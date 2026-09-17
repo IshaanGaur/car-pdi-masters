@@ -1,1 +1,62 @@
-
+{
+  "currency": "INR",
+  "defaultServicePrice": 2499,
+  "bookingAmount": 299,
+  "balanceAmount": 2200,
+  "services": {
+    "new-car-pdi": {
+      "name": "New Car PDI",
+      "price": 2499
+    },
+    "new-car-inspection": {
+      "name": "New Car Inspection",
+      "price": 2499
+    },
+    "car-pdi": {
+      "name": "Car PDI",
+      "price": 2499
+    },
+    "car-inspection": {
+      "name": "Car Inspection",
+      "price": 2499
+    },
+    "used-car-pdi": {
+      "name": "Used Car PDI",
+      "price": 2499
+    },
+    "used-car-inspection": {
+      "name": "Used Car Inspection",
+      "price": 2499
+    },
+    "pre-purchase-inspection": {
+      "name": "Pre-Purchase Car Inspection",
+      "price": 2499
+    },
+    "360-degree-car-inspection": {
+      "name": "360° Car Inspection",
+      "price": 2499
+    },
+    "luxuryCarPdi": {
+      "name": "Luxury Car PDI",
+      "price": 2499,
+      "active": true
+    },
+    "evCarPdi": {
+      "name": "EV Car PDI",
+      "price": 2499,
+      "active": true
+    }
+  },
+  "payment": {
+    "accountHolder": "Ishaan Gaur",
+    "bankName": "Canara Bank",
+    "accountNumber": "110317414950",
+    "ifsc": "CNRB0008598",
+    "upiId": "9821097137@upi",
+    "qrImage": "/assets/payment-qr.jpg"
+  },
+  "adminIntegration": {
+    "source": "config/pricing.json",
+    "note": "The website reads pricing from this central configuration. Connect the existing Admin Panel to update this configuration or replace the loader with the Admin Panel's authenticated pricing API/Firestore document. Do not expose admin credentials in the public website."
+  }
+}
