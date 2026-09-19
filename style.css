@@ -10,4 +10,4 @@
 
 
 .process-card h3 span[data-price]{display:inline;background:none;color:inherit;border-radius:0;padding:0;width:auto;height:auto;font:inherit;}
-.date-field{display:flex;flex-direction:column;gap:6px;font-weight:700;color:var(--text)}.date-field span{font-size:13px;color:var(--muted)}.date-field input{box-sizing:border-box}.date-field input:invalid{color:var(--text)}
+.date-field{display:flex;flex-direction:column;gap:6px;font-weight:700;color:var(--text);position:relative}.date-field span{font-size:13px;color:var(--muted)}.date-field input{box-sizing:border-box}.date-field input:invalid{color:var(--text)}@media(max-width:640px){.date-field:has(input:invalid)::after{content:"dd-mm-yyyy";position:absolute;left:14px;top:39px;font-weight:700;color:var(--text);pointer-events:none}}
