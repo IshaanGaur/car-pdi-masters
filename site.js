@@ -20,7 +20,7 @@
     const priceInput=document.getElementById('bookingPrice'); if(priceInput) priceInput.value=price;
     const bookingInput=document.getElementById('bookingAmount'); if(bookingInput) bookingInput.value=booking;
     const balanceInput=document.getElementById('balanceAmount'); if(balanceInput) balanceInput.value=balance;
-    document.querySelectorAll('[data-booking-upi]').forEach(el=>{el.href=`upi://pay?pa=${((p.payment&&p.payment.upiId)||fallback.payment.upiId)}&pn=Car%20PDI%20Masters&am=${encodeURIComponent(booking)}&cu=INR`});
+    document.querySelectorAll('[data-booking-upi]').forEach(el=>{const upi=((p.payment&&p.payment.upiId)||fallback.payment.upiId);const bookingId=new URLSearchParams(window.location.search).get('bookingId')||'';const qs=`upi://pay?pa=${encodeURIComponent(upi).replace(/%40/g,'@')}&pn=${encodeURIComponent('Car PDI Masters')}&am=${encodeURIComponent(booking)}&cu=INR${bookingId?`&tr=${encodeURIComponent(bookingId)}`:''}`;el.href=qs});
     window.CPM_PRICING={...p,defaultServicePrice:price,bookingAmount:booking,balanceAmount:balance};
     return window.CPM_PRICING;
   }
