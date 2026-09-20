@@ -1659,3 +1659,248 @@ footer a{color:#b8c8d9}
     max-width:420px !important;
   }
 }
+/* =========================================================
+   CAR PDI MASTERS — MOBILE HERO FINAL POLISH
+   Mobile only — desktop layout remains untouched
+   ========================================================= */
+
+@media (max-width: 640px){
+
+  /* HERO OVERALL */
+  .hero{
+    padding:34px 0 36px !important;
+  }
+
+  .hero-grid{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:18px !important;
+    align-items:stretch !important;
+  }
+
+  /* HERO TEXT */
+  .hero-copy{
+    width:100% !important;
+  }
+
+  .hero-copy .eyebrow{
+    font-size:10px !important;
+    letter-spacing:.12em !important;
+    margin-bottom:8px !important;
+  }
+
+  .hero-copy h1{
+    font-size:38px !important;
+    line-height:1.08 !important;
+    letter-spacing:-.035em !important;
+    margin:8px 0 14px !important;
+  }
+
+  .hero-lead{
+    font-size:15px !important;
+    line-height:1.55 !important;
+    margin:0 !important;
+  }
+
+  /* ACTION BUTTONS */
+  .actions{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:10px !important;
+    margin:20px 0 18px !important;
+  }
+
+  .actions .btn{
+    width:100% !important;
+    min-height:48px !important;
+    padding:12px 18px !important;
+    font-size:14px !important;
+  }
+
+  /* TRUST CARDS */
+  .hero-trust{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:8px !important;
+    margin-top:14px !important;
+  }
+
+  .hero-trust>div{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+    gap:12px !important;
+    padding:10px 13px !important;
+    border-radius:11px !important;
+  }
+
+  .hero-trust strong{
+    font-size:17px !important;
+    white-space:nowrap !important;
+  }
+
+  .hero-trust span{
+    font-size:11px !important;
+    text-align:right !important;
+    margin-top:0 !important;
+  }
+
+  /* CAR IMAGE AREA */
+  .hero-visual{
+    width:100% !important;
+    display:flex !important;
+    flex-direction:column !important;
+    gap:14px !important;
+    min-height:0 !important;
+    margin-top:2px !important;
+  }
+
+  .hero-car-wrap{
+    width:100% !important;
+    height:220px !important;
+    min-height:220px !important;
+    margin:0 !important;
+    opacity:.60 !important;
+  }
+
+  .hero-car-image{
+    width:100% !important;
+    height:100% !important;
+    object-fit:cover !important;
+    object-position:center center !important;
+  }
+
+  /* INSPECTION COVERAGE CARD */
+  .hero-panel{
+    width:100% !important;
+    max-width:420px !important;
+    margin:0 auto !important;
+    padding:18px !important;
+    border-radius:18px !important;
+  }
+
+  .panel-top{
+    padding-bottom:12px !important;
+    font-size:11px !important;
+  }
+
+  .panel-ring{
+    width:82px !important;
+    height:82px !important;
+    margin:18px auto 14px !important;
+  }
+
+  .hero-panel h2{
+    font-size:22px !important;
+    margin-bottom:8px !important;
+  }
+
+  .hero-panel p{
+    font-size:13px !important;
+    line-height:1.5 !important;
+  }
+
+  .panel-check{
+    font-size:12px !important;
+    line-height:1.45 !important;
+    padding:8px 0 !important;
+  }
+
+  .report-link{
+    display:block !important;
+    margin-top:12px !important;
+    font-size:12px !important;
+  }
+
+  /* MOBILE PRICE STRIP */
+  .price-strip{
+    padding:0 16px !important;
+  }
+
+  .price-grid{
+    grid-template-columns:repeat(3,1fr) !important;
+    gap:0 !important;
+    padding:15px 0 !important;
+  }
+
+  .price-grid>div:not(.price-note){
+    padding:0 8px !important;
+  }
+
+  .price-grid span{
+    font-size:10px !important;
+    line-height:1.25 !important;
+  }
+
+  .price-grid strong{
+    font-size:18px !important;
+    line-height:1.2 !important;
+  }
+
+  .price-note{
+    font-size:10px !important;
+    line-height:1.4 !important;
+    padding:10px 0 0 !important;
+  }
+
+  /* GENERAL MOBILE SECTION SPACING */
+  .section{
+    padding:46px 0 !important;
+  }
+
+  .section-head{
+    margin-bottom:22px !important;
+  }
+
+  .section-head h2{
+    font-size:27px !important;
+    line-height:1.18 !important;
+  }
+
+  .section-head p{
+    font-size:14px !important;
+    line-height:1.55 !important;
+  }
+
+  /* SERVICE / CHECKPOINT / PROCESS CARDS */
+  .service-card,
+  .checkpoint-card,
+  .process-card,
+  .area-card,
+  .resource-card{
+    border-radius:16px !important;
+  }
+
+  /* BOOKING SECTION */
+  .booking-box{
+    padding:20px 16px !important;
+    border-radius:18px !important;
+  }
+
+  .booking-copy h2{
+    font-size:28px !important;
+    line-height:1.18 !important;
+  }
+
+  .booking-copy p{
+    font-size:14px !important;
+    line-height:1.55 !important;
+  }
+
+  .booking-price{
+    gap:6px !important;
+  }
+
+  .booking-price strong{
+    font-size:16px !important;
+  }
+
+  /* FOOTER */
+  footer{
+    padding-top:38px !important;
+  }
+
+  .footergrid{
+    gap:28px !important;
+  }
+}
