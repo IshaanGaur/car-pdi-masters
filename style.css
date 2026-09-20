@@ -1603,3 +1603,59 @@ footer a{color:#b8c8d9}
   .actions{flex-direction:row}
   .actions .btn{width:auto}
 }
+/* MOBILE HERO CAR VISIBILITY FIX */
+@media (max-width: 640px){
+  .hero-visual{
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:flex-start !important;
+    align-items:center !important;
+    gap:18px !important;
+    min-height:0 !important;
+    padding-top:4px !important;
+  }
+
+  .hero-car-wrap{
+    position:relative !important;
+    order:1 !important;
+    right:auto !important;
+    bottom:auto !important;
+    width:100% !important;
+    height:270px !important;
+    min-height:270px !important;
+    opacity:.72 !important;
+    border-radius:0 !important;
+    overflow:hidden !important;
+    -webkit-mask-image:linear-gradient(
+      to bottom,
+      transparent 0%,
+      #000 14%,
+      #000 82%,
+      transparent 100%
+    ) !important;
+    mask-image:linear-gradient(
+      to bottom,
+      transparent 0%,
+      #000 14%,
+      #000 82%,
+      transparent 100%
+    ) !important;
+  }
+
+  .hero-car-image{
+    width:100% !important;
+    height:100% !important;
+    object-fit:cover !important;
+    object-position:center center !important;
+    filter:saturate(1.08) contrast(1.05) brightness(.82) !important;
+    mix-blend-mode:screen !important;
+  }
+
+  .hero-panel{
+    order:2 !important;
+    position:relative !important;
+    z-index:2 !important;
+    width:100% !important;
+    max-width:420px !important;
+  }
+}
