@@ -2446,3 +2446,136 @@ body{
   }
 
 }
+/* =========================================================
+   CHECKPOINT SECTION — MATCH SERVICES LAYOUT
+   ========================================================= */
+
+/* Keep same centered width as Services */
+.cpm-checkpoints-section .container{
+  width:min(1160px,92%) !important;
+  max-width:1160px !important;
+  min-width:0 !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  box-sizing:border-box !important;
+}
+
+/* Heading aligned exactly like other sections */
+.cpm-checkpoints-head{
+  width:100% !important;
+  max-width:780px !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+
+/* Checkpoint grid */
+.cpm-checkpoint-grid{
+  width:100% !important;
+  max-width:100% !important;
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  gap:18px !important;
+}
+
+/* Checkpoint card */
+.cpm-checkpoint-card{
+  width:100% !important;
+  max-width:100% !important;
+  min-width:0 !important;
+  overflow:hidden !important;
+  padding:0 !important;
+}
+
+/* Image — same style as Services */
+.cpm-checkpoint-photo{
+  width:100% !important;
+  height:190px !important;
+  min-height:190px !important;
+  overflow:hidden !important;
+  display:block !important;
+  box-sizing:border-box !important;
+}
+
+/* Full image, same as Services */
+.cpm-checkpoint-photo img{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:100% !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  box-sizing:border-box !important;
+}
+
+/* Text area */
+.cpm-checkpoint-content{
+  width:100% !important;
+  max-width:100% !important;
+  min-width:0 !important;
+  padding:20px !important;
+  box-sizing:border-box !important;
+}
+
+/* Tablet */
+@media(max-width:1000px){
+
+  .cpm-checkpoint-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:16px !important;
+  }
+
+  .cpm-checkpoint-photo{
+    height:200px !important;
+    min-height:200px !important;
+  }
+
+}
+
+/* Mobile — same image sizing approach as Services */
+@media(max-width:640px){
+
+  .cpm-checkpoints-section .container{
+    width:92% !important;
+    max-width:1160px !important;
+  }
+
+  .cpm-checkpoint-grid{
+    width:100% !important;
+    grid-template-columns:1fr !important;
+    gap:15px !important;
+  }
+
+  .cpm-checkpoint-card{
+    width:100% !important;
+    border-radius:18px !important;
+  }
+
+  .cpm-checkpoint-photo{
+    width:100% !important;
+    height:205px !important;
+    min-height:205px !important;
+  }
+
+  .cpm-checkpoint-photo img{
+    width:100% !important;
+    height:100% !important;
+    object-fit:cover !important;
+  }
+
+  .cpm-checkpoint-content{
+    padding:18px !important;
+  }
+
+  .cpm-checkpoint-number{
+    margin-bottom:16px !important;
+  }
+
+  .cpm-checkpoint-content h3{
+    font-size:21px !important;
+  }
+
+  .cpm-checkpoint-content p{
+    font-size:15px !important;
+    line-height:1.6 !important;
+  }
+
+}
