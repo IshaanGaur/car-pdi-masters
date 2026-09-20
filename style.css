@@ -13,7 +13,7 @@
 .date-field{display:flex;flex-direction:column;gap:6px;font-weight:700;color:var(--text);position:relative}.date-field span{font-size:13px;color:var(--muted)}.date-field input{box-sizing:border-box}.date-field input:invalid{color:var(--text)}@media(max-width:640px){.date-field{position:relative}.date-placeholder{position:absolute;left:14px;top:39px;font-weight:700;color:var(--text);pointer-events:none}.date-field:has(input:valid) .date-placeholder{display:none}}
 
 /* =========================================================
-   CAR PDI MASTERS — PREMIUM JOURNEY LAYER
+   CAR PDI MASTERS â€” PREMIUM JOURNEY LAYER
    Homepage architecture update. Existing SEO/page classes retained.
    ========================================================= */
 :root{
@@ -199,7 +199,7 @@ footer a{color:#b8c8d9}
 
 
 /* =========================================================
-   CAR PDI MASTERS — PHASE 2 HOMEPAGE REFINEMENT
+   CAR PDI MASTERS â€” PHASE 2 HOMEPAGE REFINEMENT
    Hero car visual intentionally deferred to the next phase.
    ========================================================= */
 .about-section{background:#f7f9fc}
@@ -249,7 +249,7 @@ footer a{color:#b8c8d9}
 }
 
 
-/* PHASE 4 — hero visual refinement */
+/* PHASE 4 â€” hero visual refinement */
 .hero{overflow:hidden}
 .hero-grid{position:relative;z-index:5}
 .hero-copy{position:relative;z-index:7}
@@ -260,7 +260,7 @@ footer a{color:#b8c8d9}
 @media(max-width:640px){}
 
 /* =========================================================
-   PHASE 5 — SERVICE PAGE SYSTEM
+   PHASE 5 â€” SERVICE PAGE SYSTEM
    ========================================================= */
 .service-hero{position:relative;overflow:hidden;background:radial-gradient(circle at 72% 30%,rgba(18,119,255,.18),transparent 38%),linear-gradient(135deg,#020914 0%,#071626 56%,#06101e 100%);padding:78px 0 86px;color:#fff}
 .service-hero::after{content:"";position:absolute;inset:auto 0 0 0;height:120px;background:linear-gradient(transparent,rgba(0,0,0,.25));pointer-events:none}
@@ -324,7 +324,7 @@ footer a{color:#b8c8d9}
 }
 
 
-/* HOMEPAGE SERVICE CARDS — UNIFORM PREMIUM STYLE
+/* HOMEPAGE SERVICE CARDS â€” UNIFORM PREMIUM STYLE
    Match every service card to the dark premium treatment of card 01.
 */
 .service-grid .service-card,
@@ -353,7 +353,7 @@ footer a{color:#b8c8d9}
 }
 
 
-/* UNIFORM PREMIUM CARDS — HOW IT WORKS + DELHI COVERAGE
+/* UNIFORM PREMIUM CARDS â€” HOW IT WORKS + DELHI COVERAGE
    Match the premium dark treatment already used for the service cards.
 */
 .how-grid .step-card,
@@ -410,7 +410,7 @@ footer a{color:#b8c8d9}
 }
 
 
-/* ACTUAL HOMEPAGE CARD CLASSES — UNIFORM PREMIUM STYLE */
+/* ACTUAL HOMEPAGE CARD CLASSES â€” UNIFORM PREMIUM STYLE */
 .process-grid .process-card,
 .process-grid .process-card:hover{
   background:linear-gradient(145deg,#071528 0%,#0b203b 100%) !important;
@@ -452,7 +452,7 @@ footer a{color:#b8c8d9}
 
 
 /* =========================================================
-   GLOBAL HOMEPAGE CARD SYSTEM — PREMIUM DARK
+   GLOBAL HOMEPAGE CARD SYSTEM â€” PREMIUM DARK
    Apply the same readable dark-card treatment consistently
    across Services, How It Works, Delhi Coverage and Resources.
    ========================================================= */
@@ -562,7 +562,7 @@ footer a{color:#b8c8d9}
 
 
 /* =========================================================
-   COMPLETE HOMEPAGE CARD SYSTEM — FAQ + CONTACT
+   COMPLETE HOMEPAGE CARD SYSTEM â€” FAQ + CONTACT
    ========================================================= */
 
 /* FAQ accordion cards */
@@ -640,7 +640,7 @@ footer a{color:#b8c8d9}
 }
 
 
-/* FAQ FINAL VISUAL FIX — ACTUAL HOMEPAGE FAQ STRUCTURE */
+/* FAQ FINAL VISUAL FIX â€” ACTUAL HOMEPAGE FAQ STRUCTURE */
 .faq-section .faq-grid,
 .faq-section .faq-item,
 .faq-section details{
@@ -673,7 +673,7 @@ footer a{color:#b8c8d9}
 
 
 /* =========================================================
-   PHASE 6 — DELHI LOCALITY PAGES
+   PHASE 6 â€” DELHI LOCALITY PAGES
    Premium dark location-page system; URLs/content structure preserved.
    ========================================================= */
 .location-page{
@@ -771,7 +771,7 @@ footer a{color:#b8c8d9}
 
 
 /* =========================================================
-   PHASE 6 LOCATION PAGE — FINAL CONTRAST / HERO FIX
+   PHASE 6 LOCATION PAGE â€” FINAL CONTRAST / HERO FIX
    Scoped only to .location-page
    ========================================================= */
 .location-page{
@@ -877,7 +877,7 @@ footer a{color:#b8c8d9}
 
 
 /* =========================================================
-   CAR PDI MASTERS — FINAL ALL-PAGES PREMIUM THEME
+   CAR PDI MASTERS â€” FINAL ALL-PAGES PREMIUM THEME
    One shared visual system for every service + locality page.
    Homepage-specific styles remain untouched.
    ========================================================= */
@@ -965,7 +965,7 @@ footer a{color:#b8c8d9}
   color:#b9cce0 !important;
 }
 
-/* LOCATION PAGES — final shared readability layer */
+/* LOCATION PAGES â€” final shared readability layer */
 .location-page,
 .location-page main{
   background:#07101d !important;
@@ -1015,7 +1015,7 @@ footer a{color:#b8c8d9}
 
 
 /* =========================================================
-   FINAL UNIFIED CARD STYLE — PROCESS = SERVICE
+   FINAL UNIFIED CARD STYLE â€” PROCESS = SERVICE
    ========================================================= */
 .process-grid .process-card,
 .process-grid .process-card:hover{
@@ -1057,7 +1057,7 @@ footer a{color:#b8c8d9}
 
 
 /* =========================================================
-   HERO CAR — REFERENCE-STYLE DARK BLUE SEDAN
+   HERO CAR â€” REFERENCE-STYLE DARK BLUE SEDAN
    ========================================================= */
 .hero{
   overflow:hidden !important;
@@ -1118,7 +1118,7 @@ footer a{color:#b8c8d9}
 }
 
 /* =========================================================
-   BOOKING FORM — LIGHTER PREMIUM NAVY
+   BOOKING FORM â€” LIGHTER PREMIUM NAVY
    Keeps the dark premium theme while improving readability.
    ========================================================= */
 .booking-section{
@@ -1210,7 +1210,7 @@ footer a{color:#b8c8d9}
 
 
 /* =========================================================
-   CAR PDI MASTERS — ONE VISUAL SYSTEM FOR ALL INNER PAGES
+   CAR PDI MASTERS â€” ONE VISUAL SYSTEM FOR ALL INNER PAGES
    Service pages + Delhi hub + all 74 Delhi locality pages.
    Homepage/booking functionality/SEO content remain unchanged.
    ========================================================= */
@@ -1255,7 +1255,7 @@ footer a{color:#b8c8d9}
   box-shadow:0 12px 30px rgba(22,119,255,.22) !important;
 }
 
-/* SERVICE PAGES — hero and every section share the same dark canvas */
+/* SERVICE PAGES â€” hero and every section share the same dark canvas */
 .service-page .service-hero{
   background:
     radial-gradient(circle at 78% 18%,rgba(30,123,255,.22),transparent 36%),
@@ -1362,7 +1362,7 @@ footer a{color:#b8c8d9}
   color:#b9cce0 !important;
 }
 
-/* LOCATION PAGES — same canvas, same card language */
+/* LOCATION PAGES â€” same canvas, same card language */
 .location-page .hero{
   background:
     radial-gradient(circle at 78% 18%,rgba(30,123,255,.22),transparent 36%),
@@ -1517,4 +1517,89 @@ footer a{color:#b8c8d9}
   .location-page .area-grid{
     grid-template-columns:1fr !important;
   }
+}
+/* CAR PDI MASTERS - FINAL MOBILE RESPONSIVE OVERRIDES V4 */
+
+@media (max-width: 900px){
+  body{overflow-x:hidden}
+  .container{width:min(1160px,92%);max-width:100%}
+  .navin{min-height:70px;gap:10px}
+  .brand{min-width:0;flex:0 1 auto}
+  .brand img{width:155px;max-width:100%;height:auto}
+  .menu-toggle{display:block;margin-left:auto;flex:0 0 auto;width:48px;height:44px;padding:0;font-size:25px;line-height:1}
+  .nav-actions{margin-left:0;gap:8px;flex:0 0 auto}
+  .nav-actions .whatsapp-link{display:none}
+  .nav-cta{padding:10px 13px;min-height:44px;font-size:13px;line-height:1.15;white-space:nowrap}
+  .links{display:none;position:absolute;left:4%;right:4%;top:70px;z-index:50;flex-direction:column;align-items:stretch;gap:2px;margin:0;padding:8px;background:#07111f;border:1px solid rgba(88,199,255,.18);border-radius:0 0 14px 14px;box-shadow:0 20px 45px rgba(0,0,0,.35)}
+  .links.open{display:flex}
+  .links a{padding:12px 13px;font-size:14px}
+  .contact-strip-in{min-height:38px;gap:10px;justify-content:space-between;padding:7px 0;font-size:11px}
+  .breadcrumbs{padding:12px 0;font-size:12px;line-height:1.4}
+  .hero{padding:62px 0 56px}
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .hero-copy h1{font-size:clamp(42px,9vw,58px);line-height:1.02;letter-spacing:-.05em;margin:12px 0 18px}
+  .hero-lead{max-width:none;font-size:16px;line-height:1.65}
+  .actions{gap:10px;margin:22px 0}
+  .actions .btn{min-height:50px}
+  .hero-trust{grid-template-columns:1fr;gap:9px;margin-top:26px}
+  .hero-trust>div{padding:12px 14px}
+  .hero-visual{min-height:auto;width:100%}
+  .hero-panel{width:100%;max-width:420px;margin:0 auto;padding:21px;border-radius:20px}
+  .price-grid{grid-template-columns:repeat(3,1fr);gap:0;padding:17px 0}
+  .price-grid>div:not(.price-note){border-right:1px solid rgba(255,255,255,.11);padding:0 12px}
+  .price-grid>div:first-child{padding-left:0}
+  .price-grid>div:nth-child(3){border-right:0}
+  .price-grid strong{font-size:20px}
+  .price-label{font-size:11px}
+  .price-note{grid-column:1/-1;padding:12px 0 0;font-size:11px}
+  .section{padding:68px 0}
+  .section-head{margin-bottom:28px}
+  .section-head h2{font-size:clamp(30px,7vw,42px)}
+  .section-head p{font-size:14px}
+  .service-grid,.checkpoint-grid,.process-grid,.area-grid,.resource-grid,.faq-grid,.trust-grid,.about-grid,.contact-box{grid-template-columns:1fr}
+  .service-card,.process-card,.resource-card,.area-card,.checkpoint-card{min-height:0}
+  .service-card{padding:21px}
+  .process-card{padding:21px}
+  .resource-card{padding:22px}
+  .booking-box{grid-template-columns:1fr;gap:26px;padding:23px 18px;border-radius:19px}
+  .booking-copy h2{font-size:31px}
+  .booking-form{grid-template-columns:1fr}
+  .booking-form .full{grid-column:1}
+  .booking-price{grid-template-columns:repeat(3,1fr)}
+  .booking-price div{padding:10px 7px}
+  .booking-price strong{font-size:17px}
+  .footergrid{grid-template-columns:1fr}
+}
+@media (max-width: 640px){
+  .container{width:calc(100% - 32px)}
+  .navin{min-height:68px}
+  .brand img{width:150px}
+  .menu-toggle{width:45px;height:42px;font-size:23px}
+  .nav-cta{padding:9px 11px;font-size:12px;min-height:42px}
+  .contact-strip-in{font-size:10px;gap:7px}
+  .breadcrumbs{font-size:12px}
+  .hero{padding:54px 0 48px}
+  .hero-copy h1{font-size:42px}
+  .hero-lead{font-size:15px}
+  .actions{flex-direction:column;align-items:stretch}
+  .actions .btn{width:100%}
+  .hero-trust{margin-top:22px}
+  .price-grid{grid-template-columns:1fr}
+  .price-grid>div:not(.price-note){border-right:0;border-bottom:1px solid rgba(255,255,255,.1);padding:9px 0}
+  .price-grid>div:nth-child(3){border-bottom:1px solid rgba(255,255,255,.1)}
+  .price-note{padding-top:12px}
+  .section{padding:58px 0}
+  .service-card h3{font-size:21px}
+  .checkpoint-card h3{font-size:18px}
+  .process-card h3{font-size:19px}
+  .booking-box{padding:21px 16px}
+  .booking-price{grid-template-columns:1fr 1fr 1fr}
+  .booking-price strong{font-size:16px}
+  .booking-form input,.booking-form select,.booking-form textarea{font-size:16px;min-height:48px}
+  .final-cta{padding:60px 0}
+  .final-cta h2{font-size:34px}
+}
+@media (min-width:641px) and (max-width:900px){
+  .actions{flex-direction:row}
+  .actions .btn{width:auto}
 }
