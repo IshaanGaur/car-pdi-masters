@@ -1904,3 +1904,154 @@ footer a{color:#b8c8d9}
     gap:28px !important;
   }
 }
+/* =========================================================
+   CAR PDI MASTERS — MOBILE BOOKING FORM POLISH
+   Mobile only — desktop untouched
+   ========================================================= */
+
+@media (max-width: 640px){
+
+  .booking-section{
+    padding:42px 0 !important;
+  }
+
+  .booking-box{
+    width:calc(100% - 24px) !important;
+    margin:0 auto !important;
+    padding:22px 16px !important;
+    border-radius:20px !important;
+    gap:24px !important;
+  }
+
+  .booking-copy{
+    width:100% !important;
+  }
+
+  .booking-copy .eyebrow{
+    font-size:10px !important;
+    letter-spacing:.12em !important;
+  }
+
+  .booking-copy h2{
+    font-size:28px !important;
+    line-height:1.16 !important;
+    margin:9px 0 12px !important;
+  }
+
+  .booking-copy p{
+    font-size:14px !important;
+    line-height:1.55 !important;
+    margin-bottom:18px !important;
+  }
+
+  /* PRICE SUMMARY */
+  .booking-price{
+    display:grid !important;
+    grid-template-columns:repeat(3,1fr) !important;
+    gap:0 !important;
+    margin-top:16px !important;
+    border-radius:12px !important;
+    overflow:hidden !important;
+  }
+
+  .booking-price div{
+    min-width:0 !important;
+    padding:11px 5px !important;
+    text-align:center !important;
+  }
+
+  .booking-price span{
+    display:block !important;
+    font-size:10px !important;
+    line-height:1.2 !important;
+  }
+
+  .booking-price strong{
+    display:block !important;
+    font-size:16px !important;
+    line-height:1.25 !important;
+    margin-top:4px !important;
+  }
+
+  /* FORM */
+  .booking-form{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:13px !important;
+  }
+
+  .booking-form label{
+    width:100% !important;
+    min-width:0 !important;
+  }
+
+  .booking-form label span{
+    display:block !important;
+    font-size:12px !important;
+    font-weight:800 !important;
+    margin-bottom:6px !important;
+  }
+
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea{
+    width:100% !important;
+    min-height:50px !important;
+    padding:12px 13px !important;
+    border-radius:10px !important;
+    font-size:16px !important;
+    line-height:1.3 !important;
+  }
+
+  .booking-form textarea{
+    min-height:105px !important;
+    resize:vertical !important;
+  }
+
+  .booking-form .full{
+    grid-column:1 !important;
+  }
+
+  /* DATE + TIME */
+  .booking-form .date-field{
+    width:100% !important;
+  }
+
+  /* PAYMENT BUTTON */
+  .booking-form button[type="submit"]{
+    width:100% !important;
+    min-height:52px !important;
+    margin-top:5px !important;
+    padding:13px 16px !important;
+    border-radius:11px !important;
+    font-size:14px !important;
+    font-weight:900 !important;
+  }
+
+  /* FORM STATUS / HELP TEXT */
+  .booking-form .form-msg{
+    font-size:12px !important;
+    line-height:1.45 !important;
+    margin:0 !important;
+  }
+
+  /* LOCATION STATUS */
+  #locationMsg{
+    margin-top:-5px !important;
+    padding:0 2px !important;
+  }
+
+  /* BETTER FIELD SEPARATION */
+  .booking-form label + label{
+    margin-top:0 !important;
+  }
+
+  /* PREVENT MOBILE HORIZONTAL OVERFLOW */
+  .booking-section,
+  .booking-section .container,
+  .booking-box,
+  .booking-form{
+    max-width:100% !important;
+    overflow-x:hidden !important;
+  }
+}
