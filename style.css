@@ -2055,3 +2055,120 @@ footer a{color:#b8c8d9}
     overflow-x:hidden !important;
   }
 }
+/* =========================================================
+   CAR PDI MASTERS — SERVICE PHOTO CARDS FINAL RESPONSIVE FIX
+   Fixes oversized cards, image sizing and horizontal overflow
+   ========================================================= */
+
+html,
+body{
+  max-width:100%;
+  overflow-x:hidden !important;
+}
+
+/* Services grid */
+.service-grid.service-photo-grid{
+  display:grid !important;
+  width:100% !important;
+  max-width:100% !important;
+  min-width:0 !important;
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  gap:18px !important;
+  box-sizing:border-box !important;
+}
+
+/* Individual service card */
+.service-grid.service-photo-grid .service-photo-card{
+  width:100% !important;
+  max-width:100% !important;
+  min-width:0 !important;
+  min-height:0 !important;
+  padding:0 !important;
+  box-sizing:border-box !important;
+  overflow:hidden !important;
+}
+
+/* Image wrapper */
+.service-grid.service-photo-grid .service-photo{
+  display:block !important;
+  position:relative !important;
+  width:100% !important;
+  max-width:100% !important;
+  height:190px !important;
+  min-height:190px !important;
+  overflow:hidden !important;
+  box-sizing:border-box !important;
+}
+
+/* Actual image */
+.service-grid.service-photo-grid .service-photo img{
+  display:block !important;
+  width:100% !important;
+  max-width:100% !important;
+  height:100% !important;
+  min-width:0 !important;
+  min-height:0 !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  box-sizing:border-box !important;
+}
+
+/* Card text area */
+.service-grid.service-photo-grid .service-card-body{
+  width:100% !important;
+  max-width:100% !important;
+  min-width:0 !important;
+  box-sizing:border-box !important;
+  padding:20px !important;
+  overflow:hidden !important;
+}
+
+/* Prevent long text from increasing card width */
+.service-grid.service-photo-grid h3,
+.service-grid.service-photo-grid p,
+.service-grid.service-photo-grid .card-link{
+  max-width:100% !important;
+  overflow-wrap:anywhere !important;
+  word-break:normal !important;
+}
+
+/* Tablet */
+@media (max-width:1000px){
+
+  .service-grid.service-photo-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:16px !important;
+  }
+
+  .service-grid.service-photo-grid .service-photo{
+    height:200px !important;
+    min-height:200px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width:640px){
+
+  .service-grid.service-photo-grid{
+    width:100% !important;
+    grid-template-columns:1fr !important;
+    gap:15px !important;
+  }
+
+  .service-grid.service-photo-grid .service-photo{
+    height:205px !important;
+    min-height:205px !important;
+  }
+
+  .service-grid.service-photo-grid .service-card-body{
+    padding:18px !important;
+  }
+
+  .service-grid.service-photo-grid h3{
+    font-size:21px !important;
+  }
+
+  .service-grid.service-photo-grid p{
+    min-height:0 !important;
+  }
+}
