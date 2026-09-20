@@ -57,6 +57,101 @@
 <div><h4>Delhi Areas</h4><p><a href="/locations/delhi.html">All Delhi Areas</a><br><a href="/site-map.html">HTML Sitemap</a></p></div>
 <div><h4>Support</h4><p><a href="tel:+919971116411">Call 99711 16411</a><br><a href="https://wa.me/919971116411" target="_blank" rel="noopener">WhatsApp Payment Help</a></p></div></div>
 <div class="container copyright">&#169; 2026 CAR PDI MASTERS &#8226; Delhi &#8226; www.carmasters.co.in</div></footer>
+<!-- CAR PDI MASTERS — ROBUST MOBILE UPI PAYMENT HANDLER -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const btn = document.querySelector('[data-booking-upi]');
+  if (!btn) return;
+
+  const params = new URLSearchParams(window.location.search);
+
+  const bookingAmount =
+    params.get('bookingAmount') ||
+    document.querySelector('[data-price="booking"]')?.textContent.replace(/[^\d.]/g, '') ||
+    '299';
+
+  const bookingId = params.get('bookingId') || '';
+
+  function cleanUpi(value) {
+    return String(value || '')
+      .trim()
+      .replace(/\s+/g, '')
+      .replace(/%40/gi, '@');
+  }
+
+  function getUpiId() {
+    const el = document.querySelector('[data-payment="upiId"]');
+    return cleanUpi(el?.textContent || '9821097137@upi');
+  }
+
+  function buildUpiUrl() {
+    const upi = getUpiId();
+
+    const query =
+      'pa=' + encodeURIComponent(upi) +
+      '&pn=' + encodeURIComponent('Car PDI Masters') +
+      '&am=' + encodeURIComponent(bookingAmount) +
+      '&cu=INR' +
+      (bookingId ? '&tr=' + encodeURIComponent(bookingId) : '');
+
+    return 'upi://pay?' + query;
+  }
+
+  function buildAndroidIntent() {
+    const upi = getUpiId();
+
+    const query =
+      'pa=' + encodeURIComponent(upi) +
+      '&pn=' + encodeURIComponent('Car PDI Masters') +
+      '&am=' + encodeURIComponent(bookingAmount) +
+      '&cu=INR' +
+      (bookingId ? '&tr=' + encodeURIComponent(bookingId) : '');
+
+    return 'intent://pay?' + query +
+      '#Intent;scheme=upi;action=android.intent.action.VIEW;end';
+  }
+
+  btn.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    const upiUrl = buildUpiUrl();
+    const androidIntent = buildAndroidIntent();
+
+    const isAndroid = /Android/i.test(navigator.userAgent);
+
+    /*
+     * Android Chrome / Samsung Internet:
+     * Try Android UPI intent first.
+     */
+    if (isAndroid) {
+      window.location.href = androidIntent;
+
+      /*
+       * If no compatible UPI app handles the intent,
+       * keep the QR/payment page available.
+       */
+      setTimeout(function () {
+        if (document.visibilityState === 'visible') {
+          btn.href = upiUrl;
+        }
+      }, 1800);
+
+      return;
+    }
+
+    /*
+     * iPhone / desktop / other browsers:
+     * Use the standard UPI URI.
+     */
+    window.location.href = upiUrl;
+  });
+
+  /*
+   * Keep the normal UPI URI available as fallback.
+   */
+  btn.href = buildUpiUrl();
+});
+</script>
 </body></html>
 
 
