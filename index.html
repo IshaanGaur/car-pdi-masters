@@ -559,7 +559,12 @@
       <label id="otherVariantWrap" class="hidden-field"><span>Other Variant (Optional)</span><input id="otherVariant" placeholder="Enter variant if known"></label>
       <label id="registrationWrap" class="full hidden-field"><span>Registration Number</span><input id="registrationNumber" placeholder="Registration number"></label>
       <label class="full"><span>Inspection Address (Optional)</span><input id="address" placeholder="Inspection address, if available"></label>
-      <label class="date-field"><span>Inspection Date *</span><input id="date" type="date" required></label>
+      <label class="date-field">
+  <span>Preferred Date *</span>
+  <select id="date" required>
+    <option value="">Select preferred date</option>
+  </select>
+</label>
       <label><span>Preferred Time *</span><select id="time" required><option value="">Select preferred time</option><option>10:00 AM – 11:00 AM</option><option>11:00 AM – 12:00 PM</option><option>12:00 PM – 1:00 PM</option><option>1:00 PM – 2:00 PM</option><option>2:00 PM – 3:00 PM</option><option>3:00 PM – 4:00 PM</option><option>4:00 PM – 5:00 PM</option><option>5:00 PM – 6:00 PM</option><option>6:00 PM – 7:00 PM</option><option>7:00 PM – 8:00 PM</option></select></label>
       <label class="full"><span>Additional Notes (Optional)</span><textarea id="notes" placeholder="Anything else we should know?"></textarea></label>
       <button class="btn btn-primary btn-large full" type="submit">Continue to Booking Payment</button>
