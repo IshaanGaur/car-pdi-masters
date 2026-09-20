@@ -1621,9 +1621,9 @@ footer a{color:#b8c8d9}
     right:auto !important;
     bottom:auto !important;
     width:100% !important;
-    height:270px !important;
-    min-height:270px !important;
-    opacity:.72 !important;
+    height:220px !important;
+    min-height:220px !important;
+    opacity:.60 !important;
     border-radius:0 !important;
     overflow:hidden !important;
     -webkit-mask-image:linear-gradient(
