@@ -1,4 +1,51 @@
 (function(){
+
+    /* Legacy navigation compatibility
+   * Older location pages may still point to previous homepage anchors.
+   * Current homepage anchors are #process and #faq.
+   */
+  const LEGACY_HASHES={
+    '/#how-it-works':'/#process',
+    '/#faqs':'/#faq'
+  };
+
+  function setupLegacyNavigation(){
+
+    document.addEventListener('click',event=>{
+
+      const link=event.target.closest?.('a[href]');
+
+      if(!link) return;
+
+      const target=link.getAttribute('href');
+
+      const replacement=
+        LEGACY_HASHES[target];
+
+      if(!replacement) return;
+
+      event.preventDefault();
+
+      window.location.href=replacement;
+    });
+
+    const current=
+      window.location.pathname+
+      window.location.hash;
+
+    const replacement=
+      LEGACY_HASHES[current];
+
+    if(replacement){
+      window.history.replaceState(
+        null,
+        '',
+        replacement
+      );
+    }
+  }
+
+  setupLegacyNavigation();
   const firebaseConfig={
     apiKey:'AIzaSyD60AqqE6Hs6GlEORAkCa-UydrEtTg1P5w',
     authDomain:'car-pdi-masters.firebaseapp.com',
