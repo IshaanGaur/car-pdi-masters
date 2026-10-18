@@ -14,7 +14,7 @@ const liveKeySecret = defineSecret('LiveSecret');
 const testWebhookSecret = defineSecret('RAZORPAY_TEST_WEBHOOK_SECRET');
 const liveWebhookSecret = defineSecret('LiveWebhookSecret');
 const orderSecrets = [testKeyId, testKeySecret, liveKeyId, liveKeySecret];
-const verifySecrets = [testKeySecret, liveKeySecret];
+const verifySecrets = [testKeyId, testKeySecret, liveKeyId, liveKeySecret];
 const webhookSecrets = [testWebhookSecret, liveWebhookSecret];
 const REGION = 'asia-south1';
 
