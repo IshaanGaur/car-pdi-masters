@@ -12,7 +12,7 @@ const testKeySecret = defineSecret('test7717');
 const liveKeyId = defineSecret('RAZORPAY_LIVE_KEY_ID');
 const liveKeySecret = defineSecret('LiveSecret');
 const testWebhookSecret = defineSecret('RAZORPAY_TEST_WEBHOOK_SECRET');
-const liveWebhookSecret = defineSecret('LiveWebhookSecret');
+const liveWebhookSecret = defineSecret('RAZORPAY_LIVE_WEBHOOK_SECRET');
 const orderSecrets = [testKeyId, testKeySecret, liveKeyId, liveKeySecret];
 const verifySecrets = [testKeyId, testKeySecret, liveKeyId, liveKeySecret];
 const webhookSecrets = [testWebhookSecret, liveWebhookSecret];
@@ -294,7 +294,8 @@ exports.cpmRazorpayPaymentWebhookV1 = onRequest({ region: REGION, secrets: webho
   if (!payment?.id || !orderId) return res.status(400).send('Missing payment reference');
   try {
     const orderSnap = await db.doc(`razorpayOrders/${orderId}`).get();
-    if (!orderSnap.exists) return res.status(404).send('Order not found');
+    // Shared Razorpay account: payments for other businesses are acknowledged and ignored.
+    if (!orderSnap.exists) return res.status(200).send('Ignored: not a Car PDI Masters order');
     const order = orderSnap.data();
     const expected = crypto.createHmac('sha256', webhookSecret(order.paymentMode)).update(rawBody).digest('hex');
     if (!safeEqualHex(expected, signature)) return res.status(401).send('Invalid signature');
