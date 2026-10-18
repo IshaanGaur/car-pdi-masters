@@ -1,6 +1,5 @@
 (function(){
-
-    /* Legacy navigation compatibility
+  /* Legacy navigation compatibility
    * Older location pages may still point to previous homepage anchors.
    * Current homepage anchors are #process and #faq.
    */
@@ -46,164 +45,41 @@
   }
 
   setupLegacyNavigation();
-  const firebaseConfig={
-    apiKey:'AIzaSyD60AqqE6Hs6GlEORAkCa-UydrEtTg1P5w',
-    authDomain:'car-pdi-masters.firebaseapp.com',
-    projectId:'car-pdi-masters',
-    storageBucket:'car-pdi-masters.firebasestorage.app',
-    messagingSenderId:'540105751171',
-    appId:'1:540105751171:web:5edba36edd0effcccb79b6',
-    measurementId:'G-BGWPW2HG1J'
-  };
-
-  /*
-   * IMPORTANT:
-   * Pricing is LIVE from Firestore:
-   * pricing/current
-   *
-   * No hard-coded service price fallback is used.
-   */
-  const fallback={
-    paymentMode:'LIVE',
-    serviceActive:true,
-    payment:{
-      upiId:'9821097137@upi',
-      accountHolder:'Ishaan Gaur',
-      bankName:'Canara Bank',
-      accountNumber:'110317414950',
-      ifsc:'CNRB0008598',
-      qrImage:'/assets/payment-qr.jpg'
-    }
-  };
-
-  const money=n=>'₹'+Number(n||0).toLocaleString('en-IN');
-
+  const firebaseConfig={apiKey:'AIzaSyD60AqqE6Hs6GlEORAkCa-UydrEtTg1P5w',authDomain:'car-pdi-masters.firebaseapp.com',projectId:'car-pdi-masters',storageBucket:'car-pdi-masters.firebasestorage.app',messagingSenderId:'540105751171',appId:'1:540105751171:web:5edba36edd0effcccb79b6',measurementId:'G-BGWPW2HG1J'};
+  const fallback={paymentMode:'LIVE',serviceActive:true,payment:{upiId:'9821097137@upi',accountHolder:'Ishaan Gaur',bankName:'Canara Bank',accountNumber:'110317414950',ifsc:'CNRB0008598',qrImage:'/assets/payment-qr.jpg'}};
+  const money=n=>'\u20B9'+Number(n||0).toLocaleString('en-IN');
   let dbPromise;
-
   async function db(){
-    if(!dbPromise){
-      dbPromise=Promise.all([
-        import('https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js'),
-        import('https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js')
-      ]).then(([appMod,fs])=>({
-        db:fs.getFirestore(appMod.initializeApp(firebaseConfig)),
-        fs
-      }));
-    }
+    if(!dbPromise) dbPromise=Promise.all([
+      import('https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js'),
+      import('https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js'),
+      import('https://www.gstatic.com/firebasejs/12.0.0/firebase-functions.js')
+    ]).then(([appMod,fs,functions])=>{const app=appMod.getApps()[0]||appMod.initializeApp(firebaseConfig);return{app,db:fs.getFirestore(app),fs,functions}});
     return dbPromise;
   }
-
+  window.CPM_FIREBASE_READY=db;
   function apply(p){
-    if(!p||typeof p!=='object'){
-      throw new Error('Live pricing configuration is unavailable.');
-    }
-
-    const price=Number(
-      p.totalServicePrice ?? p.defaultServicePrice
-    );
-
-    const booking=Number(p.bookingAmount);
-
-    const balance=Number(
-      p.balanceAmount ?? (price-booking)
-    );
-
-    if(
-      !Number.isFinite(price) ||
-      !Number.isFinite(booking) ||
-      !Number.isFinite(balance)
-    ){
-      throw new Error('Live pricing configuration is invalid.');
-    }
-
-    document.querySelectorAll('[data-price]').forEach(el=>{
-      const key=el.dataset.price;
-
-      const val=
-        key==='service'
-          ? price
-          : key==='booking'
-            ? booking
-            : key==='balance'
-              ? balance
-              : price;
-
-      el.textContent=money(val);
-    });
-
-    document.querySelectorAll('[data-service-price]').forEach(el=>{
-      const key=el.dataset.servicePrice;
-      const svc=p.services&&p.services[key];
-
-      el.textContent=money(
-        svc&&svc.price!=null
-          ? svc.price
-          : price
-      );
-    });
-
-    document.querySelectorAll('[data-payment]').forEach(el=>{
-      const k=el.dataset.payment;
-
-      el.textContent=
-        (p.payment&&p.payment[k]) ||
-        fallback.payment[k] ||
-        '';
-    });
-
-    document.querySelectorAll('[data-payment-img]').forEach(el=>{
-      el.src=
-        (p.payment&&p.payment.qrImage) ||
-        fallback.payment.qrImage;
-    });
-
-    const priceInput=document.getElementById('bookingPrice');
-    if(priceInput) priceInput.value=price;
-
-    const bookingInput=document.getElementById('bookingAmount');
-    if(bookingInput) bookingInput.value=booking;
-
-    const balanceInput=document.getElementById('balanceAmount');
-    if(balanceInput) balanceInput.value=balance;
-
-    document.querySelectorAll('[data-booking-upi]').forEach(el=>{
-      const upi=
-        (p.payment&&p.payment.upiId) ||
-        fallback.payment.upiId;
-
-      const bookingId=
-        new URLSearchParams(window.location.search)
-          .get('bookingId') || '';
-
-      const qs=
-        `upi://pay?pa=${encodeURIComponent(upi).replace(/%40/g,'@')}`+
-        `&pn=${encodeURIComponent('Car PDI Masters')}`+
-        `&am=${encodeURIComponent(booking)}`+
-        `&cu=INR`+
-        `${bookingId?`&tr=${encodeURIComponent(bookingId)}`:''}`;
-
-      el.href=qs;
-    });
-
-    window.CPM_PRICING={
-      ...p,
-      totalServicePrice:price,
-      defaultServicePrice:price,
-      bookingAmount:booking,
-      balanceAmount:balance
-    };
-
+    p=p||fallback;
+    const configuredTotal=p.finalAmount??p.totalServicePrice??p.servicePrice;
+    const pricingReady=configuredTotal!=null && Number.isFinite(Number(configuredTotal));
+    const basePrice=pricingReady?Number(p.servicePrice??p.totalServicePrice??configuredTotal):NaN;
+    const charges=pricingReady?Number(p.serviceCharges||0):0;
+    const taxApplicable=String(p.taxApplicable||'NO').toUpperCase()==='YES';
+    const taxAmount=taxApplicable?Number(p.taxAmount||0):0;
+    const finalAmount=pricingReady?Number(p.finalAmount??(basePrice+charges+taxAmount)):NaN;
+    const price=finalAmount;
+    const booking=pricingReady?Number(p.bookingAmount??0):NaN;
+    const balance=pricingReady?finalAmount-booking:NaN;
+    document.querySelectorAll('[data-price]').forEach(el=>{const key=el.dataset.price; const val=key==='service'?price:key==='booking'?booking:key==='balance'?balance:price; el.textContent=pricingReady?money(val):'₹—'});
+    document.querySelectorAll('[data-service-price]').forEach(el=>{const key=el.dataset.servicePrice; const svc=p.services&&p.services[key]; el.textContent=pricingReady?money(svc&&svc.price!=null?svc.price:price):'₹—'});
+    document.querySelectorAll('[data-payment]').forEach(el=>{const k=el.dataset.payment; el.textContent=(p.payment&&p.payment[k])||fallback.payment[k]||''});
+    document.querySelectorAll('[data-payment-img]').forEach(el=>{el.src=(p.payment&&p.payment.qrImage)||fallback.payment.qrImage});
+    const priceInput=document.getElementById('bookingPrice'); if(priceInput) priceInput.value=pricingReady?price:'';
+    const bookingInput=document.getElementById('bookingAmount'); if(bookingInput) bookingInput.value=pricingReady?booking:'';
+    const balanceInput=document.getElementById('balanceAmount'); if(balanceInput) balanceInput.value=pricingReady?balance:'';
+    document.querySelectorAll('[data-booking-upi]').forEach(el=>{const upi=((p.payment&&p.payment.upiId)||fallback.payment.upiId);const bookingId=new URLSearchParams(window.location.search).get('bookingId')||'';const qs=`upi://pay?pa=${encodeURIComponent(upi).replace(/%40/g,'@')}&pn=${encodeURIComponent('Car PDI Masters')}&am=${encodeURIComponent(booking)}&cu=INR${bookingId?`&tr=${encodeURIComponent(bookingId)}`:''}`;el.href=qs});
+    window.CPM_PRICING={...p,defaultServicePrice:price,bookingAmount:booking,balanceAmount:balance};
     return window.CPM_PRICING;
-  }
-
-  function clearPricing(){
-    document.querySelectorAll('[data-price]').forEach(el=>{
-      el.textContent='Price unavailable';
-    });
-
-    document.querySelectorAll('[data-service-price]').forEach(el=>{
-      el.textContent='Price unavailable';
-    });
   }
 
   const CPM_MODELS={
@@ -234,547 +110,294 @@
     'MINI':['Cooper','Countryman','Other'],
     'Force Motors':['Gurkha','Trax Cruiser','Other']
   };
-
   function setupHomepageUI(){
-    const menu=document.querySelector('.menu-toggle');
-    const nav=document.getElementById('main-navigation');
-
+    const menu=document.querySelector('.menu-toggle'), nav=document.getElementById('main-navigation');
     if(menu&&nav){
-      menu.addEventListener('click',()=>{
-        const open=nav.classList.toggle('open');
-
-        menu.setAttribute(
-          'aria-expanded',
-          String(open)
-        );
-
-        menu.setAttribute(
-          'aria-label',
-          open
-            ? 'Close navigation'
-            : 'Open navigation'
-        );
-      });
-
-      nav.querySelectorAll('a').forEach(a=>{
-        a.addEventListener('click',()=>{
-          nav.classList.remove('open');
-          menu.setAttribute('aria-expanded','false');
-        });
-      });
+      menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close navigation':'Open navigation')});
+      nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}));
     }
-
-    const make=document.getElementById('carMake');
-    const model=document.getElementById('carModel');
-    const otherMakeWrap=document.getElementById('otherMakeWrap');
-    const otherModelWrap=document.getElementById('otherModelWrap');
-    const variant=document.getElementById('variant');
-    const otherVariantWrap=document.getElementById('otherVariantWrap');
-    const type=document.getElementById('type');
-    const regWrap=document.getElementById('registrationWrap');
-
+    const make=document.getElementById('carMake'), model=document.getElementById('carModel'), otherMakeWrap=document.getElementById('otherMakeWrap'), otherModelWrap=document.getElementById('otherModelWrap'), variant=document.getElementById('variant'), otherVariantWrap=document.getElementById('otherVariantWrap'), type=document.getElementById('type'), regWrap=document.getElementById('registrationWrap');
     if(make&&model){
       const fillModels=()=>{
         const rows=CPM_MODELS[make.value]||[];
-
-        model.disabled=
-          !make.value ||
-          make.value==='Other';
-
-        model.innerHTML=
-          make.value==='Other'
-            ? '<option value="">Enter model below</option>'
-            : rows.length
-              ? '<option value="">Select car model</option>'
-              : '<option value="">Select model</option>';
-
-        rows.forEach(x=>{
-          const o=document.createElement('option');
-          o.value=x;
-          o.textContent=x;
-          model.appendChild(o);
-        });
-
-        otherMakeWrap?.classList.toggle(
-          'hidden-field',
-          make.value!=='Other'
-        );
-
-        if(make.value==='Other'){
-          document.getElementById('otherMake')?.focus();
-        }
-
-        otherModelWrap?.classList.toggle(
-          'hidden-field',
-          model.value!=='Other'
-        );
-
+        model.disabled=!make.value||make.value==='Other';
+        model.innerHTML=make.value==='Other'?'<option value="">Enter model below</option>':rows.length?'<option value="">Select car model</option>':'<option value="">Select model</option>';
+        rows.forEach(x=>{const o=document.createElement('option');o.value=x;o.textContent=x;model.appendChild(o)});
+        otherMakeWrap?.classList.toggle('hidden-field',make.value!=='Other');
+        if(make.value==='Other') document.getElementById('otherMake')?.focus();
+        otherModelWrap?.classList.toggle('hidden-field',model.value!=='Other');
         updateVariant();
       };
-
       const updateVariant=()=>{
         const otherModel=model.value==='Other';
-
-        otherModelWrap?.classList.toggle(
-          'hidden-field',
-          !otherModel
-        );
-
-        const modelKey=
-          otherModel
-            ? (document.getElementById('otherModel')?.value||'Other')
-            : model.value;
-
-        const variants=
-          modelKey&&modelKey!=='Other'
-            ? ['Standard','Mid','Top','Other']
-            : ['Other'];
-
-        variant.innerHTML=
-          '<option value="">Select variant if known</option>';
-
-        variants.forEach(x=>{
-          const o=document.createElement('option');
-          o.value=x;
-          o.textContent=x;
-          variant.appendChild(o);
-        });
-
-        otherVariantWrap?.classList.toggle(
-          'hidden-field',
-          variant.value!=='Other'
-        );
+        otherModelWrap?.classList.toggle('hidden-field',!otherModel);
+        const modelKey=otherModel?(document.getElementById('otherModel')?.value||'Other'):model.value;
+        const variants=(modelKey&&modelKey!=='Other')?['Standard','Mid','Top','Other']:['Other'];
+        variant.innerHTML='<option value="">Select variant if known</option>';
+        variants.forEach(x=>{const o=document.createElement('option');o.value=x;o.textContent=x;variant.appendChild(o)});
+        otherVariantWrap?.classList.toggle('hidden-field',variant.value!=='Other');
       };
-
-      make.addEventListener('change',fillModels);
-      model.addEventListener('change',updateVariant);
-
-      document.getElementById('otherModel')
-        ?.addEventListener('input',updateVariant);
-
-      variant.addEventListener('change',()=>{
-        otherVariantWrap?.classList.toggle(
-          'hidden-field',
-          variant.value!=='Other'
-        );
-      });
-
+      make.addEventListener('change',fillModels); model.addEventListener('change',updateVariant);
+      document.getElementById('otherModel')?.addEventListener('input',updateVariant);
+      variant.addEventListener('change',()=>otherVariantWrap?.classList.toggle('hidden-field',variant.value!=='Other'));
       type?.addEventListener('change',()=>{
-        const needs=[
-          'Used Car PDI',
-          'Used Car Inspection',
-          'Pre-Purchase Car Inspection'
-        ].includes(type.value);
-
-        regWrap?.classList.toggle(
-          'hidden-field',
-          !needs
-        );
-
-        const reg=
-          document.getElementById('registrationNumber');
-
-        if(reg) reg.required=false;
+        const needs=['Used Car PDI','Used Car Inspection','Pre-Purchase Car Inspection'].includes(type.value);
+        regWrap?.classList.toggle('hidden-field',!needs);
+        const reg=document.getElementById('registrationNumber'); if(reg) reg.required=false;
       });
     }
   }
 
-  async function loadPricing(){
-    clearPricing();
-
-    try{
-      const {db:firestoreDb,fs}=await db();
-
-      const snap=await fs.getDoc(
-        fs.doc(
-          firestoreDb,
-          'pricing',
-          'current'
-        )
-      );
-
-      if(!snap.exists()){
-        throw new Error(
-          'Live pricing document was not found.'
-        );
-      }
-
-      return apply(snap.data());
-
-    }catch(e){
-      console.warn(
-        'Live pricing unavailable.',
-        e
-      );
-
-      window.CPM_PRICING=null;
-
-      document.querySelectorAll('[data-price]').forEach(el=>{
-        el.textContent='Price unavailable';
-      });
-
-      document.querySelectorAll('[data-service-price]').forEach(el=>{
-        el.textContent='Price unavailable';
-      });
-
-      return null;
-    }
-  }
-
+  async function loadPricing(){try{const {db:firestoreDb,fs}=await db();const snap=await fs.getDoc(fs.doc(firestoreDb,'pricing','current'));return snap.exists()?apply(snap.data()):apply(fallback)}catch(e){console.warn('Live pricing unavailable; using website fallback.',e);return apply(fallback)}}
   async function loadLocations(){
-    const select=
-      document.getElementById('location');
-
-    if(!select) return;
-
+    const select=document.getElementById('location'); if(!select) return;
     try{
       const {db:firestoreDb,fs}=await db();
-
-      const snap=await fs.getDocs(
-        fs.query(
-          fs.collection(
-            firestoreDb,
-            'locations'
-          ),
-          fs.where(
-            'status',
-            '==',
-            'ACTIVE'
-          ),
-          fs.where(
-            'enabledForOrders',
-            '==',
-            true
-          )
-        )
-      );
-
-      const rows=
-        snap.docs
-          .map(d=>({
-            id:d.id,
-            ...d.data()
-          }))
-          .filter(x=>x.name)
-          .sort((a,b)=>
-            String(a.name)
-              .localeCompare(String(b.name))
-          );
-
-      select.innerHTML=
-        '<option value="">Inspection Location</option>';
-
-      rows.forEach(x=>{
-        const o=document.createElement('option');
-
-        o.value=x.name;
-        o.textContent=`${x.name}, Delhi`;
-
-        select.appendChild(o);
-      });
-
+      const snap=await fs.getDocs(fs.query(fs.collection(firestoreDb,'locations'),fs.where('status','==','ACTIVE'),fs.where('enabledForOrders','==',true)));
+      const rows=snap.docs.map(d=>({id:d.id,...d.data()})).filter(x=>x.name).sort((a,b)=>String(a.name).localeCompare(String(b.name)));
+      select.innerHTML='<option value="">Inspection Location</option>';
+      rows.forEach(x=>{const o=document.createElement('option');o.value=x.name;o.textContent=`${x.name}, Delhi`;select.appendChild(o)});
       select.disabled=rows.length===0;
-
-      if(!rows.length){
-        select.innerHTML=
-          '<option value="">No locations currently accepting orders</option>';
-      }
-
-      const note=
-        document.getElementById('locationMsg');
-
-      if(note){
-        note.textContent=
-          rows.length
-            ? `${rows.length} Delhi locations currently accepting new bookings.`
-            : 'No Delhi location is currently accepting new bookings. Please call or WhatsApp us.';
-      }
-
-    }catch(e){
-      select.innerHTML=
-        '<option value="">Locations temporarily unavailable</option>';
-
-      select.disabled=true;
-
-      const note=
-        document.getElementById('locationMsg');
-
-      if(note){
-        note.textContent=
-          'Please call or WhatsApp Car PDI Masters to confirm service availability.';
-      }
-
-      console.warn(
-        'Live locations unavailable.',
-        e
-      );
-    }
+      if(!rows.length) select.innerHTML='<option value="">No locations currently accepting orders</option>';
+      const note=document.getElementById('locationMsg'); if(note) note.textContent=rows.length?`${rows.length} Delhi locations currently accepting new bookings.`:'No Delhi location is currently accepting new bookings. Please call or WhatsApp us.';
+    }catch(e){select.innerHTML='<option value="">Locations temporarily unavailable</option>';select.disabled=true;const note=document.getElementById('locationMsg');if(note)note.textContent='Please call or WhatsApp Car PDI Masters to confirm service availability.';console.warn('Live locations unavailable.',e)}
   }
-
   setupHomepageUI();
   loadPricing();
   loadLocations();
-
   window.CPM_MONEY=money;
-
   window.CPM_SUBMIT_BOOKING=async function(e){
     e.preventDefault();
-
-    const f=e.target;
-
-    const get=id=>
-      (document.getElementById(id)?.value||'').trim();
-
-    const msg=
-      document.getElementById('bookingMsg');
-
-    const btn=
-      f.querySelector('button[type="submit"]');
-
-    const make=get('carMake');
-    const model=get('carModel');
-    const otherMake=get('otherMake');
-    const otherModel=get('otherModel');
-    const variantSelect=get('variant');
-    const otherVariant=get('otherVariant');
-
-    const data={
-      name:get('name'),
-      mobile:get('mobile'),
-      type:get('type'),
-      car:
-        make==='Other'
-          ? (otherMake||'Other')
-          : make+' '+model,
-      vehicleMake:make,
-      vehicleModel:model,
-      otherMake,
-      otherModel,
-      variant:
-        variantSelect==='Other'
-          ? (otherVariant||'')
-          : variantSelect,
-      dealer:'',
-      address:get('address'),
-      location:get('location'),
-      date:get('date'),
-      time:get('time'),
-      notes:get('notes'),
-      registrationNumber:get('registrationNumber')
-    };
-
-    if(!data.location){
-      if(msg){
-        msg.textContent=
-          'Please select an active Delhi inspection location.';
-      }
-      return false;
-    }
-
-    if(
-      !data.vehicleMake ||
-      (
-        data.vehicleMake==='Other' &&
-        !data.otherMake
-      )
-    ){
-      if(msg){
-        msg.textContent=
-          'Please enter the car make.';
-      }
-      return false;
-    }
-
-    if(
-      data.vehicleMake!=='Other' &&
-      !data.vehicleModel
-    ){
-      if(msg){
-        msg.textContent=
-          'Please select the car model.';
-      }
-      return false;
-    }
-
-    if(btn){
-      btn.disabled=true;
-      btn.textContent='Checking availability…';
-    }
-
+    const f=e.target, get=id=>(document.getElementById(id)?.value||'').trim(), msg=document.getElementById('bookingMsg'), btn=f.querySelector('button[type="submit"]');
+    const make=get('carMake'), model=get('carModel'), otherMake=get('otherMake'), otherModel=get('otherModel'), variantSelect=get('variant'), otherVariant=get('otherVariant');
+    const data={name:get('name'),mobile:get('mobile'),type:get('type'),car:make==='Other'?(otherMake||'Other'):make+' '+model,vehicleMake:make,vehicleModel:model,otherMake,otherModel,variant:variantSelect==='Other'?(otherVariant||''):variantSelect,dealer:'',address:get('address'),location:get('location'),date:get('date'),time:get('time'),notes:get('notes'),registrationNumber:get('registrationNumber')};
+    if(!data.location){if(msg)msg.textContent='Please select an active Delhi inspection location.';return false};
+    if(!data.vehicleMake||data.vehicleMake==='Other'&&!data.otherMake){if(msg)msg.textContent='Please enter the car make.';return false}
+    if(data.vehicleMake!=='Other'&&!data.vehicleModel){if(msg)msg.textContent='Please select the car model.';return false}
+    if(['Used Car PDI','Used Car Inspection','Pre-Purchase Car Inspection'].includes(data.type)&&!data.registrationNumber){/* registration remains optional */}
+    if(btn){btn.disabled=true;btn.textContent='Checking availability…'}
     try{
       const {db:firestoreDb,fs}=await db();
-
-      const locationSlug=
-        data.location
-          .toLowerCase()
-          .replace(/[^a-z0-9]+/g,'-')
-          .replace(/^-|-$/g,'');
-
-      const locSnap=await fs.getDoc(
-        fs.doc(
-          firestoreDb,
-          'locations',
-          locationSlug
-        )
-      );
-
-      if(
-        !locSnap.exists() ||
-        locSnap.data().status!=='ACTIVE' ||
-        locSnap.data().enabledForOrders!==true
-      ){
-        throw new Error(
-          'This location is currently paused for new orders. Please choose another active Delhi location.'
-        );
-      }
-
-      /*
-       * LIVE PRICING ONLY
-       * No hard-coded price fallback.
-       */
-      const priceSnap=await fs.getDoc(
-        fs.doc(
-          firestoreDb,
-          'pricing',
-          'current'
-        )
-      );
-
-      if(!priceSnap.exists()){
-        throw new Error(
-          'Live pricing is currently unavailable. Please try again shortly.'
-        );
-      }
-
-      const p=priceSnap.data();
-
-      const total=Number(
-        p.totalServicePrice ??
-        p.defaultServicePrice
-      );
-
-      const booking=Number(
-        p.bookingAmount
-      );
-
-      const balance=Number(
-        p.balanceAmount ??
-        (total-booking)
-      );
-
-      if(
-        !Number.isFinite(total) ||
-        !Number.isFinite(booking) ||
-        !Number.isFinite(balance)
-      ){
-        throw new Error(
-          'Live pricing configuration is invalid. Please contact us.'
-        );
-      }
-
-      const code=
-        `CPM-${data.date.replaceAll('-','')}-${Math.random().toString(36).slice(2,7).toUpperCase()}`;
-
-      const ref=await fs.addDoc(
-        fs.collection(
-          firestoreDb,
-          'bookings'
-        ),
-        {
-          customerName:data.name,
-          customerPhone:data.mobile,
-          inspectionType:data.type,
-          vehicleMakeModel:data.car,
-          vehicleMake:data.vehicleMake,
-          vehicleModel:data.vehicleModel,
-          otherMake:data.otherMake,
-          otherModel:data.otherModel,
-          variant:data.variant,
-          dealerSeller:data.dealer,
-          registrationNumber:data.registrationNumber,
-          inspectionLocation:data.location,
-          locationSlug,
-          inspectionDate:data.date,
-          timeSlot:data.time,
-          inspectionAddress:data.address,
-          additionalInformation:data.notes||'',
-          bookingId:code,
-          bookingStatus:'PAYMENT_PENDING',
-          bookingPaymentStatus:'PENDING',
-          balancePaymentStatus:'PENDING',
-          totalServicePrice:total,
-          bookingAmount:booking,
-          balanceAmount:balance,
-          paymentMode:p.paymentMode||'LIVE',
-          currency:'INR',
-          source:'WEBSITE',
-          createdAt:fs.serverTimestamp(),
-          updatedAt:fs.serverTimestamp()
-        }
-      );
-
-      try{
-        localStorage.setItem(
-          'cpm_booking',
-          JSON.stringify({
-            ...data,
-            bookingId:code,
-            firestoreId:ref.id,
-            totalServicePrice:total,
-            bookingAmount:booking,
-            balanceAmount:balance
-          })
-        );
-      }catch(_){}
-
-      if(msg){
-        msg.textContent=
-          `Booking ${code} created. Opening payment page…`;
-      }
-
-      const params=
-        new URLSearchParams({
-          bookingId:code,
-          type:data.type,
-          car:data.car,
-          name:data.name,
-          mobile:data.mobile,
-          location:data.location,
-          date:data.date,
-          time:data.time,
-          address:data.address,
-          bookingAmount:String(booking),
-          totalServicePrice:String(total),
-          balanceAmount:String(balance)
-        });
-
-      setTimeout(()=>{
-        location.href=
-          '/payment.html?'+params.toString();
-      },250);
-
-    }catch(err){
-      if(msg){
-        msg.textContent=
-          err.message ||
-          'Booking could not be created. Please call or WhatsApp us.';
-      }
-
-      if(btn){
-        btn.disabled=false;
-
-        const liveBooking=
-          Number(
-            window.CPM_PRICING?.bookingAmount
-          );
-
-        btn.textContent=
-          Number.isFinite(liveBooking)
-            ? `Continue to ₹${liveBooking.toLocaleString('en-IN')} Payment`
-            : 'Continue to Payment';
-      }
-    }
-
+      const locationSlug=data.location.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+      const locSnap=await fs.getDoc(fs.doc(firestoreDb,'locations',locationSlug));
+      if(!locSnap.exists()||locSnap.data().status!=='ACTIVE'||locSnap.data().enabledForOrders!==true)throw new Error('This location is currently paused for new orders. Please choose another active Delhi location.');
+      const priceSnap=await fs.getDoc(fs.doc(firestoreDb,'pricing','current'));
+      const p=priceSnap.exists()?priceSnap.data():fallback;
+      const configuredTotal=p.finalAmount??p.totalServicePrice??p.servicePrice;
+      const pricingReady=configuredTotal!=null && Number.isFinite(Number(configuredTotal));
+      if(!pricingReady) throw new Error('Pricing is not configured for new bookings. Please contact Car PDI Masters.');
+      const servicePrice=Number(p.servicePrice??p.totalServicePrice??configuredTotal);
+      const serviceCharges=Number(p.serviceCharges||0);
+      const taxApplicable=String(p.taxApplicable||'NO').toUpperCase()==='YES';
+      const taxAmount=taxApplicable?Number(p.taxAmount||0):0;
+      const finalAmount=Number(p.finalAmount??(servicePrice+serviceCharges+taxAmount));
+      const booking=Number(p.bookingAmount??0);
+      const balance=finalAmount-booking;
+      const total=finalAmount;
+      const code=`CPM-${data.date.replaceAll('-','')}-${Math.random().toString(36).slice(2,7).toUpperCase()}`;
+      const ref=await fs.addDoc(fs.collection(firestoreDb,'bookings'),{customerName:data.name,customerPhone:data.mobile,inspectionType:data.type,vehicleMakeModel:data.car,vehicleMake:data.vehicleMake,vehicleModel:data.vehicleModel,otherMake:data.otherMake,otherModel:data.otherModel,variant:data.variant,dealerSeller:data.dealer,registrationNumber:data.registrationNumber,inspectionLocation:data.location,locationSlug,inspectionDate:data.date,timeSlot:data.time,inspectionAddress:data.address,additionalInformation:data.notes||'',bookingId:code,bookingStatus:'PAYMENT_PENDING',bookingPaymentStatus:'PENDING',balancePaymentStatus:'PENDING',totalServicePrice:total,servicePrice:servicePrice,serviceCharges:serviceCharges,taxApplicable:taxApplicable,taxAmount:taxAmount,finalAmount:finalAmount,bookingAmount:booking,balanceAmount:balance,paymentMode:p.paymentMode||'LIVE',currency:'INR',source:'WEBSITE',createdAt:fs.serverTimestamp(),updatedAt:fs.serverTimestamp()});
+      try{localStorage.setItem('cpm_booking',JSON.stringify({...data,bookingId:code,firestoreId:ref.id,totalServicePrice:total,servicePrice:servicePrice,serviceCharges:serviceCharges,taxApplicable:taxApplicable,taxAmount:taxAmount,finalAmount:finalAmount,bookingAmount:booking,balanceAmount:balance}))}catch(_){ }
+      if(msg)msg.textContent=`Booking ${code} created. Opening payment page…`;
+      // Only booking references go in the address; customer details stay in localStorage (cpm_booking).
+      const params=new URLSearchParams({bookingId:code,bookingDocId:ref.id,bookingAmount:String(booking)});
+      setTimeout(()=>location.href='/payment.html?'+params.toString(),250);
+    }catch(err){if(msg)msg.textContent=err.message||'Booking could not be created. Please call or WhatsApp us.';if(btn){btn.disabled=false;btn.textContent=`Continue to \u20B9${Number(window.CPM_PRICING?.bookingAmount||0).toLocaleString('en-IN')} Payment`}}
     return false;
   };
+  // --- CAR PDI MASTERS CMS PUBLIC READ BRIDGE (v1) ---
+  // Published CMS records override the matching static page. Static HTML remains
+  // the fallback when a CMS record is missing or Firestore is unavailable.
+  async function loadPublicCms(){
+    try{
+      const {db:firestoreDb,fs}=await db();
+      const path=window.location.pathname.replace(/\/+$/,'')||'/';
+      const clean=v=>String(v??'').trim();
+      const normalizePath=v=>{
+        const s=clean(v);
+        if(!s)return'';
+        if(/^https?:\/\//i.test(s)){try{return new URL(s).pathname.replace(/\/+$/,'')||'/'}catch(_){return s}}
+        return ('/'+s.replace(/^\/+/,'')).replace(/\/+$/,'')||'/';
+      };
+      const setMeta=(name,value)=>{
+        if(!value)return;
+        let el=document.querySelector(`meta[name="${name}"]`);
+        if(!el){el=document.createElement('meta');el.setAttribute('name',name);document.head.appendChild(el)}
+        el.setAttribute('content',value);
+      };
+      const setProperty=(property,value)=>{
+        if(!value)return;
+        let el=document.querySelector(`meta[property="${property}"]`);
+        if(!el){el=document.createElement('meta');el.setAttribute('property',property);document.head.appendChild(el)}
+        el.setAttribute('content',value);
+      };
+      const setCanonical=value=>{
+        if(!value)return;
+        let el=document.querySelector('link[rel="canonical"]');
+        if(!el){el=document.createElement('link');el.setAttribute('rel','canonical');document.head.appendChild(el)}
+        el.setAttribute('href',value);
+      };
+      const applyCommon=d=>{
+        const seoTitle=clean(d.seoTitle||d.title||d.pageTitle||d.blogTitle);
+        const meta=clean(d.metaDescription);
+        const keywords=clean(d.keywords);
+        const canonical=clean(d.canonicalUrl);
+        if(seoTitle)document.title=seoTitle;
+        setMeta('description',meta); setMeta('keywords',keywords); setCanonical(canonical);
+        setProperty('og:title',seoTitle); setProperty('og:description',meta); setProperty('og:url',canonical);
+      };
+
+      // Website Pages: pageContent is the migrated <main> HTML. When present,
+      // it replaces the current main element, while all header/footer/booking
+      // infrastructure remains intact.
+      // Keep the payment page code-owned: legacy CMS HTML can remove the Razorpay button and detach its handler.
+      let pageSnap={empty:true,docs:[]};
+      if(path!=="/payment.html"){
+        pageSnap=await fs.getDocs(fs.query(
+          fs.collection(firestoreDb,"website_pages"),
+          fs.where("pagePath","==",path),
+          fs.where("status","==","PUBLISHED"),
+          fs.limit(1)
+        ));
+      }
+
+      // Homepage fallback: CMS may store the homepage as /index.html
+      if(pageSnap.empty && path==='/'){
+        pageSnap=await fs.getDocs(fs.query(
+          fs.collection(firestoreDb,'website_pages'),
+          fs.where('pagePath','==','/index.html'),
+          fs.where('status','==','PUBLISHED'),
+          fs.limit(1)
+        ));
+      }
+      if(!pageSnap.empty){
+        const d=pageSnap.docs[0].data(); applyCommon(d);
+        const content=clean(d.pageContent||d.content);
+        if(content && /<main[\s>]/i.test(content)){
+          const parser=new DOMParser();
+          const parsed=parser.parseFromString(content,'text/html');
+          const nextMain=sanitizeCmsNode(parsed.querySelector('main'));
+          const currentMain=document.querySelector('main');
+          if(nextMain&&currentMain){currentMain.replaceWith(nextMain);setupHomepageUI();loadPricing();loadLocations()}
+        }else{
+          const h1=clean(d.pageTitle);
+          if(h1){const el=document.querySelector('main h1');if(el)el.textContent=h1}
+        }
+        document.documentElement.dataset.cmsPage='published';
+      }
+
+      // Location Content: locationContent is the migrated local section HTML.
+      const locSnap=await fs.getDocs(fs.query(
+        fs.collection(firestoreDb,'location_content'),
+        fs.where('pagePath','==',path),
+        fs.where('status','==','PUBLISHED'),
+        fs.limit(1)
+      ));
+      if(!locSnap.empty){
+        const d=locSnap.docs[0].data(); applyCommon(d);
+        const h1=clean(d.pageHeading||d.locationName);
+        if(h1){const el=document.querySelector('main h1');if(el)el.textContent=h1}
+        const hero=clean(d.introduction);
+        const heroEl=document.querySelector('main .hero .hero-lead');
+        if(hero&&heroEl)heroEl.textContent=hero;
+        const content=clean(d.locationContent);
+        if(content && /<section[\s>]/i.test(content)){
+          const parser=new DOMParser();
+          const parsed=parser.parseFromString(content,'text/html');
+          const nextSection=sanitizeCmsNode(parsed.querySelector('section'));
+          const currentSections=[...document.querySelectorAll('main > section')];
+          const current= currentSections.find((el,i)=>i>0 && !el.classList.contains('hero')) || currentSections[1];
+          if(nextSection&&current)current.replaceWith(nextSection);
+        }
+        const faqHost=document.querySelector('main .faq-grid');
+        if(faqHost&&d.faqs){
+          let rows=null;
+          try{rows=Array.isArray(d.faqs)?d.faqs:JSON.parse(d.faqs)}catch(_){rows=null}
+          if(Array.isArray(rows)){
+            faqHost.innerHTML=rows.map(x=>`<details><summary>${escapeHtml(x.question||'')}</summary><p>${escapeHtml(x.answer||'')}</p></details>`).join('');
+          }
+        }
+        document.documentElement.dataset.cmsLocation='published';
+      }
+
+      // Published SEO Schema: inject matching JSON-LD from the Admin SEO Schema Manager.
+      const schemaSnap=await fs.getDocs(fs.query(
+        fs.collection(firestoreDb,'seo_schema'),
+        fs.where('status','==','PUBLISHED'),
+        fs.limit(50)
+      ));
+      if(!schemaSnap.empty){
+        const currentPath=normalizePath(path);
+        const existingSchemas=[...document.querySelectorAll('script[data-cpm-schema="published"]')];
+        existingSchemas.forEach(el=>el.remove());
+
+        for(const doc of schemaSnap.docs){
+          const d=doc.data()||{};
+          const target=clean(d.targetUrl);
+          if(!target)continue;
+
+          let targetPath=target;
+          try{
+            targetPath=new URL(target,window.location.origin).pathname;
+          }catch(_){}
+
+          if(normalizePath(targetPath)!==currentPath)continue;
+
+          let json=d.jsonLd;
+          try{
+            if(typeof json==='string')json=JSON.parse(json);
+          }catch(_){
+            json=null;
+          }
+
+          if(!json)continue;
+
+          const script=document.createElement('script');
+          script.type='application/ld+json';
+          script.setAttribute('data-cpm-schema','published');
+          script.textContent=JSON.stringify(json);
+          document.head.appendChild(script);
+        }
+      }
+      // Active redirects are public-read only and never written by the website.
+      if(path==='/payment.html')return;
+      const redirectSnap=await fs.getDocs(fs.query(
+        fs.collection(firestoreDb,'seo_redirects'),
+        fs.where('fromPath','==',path),
+        fs.where('status','==','ACTIVE'),
+        fs.limit(1)
+      ));
+      if(!redirectSnap.empty){
+        const to=clean(redirectSnap.docs[0].data().toPath);
+        if(to&&to.startsWith('/')&&!to.startsWith('//')&&normalizePath(to)!==path){window.location.replace(to);return}
+      }
+    }catch(e){
+      console.warn('Public CMS bridge unavailable; keeping static website content.',e);
+    }
+  }
+  // Remove anything executable from CMS-published HTML before it is inserted.
+  function sanitizeCmsNode(root){
+    if(!root)return root;
+    root.querySelectorAll('script,iframe,frame,object,embed,base,link,meta').forEach(el=>el.remove());
+    root.querySelectorAll('*').forEach(el=>{
+      [...el.attributes].forEach(a=>{
+        const n=a.name.toLowerCase(), v=String(a.value||'').trim().toLowerCase();
+        if(n.startsWith('on')||n==='srcdoc'||n==='formaction')el.removeAttribute(a.name);
+        else if(['href','src','xlink:href','action','poster'].includes(n)&&(v.startsWith('javascript:')||v.startsWith('vbscript:')||(v.startsWith('data:')&&!v.startsWith('data:image/'))))el.removeAttribute(a.name);
+      });
+    });
+    // The booking form's inline onsubmit is stripped above, so re-attach the real handler.
+    root.querySelectorAll('form.booking-form').forEach(f=>f.addEventListener('submit',e=>window.CPM_SUBMIT_BOOKING(e)));
+    return root;
+  }
+  function escapeHtml(v){
+    return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  }
+  loadPublicCms();
+
 })();
+
+
+
+
+
+

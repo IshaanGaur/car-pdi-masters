@@ -1,0 +1,14 @@
+﻿{
+  "projects": {
+    "default": "car-pdi-masters"
+  },
+  "targets": {
+    "car-pdi-masters": {
+      "hosting": {
+        "website": [
+          "car-pdi-masters"
+        ]
+      }
+    }
+  }
+}

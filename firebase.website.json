@@ -1,0 +1,36 @@
+{
+  "functions": {
+    "source": "functions",
+    "codebase": "payments"
+  },
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "firebase.*.json",
+      ".firebaserc*",
+      "**/.*",
+      "**/node_modules/**",
+      "functions/**",
+      "*.backup-*",
+      "_before-encoding-cleanup-20260930/**",
+      "_favicon-backup-20260930/**",
+      "_pricing-backups-20260929/**",
+      "_pricing-final-backups-20260929/**",
+      "scripts/**",
+      "package.json",
+      "package-lock.json",
+      "config/README*",
+      "config/cms-import*.json",
+      "assets/cpm-favicon-test*",
+      "DEPLOY-WEBSITE.md",
+      "*-CHANGELOG-*.txt",
+      "*-audit-*.txt",
+      "_*.ps1"
+    ],
+    "target": "website",
+    "predeploy": [
+      "node scripts/check-website.js"
+    ]
+  }
+}
