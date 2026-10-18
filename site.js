@@ -46,7 +46,7 @@
 
   setupLegacyNavigation();
   const firebaseConfig={apiKey:'AIzaSyD60AqqE6Hs6GlEORAkCa-UydrEtTg1P5w',authDomain:'car-pdi-masters.firebaseapp.com',projectId:'car-pdi-masters',storageBucket:'car-pdi-masters.firebasestorage.app',messagingSenderId:'540105751171',appId:'1:540105751171:web:5edba36edd0effcccb79b6',measurementId:'G-BGWPW2HG1J'};
-  const fallback={paymentMode:'LIVE',serviceActive:true,payment:{upiId:'9821097137@upi',accountHolder:'Ishaan Gaur',bankName:'Canara Bank',accountNumber:'110317414950',ifsc:'CNRB0008598',qrImage:'/assets/payment-qr.jpg'}};
+  const fallback={paymentMode:'LIVE',serviceActive:true};
   const money=n=>'\u20B9'+Number(n||0).toLocaleString('en-IN');
   let dbPromise;
   async function db(){
@@ -72,12 +72,9 @@
     const balance=pricingReady?finalAmount-booking:NaN;
     document.querySelectorAll('[data-price]').forEach(el=>{const key=el.dataset.price; const val=key==='service'?price:key==='booking'?booking:key==='balance'?balance:price; el.textContent=pricingReady?money(val):'₹—'});
     document.querySelectorAll('[data-service-price]').forEach(el=>{const key=el.dataset.servicePrice; const svc=p.services&&p.services[key]; el.textContent=pricingReady?money(svc&&svc.price!=null?svc.price:price):'₹—'});
-    document.querySelectorAll('[data-payment]').forEach(el=>{const k=el.dataset.payment; el.textContent=(p.payment&&p.payment[k])||fallback.payment[k]||''});
-    document.querySelectorAll('[data-payment-img]').forEach(el=>{el.src=(p.payment&&p.payment.qrImage)||fallback.payment.qrImage});
     const priceInput=document.getElementById('bookingPrice'); if(priceInput) priceInput.value=pricingReady?price:'';
     const bookingInput=document.getElementById('bookingAmount'); if(bookingInput) bookingInput.value=pricingReady?booking:'';
     const balanceInput=document.getElementById('balanceAmount'); if(balanceInput) balanceInput.value=pricingReady?balance:'';
-    document.querySelectorAll('[data-booking-upi]').forEach(el=>{const upi=((p.payment&&p.payment.upiId)||fallback.payment.upiId);const bookingId=new URLSearchParams(window.location.search).get('bookingId')||'';const qs=`upi://pay?pa=${encodeURIComponent(upi).replace(/%40/g,'@')}&pn=${encodeURIComponent('Car PDI Masters')}&am=${encodeURIComponent(booking)}&cu=INR${bookingId?`&tr=${encodeURIComponent(bookingId)}`:''}`;el.href=qs});
     window.CPM_PRICING={...p,defaultServicePrice:price,bookingAmount:booking,balanceAmount:balance};
     return window.CPM_PRICING;
   }

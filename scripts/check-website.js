@@ -13,6 +13,9 @@ need('payment.html', '/payment.js', 'the payment script');
 need('payment.html', 'checkout.razorpay.com', 'the Razorpay checkout script');
 need('payment.js', 'cpmCreateBookingRazorpayOrderV1', 'the Razorpay order call');
 need('site.js', 'sanitizeCmsNode', 'the CMS sanitising fix');
+for (const f of ['site.js', 'payment.html', 'config/pricing.json']) {
+  if (/9821097137|110317414950|CNRB0008598/.test(read(f))) problems.push(`${f}: still has the old manual UPI/bank details`);
+}
 if (/SCAN &(amp;)?amp; PAY|SCAN & PAY/.test(read('payment.html'))) problems.push('payment.html: has the old QR-only "SCAN & PAY" page');
 
 if (problems.length) {

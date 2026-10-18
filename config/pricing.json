@@ -47,14 +47,6 @@
       "active": true
     }
   },
-  "payment": {
-    "accountHolder": "Ishaan Gaur",
-    "bankName": "Canara Bank",
-    "accountNumber": "110317414950",
-    "ifsc": "CNRB0008598",
-    "upiId": "9821097137@upi",
-    "qrImage": "/assets/payment-qr.jpg"
-  },
   "adminIntegration": {
     "source": "config/pricing.json",
     "note": "The website reads pricing from this central configuration. Connect the existing Admin Panel to update this configuration or replace the loader with the Admin Panel's authenticated pricing API/Firestore document. Do not expose admin credentials in the public website."
