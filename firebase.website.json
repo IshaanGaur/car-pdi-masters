@@ -31,6 +31,35 @@
     "target": "website",
     "predeploy": [
       "node scripts/check-website.js"
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(html|js|css|json|xml|txt)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
+      },
+      {
+        "source": "/",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(png|jpg|jpeg|webp|svg|ico|pdf)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=86400"
+          }
+        ]
+      }
     ]
   }
 }
