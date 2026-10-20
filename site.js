@@ -126,7 +126,18 @@
     }
     if(keep) select.value=keep;
   }
+  // Every page gets the same mobile menu button as the homepage (most pages only have the desktop links).
+  function ensureMobileMenu(){
+    const links=document.querySelector('header.nav nav.links'); if(!links) return;
+    if(!links.id) links.id='main-navigation';
+    if(document.querySelector('.menu-toggle')) return;
+    const btn=document.createElement('button');
+    btn.className='menu-toggle'; btn.type='button'; btn.textContent='☰';
+    btn.setAttribute('aria-label','Open navigation'); btn.setAttribute('aria-expanded','false'); btn.setAttribute('aria-controls',links.id);
+    links.parentNode.insertBefore(btn,links);
+  }
   function setupHomepageUI(){
+    ensureMobileMenu();
     fillPreferredDates();
     const menu=document.querySelector('.menu-toggle'), nav=document.getElementById('main-navigation');
     if(menu&&nav){

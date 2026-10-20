@@ -14,6 +14,7 @@ need('payment.html', 'checkout.razorpay.com', 'the Razorpay checkout script');
 need('payment.js', 'cpmCreateBookingRazorpayOrderV1', 'the Razorpay order call');
 need('site.js', 'sanitizeCmsNode', 'the CMS sanitising fix');
 need('site.js', 'fillPreferredDates', 'the Preferred Date list filler');
+need('site.js', 'ensureMobileMenu', 'the mobile menu button for every page');
 need('site.js', 'const CMS_PAGE_OVERRIDES=false', 'GitHub-as-master for page content (old CMS copies must not replace pages)');
 need('index.html', 'id="date"', 'the Preferred Date field on the booking form');
 for (const f of ['site.js', 'payment.html', 'config/pricing.json']) {

@@ -3894,19 +3894,24 @@ footer{
 
 /* =========================================================
    HOMEPAGE SERVICE COVERAGE — city cards with area chips
+   (same dark premium card style as the rest of the site)
    ========================================================= */
-.city-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:28px}
-.city-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:26px;display:flex;flex-direction:column;gap:14px}
-.city-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding-bottom:14px;border-bottom:1px solid var(--border)}
-.city-card-kicker{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--blue)}
-.city-card h3{margin:4px 0 0;font-size:28px;line-height:1.1}
-.city-card h3 a{color:var(--navy);text-decoration:none}
-.city-card-link{white-space:nowrap;font-weight:700;color:var(--blue);text-decoration:none;padding-top:6px}
+.city-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:28px}
+.city-card{color:#fff;border:1px solid rgba(53,156,255,.38);border-radius:var(--radius-lg);background:linear-gradient(145deg,#071528 0%,#0b203b 100%);box-shadow:var(--dark-shadow);padding:26px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.city-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding-bottom:14px;border-bottom:1px solid rgba(88,199,255,.18)}
+.city-card-kicker{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan)}
+.city-card h3{margin:4px 0 0;font-size:28px;line-height:1.1;color:#fff}
+.city-card h3 a{color:#fff;text-decoration:none}
+.city-card-link{white-space:nowrap;font-weight:700;color:var(--cyan);text-decoration:none;padding-top:6px}
 .city-card-link:hover{text-decoration:underline}
-.city-card p{margin:0;color:var(--muted)}
+.city-card p{margin:0;color:var(--muted-light)}
 .city-chips{display:flex;flex-wrap:wrap;gap:8px}
-.city-chip{display:inline-flex;align-items:center;padding:8px 14px;border-radius:999px;background:var(--page-soft);border:1px solid var(--border);color:var(--navy);font-size:14px;font-weight:600;text-decoration:none;transition:background .15s,border-color .15s,color .15s}
-.city-chip:hover{background:var(--navy);border-color:var(--navy);color:var(--white)}
-.city-chip.more{background:transparent;border-style:dashed;color:var(--blue)}
-.city-chip.more:hover{background:var(--blue);border-color:var(--blue);color:var(--white)}
-@media (max-width:860px){.city-grid{grid-template-columns:1fr}.city-card{padding:20px}.city-card h3{font-size:24px}}
+.city-chip{display:inline-flex;align-items:center;padding:8px 14px;border-radius:999px;background:rgba(88,199,255,.08);border:1px solid rgba(88,199,255,.28);color:#e6f2ff;font-size:14px;font-weight:600;text-decoration:none;transition:background .15s,border-color .15s,color .15s}
+.city-chip:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+.city-chip.more{background:transparent;border-style:dashed;color:var(--cyan)}
+.city-chip.more:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+@media (max-width:860px){.city-grid{grid-template-columns:1fr}.city-card{padding:20px}.city-card h3{font-size:24px}.city-chip{font-size:13px;padding:7px 12px}}
+
+/* Booking form: native calendar for Preferred Date, readable on the dark form */
+.booking-form input[type="date"]{color-scheme:dark;min-height:46px;cursor:pointer}
+.booking-form input[type="date"]::-webkit-calendar-picker-indicator{filter:invert(80%) sepia(30%) saturate(500%) hue-rotate(170deg);cursor:pointer;opacity:.9}
