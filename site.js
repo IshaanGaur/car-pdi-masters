@@ -107,7 +107,23 @@
     'MINI':['Cooper','Countryman','Other'],
     'Force Motors':['Gurkha','Trax Cruiser','Other']
   };
+  // Preferred Date: the next 30 days, so past dates can't be chosen.
+  function fillPreferredDates(){
+    const select=document.getElementById('date'); if(!select||select.tagName!=='SELECT') return;
+    const keep=select.value;
+    select.innerHTML='<option value="">Select preferred date</option>';
+    const today=new Date(); today.setHours(0,0,0,0);
+    for(let i=0;i<30;i++){
+      const d=new Date(today); d.setDate(today.getDate()+i);
+      const o=document.createElement('option');
+      o.value=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+      o.textContent=d.toLocaleDateString('en-IN',{weekday:'long',day:'2-digit',month:'short',year:'numeric'});
+      select.appendChild(o);
+    }
+    if(keep) select.value=keep;
+  }
   function setupHomepageUI(){
+    fillPreferredDates();
     const menu=document.querySelector('.menu-toggle'), nav=document.getElementById('main-navigation');
     if(menu&&nav){
       menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close navigation':'Open navigation')});
@@ -153,10 +169,10 @@
       const snap=await fs.getDocs(fs.query(fs.collection(firestoreDb,'locations'),fs.where('status','==','ACTIVE'),fs.where('enabledForOrders','==',true)));
       const rows=snap.docs.map(d=>({id:d.id,...d.data()})).filter(x=>x.name).sort((a,b)=>String(a.name).localeCompare(String(b.name)));
       select.innerHTML='<option value="">Inspection Location</option>';
-      rows.forEach(x=>{const o=document.createElement('option');o.value=x.name;o.textContent=`${x.name}, Delhi`;select.appendChild(o)});
+      rows.forEach(x=>{const city=x.city||'Delhi';const o=document.createElement('option');o.value=city==='Delhi'?x.name:`${x.name}, ${city}`;o.dataset.slug=x.id;o.textContent=`${x.name}, ${city}`;select.appendChild(o)});
       select.disabled=rows.length===0;
       if(!rows.length) select.innerHTML='<option value="">No locations currently accepting orders</option>';
-      const note=document.getElementById('locationMsg'); if(note) note.textContent=rows.length?`${rows.length} Delhi locations currently accepting new bookings.`:'No Delhi location is currently accepting new bookings. Please call or WhatsApp us.';
+      const note=document.getElementById('locationMsg'); if(note) note.textContent=rows.length?`${rows.length} Delhi NCR locations currently accepting new bookings.`:'No location is currently accepting new bookings. Please call or WhatsApp us.';
     }catch(e){select.innerHTML='<option value="">Locations temporarily unavailable</option>';select.disabled=true;const note=document.getElementById('locationMsg');if(note)note.textContent='Please call or WhatsApp Car PDI Masters to confirm service availability.';console.warn('Live locations unavailable.',e)}
   }
   setupHomepageUI();
@@ -168,14 +184,14 @@
     const f=e.target, get=id=>(document.getElementById(id)?.value||'').trim(), msg=document.getElementById('bookingMsg'), btn=f.querySelector('button[type="submit"]');
     const make=get('carMake'), model=get('carModel'), otherMake=get('otherMake'), otherModel=get('otherModel'), variantSelect=get('variant'), otherVariant=get('otherVariant');
     const data={name:get('name'),mobile:get('mobile'),type:get('type'),car:make==='Other'?(otherMake||'Other'):make+' '+model,vehicleMake:make,vehicleModel:model,otherMake,otherModel,variant:variantSelect==='Other'?(otherVariant||''):variantSelect,dealer:'',address:get('address'),location:get('location'),date:get('date'),time:get('time'),notes:get('notes'),registrationNumber:get('registrationNumber')};
-    if(!data.location){if(msg)msg.textContent='Please select an active Delhi inspection location.';return false};
+    if(!data.location){if(msg)msg.textContent='Please select an active inspection location.';return false};
     if(!data.vehicleMake||data.vehicleMake==='Other'&&!data.otherMake){if(msg)msg.textContent='Please enter the car make.';return false}
     if(data.vehicleMake!=='Other'&&!data.vehicleModel){if(msg)msg.textContent='Please select the car model.';return false}
     if(['Used Car PDI','Used Car Inspection','Pre-Purchase Car Inspection'].includes(data.type)&&!data.registrationNumber){/* registration remains optional */}
     if(btn){btn.disabled=true;btn.textContent='Checking availability…'}
     try{
       const {db:firestoreDb,fs}=await db();
-      const locationSlug=data.location.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+      const locationSlug=document.getElementById('location')?.selectedOptions?.[0]?.dataset.slug||data.location.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
       const locSnap=await fs.getDoc(fs.doc(firestoreDb,'locations',locationSlug));
       if(!locSnap.exists()||locSnap.data().status!=='ACTIVE'||locSnap.data().enabledForOrders!==true)throw new Error('This location is currently paused for new orders. Please choose another active Delhi location.');
       const priceSnap=await fs.getDoc(fs.doc(firestoreDb,'pricing','current'));

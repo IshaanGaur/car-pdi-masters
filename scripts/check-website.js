@@ -13,6 +13,8 @@ need('payment.html', '/payment.js', 'the payment script');
 need('payment.html', 'checkout.razorpay.com', 'the Razorpay checkout script');
 need('payment.js', 'cpmCreateBookingRazorpayOrderV1', 'the Razorpay order call');
 need('site.js', 'sanitizeCmsNode', 'the CMS sanitising fix');
+need('site.js', 'fillPreferredDates', 'the Preferred Date list filler');
+need('index.html', 'id="date"', 'the Preferred Date field on the booking form');
 for (const f of ['site.js', 'payment.html', 'config/pricing.json']) {
   if (/9821097137|110317414950|CNRB0008598/.test(read(f))) problems.push(`${f}: still has the old manual UPI/bank details`);
 }
@@ -23,4 +25,4 @@ if (problems.length) {
   console.error('\nRun `git pull` to get the latest version from GitHub, then deploy again. See DEPLOY-WEBSITE.md.\n');
   process.exit(1);
 }
-console.log('Website check passed: Razorpay payment page and CMS fix are present.');
+console.log('Website check passed: Razorpay payment page, booking date list and CMS fix are present.');
