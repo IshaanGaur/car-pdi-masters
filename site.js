@@ -267,8 +267,12 @@
       // it replaces the current main element, while all header/footer/booking
       // infrastructure remains intact.
       // Keep the payment page code-owned: legacy CMS HTML can remove the Razorpay button and detach its handler.
+      // Page content, titles and descriptions now come from the GitHub files (the master copy).
+      // Old CMS copies were silently hiding newer page edits, so Website Pages / Location Content
+      // no longer replace page content. Set to true only to re-enable CMS page overrides.
+      const CMS_PAGE_OVERRIDES=false;
       let pageSnap={empty:true,docs:[]};
-      if(path!=="/payment.html"){
+      if(CMS_PAGE_OVERRIDES && path!=="/payment.html"){
         pageSnap=await fs.getDocs(fs.query(
           fs.collection(firestoreDb,"website_pages"),
           fs.where("pagePath","==",path),
@@ -278,7 +282,7 @@
       }
 
       // Homepage fallback: CMS may store the homepage as /index.html
-      if(pageSnap.empty && path==='/'){
+      if(CMS_PAGE_OVERRIDES && pageSnap.empty && path==='/'){
         pageSnap=await fs.getDocs(fs.query(
           fs.collection(firestoreDb,'website_pages'),
           fs.where('pagePath','==','/index.html'),
@@ -303,7 +307,7 @@
       }
 
       // Location Content: locationContent is the migrated local section HTML.
-      const locSnap=await fs.getDocs(fs.query(
+      const locSnap=!CMS_PAGE_OVERRIDES?{empty:true,docs:[]}:await fs.getDocs(fs.query(
         fs.collection(firestoreDb,'location_content'),
         fs.where('pagePath','==',path),
         fs.where('status','==','PUBLISHED'),
