@@ -36,6 +36,22 @@ for (const f of pages) {
     if (m[1].replace(/^91/, '') !== '9971116411') problems.push(`${f}: call/WhatsApp link uses ${m[1]} instead of 9971116411`);
   }
   if (/98765[\s-]?43210/.test(html)) problems.push(`${f}: shows the placeholder number 98765 43210`);
+  // Every real page (not a redirect stub) must use the shared site design: logo header, menu, site styles and booking script.
+  const isRedirect = /http-equiv="refresh"/i.test(html);
+  if (!isRedirect) {
+    const design = [
+      ['<header class="nav">', 'the site header'],
+      ['/assets/cpm-logo.png', 'the Car PDI Masters logo'],
+      ['href="/style.css"', 'the site stylesheet'],
+      ['src="/site.js"', 'the site script (menu, booking, pricing)'],
+      ['nav class="links"', 'the site menu']
+    ];
+    for (const [text, why] of design) if (!html.includes(text)) problems.push(`${f}: missing ${why} - build new pages from an existing page such as locations/delhi/dwarka.html`);
+    if (/cdn\.tailwindcss\.com/.test(html)) problems.push(`${f}: is a stand-alone Tailwind page; use the site design instead`);
+    for (const m of html.matchAll(/<a[^>]*href="https:\/\/wa\.me[^"]*"[^>]*>([\s\S]*?)<\/a>/g)) {
+      if (/\bbook\b/i.test(m[1].replace(/<[^>]*>/g, ''))) problems.push(`${f}: a "Book" button opens WhatsApp; Book buttons must go to /#booking`);
+    }
+  }
 }
 if (/SCAN &(amp;)?amp; PAY|SCAN & PAY/.test(read('payment.html'))) problems.push('payment.html: has the old QR-only "SCAN & PAY" page');
 

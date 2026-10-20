@@ -1,0 +1,18 @@
+name: Website check
+
+# Runs the same safety check as the Firebase publish on every change pushed to GitHub,
+# so a page without the logo/menu, a WhatsApp "Book" button or a missing payment page
+# shows a red cross on the commit straight away.
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/check-website.js
