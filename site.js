@@ -114,7 +114,12 @@
     const iso=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
     const day=i=>{const d=new Date(today); d.setDate(today.getDate()+i); return d};
     // CMS-published pages may use a date picker instead of the list: limit it to the same 30 days.
-    if(select.tagName==='INPUT'){select.min=iso(day(0));select.max=iso(day(29));return}
+    if(select.tagName==='INPUT'){
+      select.min=iso(day(0));select.max=iso(day(29));
+      // Open the calendar when the box itself is tapped, not only the small icon.
+      if(!select.dataset.pickerBound){select.dataset.pickerBound='1';select.addEventListener('click',()=>{try{select.showPicker?.()}catch(_){}})}
+      return;
+    }
     if(select.tagName!=='SELECT') return;
     const keep=select.value;
     select.innerHTML='<option value="">Select preferred date</option>';
