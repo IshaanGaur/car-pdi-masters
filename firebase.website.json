@@ -52,11 +52,20 @@
         ]
       },
       {
-        "source": "**/*.@(png|jpg|jpeg|webp|svg|ico|pdf)",
+        "source": "**/*.@(png|jpg|jpeg|webp|svg|ico)",
         "headers": [
           {
             "key": "Cache-Control",
             "value": "public, max-age=86400"
+          }
+        ]
+      },
+      {
+        "source": "**/*.pdf",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
           }
         ]
       }

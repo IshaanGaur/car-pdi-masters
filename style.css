@@ -4398,3 +4398,116 @@ body{
   border-color:#102039 !important;
   background:transparent !important;
 }
+
+/* =========================================================
+   49. SAMPLE REPORT BOX ON LOCATION PAGES (2026-10-23)
+   ========================================================= */
+
+.sample-report-section .sr-box{
+  display:flex;
+  gap:36px;
+  align-items:center;
+  max-width:1000px;
+  margin:0 auto;
+  padding:30px;
+  background:#fff;
+  border:1px solid #dbe4ef;
+  border-radius:18px;
+  box-shadow:0 8px 24px rgba(16,32,57,.07);
+}
+
+.sample-report-section .sr-thumb{
+  flex:none;
+  width:210px;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 12px 28px rgba(16,32,57,.22);
+  transition:transform .2s ease;
+}
+
+.sample-report-section .sr-thumb:hover{
+  transform:translateY(-3px);
+}
+
+.sample-report-section .sr-thumb img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+.sample-report-section .sr-text h2{
+  margin:6px 0 10px;
+  color:#102039 !important;
+}
+
+.sample-report-section .sr-text p{
+  color:#4f5f74 !important;
+  margin:0 0 14px;
+}
+
+.sample-report-section .eyebrow{
+  color:#0d57d8 !important;
+}
+
+.sample-report-section .sr-points{
+  list-style:none;
+  margin:0 0 20px;
+  padding:0;
+  display:grid;
+  gap:8px;
+}
+
+.sample-report-section .sr-points li{
+  position:relative;
+  padding-left:26px;
+  color:#102039;
+  font-weight:600;
+}
+
+.sample-report-section .sr-points li::before{
+  content:"\2713";
+  position:absolute;
+  left:0;
+  top:0;
+  width:18px;
+  height:18px;
+  border-radius:50%;
+  background:#17a86a;
+  color:#fff;
+  font-size:11px;
+  line-height:18px;
+  text-align:center;
+}
+
+.sample-report-section .actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.sample-report-section .btn-outline{
+  color:#102039 !important;
+  border-color:#102039 !important;
+  background:transparent !important;
+}
+
+@media (max-width:760px){
+  .sample-report-section .sr-box{
+    flex-direction:column;
+    text-align:center;
+    gap:22px;
+    padding:22px 18px;
+  }
+
+  .sample-report-section .sr-thumb{
+    width:170px;
+  }
+
+  .sample-report-section .sr-points{
+    justify-items:center;
+  }
+
+  .sample-report-section .actions{
+    justify-content:center;
+  }
+}

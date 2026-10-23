@@ -50,7 +50,7 @@ for (const f of pages) {
       ['</html>', 'the end of the page (the file looks cut off)']
     ];
     for (const [text, why] of design) if (!html.includes(text)) problems.push(`${f}: missing ${why} - build new pages from an existing page such as locations/delhi/dwarka.html`);
-    for (const m of html.matchAll(/<a\b[^>]*href="[^"]+\.pdf"[^>]*>/g)) {
+    for (const m of html.matchAll(/<a\b[^>]*href="[^"]+\.pdf(?:\?[^"]*)?"[^>]*>/g)) {
       if (!/target="_blank"/.test(m[0])) problems.push(`${f}: a PDF link (e.g. the sample report) must open in a new tab (target="_blank")`);
     }
     if (/cdn\.tailwindcss\.com/.test(html)) problems.push(`${f}: is a stand-alone Tailwind page; use the site design instead`);
