@@ -4131,3 +4131,270 @@ body{
     height:44px;
   }
 }
+
+/* =========================================================
+   47. POPULAR BRANDS STRIP (2026-10-23)
+   ========================================================= */
+
+.brands-section{
+  padding:64px 0 56px;
+  background:#fff;
+  overflow:hidden;
+}
+
+.brands-head{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.brands-pill{
+  display:inline-block;
+  padding:5px 14px;
+  border:1px solid rgba(29,124,242,.35);
+  border-radius:999px;
+  background:rgba(29,124,242,.08);
+  color:#1d7cf2;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.12em;
+}
+
+.brands-head h2{
+  margin:14px 0 8px;
+  color:#102039;
+  font-size:clamp(28px,4vw,44px);
+  font-weight:900;
+  letter-spacing:-.03em;
+}
+
+.brands-head p{
+  margin:0;
+  color:#5b6b80;
+  font-size:16px;
+}
+
+.brands-marquee{
+  overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+}
+
+.brands-track{
+  display:flex;
+  width:max-content;
+  animation:brands-scroll 45s linear infinite;
+}
+
+.brands-marquee:hover .brands-track,
+.brands-marquee:focus-within .brands-track{
+  animation-play-state:paused;
+}
+
+.brands-row{
+  display:flex;
+  gap:18px;
+  padding:6px 9px;
+}
+
+.brand-card{
+  flex:0 0 auto;
+  width:142px;
+  height:112px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  border:2px solid #102039;
+  border-radius:18px;
+  background:#fff;
+  color:#102039;
+  text-decoration:none;
+  transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease, color .2s ease;
+}
+
+.brand-card:hover,
+.brand-card:focus-visible{
+  transform:translateY(-3px);
+  border-color:#1d7cf2;
+  color:#1d7cf2;
+  box-shadow:0 10px 22px rgba(16,32,57,.14);
+}
+
+.brand-card img{
+  width:auto;
+  height:40px;
+  max-width:84px;
+  display:block;
+}
+
+.brand-card span{
+  font-size:13px;
+  font-weight:700;
+}
+
+@keyframes brands-scroll{
+  from{transform:translateX(0);}
+  to{transform:translateX(-50%);}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .brands-track{
+    animation:none;
+  }
+
+  .brands-marquee{
+    overflow-x:auto;
+  }
+}
+
+@media (max-width:640px){
+  .brands-section{
+    padding:46px 0 40px;
+  }
+
+  .brand-card{
+    width:116px;
+    height:96px;
+    gap:9px;
+  }
+
+  .brand-card img{
+    height:32px;
+    max-width:72px;
+  }
+
+  .brand-card span{
+    font-size:12px;
+  }
+}
+
+/* =========================================================
+   48. LIGHTER LOOK (2026-10-23)
+   Dark header, hero, price strip, trust band and booking stay;
+   cards in the light sections become white with navy text.
+   ========================================================= */
+
+:is(.service-card, .cpm-checkpoint-card, .process-card, .city-card, .resource-card, .about-card, .faq-section details, .contact-box){
+  background:#fff !important;
+  background-image:none !important;
+  border:1px solid #dbe4ef !important;
+  box-shadow:0 8px 24px rgba(16,32,57,.07) !important;
+  color:#102039 !important;
+}
+
+:is(.service-card, .cpm-checkpoint-card, .process-card, .city-card, .resource-card, .about-card, .faq-section details, .contact-box):hover{
+  border-color:#9cc3f5 !important;
+  box-shadow:0 14px 30px rgba(16,32,57,.12) !important;
+}
+
+:is(.service-card, .cpm-checkpoint-card, .process-card, .city-card, .resource-card, .about-card, .faq-section details, .contact-box) :is(h2, h3, h4, strong, summary, b){
+  color:#102039 !important;
+}
+
+:is(.service-card, .cpm-checkpoint-card, .process-card, .city-card, .resource-card, .about-card, .faq-section details, .contact-box) :is(p, li, small){
+  color:#4f5f74 !important;
+}
+
+:is(.service-card, .cpm-checkpoint-card, .process-card, .city-card, .resource-card, .about-card) :is(.eyebrow, .tag, .num, .step, .card-link, .explore, a:not(.btn)){
+  color:#1d6fe0 !important;
+}
+
+.service-photo,
+.cpm-checkpoint-photo{
+  background:#e9eff6 !important;
+}
+
+.city-card a:not(.btn),
+.city-card span{
+  background-color:#f1f6fc !important;
+  border-color:#d3e1f1 !important;
+  color:#1d4f91 !important;
+}
+
+.about-card :is(span, div, li){
+  color:#4f5f74 !important;
+}
+
+.about-card :is(li, .about-point, [class*="point"], [class*="item"]){
+  background:#f1f6fc !important;
+  border-color:#d3e1f1 !important;
+}
+
+.contact-box .btn:not(.btn-primary){
+  color:#102039 !important;
+  border-color:#102039 !important;
+  background:#fff !important;
+}
+
+:is(.resource-card, .about-card) :is(a, strong[class*="num"], .stat strong){
+  color:#1d6fe0 !important;
+}
+
+/* Light-cyan numbers and tags are too faint on the white cards */
+.service-card .service-number,
+.cpm-checkpoint-card .cpm-checkpoint-number,
+.process-card > span,
+.resource-card > span{
+  color:#1d6fe0 !important;
+}
+
+/* Service and location pages: content sections go light like the home page.
+   Hero, the dark checkpoint band and the final call-to-action stay dark. */
+:is(.service-page, .location-page) main{
+  background:#f7f9fc !important;
+  color:#102039 !important;
+}
+
+:is(.service-page, .location-page) :is(.section, .service-section, .location-services):not(.dark):not(.checkpoint-section):not(.hero){
+  background:#f7f9fc !important;
+  color:#102039 !important;
+}
+
+:is(.service-page, .location-page) :is(.section, .service-section):not(.dark):not(.checkpoint-section):not(.hero).soft{
+  background:#eef4fa !important;
+}
+
+:is(.service-page, .location-page) :is(.section, .service-section, .location-services):not(.dark):not(.checkpoint-section):not(.hero) :is(h2, .section-head h2, .service-head h2, .lead){
+  color:#102039 !important;
+}
+
+:is(.service-page, .location-page) :is(.section, .service-section, .location-services):not(.dark):not(.checkpoint-section):not(.hero) :is(.section-head p, .service-head p, .container > p){
+  color:#4f5f74 !important;
+}
+
+:is(.service-page, .location-page) :is(.section, .service-section, .location-services):not(.dark):not(.checkpoint-section):not(.hero) :is(.eyebrow, .service-kicker, .location-kicker){
+  color:#0d57d8 !important;
+}
+
+/* White cards in the light sections of every page */
+:is(.service-page, .location-page, body) :is(.section, .service-section, .location-services):not(.dark):not(.checkpoint-section):not(.hero):not(.dark-section):not(.booking-section) :is(.service-card, .area-card, .benefit, .coverage-card, .related-card, .faq-item, details, .location-hero, .location-service-card, .card, .location-card, .location-info-card, .service-feature, .service-box, .payment-card){
+  background:#fff !important;
+  background-image:none !important;
+  border:1px solid #dbe4ef !important;
+  box-shadow:0 8px 24px rgba(16,32,57,.07) !important;
+  color:#102039 !important;
+}
+
+:is(.service-page, .location-page, body) :is(.section, .service-section, .location-services):not(.dark):not(.checkpoint-section):not(.hero):not(.dark-section):not(.booking-section) :is(.service-card, .area-card, .benefit, .coverage-card, .related-card, .faq-item, details, .location-hero, .location-service-card, .card, .location-card, .location-info-card, .service-feature, .service-box, .payment-card):hover{
+  border-color:#9cc3f5 !important;
+}
+
+:is(.service-page, .location-page, body) :is(.section, .service-section, .location-services):not(.dark):not(.checkpoint-section):not(.hero):not(.dark-section):not(.booking-section) :is(.service-card, .area-card, .benefit, .coverage-card, .related-card, .faq-item, details, .location-hero, .location-service-card, .card, .location-card, .location-info-card, .service-feature, .service-box, .payment-card) :is(h2, h3, h4, strong, summary, label){
+  color:#102039 !important;
+}
+
+:is(.service-page, .location-page, body) :is(.section, .service-section, .location-services):not(.dark):not(.checkpoint-section):not(.hero):not(.dark-section):not(.booking-section) :is(.service-card, .area-card, .benefit, .coverage-card, .related-card, .faq-item, details, .location-hero, .location-service-card, .card, .location-card, .location-info-card, .service-feature, .service-box, .payment-card) :is(p, li, small, span:not(.btn)){
+  color:#4f5f74 !important;
+}
+
+:is(.service-page, .location-page, body) :is(.section, .service-section, .location-services):not(.dark):not(.checkpoint-section):not(.hero):not(.dark-section):not(.booking-section) :is(.service-card, .area-card, .benefit, .coverage-card, .related-card, .faq-item, details, .location-hero, .location-service-card, .card, .location-card, .location-info-card, .service-feature, .service-box, .payment-card) :is(a:not(.btn), b, .location-kicker, .location-secondary-btn, .eyebrow){
+  color:#1d6fe0 !important;
+}
+
+/* Outline buttons sitting on the light sections */
+:is(.service-page, .location-page, body) :is(.section, .service-section, .location-services):not(.dark):not(.checkpoint-section):not(.hero):not(.dark-section):not(.booking-section) .btn-outline{
+  color:#102039 !important;
+  border-color:#102039 !important;
+  background:transparent !important;
+}

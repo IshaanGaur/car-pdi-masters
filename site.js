@@ -459,3 +459,20 @@
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init);
   else init();
 })();
+
+/* Popular brands strip: tapping a brand picks it in the booking form, added 2026-10-23 */
+(function(){
+  document.addEventListener('click',event=>{
+    const card=event.target.closest?.('.brand-card[data-make]');
+    if(!card) return;
+    const make=document.getElementById('carMake');
+    const booking=document.getElementById('booking');
+    if(!make||!booking) return;
+    event.preventDefault();
+    const wanted=card.dataset.make;
+    const option=[...make.options].find(o=>(o.value||o.textContent)===wanted);
+    make.value=option?(option.value||option.textContent):'Other';
+    make.dispatchEvent(new Event('change',{bubbles:true}));
+    booking.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+})();
