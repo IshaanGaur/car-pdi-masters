@@ -44,7 +44,10 @@ for (const f of pages) {
       ['/assets/cpm-logo.png', 'the Car PDI Masters logo'],
       ['href="/style.css"', 'the site stylesheet'],
       ['src="/site.js"', 'the site script (menu, booking, pricing)'],
-      ['nav class="links"', 'the site menu']
+      ['nav class="links"', 'the site menu'],
+      ['<footer', 'the site footer'],
+      ['footer-bottom', 'the footer bottom line (copyright)'],
+      ['</html>', 'the end of the page (the file looks cut off)']
     ];
     for (const [text, why] of design) if (!html.includes(text)) problems.push(`${f}: missing ${why} - build new pages from an existing page such as locations/delhi/dwarka.html`);
     for (const m of html.matchAll(/<a\b[^>]*href="[^"]+\.pdf"[^>]*>/g)) {
