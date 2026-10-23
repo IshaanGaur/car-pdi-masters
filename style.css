@@ -4411,7 +4411,7 @@ body{
 }
 
 /* Location pages: no big empty right side */
-.location-page .loc-report-thumb{
+.loc-report-thumb{
   display:block;
   width:124px;
   height:auto;
@@ -4423,11 +4423,11 @@ body{
   transition:transform .25s ease;
 }
 
-.location-page .loc-report-thumb:hover{
+.loc-report-thumb:hover{
   transform:rotate(0) scale(1.05);
 }
 
-.location-page .loc-report-thumb img{
+.loc-report-thumb img{
   display:block;
   width:100%;
   height:auto;
