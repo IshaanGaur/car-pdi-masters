@@ -4400,114 +4400,102 @@ body{
 }
 
 /* =========================================================
-   49. SAMPLE REPORT BOX ON LOCATION PAGES (2026-10-23)
+   50. BOOKING STEPS SPACING (2026-10-23)
+   Space between the Book Inspection button and the 01/02/03 steps.
    ========================================================= */
 
-.sample-report-section .sr-box{
-  display:flex;
-  gap:36px;
-  align-items:center;
-  max-width:1000px;
-  margin:0 auto;
-  padding:30px;
-  background:#fff;
-  border:1px solid #dbe4ef;
-  border-radius:18px;
-  box-shadow:0 8px 24px rgba(16,32,57,.07);
+.location-page .split > .benefit-list{
+  display:grid;
+  gap:14px;
+  margin-top:28px;
 }
 
-.sample-report-section .sr-thumb{
-  flex:none;
-  width:210px;
-  border-radius:10px;
-  overflow:hidden;
-  box-shadow:0 12px 28px rgba(16,32,57,.22);
-  transition:transform .2s ease;
+/* Location pages: no big empty right side */
+.location-page .loc-report-thumb{
+  display:block;
+  width:124px;
+  height:auto;
+  margin:20px auto 16px;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+  transform:rotate(-4deg);
+  transition:transform .25s ease;
 }
 
-.sample-report-section .sr-thumb:hover{
-  transform:translateY(-3px);
+.location-page .loc-report-thumb:hover{
+  transform:rotate(0) scale(1.05);
 }
 
-.sample-report-section .sr-thumb img{
+.location-page .loc-report-thumb img{
   display:block;
   width:100%;
   height:auto;
+  border-radius:8px;
+  border:2px solid rgba(255,255,255,.85);
+  box-shadow:0 14px 30px rgba(0,0,0,.45), 0 0 34px rgba(20,119,255,.35);
 }
 
-.sample-report-section .sr-text h2{
-  margin:6px 0 10px;
-  color:#102039 !important;
-}
-
-.sample-report-section .sr-text p{
-  color:#4f5f74 !important;
-  margin:0 0 14px;
-}
-
-.sample-report-section .eyebrow{
-  color:#0d57d8 !important;
-}
-
-.sample-report-section .sr-points{
-  list-style:none;
-  margin:0 0 20px;
-  padding:0;
+.location-page .hero > .container.loc-hero-grid{
   display:grid;
-  gap:8px;
+  grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  gap:56px;
+  align-items:center;
 }
 
-.sample-report-section .sr-points li{
-  position:relative;
-  padding-left:26px;
-  color:#102039;
-  font-weight:600;
+.location-page .loc-panel{
+  width:100%;
+  max-width:440px;
+  justify-self:end;
 }
 
-.sample-report-section .sr-points li::before{
-  content:"\2713";
-  position:absolute;
-  left:0;
-  top:0;
-  width:18px;
-  height:18px;
-  border-radius:50%;
-  background:#17a86a;
-  color:#fff;
-  font-size:11px;
-  line-height:18px;
-  text-align:center;
+.location-page .section > .container > .section-head:has(> p + p + p):not(:has(> h3)){
+  max-width:none;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  column-gap:48px;
 }
 
-.sample-report-section .actions{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
+.location-page .section > .container > .section-head:has(> p + p + p):not(:has(> h3)) > :is(.eyebrow, h2){
+  grid-column:1 / -1;
 }
 
-.sample-report-section .btn-outline{
-  color:#102039 !important;
-  border-color:#102039 !important;
-  background:transparent !important;
+.location-page .container.narrow:has(> .section-head > h3){
+  max-width:1160px;
 }
 
-@media (max-width:760px){
-  .sample-report-section .sr-box{
-    flex-direction:column;
-    text-align:center;
-    gap:22px;
-    padding:22px 18px;
+.location-page .section-head:has(> h3){
+  max-width:none;
+  display:grid;
+  grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);
+  column-gap:48px;
+}
+
+.location-page .section-head:has(> h3) > :is(.eyebrow, h2){
+  grid-column:1 / -1;
+}
+
+.location-page .section-head:has(> h3) > h3,
+.location-page .section-head:has(> h3) > h3 + p{
+  margin:0;
+  padding:16px 0;
+  border-top:1px solid #dbe4ef;
+}
+
+@media (max-width:900px){
+  .location-page .hero > .container.loc-hero-grid,
+  .location-page .section > .container > .section-head:has(> p + p + p):not(:has(> h3)),
+  .location-page .section-head:has(> h3){
+    grid-template-columns:1fr;
   }
 
-  .sample-report-section .sr-thumb{
-    width:170px;
+  .location-page .loc-panel{
+    justify-self:stretch;
+    max-width:none;
   }
 
-  .sample-report-section .sr-points{
-    justify-items:center;
-  }
-
-  .sample-report-section .actions{
-    justify-content:center;
+  .location-page .section-head:has(> h3) > h3 + p{
+    border-top:0;
+    padding-top:0;
   }
 }
