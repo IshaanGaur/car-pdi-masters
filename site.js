@@ -433,8 +433,29 @@
 
 })();
 
-
-
-
-
-
+/* Floating WhatsApp button (bottom right) and back-to-top arrow (bottom left), added 2026-10-23 */
+(function(){
+  function init(){
+    if(document.querySelector('.float-whatsapp')) return;
+    const wa=document.createElement('a');
+    wa.className='float-whatsapp';
+    wa.href='https://wa.me/919971116411?text=Hello%20Car%20PDI%20Masters%2C%20I%20want%20to%20book%20a%20car%20inspection.';
+    wa.target='_blank';
+    wa.rel='noopener';
+    wa.setAttribute('aria-label','Chat with Car PDI Masters on WhatsApp');
+    wa.innerHTML='<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.004 3.2C8.94 3.2 3.2 8.938 3.2 16c0 2.258.59 4.464 1.712 6.41L3.09 28.8l6.55-1.718A12.76 12.76 0 0 0 16.004 28.8C23.066 28.8 28.8 23.062 28.8 16S23.066 3.2 16.004 3.2zm0 23.44a10.6 10.6 0 0 1-5.404-1.478l-.388-.23-3.888 1.02 1.038-3.79-.252-.39A10.58 10.58 0 0 1 5.36 16c0-5.866 4.776-10.64 10.644-10.64 5.866 0 10.636 4.774 10.636 10.64 0 5.868-4.77 10.64-10.636 10.64zm5.836-7.966c-.32-.16-1.89-.932-2.184-1.04-.292-.106-.506-.16-.718.16-.214.32-.826 1.04-1.012 1.252-.186.214-.372.24-.692.08-.32-.16-1.35-.498-2.572-1.588-.95-.848-1.592-1.894-1.778-2.214-.186-.32-.02-.492.14-.652.144-.142.32-.372.48-.558.16-.186.212-.32.32-.532.106-.214.052-.4-.028-.56-.08-.16-.718-1.732-.984-2.372-.26-.622-.522-.538-.718-.548l-.612-.012c-.212 0-.558.08-.85.4-.292.32-1.116 1.09-1.116 2.66 0 1.568 1.142 3.084 1.302 3.298.16.212 2.248 3.432 5.446 4.812.762.33 1.356.526 1.82.672.764.244 1.46.21 2.01.128.612-.092 1.89-.774 2.156-1.52.266-.746.266-1.386.186-1.52-.078-.132-.292-.212-.612-.372z"/></svg>';
+    const top=document.createElement('button');
+    top.type='button';
+    top.className='back-to-top';
+    top.setAttribute('aria-label','Back to top');
+    top.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+    top.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+    document.body.appendChild(wa);
+    document.body.appendChild(top);
+    const toggle=()=>top.classList.toggle('show',window.scrollY>400);
+    window.addEventListener('scroll',toggle,{passive:true});
+    toggle();
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init);
+  else init();
+})();

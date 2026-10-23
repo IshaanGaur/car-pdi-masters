@@ -4038,3 +4038,96 @@ footer{
   border-top:1px solid rgba(255,255,255,.18);
   color:#bcd0e6;
 }
+
+
+/* =========================================================
+   46. STICKY HEADER + FLOATING BUTTONS (2026-10-23)
+   ========================================================= */
+
+/* overflow-x:hidden on html/body stopped the header from staying on screen;
+   clip keeps the same look without breaking it */
+html,
+body{
+  overflow-x:clip !important;
+}
+
+.nav{
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.float-whatsapp,
+.back-to-top{
+  position:fixed;
+  bottom:22px;
+  z-index:1001;
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 6px 18px rgba(0,0,0,.35);
+  transition:transform .2s ease, opacity .25s ease, visibility .25s ease;
+}
+
+.float-whatsapp{
+  right:22px;
+  background:#25d366;
+}
+
+.float-whatsapp svg{
+  width:32px;
+  height:32px;
+  fill:#fff;
+}
+
+.float-whatsapp:hover,
+.back-to-top:hover{
+  transform:scale(1.08);
+}
+
+.back-to-top{
+  left:22px;
+  width:48px;
+  height:48px;
+  bottom:26px;
+  border:0;
+  cursor:pointer;
+  background:#1d7cf2;
+  color:#fff;
+  opacity:0;
+  visibility:hidden;
+}
+
+.back-to-top.show{
+  opacity:1;
+  visibility:visible;
+}
+
+.back-to-top svg{
+  width:24px;
+  height:24px;
+  stroke:#fff;
+  fill:none;
+  stroke-width:3;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+@media (max-width:640px){
+  .float-whatsapp{
+    right:16px;
+    bottom:16px;
+    width:52px;
+    height:52px;
+  }
+
+  .back-to-top{
+    left:16px;
+    bottom:18px;
+    width:44px;
+    height:44px;
+  }
+}
