@@ -4499,3 +4499,83 @@ body{
     padding-top:0;
   }
 }
+
+/* =========================================================
+   51. SAMPLE REPORT VIEWER PAGE (2026-10-25)
+   ========================================================= */
+
+.report-viewer{
+  background:#eef4fa !important;
+}
+
+.report-viewer .rv-head{
+  max-width:860px;
+  margin:0 auto 28px;
+  text-align:center;
+}
+
+.report-viewer .rv-head h1{
+  margin:8px 0 12px;
+  color:#102039 !important;
+  font-size:clamp(30px,5vw,46px);
+  line-height:1.1;
+}
+
+.report-viewer .rv-head p{
+  color:#4f5f74 !important;
+  margin:0 0 20px;
+}
+
+.report-viewer .actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  justify-content:center;
+}
+
+.report-viewer .btn-outline{
+  color:#102039 !important;
+  border-color:#102039 !important;
+  background:#fff !important;
+}
+
+.report-viewer .rv-pages{
+  display:grid;
+  gap:22px;
+  max-width:860px;
+  margin:0 auto;
+}
+
+.report-viewer .rv-page{
+  margin:0;
+}
+
+.report-viewer .rv-page img{
+  display:block;
+  width:100%;
+  height:auto;
+  background:#fff;
+  border-radius:10px;
+  box-shadow:0 10px 30px rgba(16,32,57,.14);
+}
+
+.report-viewer .rv-page figcaption{
+  margin-top:8px;
+  text-align:center;
+  color:#4f5f74;
+  font-size:13px;
+}
+
+.report-viewer .rv-foot{
+  margin-top:32px;
+}
+
+@media (max-width:600px){
+  .report-viewer .rv-pages{
+    gap:14px;
+  }
+
+  .report-viewer .rv-page img{
+    border-radius:6px;
+  }
+}
