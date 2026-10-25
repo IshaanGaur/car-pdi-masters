@@ -4579,3 +4579,273 @@ body{
     border-radius:6px;
   }
 }
+
+
+/* =========================================================
+   52. INSPECTION PLANS: STANDARD + COMPREHENSIVE (2026-10-25)
+   Two plans with their checklists, in the site's colours.
+   ========================================================= */
+
+.cpm-pricing-section{
+  background:var(--page-soft);
+}
+
+.cpm-plans .plan-tabs{
+  display:flex;
+  width:max-content;
+  max-width:100%;
+  margin:0 auto 28px;
+  padding:5px;
+  border:1px solid #d3e1f1;
+  border-radius:999px;
+  background:#fff;
+}
+
+.cpm-plans .plan-tabs button{
+  padding:10px 26px;
+  border:0;
+  border-radius:999px;
+  background:transparent;
+  color:#102039;
+  font:inherit;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.cpm-plans .plan-tabs button[aria-selected="true"]{
+  background:var(--navy-3);
+  color:#fff;
+}
+
+.cpm-plans[data-car="new"] .used-only,
+.cpm-plans[data-car="used"] .new-only{
+  display:none !important;
+}
+
+.plan-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+  max-width:920px;
+  margin:0 auto;
+}
+
+.plan-card{
+  display:flex;
+  flex-direction:column;
+  padding:28px;
+  border:1px solid #dbe4ef;
+  border-radius:var(--radius-lg);
+  background:#fff;
+  box-shadow:0 8px 24px rgba(16,32,57,.07);
+  color:#102039;
+}
+
+.plan-card-featured{
+  border-color:#9cc3f5;
+  box-shadow:0 16px 36px rgba(22,119,255,.14);
+}
+
+.plan-label{
+  color:#1d6fe0;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+.plan-card h3{
+  margin:8px 0 0;
+  color:#102039;
+  font-size:22px;
+  line-height:1.3;
+}
+
+.plan-car{
+  color:#647187;
+  font-weight:700;
+}
+
+.plan-price{
+  display:flex;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:16px 0 4px;
+}
+
+.plan-price strong{
+  color:#102039;
+  font-size:38px;
+  line-height:1;
+}
+
+.plan-price span{
+  color:#647187;
+  font-size:13px;
+  font-weight:700;
+}
+
+.plan-desc{
+  margin:10px 0 16px;
+  color:#4f5f74;
+  font-size:15px;
+}
+
+.plan-list{
+  display:grid;
+  gap:8px;
+  margin:0 0 14px;
+  padding:16px 0 0;
+  border-top:1px solid #e3eaf3;
+  list-style:none;
+}
+
+.plan-list li{
+  position:relative;
+  padding-left:28px;
+  color:#24344a;
+  font-size:15px;
+}
+
+.plan-list li::before{
+  content:"✓";
+  position:absolute;
+  left:0;
+  top:1px;
+  display:grid;
+  place-items:center;
+  width:19px;
+  height:19px;
+  border-radius:50%;
+  background:#e6f7ef;
+  color:#14935a;
+  font-size:12px;
+  font-weight:900;
+}
+
+.plan-list li.plan-extra{
+  color:#102039;
+  font-weight:800;
+}
+
+.plan-list li.plan-extra::before{
+  background:#e3efff;
+  color:#1d6fe0;
+}
+
+.plan-foot{
+  margin:auto 0 16px;
+  color:#647187;
+  font-size:12px;
+}
+
+.plan-btn{
+  display:block;
+  width:100%;
+  text-align:center;
+  white-space:normal;
+}
+
+.plan-card .btn-outline.plan-btn{
+  border-color:#102039;
+  background:#fff;
+  color:#102039;
+}
+
+.price-note a{
+  color:#58c7ff;
+  font-weight:800;
+}
+
+/* Plan choice inside the booking form */
+.booking-plan-line{
+  margin:22px 0 0;
+  color:#cfe3f5;
+  font-size:14px;
+}
+
+.booking-plan-line b{
+  color:#fff;
+}
+
+.booking-form .plan-picker{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin:0;
+  padding:0;
+  border:0;
+  min-width:0;
+}
+
+.booking-form .plan-picker legend{
+  margin-bottom:6px;
+  padding:0;
+  color:#dff2ff;
+  font-size:13px;
+  font-weight:850;
+}
+
+.booking-form .plan-picker label{
+  flex-direction:row;
+  align-items:center;
+  gap:10px;
+  padding:12px 14px;
+  border:1px solid rgba(126,176,214,.38);
+  border-radius:10px;
+  background:rgba(10,27,45,.72);
+  cursor:pointer;
+}
+
+.booking-form .plan-picker label:has(input:checked){
+  border-color:#55c5ff;
+  box-shadow:0 0 0 3px rgba(85,197,255,.16);
+}
+
+.booking-form .plan-picker label.plan-unavailable{
+  opacity:.5;
+  cursor:not-allowed;
+}
+
+.booking-form .plan-picker input{
+  width:18px;
+  height:18px;
+  padding:0;
+  accent-color:#1677ff;
+  box-shadow:none;
+}
+
+.booking-form .plan-picker label > span{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+
+.booking-form .plan-picker small{
+  color:#9fc0da;
+  font-size:13px;
+  font-weight:800;
+}
+
+.plan-picker-link{
+  grid-column:1 / -1;
+  color:#58c7ff;
+  font-size:13px;
+  font-weight:800;
+}
+
+@media (max-width:760px){
+  .plan-grid,
+  .booking-form .plan-picker{
+    grid-template-columns:1fr;
+  }
+
+  .plan-card{
+    padding:22px;
+  }
+
+  .cpm-plans .plan-tabs button{
+    padding:10px 20px;
+  }
+}

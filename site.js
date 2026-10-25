@@ -70,13 +70,58 @@
     const price=finalAmount;
     const booking=pricingReady?Number(p.bookingAmount??0):NaN;
     const balance=pricingReady?finalAmount-booking:NaN;
-    document.querySelectorAll('[data-price]').forEach(el=>{const key=el.dataset.price; const val=key==='service'?price:key==='booking'?booking:key==='balance'?balance:price; el.textContent=pricingReady?money(val):'₹—'});
+    const compTotal=Number(p.comprehensiveFinalAmount), compBalance=Number(p.comprehensiveBalanceAmount);
+    const compReady=pricingReady&&p.comprehensiveFinalAmount!=null&&Number.isFinite(compTotal)&&Number.isFinite(compBalance);
+    PLAN_PRICES['standard-pdi']=pricingReady?{total:finalAmount,balance}:null;
+    PLAN_PRICES['comprehensive-360-pdi']=compReady?{total:compTotal,balance:compBalance}:null;
+    const chosen=PLAN_PRICES[selectedPlan]||null;
+    const values={service:chosen?.total,balance:chosen?.balance,booking,standard:pricingReady?finalAmount:NaN,'standard-balance':balance,comprehensive:compReady?compTotal:NaN,'comprehensive-balance':compReady?compBalance:NaN};
+    document.querySelectorAll('[data-price]').forEach(el=>{const val=values[el.dataset.price]; el.textContent=pricingReady&&Number.isFinite(Number(val))&&val!=null?money(val):'₹—'});
+    document.querySelectorAll('[data-plan-name]').forEach(el=>{el.textContent=PLANS[selectedPlan].name});
+    document.querySelectorAll('input[name="plan"]').forEach(r=>{r.checked=r.value===selectedPlan; const off=!PLAN_PRICES[r.value]&&pricingReady; r.disabled=off; r.closest('label')?.classList.toggle('plan-unavailable',off)});
     document.querySelectorAll('[data-service-price]').forEach(el=>{const key=el.dataset.servicePrice; const svc=p.services&&p.services[key]; el.textContent=pricingReady?money(svc&&svc.price!=null?svc.price:price):'₹—'});
-    const priceInput=document.getElementById('bookingPrice'); if(priceInput) priceInput.value=pricingReady?price:'';
+    const priceInput=document.getElementById('bookingPrice'); if(priceInput) priceInput.value=chosen?chosen.total:'';
     const bookingInput=document.getElementById('bookingAmount'); if(bookingInput) bookingInput.value=pricingReady?booking:'';
-    const balanceInput=document.getElementById('balanceAmount'); if(balanceInput) balanceInput.value=pricingReady?balance:'';
+    const balanceInput=document.getElementById('balanceAmount'); if(balanceInput) balanceInput.value=chosen?chosen.balance:'';
+    lastPricing=p;
     window.CPM_PRICING={...p,defaultServicePrice:price,bookingAmount:booking,balanceAmount:balance};
     return window.CPM_PRICING;
+  }
+
+  // Two inspection plans: Standard PDI and Comprehensive 360° PDI.
+  // Prices come from the dashboard Pricing screen (pricing/current); the booking amount is the same for both.
+  const PLANS={
+    'standard-pdi':{name:'Standard PDI'},
+    'comprehensive-360-pdi':{name:'Comprehensive 360° PDI'}
+  };
+  const PLAN_PRICES={};
+  let selectedPlan='standard-pdi', lastPricing=null;
+  const CAR_TYPES={new:'New Car PDI',used:'Used Car Inspection'};
+  function choosePlan(plan,car){
+    if(PLANS[plan]) selectedPlan=plan;
+    const type=document.getElementById('type');
+    if(type&&CAR_TYPES[car]&&(!type.value||Object.values(CAR_TYPES).includes(type.value))){type.value=CAR_TYPES[car];type.dispatchEvent(new Event('change'))}
+    if(car) setCarTab(car);
+    apply(lastPricing||fallback);
+  }
+  function setCarTab(car){
+    document.querySelectorAll('.cpm-plans').forEach(el=>el.dataset.car=car);
+    document.querySelectorAll('[data-car-tab]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.carTab===car)));
+  }
+  function setupPlans(){
+    if(window.CPM_PLANS_BOUND) return; window.CPM_PLANS_BOUND=true;
+    document.addEventListener('click',e=>{
+      const tab=e.target.closest?.('[data-car-tab]'); if(tab){setCarTab(tab.dataset.carTab);return}
+      const book=e.target.closest?.('[data-choose-plan]');
+      if(book&&document.getElementById('booking')){choosePlan(book.dataset.choosePlan,book.dataset.car||document.querySelector('.cpm-plans')?.dataset.car)}
+    });
+    document.addEventListener('change',e=>{if(e.target.name==='plan') choosePlan(e.target.value)});
+    const q=new URLSearchParams(location.search);
+    // Payment page: show the plan saved with this booking.
+    try{const b=JSON.parse(localStorage.getItem('cpm_booking')||'null');if(b&&b.bookingId&&b.bookingId===q.get('bookingId')&&PLANS[b.packageId])selectedPlan=b.packageId}catch(_){}
+    if(!PLANS[q.get('plan')]&&!CAR_TYPES[q.get('car')]) return;
+    const pick=()=>choosePlan(q.get('plan'),q.get('car'));
+    if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',pick,{once:true}); else pick();
   }
 
   const CPM_MODELS={
@@ -196,6 +241,7 @@
     }catch(e){select.innerHTML='<option value="">Locations temporarily unavailable</option>';select.disabled=true;const note=document.getElementById('locationMsg');if(note)note.textContent='Please call or WhatsApp Car PDI Masters to confirm service availability.';console.warn('Live locations unavailable.',e)}
   }
   setupHomepageUI();
+  setupPlans();
   loadPricing();
   loadLocations();
   window.CPM_MONEY=money;
@@ -225,11 +271,16 @@
       const taxAmount=taxApplicable?Number(p.taxAmount||0):0;
       const finalAmount=Number(p.finalAmount??(servicePrice+serviceCharges+taxAmount));
       const booking=Number(p.bookingAmount??0);
-      const balance=finalAmount-booking;
-      const total=finalAmount;
+      const plan=PLANS[selectedPlan]?selectedPlan:'standard-pdi';
+      let balance=finalAmount-booking, total=finalAmount;
+      if(plan==='comprehensive-360-pdi'){
+        total=Number(p.comprehensiveFinalAmount); balance=Number(p.comprehensiveBalanceAmount);
+        if(p.comprehensiveFinalAmount==null||!Number.isFinite(total)||!Number.isFinite(balance)) throw new Error('The Comprehensive 360° PDI plan is not open for booking right now. Please choose Standard PDI or call us.');
+      }
+      const packageName=PLANS[plan].name;
       const code=`CPM-${data.date.replaceAll('-','')}-${Math.random().toString(36).slice(2,7).toUpperCase()}`;
-      const ref=await fs.addDoc(fs.collection(firestoreDb,'bookings'),{customerName:data.name,customerPhone:data.mobile,inspectionType:data.type,vehicleMakeModel:data.car,vehicleMake:data.vehicleMake,vehicleModel:data.vehicleModel,otherMake:data.otherMake,otherModel:data.otherModel,variant:data.variant,dealerSeller:data.dealer,registrationNumber:data.registrationNumber,inspectionLocation:data.location,locationSlug,inspectionDate:data.date,timeSlot:data.time,inspectionAddress:data.address,additionalInformation:data.notes||'',bookingId:code,bookingStatus:'PAYMENT_PENDING',bookingPaymentStatus:'PENDING',balancePaymentStatus:'PENDING',totalServicePrice:total,servicePrice:servicePrice,serviceCharges:serviceCharges,taxApplicable:taxApplicable,taxAmount:taxAmount,finalAmount:finalAmount,bookingAmount:booking,balanceAmount:balance,paymentMode:p.paymentMode||'LIVE',currency:'INR',source:'WEBSITE',createdAt:fs.serverTimestamp(),updatedAt:fs.serverTimestamp()});
-      try{localStorage.setItem('cpm_booking',JSON.stringify({...data,bookingId:code,firestoreId:ref.id,totalServicePrice:total,servicePrice:servicePrice,serviceCharges:serviceCharges,taxApplicable:taxApplicable,taxAmount:taxAmount,finalAmount:finalAmount,bookingAmount:booking,balanceAmount:balance}))}catch(_){ }
+      const ref=await fs.addDoc(fs.collection(firestoreDb,'bookings'),{customerName:data.name,customerPhone:data.mobile,inspectionType:data.type,packageId:plan,packageName,vehicleMakeModel:data.car,vehicleMake:data.vehicleMake,vehicleModel:data.vehicleModel,otherMake:data.otherMake,otherModel:data.otherModel,variant:data.variant,dealerSeller:data.dealer,registrationNumber:data.registrationNumber,inspectionLocation:data.location,locationSlug,inspectionDate:data.date,timeSlot:data.time,inspectionAddress:data.address,additionalInformation:data.notes||'',bookingId:code,bookingStatus:'PAYMENT_PENDING',bookingPaymentStatus:'PENDING',balancePaymentStatus:'PENDING',totalServicePrice:total,servicePrice:plan==='comprehensive-360-pdi'?Number(p.comprehensivePrice??total):servicePrice,serviceCharges:serviceCharges,taxApplicable:taxApplicable,taxAmount:plan==='comprehensive-360-pdi'?Number(p.comprehensiveTaxAmount||0):taxAmount,finalAmount:total,bookingAmount:booking,balanceAmount:balance,paymentMode:p.paymentMode||'LIVE',currency:'INR',source:'WEBSITE',createdAt:fs.serverTimestamp(),updatedAt:fs.serverTimestamp()});
+      try{localStorage.setItem('cpm_booking',JSON.stringify({...data,packageId:plan,packageName,bookingId:code,firestoreId:ref.id,totalServicePrice:total,servicePrice:servicePrice,serviceCharges:serviceCharges,taxApplicable:taxApplicable,taxAmount:taxAmount,finalAmount:total,bookingAmount:booking,balanceAmount:balance}))}catch(_){ }
       if(msg)msg.textContent=`Booking ${code} created. Opening payment page…`;
       // Only booking references go in the address; customer details stay in localStorage (cpm_booking).
       const params=new URLSearchParams({bookingId:code,bookingDocId:ref.id,bookingAmount:String(booking)});
