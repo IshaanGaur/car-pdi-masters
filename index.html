@@ -100,7 +100,7 @@
   <div class="container price-grid">
     <div><span>Standard PDI</span><strong data-price="standard">₹1,499</strong></div>
     <div><span>Comprehensive 360° PDI</span><strong data-price="comprehensive">₹2,499</strong></div>
-    <div><span>Booking Amount</span><strong data-price="booking">₹299</strong></div>
+    <div><span>Booking Amount</span><strong><span data-price="standard-booking">₹299</span> / <span data-price="comprehensive-booking">₹499</span></strong></div>
     <div class="price-note"><b>Simple payment flow:</b> Pay the booking amount first. Your booking is reviewed and assigned before final confirmation. <a href="#pricing">Compare plans →</a></div>
   </div>
 </section>
@@ -706,7 +706,7 @@
     <div class="section-head">
       <div class="eyebrow dark">CLEAR INVESTMENT</div>
       <h2>Transparent Independent Pricing</h2>
-      <p>Zero hidden charges. Full inspector travel to the dealership within operational city limits included. Pay only the <span data-price="booking">₹299</span> booking amount online now; the balance is paid before the inspection starts.</p>
+      <p>Zero hidden charges. Full inspector travel to the dealership within operational city limits included. Pay only the booking amount online now; the balance is paid before the inspection starts.</p>
     </div>
     <div class="cpm-plans" data-car="new">
       <div class="plan-tabs" role="tablist" aria-label="Car type">
@@ -718,6 +718,7 @@
         <div class="plan-label"><span class="new-only">Dealership Delivery Audit</span><span class="used-only">Pre-Purchase Protocol</span></div>
         <h3>Standard PDI <span class="plan-car new-only">· New Car</span><span class="plan-car used-only">· Used Car</span></h3>
         <div class="plan-price"><strong data-price="standard">₹1,499</strong><span>Inclusive of Tax</span></div>
+        <p class="plan-pay">Booking <b data-price="standard-booking">₹299</b> online now · Balance <b data-price="standard-balance">₹1,200</b> before inspection</p>
         <p class="plan-desc new-only">Complete 300+ point, 360° pre-delivery inspection at the dealership for any new hatchback, sedan, or SUV.</p>
         <p class="plan-desc used-only">300+ point, 360° inspection for second-hand vehicles at seller doorstep or used dealership lot.</p>
         <ul class="plan-list">
@@ -745,6 +746,7 @@
         <div class="plan-label"><span class="new-only">Dealership Delivery Audit</span><span class="used-only">Pre-Purchase Protocol</span></div>
         <h3>Comprehensive 360° PDI <span class="plan-car new-only">· New Car</span><span class="plan-car used-only">· Used Car</span></h3>
         <div class="plan-price"><strong data-price="comprehensive">₹2,499</strong><span>Inclusive of Tax</span></div>
+        <p class="plan-pay">Booking <b data-price="comprehensive-booking">₹499</b> online now · Balance <b data-price="comprehensive-balance">₹2,000</b> before inspection</p>
         <p class="plan-desc new-only">Complete 300+ point, 360° pre-delivery inspection at the dealership for any new hatchback, sedan, or SUV.</p>
         <p class="plan-desc used-only">300+ point, 360° inspection for second-hand vehicles at seller doorstep or used dealership lot.</p>
         <ul class="plan-list">
@@ -962,8 +964,8 @@
       <label><span>Mobile Number *</span><input id="mobile" inputmode="tel" placeholder="WhatsApp / mobile number" required></label>
       <fieldset class="plan-picker full">
         <legend>Inspection Plan *</legend>
-        <label><input type="radio" name="plan" value="standard-pdi" checked><span><b>Standard PDI</b><small data-price="standard">₹1,499</small></span></label>
-        <label><input type="radio" name="plan" value="comprehensive-360-pdi"><span><b>Comprehensive 360° PDI</b><small data-price="comprehensive">₹2,499</small></span></label>
+        <label><input type="radio" name="plan" value="standard-pdi" checked><span><b>Standard PDI</b><small><span data-price="standard">₹1,499</span> · booking <span data-price="standard-booking">₹299</span></small></span></label>
+        <label><input type="radio" name="plan" value="comprehensive-360-pdi"><span><b>Comprehensive 360° PDI</b><small><span data-price="comprehensive">₹2,499</span> · booking <span data-price="comprehensive-booking">₹499</span></small></span></label>
         <a class="plan-picker-link" href="#pricing">What's included in each plan?</a>
       </fieldset>
       <label><span>Inspection Type *</span><select id="type" required><option value="">Select inspection type</option><option>New Car PDI</option><option>New Car Inspection</option><option>Used Car PDI</option><option>Used Car Inspection</option><option>Pre-Purchase Car Inspection</option><option>Luxury Car</option><option>EV Car</option></select></label>

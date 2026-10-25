@@ -4849,3 +4849,19 @@ body{
     padding:10px 20px;
   }
 }
+
+.plan-pay{
+  margin:6px 0 0;
+  color:#4f5f74;
+  font-size:13px;
+}
+
+.plan-pay b{
+  color:#102039;
+}
+
+.price-grid strong span{
+  display:inline;
+  color:#fff;
+  font-size:inherit;
+}

@@ -71,25 +71,27 @@
     const booking=pricingReady?Number(p.bookingAmount??0):NaN;
     const balance=pricingReady?finalAmount-booking:NaN;
     const compTotal=Number(p.comprehensiveFinalAmount), compBalance=Number(p.comprehensiveBalanceAmount);
-    const compReady=pricingReady&&p.comprehensiveFinalAmount!=null&&Number.isFinite(compTotal)&&Number.isFinite(compBalance);
-    PLAN_PRICES['standard-pdi']=pricingReady?{total:finalAmount,balance}:null;
-    PLAN_PRICES['comprehensive-360-pdi']=compReady?{total:compTotal,balance:compBalance}:null;
+    // Comprehensive has its own booking amount; older pricing records without one use the Standard booking amount.
+    const compBooking=Number(p.comprehensiveBookingAmount??p.bookingAmount);
+    const compReady=pricingReady&&p.comprehensiveFinalAmount!=null&&Number.isFinite(compTotal)&&Number.isFinite(compBalance)&&Number.isFinite(compBooking);
+    PLAN_PRICES['standard-pdi']=pricingReady?{total:finalAmount,booking,balance}:null;
+    PLAN_PRICES['comprehensive-360-pdi']=compReady?{total:compTotal,booking:compBooking,balance:compBalance}:null;
     const chosen=PLAN_PRICES[selectedPlan]||null;
-    const values={service:chosen?.total,balance:chosen?.balance,booking,standard:pricingReady?finalAmount:NaN,'standard-balance':balance,comprehensive:compReady?compTotal:NaN,'comprehensive-balance':compReady?compBalance:NaN};
+    const values={service:chosen?.total,balance:chosen?.balance,booking:chosen?chosen.booking:booking,standard:pricingReady?finalAmount:NaN,'standard-booking':booking,'standard-balance':balance,comprehensive:compReady?compTotal:NaN,'comprehensive-booking':compReady?compBooking:NaN,'comprehensive-balance':compReady?compBalance:NaN};
     document.querySelectorAll('[data-price]').forEach(el=>{const val=values[el.dataset.price]; el.textContent=pricingReady&&Number.isFinite(Number(val))&&val!=null?money(val):'₹—'});
     document.querySelectorAll('[data-plan-name]').forEach(el=>{el.textContent=PLANS[selectedPlan].name});
     document.querySelectorAll('input[name="plan"]').forEach(r=>{r.checked=r.value===selectedPlan; const off=!PLAN_PRICES[r.value]&&pricingReady; r.disabled=off; r.closest('label')?.classList.toggle('plan-unavailable',off)});
     document.querySelectorAll('[data-service-price]').forEach(el=>{const key=el.dataset.servicePrice; const svc=p.services&&p.services[key]; el.textContent=pricingReady?money(svc&&svc.price!=null?svc.price:price):'₹—'});
     const priceInput=document.getElementById('bookingPrice'); if(priceInput) priceInput.value=chosen?chosen.total:'';
-    const bookingInput=document.getElementById('bookingAmount'); if(bookingInput) bookingInput.value=pricingReady?booking:'';
+    const bookingInput=document.getElementById('bookingAmount'); if(bookingInput) bookingInput.value=chosen?chosen.booking:'';
     const balanceInput=document.getElementById('balanceAmount'); if(balanceInput) balanceInput.value=chosen?chosen.balance:'';
     lastPricing=p;
-    window.CPM_PRICING={...p,defaultServicePrice:price,bookingAmount:booking,balanceAmount:balance};
+    window.CPM_PRICING={...p,defaultServicePrice:price,bookingAmount:chosen?chosen.booking:booking,balanceAmount:balance};
     return window.CPM_PRICING;
   }
 
   // Two inspection plans: Standard PDI and Comprehensive 360° PDI.
-  // Prices come from the dashboard Pricing screen (pricing/current); the booking amount is the same for both.
+  // Prices come from the dashboard Pricing screen (pricing/current); each plan has its own booking amount.
   const PLANS={
     'standard-pdi':{name:'Standard PDI'},
     'comprehensive-360-pdi':{name:'Comprehensive 360° PDI'}
@@ -270,12 +272,12 @@
       const taxApplicable=String(p.taxApplicable||'NO').toUpperCase()==='YES';
       const taxAmount=taxApplicable?Number(p.taxAmount||0):0;
       const finalAmount=Number(p.finalAmount??(servicePrice+serviceCharges+taxAmount));
-      const booking=Number(p.bookingAmount??0);
+      let booking=Number(p.bookingAmount??0);
       const plan=PLANS[selectedPlan]?selectedPlan:'standard-pdi';
       let balance=finalAmount-booking, total=finalAmount;
       if(plan==='comprehensive-360-pdi'){
-        total=Number(p.comprehensiveFinalAmount); balance=Number(p.comprehensiveBalanceAmount);
-        if(p.comprehensiveFinalAmount==null||!Number.isFinite(total)||!Number.isFinite(balance)) throw new Error('The Comprehensive 360° PDI plan is not open for booking right now. Please choose Standard PDI or call us.');
+        total=Number(p.comprehensiveFinalAmount); balance=Number(p.comprehensiveBalanceAmount); booking=Number(p.comprehensiveBookingAmount??p.bookingAmount);
+        if(p.comprehensiveFinalAmount==null||!Number.isFinite(total)||!Number.isFinite(balance)||!Number.isFinite(booking)) throw new Error('The Comprehensive 360° PDI plan is not open for booking right now. Please choose Standard PDI or call us.');
       }
       const packageName=PLANS[plan].name;
       const code=`CPM-${data.date.replaceAll('-','')}-${Math.random().toString(36).slice(2,7).toUpperCase()}`;
