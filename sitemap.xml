@@ -20,12 +20,6 @@
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
-  <url>
-    <loc>https://www.carmasters.co.in/payment.html</loc>
-    <lastmod>2026-10-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
 
   <!-- Key Services -->
   <url>
@@ -238,7 +232,7 @@
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/peeragarhi.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -250,6 +244,18 @@
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/rajouri-garden.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.carmasters.co.in/locations/delhi/bali-nagar.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.carmasters.co.in/locations/delhi/ramesh-nagar.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -274,7 +280,7 @@
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/vikaspuri.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -334,19 +340,19 @@
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/dwarka-sector-24.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/kakrola.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/matiala.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -358,7 +364,7 @@
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/prashant-vihar.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -370,7 +376,7 @@
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/shalimar-bagh.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -388,7 +394,7 @@
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/azadpur.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -400,13 +406,13 @@
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/model-town.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/karol-bagh.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -424,7 +430,7 @@
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/paharganj.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -454,31 +460,31 @@
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/vasant-vihar.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/rk-puram.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/safdarjung-enclave.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/green-park.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/malviya-nagar.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -514,13 +520,13 @@
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/kalkaji.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/okhla.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -544,7 +550,7 @@
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/mahipalpur.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -562,13 +568,13 @@
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/laxmi-nagar.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/preet-vihar.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -580,7 +586,7 @@
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/mayur-vihar.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -610,7 +616,7 @@
   </url>
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/raja-garden.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

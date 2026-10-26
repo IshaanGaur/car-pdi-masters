@@ -4865,3 +4865,28 @@ body{
   color:#fff;
   font-size:inherit;
 }
+
+/* =========================================================
+   53. LOCATION PAGE LOCAL CHECK LIST (2026-10-26)
+   ========================================================= */
+.location-page .local-checks{
+  margin-top:8px;
+  padding:22px 26px;
+  border:1px solid #dbe4ef;
+  border-radius:14px;
+  background:#fff;
+}
+.location-page .local-checks h3{
+  margin:0 0 10px;
+  font-size:20px;
+}
+.location-page .local-checks ul{
+  margin:0;
+  padding-left:22px;
+  color:var(--muted);
+  font-size:16px;
+  line-height:1.7;
+}
+.location-page .local-checks li{margin:4px 0}
+.location-page .section-head p a{text-decoration:underline}
+.location-page .section-head > p + p{margin-top:12px}

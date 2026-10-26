@@ -59,6 +59,28 @@ for (const f of pages) {
     }
   }
 }
+// Google indexing: location pages must point to themselves, be indexable and carry valid breadcrumb data.
+for (const f of pages.filter(p => p.startsWith('locations/'))) {
+  const html = read(f);
+  if (/http-equiv="refresh"/i.test(html)) continue;
+  const url = `https://www.carmasters.co.in/${f}`;
+  const canon = [...html.matchAll(/<link rel="canonical" href="([^"]+)"/g)].map(m => m[1]);
+  if (canon.length !== 1 || canon[0] !== url) problems.push(`${f}: canonical must be exactly ${url} (found ${canon.join(', ') || 'none'})`);
+  if (/<meta name="robots" content="[^"]*noindex/i.test(html)) problems.push(`${f}: location page is set to noindex`);
+  if (!html.includes('"BreadcrumbList"')) problems.push(`${f}: missing breadcrumb data (BreadcrumbList)`);
+  for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+    try { JSON.parse(m[1]); } catch (_) { problems.push(`${f}: broken structured data (JSON-LD)`); }
+  }
+}
+// The payment page only works with a booking, so it stays out of Google and out of the sitemap.
+if (!/<meta name="robots" content="noindex/.test(read('payment.html'))) problems.push('payment.html: must stay noindex (it is not a page for Google)');
+const sitemap = read('sitemap.xml');
+if (sitemap.includes('/payment.html')) problems.push('sitemap.xml: must not list payment.html');
+for (const m of sitemap.matchAll(/<loc>https:\/\/www\.carmasters\.co\.in\/([^<]*)<\/loc>/g)) {
+  const f = m[1] === '' ? 'index.html' : m[1];
+  if (!fs.existsSync(path.join(root, f))) problems.push(`sitemap.xml: lists ${m[1]} but that page does not exist`);
+  else if (/<meta name="robots" content="[^"]*noindex/i.test(read(f))) problems.push(`sitemap.xml: lists ${m[1]} but that page is noindex`);
+}
 if (/SCAN &(amp;)?amp; PAY|SCAN & PAY/.test(read('payment.html'))) problems.push('payment.html: has the old QR-only "SCAN & PAY" page');
 
 if (problems.length) {
