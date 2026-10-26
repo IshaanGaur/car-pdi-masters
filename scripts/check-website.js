@@ -72,6 +72,8 @@ for (const f of pages.filter(p => p.startsWith('locations/'))) {
     try { JSON.parse(m[1]); } catch (_) { problems.push(`${f}: broken structured data (JSON-LD)`); }
   }
 }
+// Short addresses like /locations/delhi must forward to the real pages (Google reported a 404 on it).
+if (!read('firebase.website.json').includes('"/locations/delhi"')) problems.push('firebase.website.json: missing the /locations/delhi -> /locations/delhi.html redirect');
 // The payment page only works with a booking, so it stays out of Google and out of the sitemap.
 if (!/<meta name="robots" content="noindex/.test(read('payment.html'))) problems.push('payment.html: must stay noindex (it is not a page for Google)');
 const sitemap = read('sitemap.xml');

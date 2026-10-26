@@ -69,6 +69,15 @@
           }
         ]
       }
+    ],
+    "redirects": [
+      {"source": "/locations/delhi", "destination": "/locations/delhi.html", "type": 301},
+      {"source": "/locations/delhi/", "destination": "/locations/delhi.html", "type": 301},
+      {"source": "/locations/gurugram", "destination": "/locations/gurugram.html", "type": 301},
+      {"source": "/locations/gurugram/", "destination": "/locations/gurugram.html", "type": 301},
+      {"source": "/locations", "destination": "/site-map.html", "type": 301},
+      {"source": "/locations/", "destination": "/site-map.html", "type": 301},
+      {"regex": "^/(?P<dir>locations/delhi|locations/gurugram|services)/(?P<page>[a-z0-9-]+)/?$", "destination": "/:dir/:page.html", "type": 301}
     ]
   }
 }
