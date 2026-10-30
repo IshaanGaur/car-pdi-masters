@@ -45,6 +45,7 @@ for (const f of pages) {
       ['href="/style.css"', 'the site stylesheet'],
       ['src="/site.js"', 'the site script (menu, booking, pricing)'],
       ['nav class="links"', 'the site menu'],
+      ['/cpm-icon-48.png', 'the site icon for Google (cpm-icon-48.png)'],
       ['<footer', 'the site footer'],
       ['footer-bottom', 'the footer bottom line (copyright)'],
       ['</html>', 'the end of the page (the file looks cut off)']
@@ -83,6 +84,9 @@ for (const m of sitemap.matchAll(/<loc>https:\/\/www\.carmasters\.co\.in\/([^<]*
   if (!fs.existsSync(path.join(root, f))) problems.push(`sitemap.xml: lists ${m[1]} but that page does not exist`);
   else if (/<meta name="robots" content="[^"]*noindex/i.test(read(f))) problems.push(`sitemap.xml: lists ${m[1]} but that page is noindex`);
 }
+for (const f of ['favicon.ico', 'cpm-icon-48.png', 'cpm-icon-96.png', 'cpm-icon-192.png', 'apple-touch-icon.png'])
+  if (!fs.existsSync(path.join(root, f))) problems.push(`${f}: site icon file is missing`);
+if (!read('index.html').includes('"@type":"WebSite"')) problems.push('index.html: missing the site name data for Google (WebSite)');
 if (/SCAN &(amp;)?amp; PAY|SCAN & PAY/.test(read('payment.html'))) problems.push('payment.html: has the old QR-only "SCAN & PAY" page');
 
 if (problems.length) {
