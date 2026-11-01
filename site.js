@@ -529,3 +529,19 @@
     booking.scrollIntoView({behavior:'smooth',block:'start'});
   });
 })();
+
+
+/* Track tap-to-call conversions for GA4 without interrupting the phone link. */
+(function(){
+  document.addEventListener('click',event=>{
+    const link=event.target.closest?.('a[href^="tel:"]');
+    if(!link) return;
+    if(typeof window.gtag==='function'){
+      window.gtag('event','phone_call_click',{
+        event_category:'engagement',
+        event_label:link.getAttribute('href'),
+        page_location:window.location.href
+      });
+    }
+  });
+})();
