@@ -545,3 +545,26 @@
     }
   });
 })();
+
+
+/* Add a direct call-to-book action consistently across location pages. */
+(function(){
+  function addCallLink(container,large){
+    if(!container || container.querySelector('a[href^="tel:"]')) return;
+    const link=document.createElement('a');
+    link.href='tel:+919971116411';
+    link.className=large?'btn btn-primary btn-large':'btn btn-primary nav-cta';
+    link.textContent='Call to Book: 99711 16411';
+    link.setAttribute('aria-label','Call Car PDI Masters to book an inspection at 99711 16411');
+    link.dataset.locationCallCta='true';
+    container.appendChild(link);
+  }
+  function init(){
+    if(!document.body.classList.contains('location-page')) return;
+    addCallLink(document.querySelector('.nav-actions'),false);
+    addCallLink(document.querySelector('.loc-hero-copy .actions, .hero .actions'),true);
+    addCallLink(document.querySelector('.final-cta .actions'),true);
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init);
+  else init();
+})();
