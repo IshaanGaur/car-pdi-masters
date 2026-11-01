@@ -4890,3 +4890,62 @@ body{
 .location-page .local-checks li{margin:4px 0}
 .location-page .section-head p a{text-decoration:underline}
 .location-page .section-head > p + p{margin-top:12px}
+
+
+/* =========================================================
+   55. SHARED HEADER LAYOUT FIX (2026-11-01)
+   Keep the logo, navigation and booking actions in separate
+   flex columns so long navigation labels cannot overlap brand.
+   ========================================================= */
+
+@media (min-width:901px){
+  .navin{
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+
+  .navin > .brand{
+    flex:0 0 220px;
+    min-width:220px;
+    max-width:220px;
+  }
+
+  .navin > .brand::after{
+    flex:0 0 auto;
+    font-size:18px;
+  }
+
+  .navin > .links{
+    display:flex;
+    flex:1 1 auto;
+    min-width:0;
+    align-items:center;
+    justify-content:center;
+    gap:clamp(7px, .75vw, 13px);
+    margin:0;
+  }
+
+  .navin > .links a{
+    flex:0 0 auto;
+    font-size:clamp(11px, .72vw, 13px);
+    white-space:nowrap;
+  }
+
+  .navin > .nav-actions{
+    flex:0 0 auto;
+    align-items:center;
+    gap:8px;
+    margin:0;
+  }
+
+  .navin > .nav-actions .whatsapp-link{
+    font-size:12px;
+  }
+
+  .navin > .nav-actions .nav-cta{
+    min-height:42px;
+    padding:9px 13px;
+    font-size:12px;
+  }
+}
