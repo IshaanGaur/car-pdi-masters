@@ -568,3 +568,50 @@
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init);
   else init();
 })();
+
+
+/* Show the same Popular Brands We Inspect strip on every page.
+   The homepage already contains the full static section, so it is left untouched. */
+(function(){
+  function addPopularBrands(){
+    if(document.getElementById('brands')) return;
+    const footer=document.querySelector('footer');
+    if(!footer) return;
+
+    const brands=[
+      ['Maruti Suzuki','suzuki'],['Hyundai','hyundai'],['Tata','tata'],
+      ['Mahindra','mahindra'],['Toyota','toyota'],['Kia','kia'],
+      ['Honda','honda'],['MG','mg'],['Skoda','skoda'],
+      ['Volkswagen','volkswagen'],['Renault','renault'],['Nissan','nissan'],
+      ['Citroën','citroen'],['Jeep','jeep'],['BMW','bmw'],
+      ['Mercedes-Benz','mercedes'],['Audi','audi'],['Volvo','volvo'],
+      ['Jaguar','jaguar'],['Land Rover','landrover'],['Porsche','porsche']
+    ];
+
+    const makeCards=(duplicate)=>brands.map(([name,logo])=>
+      '<a class="brand-card" href="/#booking" data-make="'+name+'"'+(duplicate?' tabindex="-1"':'')+'>'+
+      '<img src="/assets/brands/'+logo+'.svg" alt="" height="40" loading="lazy">'+
+      '<span>'+name+'</span></a>'
+    ).join('');
+
+    const section=document.createElement('section');
+    section.className='brands-section';
+    section.id='brands';
+    section.setAttribute('aria-labelledby','brands-title');
+    section.innerHTML=
+      '<div class="container brands-head">'+
+        '<span class="brands-pill">ALL MAKES &amp; MODELS</span>'+
+        '<h2 id="brands-title">Popular Brands We Inspect</h2>'+
+        '<p>Tap your car\'s brand to book its inspection.</p>'+
+      '</div>'+
+      '<div class="brands-marquee"><div class="brands-track">'+
+        '<div class="brands-row">'+makeCards(false)+'</div>'+
+        '<div class="brands-row" aria-hidden="true">'+makeCards(true)+'</div>'+
+      '</div></div>';
+
+    footer.parentNode.insertBefore(section,footer);
+  }
+
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',addPopularBrands,{once:true});
+  else addPopularBrands();
+})();
