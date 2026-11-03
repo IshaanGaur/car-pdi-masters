@@ -486,6 +486,24 @@
 
 })();
 
+/* Use the current Gurugram locality in the header WhatsApp prefill. */
+(function(){
+  function init(){
+    const match = window.location.pathname.match(/^\/locations\/gurugram\/([^/]+)\.html$/i);
+    if(!match) return;
+    const slug = match[1].toLowerCase();
+    const locality = slug.startsWith('dlf-phase-')
+      ? slug.replace('dlf-phase-', 'DLF Phase ')
+      : slug.split('-').map(part=>part.charAt(0).toUpperCase()+part.slice(1)).join(' ');
+    const link = document.querySelector('.nav-actions a.whatsapp-link');
+    if(!link) return;
+    const message = `Hello Car PDI Masters, I want to book a car inspection in ${locality}, Gurugram.`;
+    link.href = 'https://wa.me/919971116411?text=' + encodeURIComponent(message);
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init,{once:true});
+  else init();
+})();
+
 /* Floating WhatsApp button (bottom right) and back-to-top arrow (bottom left), added 2026-10-23 */
 (function(){
   function init(){
