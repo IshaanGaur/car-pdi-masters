@@ -4949,3 +4949,101 @@ body{
     font-size:12px;
   }
 }
+
+
+/* =========================================================
+   LOCATION PAGES — MOBILE NAV + CTA CLEANUP (2026-11-04)
+   Keep the mobile header to logo + menu; prevent CTA collisions.
+   ========================================================= */
+@media (max-width:900px){
+  .location-page .navin{
+    display:flex;
+    min-height:68px;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+    padding-top:8px;
+    padding-bottom:8px;
+  }
+
+  .location-page .brand{
+    min-width:0;
+    flex:0 1 auto;
+  }
+
+  .location-page .brand img{
+    display:block;
+    width:clamp(128px,42vw,155px);
+    max-width:100%;
+    height:auto;
+  }
+
+  .location-page .nav-actions{
+    display:none !important;
+  }
+
+  .location-page .menu-toggle{
+    display:flex;
+    flex:0 0 44px;
+    align-items:center;
+    justify-content:center;
+    margin-left:auto;
+  }
+
+  .location-page .links{
+    top:68px;
+  }
+
+  .location-page .float-whatsapp{
+    display:none !important;
+  }
+
+  .location-page .contact-strip-in{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:6px 14px;
+    padding:8px 0;
+    text-align:center;
+  }
+
+  .location-page .loc-hero-copy .actions,
+  .location-page .hero .actions,
+  .location-page .final-cta .actions{
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:12px;
+    width:100%;
+  }
+
+  .location-page .loc-hero-copy .actions > .btn,
+  .location-page .hero .actions > .btn,
+  .location-page .final-cta .actions > .btn{
+    width:100%;
+    min-height:54px;
+    white-space:normal;
+    text-align:center;
+  }
+}
+
+@media (max-width:480px){
+  .location-page .hero{
+    padding-top:42px;
+    padding-bottom:42px;
+  }
+
+  .location-page .loc-hero-copy h1{
+    font-size:clamp(34px,9vw,46px);
+    line-height:1.08;
+    overflow-wrap:anywhere;
+  }
+
+  .location-page .hero-lead{
+    font-size:17px;
+    line-height:1.55;
+  }
+
+  .location-page .contact-strip-in{
+    font-size:11px;
+  }
+}
