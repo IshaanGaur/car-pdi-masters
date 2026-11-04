@@ -5047,3 +5047,48 @@ body{
     font-size:11px;
   }
 }
+
+
+/* LOCATION MOBILE LOGO FIX — keep the shared brand mark compact */
+@media (max-width:900px){
+  body.location-page header.nav .navin > a.brand{
+    display:flex !important;
+    flex:0 1 auto !important;
+    min-width:0 !important;
+    max-width:calc(100% - 60px) !important;
+    align-items:center !important;
+    gap:10px !important;
+    overflow:hidden !important;
+  }
+
+  body.location-page header.nav .navin > a.brand img{
+    display:block !important;
+    flex:0 0 64px !important;
+    width:64px !important;
+    min-width:64px !important;
+    max-width:64px !important;
+    height:64px !important;
+    max-height:64px !important;
+    object-fit:contain !important;
+    padding:3px !important;
+    border-radius:10px !important;
+  }
+
+  body.location-page header.nav .navin > a.brand::after{
+    display:block !important;
+    flex:0 1 auto !important;
+    min-width:0 !important;
+    overflow:hidden !important;
+    font-size:16px !important;
+    line-height:1.15 !important;
+    white-space:nowrap !important;
+    text-overflow:ellipsis !important;
+  }
+
+  body.location-page header.nav .navin > .menu-toggle{
+    flex:0 0 44px !important;
+    width:44px !important;
+    height:44px !important;
+    margin-left:auto !important;
+  }
+}
