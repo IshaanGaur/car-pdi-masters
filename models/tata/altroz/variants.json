@@ -1,0 +1,13 @@
+{
+  "brand": "Tata",
+  "model": "Altroz",
+  "status": "research_pending",
+  "checkedAt": null,
+  "sourceUrls": [],
+  "variants": [],
+  "notes": [
+    "Populate only after checking current official Tata Motors variant/feature information.",
+    "Record model year/generation because variant names and equipment can change.",
+    "Do not infer feature availability across all variants."
+  ]
+}
