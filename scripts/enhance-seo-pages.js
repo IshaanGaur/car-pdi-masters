@@ -77,6 +77,10 @@ function updateJsonLd(html, ctx) {
       let changed = false;
       for (const node of nodes) {
         if (node['@type'] === 'FAQPage' && Array.isArray(node.mainEntity)) node.mainEntity = node.mainEntity.map(q => {
+          if (q.acceptedAnswer && typeof q.acceptedAnswer.text === 'string' && /Razorpay|booking amount|balance payment|booking form/i.test(q.acceptedAnswer.text)) {
+            changed = true;
+            return {...q,acceptedAnswer:{'@type':'Answer',text:'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through CarParakh.'}};
+          }
           if (q.name === 'How do I book and pay?') {
             changed = true;
             return {...q,acceptedAnswer:{'@type':'Answer',text:'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through CarParakh.'}};
@@ -178,6 +182,9 @@ for (const file of htmlFiles) {
     const entity = {'@context':'https://schema.org','@type':'Service',name:'Car PDI and Inspection in ' + ctx.place,serviceType:['New Car Pre-Delivery Inspection','Used Car Inspection','Pre-Purchase Car Inspection'],provider:{'@type':'Organization',name:'Car PDI Masters',url:SITE+'/'},areaServed:{'@type':'Place',name:ctx.place},url:canonical};
     html = html.replace(/<\/head>/i,'<script type="application/ld+json">' + JSON.stringify(entity) + '</script></head>');
   }
+  if (/<a\b[^>]*href=["']\/payment\.html["'][^>]*>(?:Payment|Payment Options|Payment Details|Pay[^<]*)<\/a>/i.test(html)) throw new Error(file + ' still exposes a customer-facing payment CTA');
+  if (/<a\b[^>]*href=["']\/#booking["'][^>]*>(?:Book Online|Book Inspection(?: in [^<]+)?|Start Booking)<\/a>/i.test(html)) throw new Error(file + ' still exposes a retired direct-booking CTA');
+  if (/Pay only the booking amount online now|continue to the ₹299 secure Razorpay payment page|Fill in the booking form[\s\S]{0,240}?Razorpay/i.test(html)) throw new Error(file + ' still contains retired customer-facing payment instructions');
   if (ctx.kind === 'home' && /What happens after I pay the booking amount|When is the balance payment made|booking form displays locations/i.test(html)) throw new Error('Homepage still contains retired booking instructions');
   if (/Choose the new car PDI service and submit your booking details|Pay the booking amount and wait for review and assignment|Complete the pending balance before the inspection starts/i.test(html)) throw new Error(file + ' still contains retired direct-booking instructions');
   if (html !== original) { write(file, html); changed++; }
