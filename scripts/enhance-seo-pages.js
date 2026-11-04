@@ -144,6 +144,10 @@ for (const file of htmlFiles) {
   html = html.replace(/Fill in the booking form with the car details, inspection address, date and time, then The team confirms availability and shares the next steps for booking through CarParakh\. The remaining balance is paid before the inspection starts\./gi, 'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through CarParakh.');
   html = html.replace(/The remaining balance is paid before the inspection starts\./gi, '');
   html = html.replace(/<h3>Pay booking amount<\/h3>/gi, '<h3>Confirm availability and booking</h3>');
+  html = html.replaceAll('Pay booking amount', 'Confirm availability and booking');
+  html = html.replace(/Pay the booking amount securely through Razorpay\.?/gi, 'The team confirms availability and shares the next steps for booking through CarParakh.');
+  html = html.replace(/Fill in the booking form[\s\S]{0,420}?Razorpay\.[\s\S]{0,180}?inspection starts\./gi,
+    'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through CarParakh.');
   html = html.replace(/Enter the Delhi inspection address and preferred date\/time\./gi, 'Share the vehicle location and preferred timing by WhatsApp or phone.');
   html = html.replace(/Your booking is received first, reviewed by the team, assigned and then confirmed before the inspection is scheduled as final\./gi,
     'Start with a WhatsApp or phone enquiry. The team reviews your vehicle and location details, confirms availability and shares the next steps to book through CarParakh.');
