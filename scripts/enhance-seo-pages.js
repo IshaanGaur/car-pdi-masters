@@ -113,6 +113,25 @@ for (const file of htmlFiles) {
     if (/^(book(?:\s+(?:online|inspection|used car inspection))?|continue to booking)$/i.test(plain)) return open + 'Enquire on WhatsApp' + close;
     return m;
   });
+  // Remove stale booking-deposit amounts and old booking-first descriptions from all public pages.
+  const enquiryWaUrl = 'https://wa.me/919971116411?text=Hello%20Car%20PDI%20Masters%2C%20I%20want%20to%20enquire%20about%20a%20car%20inspection.';
+  html = html.replace(/Booking\s*:\s*₹299\s*\/\s*₹499/gi, 'Booking is completed through CarParakh after availability confirmation');
+  html = html.replace(/Booking\s*₹299\s*online\s*now\s*·\s*Balance\s*₹1,200\s*before\s*inspection/gi, 'Enquire on WhatsApp or call · Booking through CarParakh after availability confirmation');
+  html = html.replace(/Booking\s*₹499\s*online\s*now\s*·\s*Balance\s*₹2,000\s*before\s*inspection/gi, 'Enquire on WhatsApp or call · Booking through CarParakh after availability confirmation');
+  html = html.replace(/Your booking is received first, reviewed by the team, assigned and then confirmed before the inspection is scheduled as final\./gi,
+    'Start with a WhatsApp or phone enquiry. The team reviews your vehicle and location details, confirms availability and then shares the next steps to book through CarParakh.');
+  html = html.replace(/Our website journey is built around choosing the right inspection, selecting an active service location, booking, review and assignment, completing payment and receiving inspection information\./gi,
+    'Our enquiry-first journey helps you choose an inspection, share your vehicle location and preferred timing, confirm availability and complete booking through CarParakh.');
+  html = html.replace(/<a\b([^>]*?)href=["']\/#booking["']([^>]*)>([\s\S]*?)<\/a>/gi, (m, before, after, label) => {
+    const plain = label.replace(/<[^>]*>/g, '').trim();
+    if (/^Book\b/i.test(plain)) return '<a' + before + 'href="' + enquiryWaUrl + '"' + after + '>Enquire on WhatsApp</a>';
+    return m;
+  });
+  html = html.replace(/<h3>Pay booking amount<\/h3>/gi, '<h3>Complete booking through CarParakh</h3>');
+  html = html.replace(/<h3>Provide vehicle location<\/h3>/gi, '<h3>Share vehicle location and preferred timing</h3>');
+  html = html.replace(/Enter the Delhi inspection address and preferred date\/time\./gi, 'Share your vehicle location and preferred timing by WhatsApp or phone.');
+  html = html.replace(/Choose the vehicle's actual inspection address during booking, subject to operational availability\./gi, 'Share the vehicle’s exact inspection address in your enquiry; appointment availability and access permission are confirmed before booking.');
+  html = html.replace(/Enter the booking form[\s\S]{0,140}?preferred date\/time\./gi, 'Share your vehicle details, location and preferred timing by WhatsApp or phone.');
   // Current customer journey is enquiry-first; keep dormant payment/booking code untouched.
   const enquiryText = 'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through CarParakh.';
   const wa = 'https://wa.me/919971116411?text=Hello%20Car%20PDI%20Masters%2C%20I%20want%20to%20enquire%20about%20a%20car%20inspection.';
