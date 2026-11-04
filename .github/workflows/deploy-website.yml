@@ -31,6 +31,9 @@ jobs:
       - name: Install Firebase CLI
         run: npm install --global firebase-tools
 
+      - name: Install Cloud Functions dependencies
+        run: npm ci --prefix functions
+
       - name: Deploy website enquiry Cloud Function
         run: firebase deploy --config firebase.website.json --only functions:payments:cpmSubmitWebsiteEnquiryV1 --project car-pdi-masters --non-interactive
 
