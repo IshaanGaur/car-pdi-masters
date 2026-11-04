@@ -313,3 +313,67 @@ exports.cpmRazorpayPaymentWebhookV1 = onRequest({ region: REGION, secrets: webho
     return res.status(500).send('Retry later');
   }
 });
+
+exports.cpmSubmitWebsiteEnquiryV1 = onRequest({
+  region: REGION,
+  cors: ['https://www.carmasters.co.in', 'https://carmasters.co.in'],
+  maxInstances: 5
+}, async (req, res) => {
+  if (req.method !== 'POST') return res.status(405).json({ success: false, message: 'Method not allowed.' });
+  const body = req.body && typeof req.body === 'object' ? req.body : {};
+  const clean = (value, max) => String(value || '').replace(/[<>]/g, '').trim().slice(0, max);
+  if (clean(body.website, 120)) return res.status(200).json({ success: true });
+  const name = clean(body.name, 80);
+  const phoneRaw = String(body.phone || '').replace(/\D/g, '');
+  const phone = phoneRaw.startsWith('91') && phoneRaw.length === 12 ? phoneRaw.slice(2) : phoneRaw;
+  const service = clean(body.service, 80);
+  const vehicle = clean(body.vehicle, 100);
+  const location = clean(body.location, 120);
+  const contactMethod = body.contactMethod === 'Call' ? 'Call' : 'WhatsApp';
+  const notes = clean(body.notes, 1000);
+  const sourcePath = clean(body.sourcePath, 240);
+  if (name.length < 2 || !/^[6-9]\d{9}$/.test(phone) || !service || location.length < 2 || body.consent !== true) {
+    return res.status(400).json({ success: false, message: 'Please check your name, 10-digit mobile number, service, location and contact consent.' });
+  }
+  const allowedServices = ['New Car PDI','New Car Inspection','Used Car Inspection','Pre-Purchase Car Inspection','EV Car PDI','Luxury Car PDI','Other / Not Sure'];
+  if (!allowedServices.includes(service)) return res.status(400).json({ success: false, message: 'Please choose a valid inspection service.' });
+  try {
+    const ip = String(req.headers['x-forwarded-for'] || req.ip || 'unknown').split(',')[0].trim();
+    const rateKey = crypto.createHash('sha256').update(ip + '|cpm-website-enquiry-v1').digest('hex');
+    const rateRef = db.doc('websiteEnquiryRateLimits/' + rateKey);
+    const now = Date.now();
+    await db.runTransaction(async tx => {
+      const snap = await tx.get(rateRef);
+      const record = snap.exists ? snap.data() : {};
+      const withinWindow = Number(record.windowStart || 0) > now - 10 * 60 * 1000;
+      const count = withinWindow ? Number(record.count || 0) : 0;
+      if (count >= 5) throw new Error('RATE_LIMITED');
+      tx.set(rateRef, { windowStart: withinWindow ? record.windowStart : now, count: count + 1, updatedAt: FieldValue.serverTimestamp() });
+    });
+    const ref = db.collection('bookings').doc();
+    const enquiryCode = 'CPM-ENQ-' + ref.id.slice(-8).toUpperCase();
+    await ref.set({
+      bookingId: enquiryCode,
+      bookingStatus: 'ENQUIRY_NEW',
+      bookingPaymentStatus: 'NOT_APPLICABLE',
+      balancePaymentStatus: 'NOT_APPLICABLE',
+      source: 'WEBSITE_ENQUIRY',
+      customerName: name,
+      customerPhone: phone,
+      inspectionType: service,
+      vehicleMakeModel: vehicle,
+      inspectionLocation: location,
+      preferredContactMethod: contactMethod,
+      additionalInformation: notes,
+      sourcePath,
+      consentToContact: true,
+      createdAt: FieldValue.serverTimestamp(),
+      updatedAt: FieldValue.serverTimestamp()
+    });
+    return res.status(200).json({ success: true, enquiryId: enquiryCode });
+  } catch (error) {
+    if (error.message === 'RATE_LIMITED') return res.status(429).json({ success: false, message: 'Too many attempts. Please try again in a few minutes or call us.' });
+    console.error('Website enquiry could not be saved:', error.message);
+    return res.status(500).json({ success: false, message: 'We could not save your enquiry right now. Please call 99711 16411 or WhatsApp us.' });
+  }
+});

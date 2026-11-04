@@ -247,47 +247,66 @@
   loadPricing();
   loadLocations();
   window.CPM_MONEY=money;
-  window.CPM_SUBMIT_BOOKING=async function(e){
-    e.preventDefault();
-    const f=e.target, get=id=>(document.getElementById(id)?.value||'').trim(), msg=document.getElementById('bookingMsg'), btn=f.querySelector('button[type="submit"]');
-    const make=get('carMake'), model=get('carModel'), otherMake=get('otherMake'), otherModel=get('otherModel'), variantSelect=get('variant'), otherVariant=get('otherVariant');
-    const data={name:get('name'),mobile:get('mobile'),type:get('type'),car:make==='Other'?(otherMake||'Other'):make+' '+model,vehicleMake:make,vehicleModel:model,otherMake,otherModel,variant:variantSelect==='Other'?(otherVariant||''):variantSelect,dealer:'',address:get('address'),location:get('location'),date:get('date'),time:get('time'),notes:get('notes'),registrationNumber:get('registrationNumber')};
-    if(!data.location){if(msg)msg.textContent='Please select an active inspection location.';return false};
-    if(!data.vehicleMake||data.vehicleMake==='Other'&&!data.otherMake){if(msg)msg.textContent='Please enter the car make.';return false}
-    if(data.vehicleMake!=='Other'&&!data.vehicleModel){if(msg)msg.textContent='Please select the car model.';return false}
-    if(['Used Car PDI','Used Car Inspection','Pre-Purchase Car Inspection'].includes(data.type)&&!data.registrationNumber){/* registration remains optional */}
-    if(btn){btn.disabled=true;btn.textContent='Checking availability…'}
+  function enquiryFormMarkup(){
+    return `<section class="section booking-section" id="booking" data-enquiry-section>
+  <div class="container booking-box">
+    <div class="booking-copy">
+      <div class="eyebrow">REQUEST A CALLBACK</div>
+      <h2>Tell us what you need inspected.</h2>
+      <p>Leave your details and our team will contact you to discuss the inspection, confirm location access and check appointment availability. Submitting this form does not create a confirmed booking or require an online payment.</p>
+      <p class="booking-note">Prefer to speak directly? <a href="tel:+919971116411">Call 99711 16411</a> or <a href="https://wa.me/919971116411" target="_blank" rel="noopener">message us on WhatsApp</a>.</p>
+    </div>
+    <form class="booking-form enquiry-form" data-enquiry-form onsubmit="return CPM_SUBMIT_ENQUIRY(event)">
+      <label><span>Your Name *</span><input name="name" autocomplete="name" maxlength="80" placeholder="Enter your name" required></label>
+      <label><span>Mobile Number *</span><input name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="16" placeholder="10-digit mobile number" required></label>
+      <label><span>Inspection Service *</span><select name="service" required><option value="">Choose a service</option><option>New Car PDI</option><option>New Car Inspection</option><option>Used Car Inspection</option><option>Pre-Purchase Car Inspection</option><option>EV Car PDI</option><option>Luxury Car PDI</option><option>Other / Not Sure</option></select></label>
+      <label><span>Car Make &amp; Model (Optional)</span><input name="vehicle" maxlength="100" placeholder="e.g. Hyundai Creta"></label>
+      <label><span>City / Locality *</span><input name="location" maxlength="120" autocomplete="address-level2" placeholder="e.g. Saket, Delhi" required></label>
+      <label><span>Preferred Contact Method</span><select name="contactMethod"><option value="WhatsApp">WhatsApp</option><option value="Call">Phone call</option></select></label>
+      <label class="full"><span>Additional Details (Optional)</span><textarea name="notes" maxlength="1000" placeholder="Tell us about the car or inspection requirement"></textarea></label>
+      <label class="enquiry-consent full"><input type="checkbox" name="consent" required><span>I agree that Car PDI Masters may contact me about this enquiry. *</span></label>
+      <label class="enquiry-honeypot" aria-hidden="true" tabindex="-1">Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label>
+      <input type="hidden" name="sourcePath" value="/">
+      <button class="btn btn-primary btn-large full" type="submit">Request a Callback</button>
+      <p class="form-msg full" data-enquiry-message role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>`;
+  }
+  function ensureSitewideEnquiryForm(){
+    if(document.getElementById('booking')) return;
+    const footer=document.querySelector('footer');
+    if(!footer) return;
+    const wrap=document.createElement('div');
+    wrap.innerHTML=enquiryFormMarkup();
+    const formSection=wrap.firstElementChild;
+    const source=formSection.querySelector('[name="sourcePath"]');
+    if(source) source.value=window.location.pathname;
+    footer.parentNode.insertBefore(formSection,footer);
+  }
+  ensureSitewideEnquiryForm();
+  window.CPM_SUBMIT_ENQUIRY=async function(event){
+    event.preventDefault();
+    const form=event.currentTarget;
+    const button=form.querySelector('button[type="submit"]');
+    const message=form.querySelector('[data-enquiry-message]');
+    const value=name=>(form.elements.namedItem(name)?.value||'').trim();
+    const payload={name:value('name'),phone:value('phone'),service:value('service'),vehicle:value('vehicle'),location:value('location'),contactMethod:value('contactMethod')||'WhatsApp',notes:value('notes'),consent:!!form.elements.namedItem('consent')?.checked,website:value('website'),sourcePath:value('sourcePath')||window.location.pathname};
+    if(message) message.textContent='Sending your enquiry…';
+    if(button){button.disabled=true;button.textContent='Sending…'}
     try{
-      const {db:firestoreDb,fs}=await db();
-      const locationSlug=document.getElementById('location')?.selectedOptions?.[0]?.dataset.slug||data.location.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-      const locSnap=await fs.getDoc(fs.doc(firestoreDb,'locations',locationSlug));
-      if(!locSnap.exists()||locSnap.data().status!=='ACTIVE'||locSnap.data().enabledForOrders!==true)throw new Error('This location is currently paused for new orders. Please choose another active Delhi location.');
-      const priceSnap=await fs.getDoc(fs.doc(firestoreDb,'pricing','current'));
-      const p=priceSnap.exists()?priceSnap.data():fallback;
-      const configuredTotal=p.finalAmount??p.totalServicePrice??p.servicePrice;
-      const pricingReady=configuredTotal!=null && Number.isFinite(Number(configuredTotal));
-      if(!pricingReady) throw new Error('Pricing is not configured for new bookings. Please contact Car PDI Masters.');
-      const servicePrice=Number(p.servicePrice??p.totalServicePrice??configuredTotal);
-      const serviceCharges=Number(p.serviceCharges||0);
-      const taxApplicable=String(p.taxApplicable||'NO').toUpperCase()==='YES';
-      const taxAmount=taxApplicable?Number(p.taxAmount||0):0;
-      const finalAmount=Number(p.finalAmount??(servicePrice+serviceCharges+taxAmount));
-      let booking=Number(p.bookingAmount??0);
-      const plan=PLANS[selectedPlan]?selectedPlan:'standard-pdi';
-      let balance=finalAmount-booking, total=finalAmount;
-      if(plan==='comprehensive-360-pdi'){
-        total=Number(p.comprehensiveFinalAmount); balance=Number(p.comprehensiveBalanceAmount); booking=Number(p.comprehensiveBookingAmount??p.bookingAmount);
-        if(p.comprehensiveFinalAmount==null||!Number.isFinite(total)||!Number.isFinite(balance)||!Number.isFinite(booking)) throw new Error('The Comprehensive 360° PDI plan is not open for booking right now. Please choose Standard PDI or call us.');
-      }
-      const packageName=PLANS[plan].name;
-      const code=`CPM-${data.date.replaceAll('-','')}-${Math.random().toString(36).slice(2,7).toUpperCase()}`;
-      const ref=await fs.addDoc(fs.collection(firestoreDb,'bookings'),{customerName:data.name,customerPhone:data.mobile,inspectionType:data.type,packageId:plan,packageName,vehicleMakeModel:data.car,vehicleMake:data.vehicleMake,vehicleModel:data.vehicleModel,otherMake:data.otherMake,otherModel:data.otherModel,variant:data.variant,dealerSeller:data.dealer,registrationNumber:data.registrationNumber,inspectionLocation:data.location,locationSlug,inspectionDate:data.date,timeSlot:data.time,inspectionAddress:data.address,additionalInformation:data.notes||'',bookingId:code,bookingStatus:'PAYMENT_PENDING',bookingPaymentStatus:'PENDING',balancePaymentStatus:'PENDING',totalServicePrice:total,servicePrice:plan==='comprehensive-360-pdi'?Number(p.comprehensivePrice??total):servicePrice,serviceCharges:serviceCharges,taxApplicable:taxApplicable,taxAmount:plan==='comprehensive-360-pdi'?Number(p.comprehensiveTaxAmount||0):taxAmount,finalAmount:total,bookingAmount:booking,balanceAmount:balance,paymentMode:p.paymentMode||'LIVE',currency:'INR',source:'WEBSITE',createdAt:fs.serverTimestamp(),updatedAt:fs.serverTimestamp()});
-      try{localStorage.setItem('cpm_booking',JSON.stringify({...data,packageId:plan,packageName,bookingId:code,firestoreId:ref.id,totalServicePrice:total,servicePrice:servicePrice,serviceCharges:serviceCharges,taxApplicable:taxApplicable,taxAmount:taxAmount,finalAmount:total,bookingAmount:booking,balanceAmount:balance}))}catch(_){ }
-      if(msg)msg.textContent=`Booking ${code} created. Opening payment page…`;
-      // Only booking references go in the address; customer details stay in localStorage (cpm_booking).
-      const params=new URLSearchParams({bookingId:code,bookingDocId:ref.id,bookingAmount:String(booking)});
-      setTimeout(()=>location.href='/payment.html?'+params.toString(),250);
-    }catch(err){if(msg)msg.textContent=err.message||'Booking could not be created. Please call or WhatsApp us.';if(btn){btn.disabled=false;btn.textContent=`Continue to \u20B9${Number(window.CPM_PRICING?.bookingAmount||0).toLocaleString('en-IN')} Payment`}}
+      const response=await fetch('/api/enquiry',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+      const result=await response.json().catch(()=>({}));
+      if(!response.ok||!result.success) throw new Error(result.message||'We could not send your enquiry. Please call or WhatsApp us.');
+      if(message) message.textContent='Thank you. Your enquiry has been received. Our team will contact you to confirm details and availability.';
+      form.reset();
+      const source=form.elements.namedItem('sourcePath'); if(source) source.value=window.location.pathname;
+      if(typeof window.gtag==='function') window.gtag('event','generate_lead',{event_category:'lead',lead_source:'website_form',lead_service:payload.service,lead_location:payload.location,lead_page:payload.sourcePath});
+    }catch(error){
+      if(message) message.textContent=error.message||'Enquiry could not be sent. Please call 99711 16411 or WhatsApp us.';
+    }finally{
+      if(button){button.disabled=false;button.textContent='Request a Callback'}
+    }
     return false;
   };
   // --- CAR PDI MASTERS CMS PUBLIC READ BRIDGE (v1) ---
@@ -675,19 +694,15 @@
     const brand=event.target.closest&&event.target.closest('.brand-card[data-make]');
     if(brand){
       event.preventDefault();
-      const make=brand.dataset.make||'';
-      const place=localityFromPath();
-      openWhatsApp('Hello Car PDI Masters, I want to enquire about '+serviceFromPath()+' for my '+make+' car'+(place?' in '+place:'')+'. My car model and variant are: _____. Please guide me with the inspection process and booking through CarParakh.','brand',make);
+      const vehicle=document.querySelector('[data-enquiry-form] [name="vehicle"]');
+      if(vehicle) vehicle.value=brand.dataset.make||'';
+      document.getElementById('booking')?.scrollIntoView({behavior:'smooth',block:'start'});
       return;
     }
     const link=event.target.closest&&event.target.closest('a[href]');
-    if(!link) return;
+    if(!link||link.closest('form')) return;
     const href=(link.getAttribute('href')||'').toLowerCase();
-    if(!/(^|\/)#booking$/.test(href)) return;
-    if(link.closest('form')) return;
-    event.preventDefault();
-    const place=localityFromPath();
-    openWhatsApp('Hello Car PDI Masters, I want to enquire about '+serviceFromPath()+(place?' in '+place:'')+'. My car make, model and variant are: _____. Please share the inspection details and help me proceed with booking through CarParakh.','primary_cta','');
+    if(href==='#booking'&&document.getElementById('booking')){event.preventDefault();document.getElementById('booking').scrollIntoView({behavior:'smooth',block:'start'})}
   });
   document.addEventListener('click',function(event){
     const link=event.target.closest&&event.target.closest('a[href^="https://wa.me/"]');

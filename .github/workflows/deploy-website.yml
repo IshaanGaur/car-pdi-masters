@@ -31,5 +31,5 @@ jobs:
       - name: Install Firebase CLI
         run: npm install --global firebase-tools
 
-      - name: Deploy website hosting only
-        run: firebase deploy --config firebase.website.json --only hosting:website --project car-pdi-masters --non-interactive
+      - name: Deploy website enquiry function and Hosting
+        run: firebase deploy --config firebase.website.json --only functions:cpmSubmitWebsiteEnquiryV1,hosting:website --project car-pdi-masters --non-interactive

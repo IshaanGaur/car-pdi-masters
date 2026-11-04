@@ -104,6 +104,11 @@ for (const file of walkHtml(root)) {
   if (badEnquiry.length) problems.push(path.relative(root, file) + ': Enquire on WhatsApp CTA does not open WhatsApp');
 }
 
+if (!read('index.html').includes('data-enquiry-form')) problems.push('index.html: callback enquiry form is missing');
+if (!read('site.js').includes("fetch('/api/enquiry'")) problems.push('site.js: enquiry form is not connected to the enquiry endpoint');
+if (!read('firebase.website.json').includes('cpmSubmitWebsiteEnquiryV1')) problems.push('firebase.website.json: website enquiry function rewrite is missing');
+if (!read('functions/index.js').includes('exports.cpmSubmitWebsiteEnquiryV1')) problems.push('functions/index.js: website enquiry endpoint is missing');
+
 if (problems.length) {
   console.error('\nWEBSITE DEPLOY STOPPED - this folder has an old or incomplete website:\n  - ' + problems.join('\n  - '));
   console.error('\nRun `git pull` to get the latest version from GitHub, then deploy again. See DEPLOY-WEBSITE.md.\n');

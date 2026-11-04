@@ -5092,3 +5092,11 @@ body{
     margin-left:auto !important;
   }
 }
+
+/* Website enquiry form: callback-first, no payment required */
+.enquiry-form .enquiry-consent{display:flex;flex-direction:row;align-items:flex-start;gap:10px}
+.enquiry-form .enquiry-consent input{width:18px;min-width:18px;margin:2px 0 0;accent-color:#1596e8}
+.enquiry-form .enquiry-consent span{font-size:12px;line-height:1.5}
+.enquiry-honeypot{position:absolute!important;left:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}
+.booking-note a{color:#8fd5ff;text-decoration:underline}
+@media(max-width:640px){.enquiry-form{grid-template-columns:1fr}.enquiry-form .full{grid-column:1/-1}}
