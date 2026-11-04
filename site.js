@@ -563,9 +563,17 @@
     link.dataset.locationCallCta='true';
     container.appendChild(link);
   }
+  function removeDuplicateWhatsAppActions(){
+    document.querySelectorAll('.location-page .actions').forEach(container=>{
+      const links=[...container.querySelectorAll('a')].filter(link=>
+        (link.textContent||'').replace(/\\s+/g,' ').trim().toLowerCase()==='enquire on whatsapp'
+      );
+      links.slice(1).forEach(link=>link.remove());
+    });
+  }
   function init(){
     if(!document.body.classList.contains('location-page')) return;
-    addCallLink(document.querySelector('.nav-actions'),false);
+    removeDuplicateWhatsAppActions();
     addCallLink(document.querySelector('.loc-hero-copy .actions, .hero .actions'),true);
     addCallLink(document.querySelector('.final-cta .actions'),true);
   }
