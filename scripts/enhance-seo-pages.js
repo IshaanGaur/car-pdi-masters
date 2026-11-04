@@ -189,7 +189,7 @@ for (const file of htmlFiles) {
       // Brand cards intentionally use #booking as a make-selection link.
       // Preserve their logo/name markup; only convert actual booking CTAs.
       if (/\bclass=["'][^"']*\bbrand-card\b/i.test(beforeHref + afterHref)) return match;
-      return '<a' + beforeHref + 'href="' + wa + '"' + afterHref + '>Enquire on WhatsApp</a>';
+      return '<a' + beforeHref + 'href="#booking"' + afterHref + '>Request a Callback</a>';
     });
   // Keep the legacy form and payment implementation in source for future activation, but hide it from the live customer journey.
   html = html.replace(/<section class=["']section booking-section["'] id=["']booking["']>/i,
