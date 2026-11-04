@@ -132,6 +132,27 @@ for (const file of htmlFiles) {
   html = html.replace(/Enter the Delhi inspection address and preferred date\/time\./gi, 'Share your vehicle location and preferred timing by WhatsApp or phone.');
   html = html.replace(/Choose the vehicle's actual inspection address during booking, subject to operational availability\./gi, 'Share the vehicle’s exact inspection address in your enquiry; appointment availability and access permission are confirmed before booking.');
   html = html.replace(/Enter the booking form[\s\S]{0,140}?preferred date\/time\./gi, 'Share your vehicle details, location and preferred timing by WhatsApp or phone.');
+  // Sweep remaining customer-facing deposit labels, booking-first steps and malformed legacy FAQ copy.
+  html = html.replace(/<p class=["']plan-pay["']>Booking\s*<b[^>]*>₹299<\/b>\s*online now\s*·\s*Balance\s*<b[^>]*>₹1,200<\/b>\s*before inspection<\/p>/gi,
+    '<p class="plan-pay">Full inspection price: <b>₹1,499</b> · Enquire to confirm availability and booking steps</p>');
+  html = html.replace(/<p class=["']plan-pay["']>Booking\s*<b[^>]*>₹499<\/b>\s*online now\s*·\s*Balance\s*<b[^>]*>₹2,000<\/b>\s*before inspection<\/p>/gi,
+    '<p class="plan-pay">Full inspection price: <b>₹2,499</b> · Enquire to confirm availability and booking steps</p>');
+  html = html.replace(/Booking\s*₹299\s*online now\s*·\s*Balance\s*₹1,200\s*before inspection/gi,
+    'Full inspection price ₹1,499 · Enquire to confirm availability and booking steps');
+  html = html.replace(/Booking\s*₹499\s*online now\s*·\s*Balance\s*₹2,000\s*before inspection/gi,
+    'Full inspection price ₹2,499 · Enquire to confirm availability and booking steps');
+  html = html.replace(/Fill in the booking form with the car details, inspection address, date and time, then The team confirms availability and shares the next steps for booking through CarParakh\. The remaining balance is paid before the inspection starts\./gi, 'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through CarParakh.');
+  html = html.replace(/The remaining balance is paid before the inspection starts\./gi, '');
+  html = html.replace(/<h3>Pay booking amount<\/h3>/gi, '<h3>Confirm availability and booking</h3>');
+  html = html.replaceAll('Pay booking amount', 'Confirm availability and booking');
+  html = html.replace(/Pay the booking amount securely through Razorpay\.?/gi, 'The team confirms availability and shares the next steps for booking through CarParakh.');
+  html = html.replace(/Fill in the booking form[\s\S]{0,420}?Razorpay\.[\s\S]{0,180}?inspection starts\./gi,
+    'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through CarParakh.');
+  html = html.replace(/Enter the Delhi inspection address and preferred date\/time\./gi, 'Share the vehicle location and preferred timing by WhatsApp or phone.');
+  html = html.replace(/Your booking is received first, reviewed by the team, assigned and then confirmed before the inspection is scheduled as final\./gi,
+    'Start with a WhatsApp or phone enquiry. The team reviews your vehicle and location details, confirms availability and shares the next steps to book through CarParakh.');
+  html = html.replace(/Our website journey is built around choosing the right inspection, selecting an active service location, booking, review and assignment, completing payment and receiving inspection information\./gi,
+    'Our enquiry-first journey helps you choose an inspection, share your vehicle location and preferred timing, confirm availability and complete booking through CarParakh.');
   // Current customer journey is enquiry-first; keep dormant payment/booking code untouched.
   const enquiryText = 'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through CarParakh.';
   const wa = 'https://wa.me/919971116411?text=Hello%20Car%20PDI%20Masters%2C%20I%20want%20to%20enquire%20about%20a%20car%20inspection.';
@@ -203,6 +224,8 @@ for (const file of htmlFiles) {
   }
   if (/<a\b[^>]*href=["']\/payment\.html["'][^>]*>(?:Payment|Payment Options|Payment Details|Pay[^<]*)<\/a>/i.test(html)) throw new Error(file + ' still exposes a customer-facing payment CTA');
   if (/<a\b[^>]*href=["']\/#booking["'][^>]*>(?:Book Online|Book Inspection(?: in [^<]+)?|Start Booking)<\/a>/i.test(html)) throw new Error(file + ' still exposes a retired direct-booking CTA');
+  if (/Booking\s*<b[^>]*>₹(?:299|499)<\/b>\s*online now|Booking\s*₹(?:299|499)\s*online now/i.test(html)) throw new Error(file + ' still displays retired booking-deposit pricing');
+  if (/Your booking is received first, reviewed by the team|Pay booking amount|The remaining balance is paid before the inspection starts/i.test(html)) throw new Error(file + ' still contains booking-first or deposit copy');
   if (/Pay only the booking amount online now|continue to the ₹299 secure Razorpay payment page|Fill in the booking form[\s\S]{0,240}?Razorpay/i.test(html)) throw new Error(file + ' still contains retired customer-facing payment instructions');
   if (ctx.kind === 'home' && /What happens after I pay the booking amount|When is the balance payment made|booking form displays locations/i.test(html)) throw new Error('Homepage still contains retired booking instructions');
   if (/Choose the new car PDI service and submit your booking details|Pay the booking amount and wait for review and assignment|Complete the pending balance before the inspection starts/i.test(html)) throw new Error(file + ' still contains retired direct-booking instructions');
