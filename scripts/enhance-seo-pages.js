@@ -160,6 +160,17 @@ for (const file of htmlFiles) {
   // Current customer journey is enquiry-first; keep dormant payment/booking code untouched.
   const enquiryText = 'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through CarParakh.';
   const wa = 'https://wa.me/919971116411?text=Hello%20Car%20PDI%20Masters%2C%20I%20want%20to%20enquire%20about%20a%20car%20inspection.';
+  // The locality price strip uses HTML entities, so normalize that whole customer-facing block.
+  html = html.replace(/<div class=["']checkpoint-note["'][^>]*>[\s\S]*?<\/div>/gi, (block) => {
+    if (!/Booking[\s\S]*?(?:299|499)/i.test(block)) return block;
+    return '<div class="checkpoint-note"><strong>Standard PDI:</strong> ₹1,499 &nbsp; • &nbsp; <strong>Comprehensive 360° PDI:</strong> ₹2,499 &nbsp; • &nbsp; Booking is completed through CarParakh after availability confirmation &nbsp; • &nbsp; <a href="/#pricing">Compare plans →</a></div>';
+  });
+  // All public CTAs must start an enquiry, not scroll customers into the dormant direct-booking form.
+  html = html.replace(/<a\b([^>]*?)href=["'](?:\/#booking|#booking)["']([^>]*)>([\s\S]*?)<\/a>/gi,
+    '<a$1href="' + wa + '"$2>Enquire on WhatsApp</a>');
+  // Keep the legacy form and payment implementation in source for future activation, but hide it from the live customer journey.
+  html = html.replace(/<section class=["']section booking-section["'] id=["']booking["']>/i,
+    '<section class="section booking-section" id="booking" hidden aria-hidden="true">');
   // Final customer-facing sweep: normalize legacy payment labels, links and process copy.
   html = html.replace(/<div>\s*<span>Booking Amount<\/span>\s*<strong>[\s\S]*?<\/strong>\s*<\/div>/gi,
     '<div><span>Booking Process</span><strong>WhatsApp / Call</strong></div>');
@@ -232,6 +243,7 @@ for (const file of htmlFiles) {
   if (/Your booking is received first, reviewed by the team|Pay booking amount|The remaining balance is paid before the inspection starts/i.test(html)) throw new Error(file + ' still contains booking-first or deposit copy');
   if (/Pay only the booking amount online now|continue to the ₹299 secure Razorpay payment page|Fill in the booking form[\s\S]{0,240}?Razorpay/i.test(html)) throw new Error(file + ' still contains retired customer-facing payment instructions');
   if (ctx.kind === 'home' && /What happens after I pay the booking amount|When is the balance payment made|booking form displays locations/i.test(html)) throw new Error('Homepage still contains retired booking instructions');
+  if (ctx.kind === 'home' && /<section class=["']section booking-section["'] id=["']booking["']>/i.test(html)) throw new Error('Homepage legacy booking form is still publicly visible');
   if (/Choose the new car PDI service and submit your booking details|Pay the booking amount and wait for review and assignment|Complete the pending balance before the inspection starts/i.test(html)) throw new Error(file + ' still contains retired direct-booking instructions');
   if (html !== original) { write(file, html); changed++; }
 }
