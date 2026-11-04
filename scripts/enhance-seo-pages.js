@@ -31,6 +31,17 @@ function contextFor(file) {
   }
   return { kind: 'home' };
 }
+function linkifyCarParakh(html) {
+  const link = '<a href="https://carparakh.com/" target="_blank" rel="noopener">CarParakh</a>';
+  return html.split(/(<script\b[\s\S]*?<\/script>|<style\b[\s\S]*?<\/style>|<a\b[\s\S]*?<\/a>|<[^>]+>)/gi)
+    .map(part => part.startsWith('<') ? part : part.replace(/\bCarParakh\b/g, link))
+    .join('');
+}
+function addBookingDisclosure(html) {
+  if (/id=["']booking-platform-disclosure["']/.test(html)) return html;
+  const note = '<p id="booking-platform-disclosure" class="booking-platform-disclosure">Car PDI Masters carries out the vehicle inspection. After availability is confirmed, booking coordination is handled through <a href="https://carparakh.com/" target="_blank" rel="noopener">CarParakh</a>.</p>';
+  return html.replace(/<\/footer>/i, note + '</footer>');
+}
 function escapeHtml(s) {
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
 }
@@ -87,6 +98,13 @@ function updateJsonLd(html, ctx) {
           }
           return q;
         });
+        if (ctx.kind === 'service' && node['@type'] === 'Service' && ['new-car-pdi','used-car-inspection'].includes(ctx.slug)) {
+          node.offers = [
+            {'@type':'Offer',name:'Standard PDI',price:'1499',priceCurrency:'INR',availability:'https://schema.org/InStock',url:SITE+'/#pricing'},
+            {'@type':'Offer',name:'Comprehensive 360° PDI',price:'2499',priceCurrency:'INR',availability:'https://schema.org/InStock',url:SITE+'/#pricing'}
+          ];
+          changed = true;
+        }
         if (ctx.kind === 'location' && node['@type'] === 'Service' && !node.areaServed) {
           node.areaServed = {'@type':'Place',name:ctx.place}; changed = true;
         }
@@ -195,7 +213,7 @@ for (const file of htmlFiles) {
   html = html.replace(/<a\b([^>]*?)href=["']\/#booking["']([^>]*)>([\s\S]*?)<\/a>/gi, (m, before, after, label) => {
     const plain = label.replace(/<[^>]*>/g, '').replace(/[→»]/g, '').trim();
     if (/^(book(?:\s+(?:online|inspection(?:\s+in\s+[^]+)?|used\s+car\s+inspection))?|start\s+booking|continue\s+to\s+booking)$/i.test(plain)) {
-      return '<a' + before + 'href="' + wa + '"' + after + '>Enquire on WhatsApp</a>';
+      return '<a' + before + 'href="#booking"' + after + '>Request a Callback</a>';
     }
     return m;
   });
@@ -215,10 +233,10 @@ for (const file of htmlFiles) {
   html = html.replaceAll('Pay booking amount securely through Razorpay (UPI, cards or netbanking).', 'The team confirms availability and shares the next steps for booking through CarParakh.');
   html = html.replaceAll('Pay the booking amount securely through Razorpay (UPI, cards or netbanking).', 'The team confirms availability and shares the next steps for booking through CarParakh.');
   html = html.replaceAll('href="/payment.html"', 'href="' + wa + '"');
-  html = html.replaceAll('href="/#booking">Book Online</a>', 'href="' + wa + '">Enquire on WhatsApp</a>');
-  html = html.replaceAll('href="/#booking">Book Inspection</a>', 'href="' + wa + '">Enquire on WhatsApp</a>');
-  html = html.replaceAll('href="/#booking">Book Inspection in Saket</a>', 'href="' + wa + '">Enquire on WhatsApp</a>');
-  html = html.replaceAll('href="/#booking">Start Booking</a>', 'href="' + wa + '">Enquire on WhatsApp</a>');
+  html = html.replaceAll('href="/#booking">Book Online</a>', 'href="#booking">Request a Callback</a>');
+  html = html.replaceAll('href="/#booking">Book Inspection</a>', 'href="#booking">Request a Callback</a>');
+  html = html.replaceAll('href="/#booking">Book Inspection in Saket</a>', 'href="#booking">Request a Callback</a>');
+  html = html.replaceAll('href="/#booking">Start Booking</a>', 'href="#booking">Request a Callback</a>');
   html = html.replaceAll('>Payment Options</a>', '>Enquire on WhatsApp</a>');
   html = html.replaceAll('>Payment Details</a>', '>Enquire on WhatsApp</a>');
   html = html.replaceAll('>Pay ₹299 Booking</a>', '>Enquire on WhatsApp</a>');
@@ -249,8 +267,11 @@ for (const file of htmlFiles) {
   if (/Your booking is received first, reviewed by the team|Pay booking amount|The remaining balance is paid before the inspection starts/i.test(html)) throw new Error(file + ' still contains booking-first or deposit copy');
   if (/Pay only the booking amount online now|continue to the ₹299 secure Razorpay payment page|Fill in the booking form[\s\S]{0,240}?Razorpay/i.test(html)) throw new Error(file + ' still contains retired customer-facing payment instructions');
   if (ctx.kind === 'home' && /What happens after I pay the booking amount|When is the balance payment made|booking form displays locations/i.test(html)) throw new Error('Homepage still contains retired booking instructions');
-  if (ctx.kind === 'home' && /<section class=["']section booking-section["'] id=["']booking["']>/i.test(html)) throw new Error('Homepage legacy booking form is still publicly visible');
+  if (ctx.kind === 'home' && !/<section class=["']section booking-section["'] id=["']booking["'][^>]*data-enquiry-section/i.test(html)) throw new Error('Homepage callback enquiry form is missing');
+  if (ctx.kind === 'home' && /<section class=["']section booking-section["'] id=["']booking["'][^>]*data-enquiry-section[^>]*(?:hidden|aria-hidden=["']true["'])/i.test(html)) throw new Error('Homepage callback enquiry form is hidden');
   if (/Choose the new car PDI service and submit your booking details|Pay the booking amount and wait for review and assignment|Complete the pending balance before the inspection starts/i.test(html)) throw new Error(file + ' still contains retired direct-booking instructions');
+  html = addBookingDisclosure(html);
+  html = linkifyCarParakh(html);
   if (html !== original) { write(file, html); changed++; }
 }
 console.log('SEO/AEO/GEO build enhancement complete: ' + changed + ' HTML pages processed (' + htmlFiles.length + ' eligible pages).');
