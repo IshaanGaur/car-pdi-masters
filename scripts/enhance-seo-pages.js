@@ -141,7 +141,7 @@ for (const file of htmlFiles) {
     'Full inspection price ₹1,499 · Enquire to confirm availability and booking steps');
   html = html.replace(/Booking\s*₹499\s*online now\s*·\s*Balance\s*₹2,000\s*before inspection/gi,
     'Full inspection price ₹2,499 · Enquire to confirm availability and booking steps');
-  html = html.replace(/Fill in the booking form with the car details, inspection address, date and time, then The team confirms availability and shares the next steps for booking through CarParakh\. The remaining balance is paid before the inspection starts\./gi, enquiryText);
+  html = html.replace(/Fill in the booking form with the car details, inspection address, date and time, then The team confirms availability and shares the next steps for booking through CarParakh\. The remaining balance is paid before the inspection starts\./gi, 'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through CarParakh.');
   html = html.replace(/The remaining balance is paid before the inspection starts\./gi, '');
   html = html.replace(/<h3>Pay booking amount<\/h3>/gi, '<h3>Confirm availability and booking</h3>');
   html = html.replace(/Enter the Delhi inspection address and preferred date\/time\./gi, 'Share the vehicle location and preferred timing by WhatsApp or phone.');
