@@ -110,9 +110,9 @@ for (const file of htmlFiles) {
     return m;
   });
   if (ctx.kind === 'home') {
-    html = html.replace('<details><summary>What happens after I pay the booking amount?</summary><p>The booking is received and remains pending while the team reviews and assigns the inspection. Final confirmation follows the assignment step.</p></details>',
+    html = html.replace(/<details>\s*<summary>What happens after I pay the booking amount\?<\/summary>\s*<p>[\s\S]*?<\/p>\s*<\/details>/i,
       '<details><summary>How do I arrange an inspection?</summary><p>Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and guide you through booking via CarParakh.</p></details>');
-    html = html.replace('<details><summary>Can I choose my inspection location?</summary><p>Yes. The booking form displays locations currently active and enabled for new orders in Delhi and Gurugram.</p></details>',
+    html = html.replace(/<details>\s*<summary>Can I choose my inspection location\?<\/summary>\s*<p>[\s\S]*?<\/p>\s*<\/details>/i,
       '<details><summary>Can I choose my inspection location?</summary><p>Share the exact vehicle location, such as a home, office, dealership showroom or stockyard. The team will confirm service coverage, access permission and appointment availability.</p></details>');
     html = html.replace('<details><summary>When is the balance payment made?</summary><p>The remaining balance is intended to be completed before the inspection starts.</p></details>', '');
     if (!/"@type"\s*:\s*"FAQPage"/.test(html)) html = html.replace(/<\/head>/i,
@@ -123,6 +123,8 @@ for (const file of htmlFiles) {
     const entity = {'@context':'https://schema.org','@type':'Service',name:'Car PDI and Inspection in ' + ctx.place,serviceType:['New Car Pre-Delivery Inspection','Used Car Inspection','Pre-Purchase Car Inspection'],provider:{'@type':'Organization',name:'Car PDI Masters',url:SITE+'/'},areaServed:{'@type':'Place',name:ctx.place},url:canonical};
     html = html.replace(/<\/head>/i,'<script type="application/ld+json">' + JSON.stringify(entity) + '</script></head>');
   }
+  if (ctx.kind === 'home' && /What happens after I pay the booking amount|When is the balance payment made|booking form displays locations/i.test(html)) throw new Error('Homepage still contains retired booking instructions');
+  if (/Choose the new car PDI service and submit your booking details|Pay the booking amount and wait for review and assignment|Complete the pending balance before the inspection starts/i.test(html)) throw new Error(file + ' still contains retired direct-booking instructions');
   if (html !== original) { write(file, html); changed++; }
 }
 console.log('SEO/AEO/GEO build enhancement complete: ' + changed + ' HTML pages processed (' + htmlFiles.length + ' eligible pages).');
