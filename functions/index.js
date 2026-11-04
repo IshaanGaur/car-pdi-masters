@@ -338,7 +338,7 @@ exports.cpmSubmitWebsiteEnquiryV1 = onRequest({
   const allowedServices = ['New Car PDI','New Car Inspection','Used Car Inspection','Pre-Purchase Car Inspection','EV Car PDI','Luxury Car PDI','Other / Not Sure'];
   if (!allowedServices.includes(service)) return res.status(400).json({ success: false, message: 'Please choose a valid inspection service.' });
   try {
-    const ip = String(req.headers['x-forwarded-for'] || req.ip || 'unknown').split(',')[0].trim();
+    const ip = String(req.ip || 'unknown');
     const rateKey = crypto.createHash('sha256').update(ip + '|cpm-website-enquiry-v1').digest('hex');
     const rateRef = db.doc('websiteEnquiryRateLimits/' + rateKey);
     const now = Date.now();
