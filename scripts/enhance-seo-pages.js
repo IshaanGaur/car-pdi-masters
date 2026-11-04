@@ -167,7 +167,12 @@ for (const file of htmlFiles) {
   });
   // All public CTAs must start an enquiry, not scroll customers into the dormant direct-booking form.
   html = html.replace(/<a\b([^>]*?)href=["'](?:\/#booking|#booking)["']([^>]*)>([\s\S]*?)<\/a>/gi,
-    '<a$1href="' + wa + '"$2>Enquire on WhatsApp</a>');
+    (match, beforeHref, afterHref, label) => {
+      // Brand cards intentionally use #booking as a make-selection link.
+      // Preserve their logo/name markup; only convert actual booking CTAs.
+      if (/\bclass=["'][^"']*\bbrand-card\b/i.test(beforeHref + afterHref)) return match;
+      return '<a' + beforeHref + 'href="' + wa + '"' + afterHref + '>Enquire on WhatsApp</a>';
+    });
   // Keep the legacy form and payment implementation in source for future activation, but hide it from the live customer journey.
   html = html.replace(/<section class=["']section booking-section["'] id=["']booking["']>/i,
     '<section class="section booking-section" id="booking" hidden aria-hidden="true">');
