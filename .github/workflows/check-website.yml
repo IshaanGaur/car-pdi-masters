@@ -16,4 +16,8 @@ jobs:
         with:
           node-version: 22
       - run: node scripts/enhance-seo-pages.js
+      - name: Check JavaScript syntax
+        run: |
+          node --check site.js
+          node --check functions/index.js
       - run: node scripts/check-website.js
