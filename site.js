@@ -636,7 +636,7 @@
     return 'car inspection';
   }
   function localityFromPath(){
-    const m=window.location.pathname.match(/^\\/locations\\/(delhi|gurugram)\\/([^/]+)\\.html$/i);
+    const m=window.location.pathname.match(/^\/locations\/(delhi|gurugram)\/([^/]+)\.html$/i);
     if(!m) return '';
     const city=m[1].toLowerCase()==='gurugram'?'Gurugram':'Delhi';
     const name=m[2].replace(/^dlf-phase-/i,'DLF Phase ').split('-').map(x=>x.charAt(0).toUpperCase()+x.slice(1)).join(' ');
@@ -656,7 +656,7 @@
     });
   }
   function openWhatsApp(message,medium,make){
-    const referral='\\n\\nReferral: Car PDI Masters | Service: '+serviceFromPath()+
+    const referral='\n\nReferral: Car PDI Masters | Service: '+serviceFromPath()+
       (make?' | Make: '+make:'')+
       (localityFromPath()?' | Area: '+localityFromPath():'')+
       ' | Website page: '+window.location.pathname;
@@ -675,7 +675,7 @@
     const link=event.target.closest&&event.target.closest('a[href]');
     if(!link) return;
     const href=(link.getAttribute('href')||'').toLowerCase();
-    if(!/(^|\\/)#booking$/.test(href)) return;
+    if(!/(^|\/)#booking$/.test(href)) return;
     if(link.closest('form')) return;
     event.preventDefault();
     const place=localityFromPath();
