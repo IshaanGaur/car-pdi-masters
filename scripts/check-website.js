@@ -16,10 +16,13 @@ need('site.js', 'sanitizeCmsNode', 'the CMS sanitising fix');
 need('site.js', 'fillPreferredDates', 'the Preferred Date list filler');
 need('site.js', 'ensureMobileMenu', 'the mobile menu button for every page');
 need('site.js', 'const CMS_PAGE_OVERRIDES=false', 'GitHub-as-master for page content (old CMS copies must not replace pages)');
-need('index.html', 'data-enquiry-form', 'the callback enquiry form');
-need('index.html', 'name="phone"', 'the customer mobile number field');
+need('index.html', 'CPM_SUBMIT_BOOKING', 'the original paid booking form');
+need('index.html', 'id="mobile"', 'the customer mobile number field');
 need('scripts/enhance-seo-pages.js', 'function linkifyCarParakh', 'static CarParakh links');
-need('site.js', "existing.querySelector('[data-enquiry-form]')", 'sitewide enquiry form replacement for legacy hidden booking sections');
+need('site.js', 'ensureSitewidePaidBookingForm', 'sitewide paid booking form for service and locality pages');
+need('site.js', 'window.CPM_SUBMIT_BOOKING=async function(e)', 'the paid booking handler');
+need('site.js', "bookingStatus:'PAYMENT_PENDING'", 'pending-payment Firestore booking creation');
+need('site.js', "location.href='/payment.html?'", 'Razorpay payment page redirect');
 for (const f of ['site.js', 'payment.html', 'config/pricing.json']) {
   if (/9821097137|110317414950|CNRB0008598/.test(read(f))) problems.push(`${f}: still has the old manual UPI/bank details`);
 }
@@ -93,7 +96,7 @@ if (!read('index.html').includes('"@type":"WebSite"')) problems.push('index.html
 if (/SCAN &(amp;)?amp; PAY|SCAN & PAY/.test(read('payment.html'))) problems.push('payment.html: has the old QR-only "SCAN & PAY" page');
 
 
-// Audit regression guards: enquiry CTAs must remain real WhatsApp links,
+// Audit regression guards: WhatsApp enquiry CTAs must remain real links,
 // and the AI discovery file must ship with the website.
 const walkHtml = dir => fs.readdirSync(dir, { withFileTypes: true }).flatMap(entry => {
   const full = path.join(dir, entry.name);
@@ -107,11 +110,8 @@ for (const file of walkHtml(root)) {
   if (badEnquiry.length) problems.push(path.relative(root, file) + ': Enquire on WhatsApp CTA does not open WhatsApp');
 }
 
-if (!read('index.html').includes('data-enquiry-form')) problems.push('index.html: callback enquiry form is missing');
-if (/<section class=["']section booking-section["'] id=["']booking["'][^>]*data-enquiry-section[^>]*(?:hidden|aria-hidden=["']true["'])/i.test(read('index.html'))) problems.push('index.html: callback enquiry form must be visible');
-if (!read('site.js').includes('/api/enquiry')) problems.push('site.js: enquiry form is not connected to the enquiry endpoint');
-if (!read('firebase.website.json').includes('cpmSubmitWebsiteEnquiryV1')) problems.push('firebase.website.json: website enquiry function rewrite is missing');
-if (!read('functions/index.js').includes('exports.cpmSubmitWebsiteEnquiryV1')) problems.push('functions/index.js: website enquiry endpoint is missing');
+if (!/<section class=["']section booking-section["'] id=["']booking["'][^>]*>[\s\S]*?CPM_SUBMIT_BOOKING/i.test(read('index.html'))) problems.push('index.html: original paid booking form is missing');
+if (/<section class=["']section booking-section["'] id=["']booking["'][^>]*(?:hidden|aria-hidden=["']true["'])/i.test(read('index.html'))) problems.push('index.html: paid booking form must be visible');
 
 if (problems.length) {
   console.error('\nWEBSITE DEPLOY STOPPED - this folder has an old or incomplete website:\n  - ' + problems.join('\n  - '));
