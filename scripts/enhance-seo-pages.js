@@ -105,7 +105,7 @@ for (const file of htmlFiles) {
   // Enquiry-first journey: remove stale direct-payment instructions from indexable pages.
   const whatsappHref = 'https://wa.me/919971116411?text=Hello%20Car%20PDI%20Masters%2C%20I%20want%20to%20enquire%20about%20a%20car%20inspection.';
   html = html.replace(/(<div[^>]*class=["'][^"']*price-note[^"']*["'][^>]*>)[^]*?(<[/]div>)/i, '$1<b>How to arrange an inspection:</b> Enquire by WhatsApp or call. The team confirms availability and shares the booking steps through CarParakh. <a href="#pricing">Compare plans →</a>$2');
-  html = html.replace(/<div><span>Booking Amount<[/]span><strong>[^]*?<[/]strong><[/]div>/i, '<div><span>Enquiry First<[/]span><strong>WhatsApp / Call<[/]strong><[/]div>');
+  html = html.replace(/<div><span>Booking Amount<[/]span><strong>[^]*?<[/]strong><[/]div>/i, '<div><span>Enquiry First</span><strong>WhatsApp / Call</strong></div>');
   html = html.replace(/Booking:[ ]*<span data-price=["']standard-booking["'][^]*?<[/]span>[ ]*[/][ ]*<span data-price=["']comprehensive-booking["'][^]*?<[/]span>/gi, '');
   html = html.replace(/Select an inspection type, enter your [^]*?Razorpay payment page[.]/gi, 'Send an enquiry by WhatsApp or call with your car details, exact inspection location and preferred timing. The team will confirm availability and share the next steps for booking through CarParakh.');
   html = html.replace(/Select your inspection type and location, submit the vehicle details, then use the [^]*?Razorpay[^.]*[.]/gi, 'Send an enquiry by WhatsApp or call with your car details, exact inspection location and preferred timing. The team will confirm availability and share the next steps for booking through CarParakh.');
