@@ -622,8 +622,8 @@
 
 
 
-/* Enquiry-first conversion path: keep legacy booking/payment code intact,
-   while primary CTAs and make selections start a WhatsApp enquiry. */
+/* Enquiry-first conversion path with structured, privacy-safe lead attribution.
+   No customer details are added to analytics; make/service/location/page context only. */
 (function(){
   const PHONE='919971116411';
   function serviceFromPath(){
@@ -636,22 +636,32 @@
     return 'car inspection';
   }
   function localityFromPath(){
-    const m=window.location.pathname.match(/^\/locations\/(delhi|gurugram)\/([^/]+)\.html$/i);
+    const m=window.location.pathname.match(/^\\/locations\\/(delhi|gurugram)\\/([^/]+)\\.html$/i);
     if(!m) return '';
     const city=m[1].toLowerCase()==='gurugram'?'Gurugram':'Delhi';
     const name=m[2].replace(/^dlf-phase-/i,'DLF Phase ').split('-').map(x=>x.charAt(0).toUpperCase()+x.slice(1)).join(' ');
     return name+', '+city;
   }
-  function track(name,params){
-    if(typeof window.gtag==='function') window.gtag('event',name,Object.assign({
-      page_path:window.location.pathname,
+  function trackLead(medium,make){
+    if(typeof window.gtag!=='function') return;
+    window.gtag('event','whatsapp_click',{
+      event_category:'lead',
+      lead_source:'car_pdi_masters',
+      lead_medium:medium||'website',
+      lead_service:serviceFromPath(),
+      lead_make:make||'not_specified',
+      lead_locality:localityFromPath()||'not_specified',
+      lead_page:window.location.pathname,
       page_title:document.title
-    },params||{}));
+    });
   }
-  function openWhatsApp(message,medium){
-    const url='https://wa.me/'+PHONE+'?text='+encodeURIComponent(message);
-    track('whatsapp_click',{event_category:'engagement',event_label:serviceFromPath(),lead_medium:medium||'website'});
-    window.open(url,'_blank','noopener');
+  function openWhatsApp(message,medium,make){
+    const referral='\\n\\nReferral: Car PDI Masters | Service: '+serviceFromPath()+
+      (make?' | Make: '+make:'')+
+      (localityFromPath()?' | Area: '+localityFromPath():'')+
+      ' | Website page: '+window.location.pathname;
+    trackLead(medium,make);
+    window.open('https://wa.me/'+PHONE+'?text='+encodeURIComponent(message+referral),'_blank','noopener');
   }
   document.addEventListener('click',function(event){
     const brand=event.target.closest&&event.target.closest('.brand-card[data-make]');
@@ -659,21 +669,23 @@
       event.preventDefault();
       const make=brand.dataset.make||'';
       const place=localityFromPath();
-      openWhatsApp('Hello Car PDI Masters, I want to enquire about '+serviceFromPath()+' for my '+make+' car'+(place?' in '+place:'')+'. Please guide me with the inspection process and booking through CarParakh.','brand');
+      openWhatsApp('Hello Car PDI Masters, I want to enquire about '+serviceFromPath()+' for my '+make+' car'+(place?' in '+place:'')+'. My car model and variant are: _____. Please guide me with the inspection process and booking through CarParakh.','brand',make);
       return;
     }
     const link=event.target.closest&&event.target.closest('a[href]');
     if(!link) return;
     const href=(link.getAttribute('href')||'').toLowerCase();
-    if(!/(^|\/)#booking$/.test(href)) return;
+    if(!/(^|\\/)#booking$/.test(href)) return;
     if(link.closest('form')) return;
     event.preventDefault();
     const place=localityFromPath();
-    openWhatsApp('Hello Car PDI Masters, I want to enquire about '+serviceFromPath()+(place?' in '+place:'')+'. Please share the inspection details and help me proceed with booking through CarParakh.','primary_cta');
+    openWhatsApp('Hello Car PDI Masters, I want to enquire about '+serviceFromPath()+(place?' in '+place:'')+'. My car make, model and variant are: _____. Please share the inspection details and help me proceed with booking through CarParakh.','primary_cta','');
   });
   document.addEventListener('click',function(event){
     const link=event.target.closest&&event.target.closest('a[href^="https://wa.me/"]');
     if(!link) return;
-    track('whatsapp_click',{event_category:'engagement',event_label:link.href,lead_medium:'website'});
+    if(link.dataset.leadTracked==='true') return;
+    link.dataset.leadTracked='true';
+    trackLead('direct_whatsapp','');
   });
 })();
