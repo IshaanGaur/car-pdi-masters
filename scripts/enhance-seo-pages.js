@@ -121,19 +121,19 @@ for (const file of htmlFiles) {
   html = html.replace(/>(?:Payment Options|Payment Details|Pay ₹299 Booking|Pay &#8377;299 Booking|Payment)<[/]a>/gi, '>Enquire on WhatsApp</a>');
   html = html.replace(/href=["'][/]#booking["']([^>]*)>(?:Book Online|Book Inspection(?: in [^<]+)?|Start Booking|Call to Book)<[/]a>/gi, 'href="' + whatsappHref + '"$1>Enquire on WhatsApp</a>');
   html = html.replace(/href=["']#booking["']([^>]*)>(?:Book Online|Book Inspection(?: in [^<]+)?|Continue to Booking)<[/]a>/gi, 'href="' + whatsappHref + '"$1>Enquire on WhatsApp</a>');
-  html = html.replace(/Fill in the booking form with the car details, inspection address, date and time, then pay the booking (?:amount|deposit) securely through Razorpay\\.[\\s\\S]{0,100}?inspection starts\\./gi, 'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through CarParakh.');
-  html = html.replace(/Choose [^.<]{0,100} and submit the booking details\\./gi, 'Send an enquiry with your vehicle details, inspection location and preferred timing using WhatsApp or call.');
-  html = html.replace(/Pay the booking amount and wait for review or assignment\\./gi, 'The team confirms appointment availability and shares the next steps for booking through CarParakh.');
-  html = html.replace(/Pay the booking amount first\\. Your booking is reviewed and assigned before final confirmation\\./gi, 'Enquire by WhatsApp or call. The team confirms availability and shares the booking steps through CarParakh.');
-  html = html.replace(/Pay only the booking amount online now; the balance is paid before the inspection starts\\./gi, 'Send an enquiry by WhatsApp or call. Availability is confirmed before the booking is completed through CarParakh.');
+  html = html.replace(/Fill in the booking form with the car details, inspection address, date and time, then pay the booking (?:amount|deposit) securely through Razorpay\.[\s\S]{0,100}?inspection starts\./gi, 'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through CarParakh.');
+  html = html.replace(/Choose [^.<]{0,100} and submit the booking details\./gi, 'Send an enquiry with your vehicle details, inspection location and preferred timing using WhatsApp or call.');
+  html = html.replace(/Pay the booking amount and wait for review or assignment\./gi, 'The team confirms appointment availability and shares the next steps for booking through CarParakh.');
+  html = html.replace(/Pay the booking amount first\. Your booking is reviewed and assigned before final confirmation\./gi, 'Enquire by WhatsApp or call. The team confirms availability and shares the booking steps through CarParakh.');
+  html = html.replace(/Pay only the booking amount online now; the balance is paid before the inspection starts\./gi, 'Send an enquiry by WhatsApp or call. Availability is confirmed before the booking is completed through CarParakh.');
   html = html.replace(/continue to the ₹299 secure Razorpay payment page/gi, 'send an enquiry by WhatsApp or call and confirm appointment availability');
-  html = html.replace(/Pay booking amount securely through Razorpay \\(UPI, cards or netbanking\\)\\./gi, 'The team confirms availability and shares the next steps for booking through CarParakh.');
-  html = html.replace(/Pay the booking amount securely through Razorpay \\(UPI, cards or netbanking\\)\\./gi, 'The team confirms availability and shares the next steps for booking through CarParakh.');
-  html = html.replace(/How do I book and pay\\?/gi, 'How do I arrange an inspection?');
-  html = html.replace(/href=["']\\/payment\\.html["']/gi, 'href="' + whatsappHref + '"');
-  html = html.replace(/>(?:Payment Options|Payment Details|Pay ₹299 Booking|Pay &#8377;299 Booking|Payment)<\\/a>/gi, '>Enquire on WhatsApp</a>');
-  html = html.replace(/href=["']\\/\#booking["']([^>]*)>(?:Book Online|Book Inspection(?: in [^<]+)?|Start Booking|Call to Book)<\\/a>/gi, 'href="' + whatsappHref + '"$1>Enquire on WhatsApp</a>');
-  html = html.replace(/href=["']#booking["']([^>]*)>(?:Book Online|Book Inspection(?: in [^<]+)?|Continue to Booking)<\\/a>/gi, 'href="' + whatsappHref + '"$1>Enquire on WhatsApp</a>');
+  html = html.replace(/Pay booking amount securely through Razorpay \(UPI, cards or netbanking\)\./gi, 'The team confirms availability and shares the next steps for booking through CarParakh.');
+  html = html.replace(/Pay the booking amount securely through Razorpay \(UPI, cards or netbanking\)\./gi, 'The team confirms availability and shares the next steps for booking through CarParakh.');
+  html = html.replace(/How do I book and pay\?/gi, 'How do I arrange an inspection?');
+  html = html.replace(/href=["']\/payment\.html["']/gi, 'href="' + whatsappHref + '"');
+  html = html.replace(/>(?:Payment Options|Payment Details|Pay ₹299 Booking|Pay &#8377;299 Booking|Payment)<\/a>/gi, '>Enquire on WhatsApp</a>');
+  html = html.replace(/href=["']\/\#booking["']([^>]*)>(?:Book Online|Book Inspection(?: in [^<]+)?|Start Booking|Call to Book)<\/a>/gi, 'href="' + whatsappHref + '"$1>Enquire on WhatsApp</a>');
+  html = html.replace(/href=["']#booking["']([^>]*)>(?:Book Online|Book Inspection(?: in [^<]+)?|Continue to Booking)<\/a>/gi, 'href="' + whatsappHref + '"$1>Enquire on WhatsApp</a>');
   html = html.replace(/Fill in the booking form with the car details, inspection address, date and time, then pay the booking (?:amount|deposit) securely through Razorpay\. The remaining balance is paid before the inspection starts\./gi,
     'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through CarParakh.');
   html = html.replace(/(<a\b[^>]*href=["'][^"']*#booking["'][^>]*>)([\s\S]*?)(<\/a>)/gi, (m, open, label, close) => {
