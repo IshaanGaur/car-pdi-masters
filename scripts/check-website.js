@@ -18,6 +18,8 @@ need('site.js', 'ensureMobileMenu', 'the mobile menu button for every page');
 need('site.js', 'const CMS_PAGE_OVERRIDES=false', 'GitHub-as-master for page content (old CMS copies must not replace pages)');
 need('index.html', 'data-enquiry-form', 'the callback enquiry form');
 need('index.html', 'name="phone"', 'the customer mobile number field');
+need('scripts/enhance-seo-pages.js', 'function linkifyCarParakh', 'static CarParakh links');
+need('site.js', "existing.querySelector('[data-enquiry-form]')", 'sitewide enquiry form replacement for legacy hidden booking sections');
 for (const f of ['site.js', 'payment.html', 'config/pricing.json']) {
   if (/9821097137|110317414950|CNRB0008598/.test(read(f))) problems.push(`${f}: still has the old manual UPI/bank details`);
 }
@@ -106,6 +108,7 @@ for (const file of walkHtml(root)) {
 }
 
 if (!read('index.html').includes('data-enquiry-form')) problems.push('index.html: callback enquiry form is missing');
+if (/<section class=["']section booking-section["'] id=["']booking["'][^>]*data-enquiry-section[^>]*(?:hidden|aria-hidden=["']true["'])/i.test(read('index.html'))) problems.push('index.html: callback enquiry form must be visible');
 if (!read('site.js').includes('/api/enquiry')) problems.push('site.js: enquiry form is not connected to the enquiry endpoint');
 if (!read('firebase.website.json').includes('cpmSubmitWebsiteEnquiryV1')) problems.push('firebase.website.json: website enquiry function rewrite is missing');
 if (!read('functions/index.js').includes('exports.cpmSubmitWebsiteEnquiryV1')) problems.push('functions/index.js: website enquiry endpoint is missing');
