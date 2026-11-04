@@ -176,9 +176,9 @@ for (const file of htmlFiles) {
     'Start with a WhatsApp or phone enquiry. The team reviews your vehicle and location details, confirms availability and shares the next steps to book through CarParakh.');
   html = html.replace(/Our website journey is built around choosing the right inspection, selecting an active service location, booking, review and assignment, completing payment and receiving inspection information\./gi,
     'Our enquiry-first journey helps you choose an inspection, share your vehicle location and preferred timing, confirm availability and complete booking through CarParakh.');
-  // Current customer journey is enquiry-first; keep dormant payment/booking code untouched.
-  const enquiryText = 'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through CarParakh.';
-  const wa = 'https://wa.me/919971116411?text=Hello%20Car%20PDI%20Masters%2C%20I%20want%20to%20enquire%20about%20a%20car%20inspection.';
+  // The customer journey is the original paid booking flow: choose a plan, submit vehicle/slot details, then pay the booking amount through Razorpay.
+  const enquiryText = 'Choose your inspection plan, share vehicle and appointment details in the booking form, then complete the booking payment securely through Razorpay.';
+  const wa = 'https://wa.me/919971116411?text=Hello%20Car%20PDI%20Masters%2C%20I%20need%20help%20with%20a%20car%20inspection%20booking.';
   // The locality price strip uses HTML entities, so normalize that whole customer-facing block.
   html = html.replace(/<div class=["']checkpoint-note["'][^>]*>[\s\S]*?<\/div>/gi, (block) => {
     if (!/Booking[\s\S]*?(?:299|499)/i.test(block)) return block;
@@ -192,9 +192,9 @@ for (const file of htmlFiles) {
       if (/\bclass=["'][^"']*\bbrand-card\b/i.test(beforeHref + afterHref)) return match;
       return '<a' + beforeHref + 'href="#booking"' + afterHref + '>Request a Callback</a>';
     });
-  // Keep the legacy form and payment implementation in source for future activation, but hide it from the live customer journey.
-  html = html.replace(/<section class=["']section booking-section["'] id=["']booking["']>/i,
-    '<section class="section booking-section" id="booking" hidden aria-hidden="true">');
+  // Keep the original paid booking form visible; never hide or replace its Razorpay booking journey.
+  html = html.replace(/<section class=["']section booking-section["'] id=["']booking["'][^>]*hidden[^>]*>/i,
+    '<section class="section booking-section" id="booking">');
   // Final customer-facing sweep: normalize legacy payment labels, links and process copy.
   html = html.replace(/<div>\s*<span>Booking Amount<\/span>\s*<strong>[\s\S]*?<\/strong>\s*<\/div>/gi,
     '<div><span>Booking Process</span><strong>WhatsApp / Call</strong></div>');
@@ -268,9 +268,17 @@ for (const file of htmlFiles) {
   if (/Your booking is received first, reviewed by the team|Pay booking amount|The remaining balance is paid before the inspection starts/i.test(html)) throw new Error(file + ' still contains booking-first or deposit copy');
   if (/Pay only the booking amount online now|continue to the ₹299 secure Razorpay payment page|Fill in the booking form[\s\S]{0,240}?Razorpay/i.test(html)) throw new Error(file + ' still contains retired customer-facing payment instructions');
   if (ctx.kind === 'home' && /What happens after I pay the booking amount|When is the balance payment made|booking form displays locations/i.test(html)) throw new Error('Homepage still contains retired booking instructions');
-  if (ctx.kind === 'home' && !/<section class=["']section booking-section["'] id=["']booking["'][^>]*data-enquiry-section/i.test(html)) throw new Error('Homepage callback enquiry form is missing');
-  if (ctx.kind === 'home' && /<section class=["']section booking-section["'] id=["']booking["'][^>]*data-enquiry-section[^>]*(?:hidden|aria-hidden=["']true["'])/i.test(html)) throw new Error('Homepage callback enquiry form is hidden');
+  if (ctx.kind === 'home' && !/<section class=["']section booking-section["'] id=["']booking["'][^>]*>[sS]*?CPM_SUBMIT_BOOKING/i.test(html)) throw new Error('Homepage paid booking form is missing');
+  if (ctx.kind === 'home' && /<section class=["']section booking-section["'] id=["']booking["'][^>]*(?:hidden|aria-hidden=["']true["'])/i.test(html)) throw new Error('Homepage paid booking form is hidden');
   if (/Choose the new car PDI service and submit your booking details|Pay the booking amount and wait for review and assignment|Complete the pending balance before the inspection starts/i.test(html)) throw new Error(file + ' still contains retired direct-booking instructions');
+  // Any booking CTA must lead to the paid booking form, not the retired callback form.
+  html = html.replace(/(<a\\b[^>]*href=["'](?:\\/#booking|#booking)["'][^>]*>)([\\s\\S]*?)(<\\/a>)/gi, (m, open, label, close) => {
+    const plain = label.replace(/<[^>]*>/g, '').trim();
+    if (/^(Request a Callback|Enquire on WhatsApp|Start Booking|Book Online)$/i.test(plain)) return open + 'Book Inspection' + close;
+    return m;
+  });
+  html = html.replace(/<section class=["']section booking-section["'] id=["']booking["'][^>]*hidden[^>]*>/i,
+    '<section class="section booking-section" id="booking">');
   html = addBookingDisclosure(html);
   html = linkifyCarParakh(html);
   if (html !== original) { write(file, html); changed++; }
