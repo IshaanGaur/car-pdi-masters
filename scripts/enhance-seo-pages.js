@@ -166,11 +166,11 @@ for (const file of htmlFiles) {
     return '<div class="checkpoint-note"><strong>Standard PDI:</strong> ₹1,499 &nbsp; • &nbsp; <strong>Comprehensive 360° PDI:</strong> ₹2,499 &nbsp; • &nbsp; Booking is completed through CarParakh after availability confirmation &nbsp; • &nbsp; <a href="/#pricing">Compare plans →</a></div>';
   });
   // All public CTAs must start an enquiry, not scroll customers into the dormant direct-booking form.
-  html = html.replace(/<a\\b([^>]*?)href=["'](?:\\/#booking|#booking)["']([^>]*)>([\\s\\S]*?)<\\/a>/gi,
+  html = html.replace(/<a\b([^>]*?)href=["'](?:\/#booking|#booking)["']([^>]*)>([\s\S]*?)<\/a>/gi,
     (match, beforeHref, afterHref, label) => {
       // Brand cards intentionally use #booking as a make-selection link.
       // Preserve their logo/name markup; only convert actual booking CTAs.
-      if (/\\bclass=["'][^"']*\\bbrand-card\\b/i.test(beforeHref + afterHref)) return match;
+      if (/\bclass=["'][^"']*\bbrand-card\b/i.test(beforeHref + afterHref)) return match;
       return '<a' + beforeHref + 'href="' + wa + '"' + afterHref + '>Enquire on WhatsApp</a>';
     });
   // Keep the legacy form and payment implementation in source for future activation, but hide it from the live customer journey.
