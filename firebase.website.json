@@ -30,6 +30,7 @@
     ],
     "target": "website",
     "predeploy": [
+      "node scripts/enhance-seo-pages.js",
       "node scripts/check-website.js"
     ],
     "headers": [

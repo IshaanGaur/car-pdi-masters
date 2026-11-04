@@ -15,4 +15,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - run: node scripts/enhance-seo-pages.js
       - run: node scripts/check-website.js
