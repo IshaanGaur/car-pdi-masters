@@ -261,18 +261,10 @@ for (const file of htmlFiles) {
     const entity = {'@context':'https://schema.org','@type':'Service',name:'Car PDI and Inspection in ' + ctx.place,serviceType:['New Car Pre-Delivery Inspection','Used Car Inspection','Pre-Purchase Car Inspection'],provider:{'@type':'Organization',name:'Car PDI Masters',url:SITE+'/'},areaServed:{'@type':'Place',name:ctx.place},url:canonical};
     html = html.replace(/<\/head>/i,'<script type="application/ld+json">' + JSON.stringify(entity) + '</script></head>');
   }
-  if (/<a\b[^>]*href=["']\/payment\.html["'][^>]*>(?:Payment|Payment Options|Payment Details|Pay[^<]*)<\/a>/i.test(html)) throw new Error(file + ' still exposes a customer-facing payment CTA');
-  if (/<a\b[^>]*href=["']\/#booking["'][^>]*>(?:Book Online|Book Inspection(?: in [^<]+)?|Start Booking)<\/a>/i.test(html)) throw new Error(file + ' still exposes a retired direct-booking CTA');
-  if (/Booking\s*<b[^>]*>₹(?:299|499)<\/b>\s*online now|Booking\s*₹(?:299|499)\s*online now/i.test(html)) throw new Error(file + ' still displays retired booking-deposit pricing');
-  if (/<div class=["']checkpoint-note["'][^>]*>[\s\S]*?<strong>Booking:<\/strong>\s*<span[^>]*>(?:₹|&#8377;|&#x20b9;)\s*299<\/span>/i.test(html) || /<div class=["']checkpoint-note["'][^>]*>[\s\S]*?<strong>Booking:<\/strong>\s*<span[^>]*>(?:₹|&#8377;|&#x20b9;)\s*499<\/span>/i.test(html)) throw new Error(file + ' still displays a retired booking deposit in its locality pricing strip');
-  if (/Your booking is received first, reviewed by the team|Pay booking amount|The remaining balance is paid before the inspection starts/i.test(html)) throw new Error(file + ' still contains booking-first or deposit copy');
-  if (/Pay only the booking amount online now|continue to the ₹299 secure Razorpay payment page|Fill in the booking form[\s\S]{0,240}?Razorpay/i.test(html)) throw new Error(file + ' still contains retired customer-facing payment instructions');
-  if (ctx.kind === 'home' && /What happens after I pay the booking amount|When is the balance payment made|booking form displays locations/i.test(html)) throw new Error('Homepage still contains retired booking instructions');
-  if (ctx.kind === 'home' && !/<section class=["']section booking-section["'] id=["']booking["'][^>]*>[\\s\\S]*?CPM_SUBMIT_BOOKING/i.test(html)) throw new Error('Homepage paid booking form is missing');
+  if (ctx.kind === 'home' && !/<section class=["']section booking-section["'] id=["']booking["'][^>]*>[\s\S]*?CPM_SUBMIT_BOOKING/i.test(html)) throw new Error('Homepage paid booking form is missing');
   if (ctx.kind === 'home' && /<section class=["']section booking-section["'] id=["']booking["'][^>]*(?:hidden|aria-hidden=["']true["'])/i.test(html)) throw new Error('Homepage paid booking form is hidden');
-  if (/Choose the new car PDI service and submit your booking details|Pay the booking amount and wait for review and assignment|Complete the pending balance before the inspection starts/i.test(html)) throw new Error(file + ' still contains retired direct-booking instructions');
   // Any booking CTA must lead to the paid booking form, not the retired callback form.
-  html = html.replace(/(<a\\b[^>]*href=["'](?:\\/#booking|#booking)["'][^>]*>)([\\s\\S]*?)(<\\/a>)/gi, (m, open, label, close) => {
+  html = html.replace(/(<a\b[^>]*href=["'](?:\/#booking|#booking)["'][^>]*>)([\s\S]*?)(<\/a>)/gi, (m, open, label, close) => {
     const plain = label.replace(/<[^>]*>/g, '').trim();
     if (/^(Request a Callback|Enquire on WhatsApp|Start Booking|Book Online)$/i.test(plain)) return open + 'Book Inspection' + close;
     return m;
