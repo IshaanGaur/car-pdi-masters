@@ -55,7 +55,8 @@ function faqFor(ctx) {
   const f = [
     {q:'What information should I share before arranging ' + s + '?',a:'Share the car make, model, variant, whether it is new or used, the inspection location and your preferred date and time. The team can then confirm the appropriate inspection and appointment availability.'},
     {q:'What is included in the inspection report?',a:'The inspection follows a structured 300+ checkpoint framework where applicable and records observable findings with relevant photo evidence. Paint thickness measurements are taken on applicable panels. OBD scanning is used only where the selected package and vehicle support it.'},
-    {q:'How do I enquire about ' + s + '?',a:'Use the WhatsApp enquiry link or call 99711 16411. Share your vehicle details and location; the team will confirm availability and guide you through booking via CarParakh.'}
+    {q:'How do I enquire about ' + s + '?',a:'Use the callback form, WhatsApp enquiry link or call 99711 16411. Share your vehicle details and location; the team will confirm availability and explain that Car PDI Masters performs the inspection while CarParakh handles booking coordination.'},
+    {q:'How much does a car PDI cost?',a:'The Standard PDI is listed at ₹1,499 and the Comprehensive 360° PDI at ₹2,499. Contact Car PDI Masters to confirm current package inclusions, availability and appointment details.'}
   ];
   if (/New Car/.test(s)) f[0].a = 'Share the make, model, variant, dealership or delivery location and expected delivery date. The team will confirm availability for a pre-delivery inspection before you accept the vehicle.';
   if (/Used Car|Pre-Purchase/.test(s)) f[0].a = 'Share the make, model, variant, seller or vehicle location and preferred inspection time. The inspection is arranged before you finalise the purchase, subject to access and appointment confirmation.';
