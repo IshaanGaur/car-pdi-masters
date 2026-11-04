@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Editorial research registry; not a list of published URLs.",
+  "publishingPolicy": "research_then_review_then_publish",
+  "models": [
+    {
+      "brand": "Tata",
+      "brandSlug": "tata",
+      "model": "Altroz",
+      "modelSlug": "altroz",
+      "status": "research_pending",
+      "variantsFile": "tata/altroz/variants.json",
+      "searchConsoleEvidence": "No Tata Altroz query rows in the reviewed 6-month GSC export; do not publish yet."
+    }
+  ]
+}
