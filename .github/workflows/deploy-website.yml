@@ -28,6 +28,12 @@ jobs:
         with:
           credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CAR_PDI_MASTERS }}
 
+      - name: Verify deployment service account identity
+        env:
+          FIREBASE_CREDENTIALS_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CAR_PDI_MASTERS }}
+        run: |
+          node -e 'const c = JSON.parse(process.env.FIREBASE_CREDENTIALS_JSON); if (!c.client_email) { throw new Error("client_email missing from deployment credentials"); } console.log("Deployment service account:", c.client_email);'
+
       - name: Install Firebase CLI
         run: npm install --global firebase-tools
 
