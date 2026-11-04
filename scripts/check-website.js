@@ -99,8 +99,8 @@ const walkHtml = dir => fs.readdirSync(dir, { withFileTypes: true }).flatMap(ent
 if (!fs.existsSync(path.join(root, 'llms.txt'))) problems.push('llms.txt: missing AI-readable business/service summary');
 for (const file of walkHtml(root)) {
   const html = fs.readFileSync(file, 'utf8');
-  const badEnquiry = [...html.matchAll(/<a\\b[^>]*href=["']([^"']*)["'][^>]*>([\\s\\S]*?)<\\/a>/gi)]
-    .filter(match => /enquire on whatsapp/i.test(match[2].replace(/<[^>]*>/g, ' ')) && !/^https:\\/\\/wa\\.me\\//i.test(match[1]));
+  const badEnquiry = [...html.matchAll(/<a\b[^>]*href=["']([^"']*)["'][^>]*>([\s\\S]*?)<\/a>/gi)]
+    .filter(match => /enquire on whatsapp/i.test(match[2].replace(/<[^>]*>/g, ' ')) && !/^https:\/\/wa\.me\//i.test(match[1]));
   if (badEnquiry.length) problems.push(path.relative(root, file) + ': Enquire on WhatsApp CTA does not open WhatsApp');
 }
 
