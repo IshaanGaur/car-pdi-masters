@@ -98,18 +98,26 @@ for (const file of htmlFiles) {
   if (/http-equiv=["']refresh/i.test(html) || /name=["']robots["']\s+content=["'][^"']*noindex/i.test(html)) continue;
   const ctx = contextFor(file);
   html = updateJsonLd(html, ctx);
-  html = html.replace(/Choose the new car PDI service and submit your booking details\\./gi, 'Send an enquiry with your vehicle details, inspection location and preferred timing using WhatsApp or call.');
-  html = html.replace(/Pay the booking amount and wait for review and assignment\\./gi, 'The team confirms appointment availability and shares the next steps for booking through CarParakh.');
-  html = html.replace(/Our team reviews and confirms the inspection assignment\\./gi, 'Complete the booking through CarParakh after the appointment details are confirmed.');
-  html = html.replace(/Complete the pending balance before the inspection starts\\./gi, 'Share any additional vehicle or access details requested before the appointment.');
-  html = html.replace(/Fill in the booking form with the car details, inspection address, date and time, then pay the booking (?:amount|deposit) securely through Razorpay\\. The remaining balance is paid before the inspection starts\\./gi,
+  html = html.replace(/Choose the new car PDI service and submit your booking details\./gi, 'Send an enquiry with your vehicle details, inspection location and preferred timing using WhatsApp or call.');
+  html = html.replace(/Pay the booking amount and wait for review and assignment\./gi, 'The team confirms appointment availability and shares the next steps for booking through CarParakh.');
+  html = html.replace(/Our team reviews and confirms the inspection assignment\./gi, 'Complete the booking through CarParakh after the appointment details are confirmed.');
+  html = html.replace(/Complete the pending balance before the inspection starts\./gi, 'Share any additional vehicle or access details requested before the appointment.');
+  html = html.replace(/Fill in the booking form with the car details, inspection address, date and time, then pay the booking (?:amount|deposit) securely through Razorpay\. The remaining balance is paid before the inspection starts\./gi,
     'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through CarParakh.');
   html = html.replace(/(<a\b[^>]*href=["'][^"']*#booking["'][^>]*>)([\s\S]*?)(<\/a>)/gi, (m, open, label, close) => {
     const plain = label.replace(/<[^>]*>/g,'').trim().replace(/[→»]+/g,'').trim();
     if (/^(book(?:\s+(?:online|inspection|used car inspection))?|continue to booking)$/i.test(plain)) return open + 'Enquire on WhatsApp' + close;
     return m;
   });
-  if (!/"@type"\s*:\s*"FAQPage"/.test(html) && ctx.kind !== 'home') html = addFaq(html, faqFor(ctx));
+  if (ctx.kind === 'home') {
+    html = html.replace('<details><summary>What happens after I pay the booking amount?</summary><p>The booking is received and remains pending while the team reviews and assigns the inspection. Final confirmation follows the assignment step.</p></details>',
+      '<details><summary>How do I arrange an inspection?</summary><p>Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and guide you through booking via CarParakh.</p></details>');
+    html = html.replace('<details><summary>Can I choose my inspection location?</summary><p>Yes. The booking form displays locations currently active and enabled for new orders in Delhi and Gurugram.</p></details>',
+      '<details><summary>Can I choose my inspection location?</summary><p>Share the exact vehicle location, such as a home, office, dealership showroom or stockyard. The team will confirm service coverage, access permission and appointment availability.</p></details>');
+    html = html.replace('<details><summary>When is the balance payment made?</summary><p>The remaining balance is intended to be completed before the inspection starts.</p></details>', '');
+    if (!/"@type"\s*:\s*"FAQPage"/.test(html)) html = html.replace(/<\/head>/i,
+      '<script type="application/ld+json">' + JSON.stringify({'@context':'https://schema.org','@type':'FAQPage',mainEntity:homeFaqs().map(x=>({'@type':'Question',name:x.q,acceptedAnswer:{'@type':'Answer',text:x.a}}))}) + '</script></head>');
+  } else if (!/"@type"\s*:\s*"FAQPage"/.test(html)) html = addFaq(html, faqFor(ctx));
   if (ctx.kind === 'location' && !/"@type"\s*:\s*"Service"/.test(html)) {
     const canonical = SITE + '/' + file;
     const entity = {'@context':'https://schema.org','@type':'Service',name:'Car PDI and Inspection in ' + ctx.place,serviceType:['New Car Pre-Delivery Inspection','Used Car Inspection','Pre-Purchase Car Inspection'],provider:{'@type':'Organization',name:'Car PDI Masters',url:SITE+'/'},areaServed:{'@type':'Place',name:ctx.place},url:canonical};
