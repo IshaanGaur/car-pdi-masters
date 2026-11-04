@@ -89,6 +89,21 @@ for (const f of ['favicon.ico', 'cpm-icon-48.png', 'cpm-icon-96.png', 'cpm-icon-
 if (!read('index.html').includes('"@type":"WebSite"')) problems.push('index.html: missing the site name data for Google (WebSite)');
 if (/SCAN &(amp;)?amp; PAY|SCAN & PAY/.test(read('payment.html'))) problems.push('payment.html: has the old QR-only "SCAN & PAY" page');
 
+
+// Audit regression guards: enquiry CTAs must remain real WhatsApp links,
+// and the AI discovery file must ship with the website.
+const walkHtml = dir => fs.readdirSync(dir, { withFileTypes: true }).flatMap(entry => {
+  const full = path.join(dir, entry.name);
+  return entry.isDirectory() ? walkHtml(full) : (entry.isFile() && entry.name.endsWith('.html') ? [full] : []);
+});
+if (!fs.existsSync(path.join(root, 'llms.txt'))) problems.push('llms.txt: missing AI-readable business/service summary');
+for (const file of walkHtml(root)) {
+  const html = fs.readFileSync(file, 'utf8');
+  const badEnquiry = [...html.matchAll(/<a\b[^>]*href=["']([^"']*)["'][^>]*>([\s\S]*?)<\/a>/gi)]
+    .filter(match => /enquire on whatsapp/i.test(match[2].replace(/<[^>]*>/g, ' ')) && !/^https:\/\/wa\.me\//i.test(match[1]));
+  if (badEnquiry.length) problems.push(path.relative(root, file) + ': Enquire on WhatsApp CTA does not open WhatsApp');
+}
+
 if (problems.length) {
   console.error('\nWEBSITE DEPLOY STOPPED - this folder has an old or incomplete website:\n  - ' + problems.join('\n  - '));
   console.error('\nRun `git pull` to get the latest version from GitHub, then deploy again. See DEPLOY-WEBSITE.md.\n');

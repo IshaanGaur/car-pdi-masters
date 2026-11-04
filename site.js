@@ -696,4 +696,26 @@
     link.dataset.leadTracked='true';
     trackLead('direct_whatsapp','');
   });
+  // Make the relationship between the inspection provider and booking coordinator
+  // clear on every page that uses the shared site script.
+  function addBookingPlatformDisclosure(){
+    const footer=document.querySelector('footer');
+    if(!footer || footer.querySelector('#booking-platform-disclosure')) return;
+    const note=document.createElement('p');
+    note.id='booking-platform-disclosure';
+    note.style.cssText='max-width:1100px;margin:14px auto;padding:0 20px 14px;color:#9fb2c8;font-size:12px;line-height:1.6;text-align:center';
+    note.append('Car PDI Masters carries out the vehicle inspection. After availability is confirmed, booking coordination is handled through ');
+    const link=document.createElement('a');
+    link.href='https://carparakh.com/';
+    link.target='_blank';
+    link.rel='noopener';
+    link.textContent='CarParakh';
+    link.style.cssText='color:#8fc8ff;text-decoration:underline';
+    note.append(link);
+    note.append('.');
+    footer.append(note);
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',addBookingPlatformDisclosure,{once:true});
+  else addBookingPlatformDisclosure();
+
 })();
