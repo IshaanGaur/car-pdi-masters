@@ -5104,3 +5104,103 @@ body{
 /* Static booking-platform disclosure shared by SEO build output */
 .booking-platform-disclosure{max-width:1100px;margin:14px auto;padding:0 20px 14px;color:#9fb2c8;font-size:12px;line-height:1.6;text-align:center}
 .booking-platform-disclosure a{color:#8fc8ff;text-decoration:underline}
+
+
+/* =========================================================
+   BOOKING FORM LIGHT THEME
+   Align booking panel with the site's light content sections.
+   Scoped to booking UI; form fields and booking logic unchanged.
+   ========================================================= */
+.booking-section{
+  background:#f3f6fb !important;
+  color:#102039 !important;
+}
+.booking-box{
+  background:#fff !important;
+  background-image:none !important;
+  border:1px solid #dbe4ef !important;
+  box-shadow:0 16px 42px rgba(16,32,57,.09) !important;
+}
+.booking-copy h2{
+  color:#102039 !important;
+}
+.booking-copy > p{
+  color:#4f5f74 !important;
+}
+.booking-note,
+.booking-note a{
+  color:#1d6fe0 !important;
+}
+.booking-plan-line{
+  color:#4f5f74 !important;
+}
+.booking-plan-line b{
+  color:#102039 !important;
+}
+.booking-price div{
+  background:#f1f6fc !important;
+  border:1px solid #dbe4ef !important;
+}
+.booking-price span{
+  color:#64748b !important;
+}
+.booking-price strong{
+  color:#102039 !important;
+}
+.booking-form label,
+.booking-form label span,
+.booking-form .plan-picker legend{
+  color:#102039 !important;
+}
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+  background:#fff !important;
+  color:#102039 !important;
+  border:1px solid #cbd5e1 !important;
+  box-shadow:0 1px 2px rgba(16,32,57,.04) !important;
+}
+.booking-form input::placeholder,
+.booking-form textarea::placeholder{
+  color:#7b8798 !important;
+}
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus{
+  border-color:#1d6fe0 !important;
+  box-shadow:0 0 0 3px rgba(29,111,224,.13) !important;
+}
+.booking-form .plan-picker label{
+  background:#fff !important;
+  color:#102039 !important;
+  border:1px solid #cbd5e1 !important;
+}
+.booking-form .plan-picker label:has(input:checked){
+  background:#eff6ff !important;
+  border-color:#1d6fe0 !important;
+  box-shadow:0 0 0 3px rgba(29,111,224,.12) !important;
+}
+.booking-form .plan-picker small{
+  color:#64748b !important;
+}
+.booking-form .plan-picker label.plan-unavailable{
+  background:#f1f5f9 !important;
+}
+.booking-form .form-msg{
+  color:#64748b !important;
+}
+.booking-section .booking-box a:not(.btn){
+  color:#1d6fe0 !important;
+}
+.booking-form input[type="date"]{
+  color-scheme:light !important;
+}
+.booking-form input[type="date"]::-webkit-datetime-edit{
+  color:#102039 !important;
+}
+.booking-form input[type="date"]::-webkit-calendar-picker-indicator{
+  filter:none !important;
+}
+@media(max-width:640px){
+  .booking-box{background:#fff !important}
+}
