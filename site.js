@@ -274,7 +274,9 @@
 </section>`;
   }
   function ensureSitewideEnquiryForm(){
-    if(document.getElementById('booking')) return;
+    const existing=document.getElementById('booking');
+    if(existing && existing.querySelector('[data-enquiry-form]')) return;
+    if(existing) existing.remove();
     const footer=document.querySelector('footer');
     if(!footer) return;
     const wrap=document.createElement('div');

@@ -5100,3 +5100,7 @@ body{
 .enquiry-honeypot{position:absolute!important;left:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}
 .booking-note a{color:#8fd5ff;text-decoration:underline}
 @media(max-width:640px){.enquiry-form{grid-template-columns:1fr}.enquiry-form .full{grid-column:1/-1}}
+
+/* Static booking-platform disclosure shared by SEO build output */
+.booking-platform-disclosure{max-width:1100px;margin:14px auto;padding:0 20px 14px;color:#9fb2c8;font-size:12px;line-height:1.6;text-align:center}
+.booking-platform-disclosure a{color:#8fc8ff;text-decoration:underline}

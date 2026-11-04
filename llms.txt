@@ -25,6 +25,10 @@
 ## Inspection scope
 The inspection uses a structured 300+ checkpoint framework. Paint thickness readings are taken on applicable panels. OBD scanning is available only where the selected package and vehicle are compatible. Findings are based on observable condition and the checks included in the selected inspection workflow; an inspection does not guarantee that every concealed defect or historical event will be identified.
 
+## Published website pricing
+- Standard PDI: ₹1,499 (confirm current package inclusions and availability with the team).
+- Comprehensive 360° PDI: ₹2,499 (confirm current package inclusions and availability with the team).
+
 ## Booking
 Customers enquire by phone or WhatsApp. The team confirms location access and appointment availability, then shares the next booking steps. Car PDI Masters performs the inspection; CarParakh is used for booking coordination after availability is confirmed.
 
