@@ -51,6 +51,15 @@ function faqFor(ctx) {
   if (/EV/.test(s)) f[1].a = 'The inspection covers observable body and paint condition, tyres, cabin, displays, controls, accessible electrical features and charging-related items that can be checked safely. It does not certify battery health unless a compatible, separately specified test is available.';
   return f;
 }
+function homeFaqs() {
+  return [
+    {q:'What is a new car PDI?',a:'A pre-delivery inspection is a structured check of a vehicle before accepting delivery, covering relevant exterior, interior, electrical, tyre and other inspection areas.'},
+    {q:'What is a used car inspection?',a:'It is a structured assessment of a used vehicle’s observable condition and relevant inspection areas before purchase.'},
+    {q:'How many checkpoints are covered?',a:'Car PDI Masters uses a 300+ checkpoint inspection framework across major vehicle systems and condition areas.'},
+    {q:'How do I arrange an inspection?',a:'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and guide you through booking via CarParakh.'},
+    {q:'Can I choose my inspection location?',a:'Share the exact vehicle location, such as a home, office, dealership showroom or stockyard. The team will confirm service coverage, access permission and appointment availability.'}
+  ];
+}
 function addFaq(html, faqs) {
   const visible = '<section class="container seo-faq" aria-labelledby="seo-faq-title"><h2 id="seo-faq-title">Frequently Asked Questions</h2><div class="seo-faq-list">' +
     faqs.map(x => '<details><summary>' + escapeHtml(x.q) + '</summary><p>' + escapeHtml(x.a) + '</p></details>').join('') +
@@ -89,7 +98,11 @@ for (const file of htmlFiles) {
   if (/http-equiv=["']refresh/i.test(html) || /name=["']robots["']\s+content=["'][^"']*noindex/i.test(html)) continue;
   const ctx = contextFor(file);
   html = updateJsonLd(html, ctx);
-  html = html.replace(/Fill in the booking form with the car details, inspection address, date and time, then pay the booking (?:amount|deposit) securely through Razorpay\. The remaining balance is paid before the inspection starts\./gi,
+  html = html.replace(/Choose the new car PDI service and submit your booking details\\./gi, 'Send an enquiry with your vehicle details, inspection location and preferred timing using WhatsApp or call.');
+  html = html.replace(/Pay the booking amount and wait for review and assignment\\./gi, 'The team confirms appointment availability and shares the next steps for booking through CarParakh.');
+  html = html.replace(/Our team reviews and confirms the inspection assignment\\./gi, 'Complete the booking through CarParakh after the appointment details are confirmed.');
+  html = html.replace(/Complete the pending balance before the inspection starts\\./gi, 'Share any additional vehicle or access details requested before the appointment.');
+  html = html.replace(/Fill in the booking form with the car details, inspection address, date and time, then pay the booking (?:amount|deposit) securely through Razorpay\\. The remaining balance is paid before the inspection starts\\./gi,
     'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through CarParakh.');
   html = html.replace(/(<a\b[^>]*href=["'][^"']*#booking["'][^>]*>)([\s\S]*?)(<\/a>)/gi, (m, open, label, close) => {
     const plain = label.replace(/<[^>]*>/g,'').trim().replace(/[→»]+/g,'').trim();
