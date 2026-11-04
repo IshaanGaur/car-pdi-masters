@@ -110,7 +110,7 @@ for (const file of walkHtml(root)) {
   if (badEnquiry.length) problems.push(path.relative(root, file) + ': Enquire on WhatsApp CTA does not open WhatsApp');
 }
 
-if (!/<section class=["']section booking-section["'] id=["']booking["'][^>]*>[\\s\\S]*?CPM_SUBMIT_BOOKING/i.test(read('index.html'))) problems.push('index.html: original paid booking form is missing');
+if (!/<section class=["']section booking-section["'] id=["']booking["'][^>]*>[\s\S]*?CPM_SUBMIT_BOOKING/i.test(read('index.html'))) problems.push('index.html: original paid booking form is missing');
 if (/<section class=["']section booking-section["'] id=["']booking["'][^>]*(?:hidden|aria-hidden=["']true["'])/i.test(read('index.html'))) problems.push('index.html: paid booking form must be visible');
 
 if (problems.length) {
