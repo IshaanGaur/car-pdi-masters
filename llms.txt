@@ -1,6 +1,6 @@
 # Car PDI Masters
 
-> Car PDI Masters provides new-car pre-delivery inspection (PDI) and used-car inspection services across Delhi and Gurugram, India.
+> Car PDI Masters provides new-car pre-delivery inspection (PDI) and used-car inspection services across Delhi, Gurugram and Noida, India.
 
 ## Official website
 - https://www.carmasters.co.in/
@@ -16,6 +16,7 @@
 ## Service area
 - Delhi: https://www.carmasters.co.in/locations/delhi.html
 - Gurugram: https://www.carmasters.co.in/locations/gurugram.html
+- Noida: https://www.carmasters.co.in/locations/noida.html
 - All location pages: https://www.carmasters.co.in/site-map.html
 
 ## Contact
