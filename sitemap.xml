@@ -21,6 +21,26 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Noida Location Hub -->
+  <url>
+    <loc>https://www.carmasters.co.in/locations/noida.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.carmasters.co.in/blog/new-car-pdi-in-noida.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.carmasters.co.in/blog/used-car-inspection-in-noida.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Key Services -->
   <url>
     <loc>https://www.carmasters.co.in/services/new-car-pdi.html</loc>
