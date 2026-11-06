@@ -3,6 +3,20 @@
   "defaultServicePrice": 2499,
   "bookingAmount": 299,
   "balanceAmount": 2200,
+  "plans": {
+    "standard-pdi": {
+      "name": "Standard PDI",
+      "price": 1499,
+      "bookingAmount": 299,
+      "balanceAmount": 1200
+    },
+    "comprehensive-360-pdi": {
+      "name": "Comprehensive 360° PDI",
+      "price": 2499,
+      "bookingAmount": 499,
+      "balanceAmount": 2000
+    }
+  },
   "services": {
     "new-car-pdi": {
       "name": "New Car PDI",

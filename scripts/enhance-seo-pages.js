@@ -100,7 +100,7 @@ function updateJsonLd(html, ctx) {
           }
           return q;
         });
-        if (ctx.kind === 'service' && node['@type'] === 'Service' && ['new-car-pdi','used-car-inspection'].includes(ctx.slug)) {
+        if (ctx.kind === 'service' && node['@type'] === 'Service') {
           node.offers = [
             {'@type':'Offer',name:'Standard PDI',price:'1499',priceCurrency:'INR',availability:'https://schema.org/InStock',url:SITE+'/#pricing'},
             {'@type':'Offer',name:'Comprehensive 360° PDI',price:'2499',priceCurrency:'INR',availability:'https://schema.org/InStock',url:SITE+'/#pricing'}
