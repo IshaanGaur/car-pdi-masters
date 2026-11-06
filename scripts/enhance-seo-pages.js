@@ -20,7 +20,8 @@ function humanize(slug) {
 function contextFor(file) {
   if (file.startsWith('locations/')) {
     const bits = file.replace(/^locations\//, '').replace(/\.html$/, '').split('/');
-    const city = bits[0] === 'gurugram' ? 'Gurugram' : 'Delhi';
+    const cityBySlug = { delhi: 'Delhi', gurugram: 'Gurugram', noida: 'Noida' };
+    const city = cityBySlug[bits[0]] || humanize(bits[0]);
     const place = bits.length > 1 ? humanize(bits.slice(1).join('-')) + ', ' + city : city;
     return { kind: 'location', city, place, slug: bits.slice(1).join('-') };
   }
