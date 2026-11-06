@@ -1,0 +1,104 @@
+{
+  "title": "Sample Locality Page Quality Audit",
+  "generatedAt": "2026-11-06",
+  "sampleSize": 8,
+  "note": "Representative sample only. Word counts and phrase checks are screening signals, not a definitive Google doorway/thin-content verdict. No URLs were deleted, consolidated, redirected or noindexed.",
+  "inventory": [
+    {
+      "path": "locations/delhi/dwarka.html",
+      "title": "Car PDI in Dwarka, Delhi | New Used Car Inspection",
+      "description": "Car PDI and used car inspection across Dwarka sub-city, South-West Delhi, near IGI Airport and Dwarka Expressway. Society, home or dealer inspection.",
+      "h1": "Car PDI Car Inspection in Dwarka",
+      "mainWordCount": 1052,
+      "h2Count": 9,
+      "canonical": "https://www.carmasters.co.in/locations/delhi/dwarka.html",
+      "hasFaq": true,
+      "hasBreadcrumb": true,
+      "localitySpecific": true
+    },
+    {
+      "path": "locations/delhi/saket.html",
+      "title": "Car PDI in Saket, Delhi | New Used Car Inspection",
+      "description": "Arrange car PDI or used-car inspection in Saket, South Delhi. 300+ checkpoints, paint-thickness readings on applicable panels and photo-supported findings.",
+      "h1": "New Car PDI Used Car Inspection in Saket, Delhi",
+      "mainWordCount": 1141,
+      "h2Count": 9,
+      "canonical": "https://www.carmasters.co.in/locations/delhi/saket.html",
+      "hasFaq": true,
+      "hasBreadcrumb": true,
+      "localitySpecific": true
+    },
+    {
+      "path": "locations/delhi/rohini.html",
+      "title": "Car PDI in Rohini, Delhi | New Used Car Inspection",
+      "description": "Car PDI and used car inspection across all Rohini sectors, North-West Delhi, near the Red Line. Inspection at your home, society or dealer.",
+      "h1": "Car PDI Car Inspection in Rohini",
+      "mainWordCount": 999,
+      "h2Count": 9,
+      "canonical": "https://www.carmasters.co.in/locations/delhi/rohini.html",
+      "hasFaq": true,
+      "hasBreadcrumb": true,
+      "localitySpecific": true
+    },
+    {
+      "path": "locations/delhi/karol-bagh.html",
+      "title": "Car PDI in Karol Bagh, Delhi | New Car PDI & Used Car Inspection",
+      "description": "Book independent car PDI in Karol Bagh, Delhi. Showroom cluster coverage around Rohtak Road, New Rohtak Road, DB Gupta Road and E Park Road, subject to access.",
+      "h1": "Independent Car PDI Car Inspection in Karol Bagh, Delhi",
+      "mainWordCount": 1308,
+      "h2Count": 10,
+      "canonical": "https://www.carmasters.co.in/locations/delhi/karol-bagh.html",
+      "hasFaq": true,
+      "hasBreadcrumb": true,
+      "localitySpecific": true
+    },
+    {
+      "path": "locations/gurugram/sector-14.html",
+      "title": "Car PDI in Sector 14–16 Gurugram | New Car Showroom Inspection",
+      "description": "Independent new car PDI around Gurugram Sector 14–16 and IDC showroom corridor. Confirm exact delivery address, dealer access and appointment.",
+      "h1": "Professional Car PDI Services in Sector 14, Gurugram",
+      "mainWordCount": 723,
+      "h2Count": 8,
+      "canonical": "https://www.carmasters.co.in/locations/gurugram/sector-14.html",
+      "hasFaq": false,
+      "hasBreadcrumb": true,
+      "localitySpecific": true
+    },
+    {
+      "path": "locations/gurugram/dlf-phase-3.html",
+      "title": "Car PDI in DLF Phase 3 Gurugram | Professional Pre-Delivery Inspection",
+      "description": "Need a car inspection in DLF Phase 3, Gurugram? Book an independent PDI at home, office or showroom with access and appointment confirmed.",
+      "h1": "Professional Car PDI Services in DLF Phase 3, Gurugram",
+      "mainWordCount": 761,
+      "h2Count": 8,
+      "canonical": "https://www.carmasters.co.in/locations/gurugram/dlf-phase-3.html",
+      "hasFaq": false,
+      "hasBreadcrumb": true,
+      "localitySpecific": true
+    },
+    {
+      "path": "locations/gurugram/golf-course-road.html",
+      "title": "Car PDI in Golf Course Road Gurugram | Professional Pre-Delivery Inspection",
+      "description": "Book independent car PDI around Golf Course Road, Gurugram. New and used car inspections at your chosen location, subject to safe access.",
+      "h1": "Professional Car PDI Services in Golf Course Road, Gurugram",
+      "mainWordCount": 605,
+      "h2Count": 7,
+      "canonical": "https://www.carmasters.co.in/locations/gurugram/golf-course-road.html",
+      "hasFaq": false,
+      "hasBreadcrumb": true,
+      "localitySpecific": true
+    },
+    {
+      "path": "locations/delhi/dwarka-sector-9.html",
+      "title": "Car PDI in Dwarka Sector 9, Delhi | New & Used Car Inspection",
+      "description": "Book car PDI and used car inspection in Dwarka Sector 9, Delhi. On-site inspection at your chosen home, office, dealership showroom or stockyard, subject to scheduling.",
+      "h1": "Car PDI Car Inspection in Dwarka Sector 9",
+      "mainWordCount": 1113,
+      "h2Count": 9,
+      "canonical": "https://www.carmasters.co.in/locations/delhi/dwarka-sector-9.html",
+      "hasFaq": true,
+      "hasBreadcrumb": true,
+      "localitySpecific": true
+    }
+  ]
+}
