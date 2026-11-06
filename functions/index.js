@@ -335,7 +335,7 @@ exports.cpmSubmitWebsiteEnquiryV1 = onRequest({
   if (name.length < 2 || !/^[6-9]\d{9}$/.test(phone) || !service || location.length < 2 || body.consent !== true) {
     return res.status(400).json({ success: false, message: 'Please check your name, 10-digit mobile number, service, location and contact consent.' });
   }
-  const allowedServices = ['New Car PDI','New Car Inspection','Used Car Inspection','Pre-Purchase Car Inspection','EV Car PDI','Luxury Car PDI','Other / Not Sure'];
+  const allowedServices = ['New Car PDI','New Car Inspection','Used Car PDI','Used Car Inspection','Pre-Purchase Car Inspection','EV Car PDI','Luxury Car PDI','Other / Not Sure'];
   if (!allowedServices.includes(service)) return res.status(400).json({ success: false, message: 'Please choose a valid inspection service.' });
   try {
     const ip = String(req.ip || 'unknown');
