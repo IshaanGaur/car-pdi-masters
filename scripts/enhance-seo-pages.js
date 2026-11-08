@@ -47,11 +47,19 @@ function escapeHtml(s) {
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
 }
 function faqFor(ctx) {
-  if (ctx.kind === 'location') return [
-    {q:'Can you inspect a car at my home, office or dealership in ' + ctx.place + '?',a:'An on-site inspection can be arranged at a home, office, dealership showroom or stockyard in ' + ctx.place + ', subject to access permission, a safe inspection area and appointment confirmation.'},
-    {q:'What does a car inspection in ' + ctx.place + ' cover?',a:'The inspection uses a structured 300+ checkpoint framework covering observable exterior and paint condition, tyres, interior, accessible mechanical areas, electrical features and safety observations. Paint thickness readings are taken on applicable panels; OBD scanning is included only where the selected package and vehicle support it.'},
-    {q:'How do I arrange a car inspection in ' + ctx.place + '?',a:'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection address and preferred timing. The team will confirm availability and share the next steps to book through CarParakh.'}
-  ];
+  if (ctx.kind === 'location') {
+    const base = [
+      {q:'Can you inspect a car at my home, office or dealership in ' + ctx.place + '?',a:'An on-site inspection can be arranged at a home, office, dealership showroom or stockyard in ' + ctx.place + ', subject to access permission, a safe inspection area and appointment confirmation.'},
+      {q:'What does a car inspection in ' + ctx.place + ' cover?',a:'The inspection uses a structured 300+ checkpoint framework covering observable exterior and paint condition, tyres, interior, accessible mechanical areas, electrical features and safety observations. Paint thickness readings are taken on applicable panels; OBD scanning is included only where the selected package and vehicle support it.'},
+      {q:'How do I arrange a car inspection in ' + ctx.place + '?',a:'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection address and preferred timing. The team will confirm availability and share the next steps to book through CarParakh.'}
+    ];
+    if (ctx.place === 'Gurugram') {
+      base[0] = {q:'Can you inspect a car at a Gurugram showroom or dealer?',a:'Yes, a new-car PDI or used-car inspection can be arranged around Gurugram at a home, office, showroom or other agreed vehicle location, subject to dealer or site access permission and appointment confirmation.'};
+      base[1] = {q:'Do you cover Gurugram sectors and DLF phases?',a:'Service coverage includes major Gurugram areas such as Sectors 14, 16, 28, 29 and 56, DLF Phases 1–5, Cyber City, Golf Course Road and Sohna Road. Share the exact vehicle location so availability and access can be confirmed.'};
+      base[2] = {q:'What should I confirm before a Gurugram car PDI?',a:'Confirm the vehicle location, expected delivery or purchase timing, showroom or seller access, and whether the vehicle will be accessible in a safe inspection area. The team can then confirm the appointment and inspection scope.'};
+    }
+    return base;
+  }
   const s = ctx.service;
   const f = [
     {q:'What information should I share before arranging ' + s + '?',a:'Share the car make, model, variant, whether it is new or used, the inspection location and your preferred date and time. The team can then confirm the appropriate inspection and appointment availability.'},
