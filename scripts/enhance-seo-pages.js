@@ -125,6 +125,14 @@ for (const file of htmlFiles) {
   // This is a presentation/consistency fix only; it does not alter URLs, canonicals or booking logic.
   if (ctx.kind === 'location') {
     html = html.replace(/Serving Delhi &amp; Gurugram/gi, 'Serving Delhi NCR');
+  html = html.replace(/Serving Delhi & Gurugram/gi, 'Serving Delhi NCR');
+  // Remove unsupported locality-page claims; keep wording aligned with the actual inspection scope.
+  html = html.replace(/100% independent/gi, 'buyer-focused');
+  html = html.replace(/ZERO dealer(?: or shop)? tie-ups/gi, 'no dealer relationship is implied');
+  html = html.replace(/OBD for all cars/gi, 'OBD scanning where the selected package and vehicle support it');
+  html = html.replace(/battery health/gi, 'battery-related observations where applicable');
+  html = html.replace(/Pay ₹299 booking deposit securely through Razorpay to (?:confirm|reserve) your (?:slot|inspector slot)/gi, 'Enquire by WhatsApp or call to confirm availability and booking steps');
+  html = html.replace(/Pay ₹499 booking deposit securely through Razorpay to (?:confirm|reserve) your (?:slot|inspector slot)/gi, 'Enquire by WhatsApp or call to confirm availability and booking steps');
     html = html.replace(/Serving Delhi & Gurugram/gi, 'Serving Delhi NCR');
   }
   html = updateJsonLd(html, ctx);
