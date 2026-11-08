@@ -127,6 +127,14 @@ for (const file of htmlFiles) {
     html = html.replace(/Serving Delhi &amp; Gurugram/gi, 'Serving Delhi NCR');
     html = html.replace(/Serving Delhi & Gurugram/gi, 'Serving Delhi NCR');
   }
+  if (ctx.kind === 'location') {
+    html = html.replace(/100% independent/gi, 'buyer-focused');
+    html = html.replace(/ZERO dealer(?: or shop)? tie-ups/gi, 'no dealer relationship is implied');
+    html = html.replace(/OBD for all cars/gi, 'OBD scanning where the selected package and vehicle support it');
+    html = html.replace(/battery health/gi, 'battery-related observations where applicable');
+    html = html.replace(/Pay ₹299 booking deposit securely through Razorpay to (?:confirm|reserve) your (?:slot|inspector slot)/gi, 'Enquire by WhatsApp or call to confirm availability and booking steps');
+    html = html.replace(/Pay ₹499 booking deposit securely through Razorpay to (?:confirm|reserve) your (?:slot|inspector slot)/gi, 'Enquire by WhatsApp or call to confirm availability and booking steps');
+  }
   html = updateJsonLd(html, ctx);
   html = html.replace(/Choose the new car PDI service and submit your booking details\./gi, 'Send an enquiry with your vehicle details, inspection location and preferred timing using WhatsApp or call.');
   html = html.replace(/Pay the booking amount and wait for review and assignment\./gi, 'The team confirms appointment availability and shares the next steps for booking through CarParakh.');
