@@ -400,12 +400,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://www.carmasters.co.in/locations/delhi/wazirpur.html</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
+  
   <url>
     <loc>https://www.carmasters.co.in/locations/delhi/budh-vihar.html</loc>
     <lastmod>2026-10-26</lastmod>
