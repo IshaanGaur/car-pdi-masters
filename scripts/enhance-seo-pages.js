@@ -121,6 +121,12 @@ for (const file of htmlFiles) {
   let html = original;
   if (/http-equiv=["']refresh/i.test(html) || /name=["']robots["']\s+content=["'][^"']*noindex/i.test(html)) continue;
   const ctx = contextFor(file);
+  // Keep the sitewide locality footer aligned with the current Delhi NCR service area.
+  // This is a presentation/consistency fix only; it does not alter URLs, canonicals or booking logic.
+  if (ctx.kind === 'location') {
+    html = html.replace(/Serving Delhi &amp; Gurugram/gi, 'Serving Delhi NCR');
+    html = html.replace(/Serving Delhi & Gurugram/gi, 'Serving Delhi NCR');
+  }
   html = updateJsonLd(html, ctx);
   html = html.replace(/Choose the new car PDI service and submit your booking details\./gi, 'Send an enquiry with your vehicle details, inspection location and preferred timing using WhatsApp or call.');
   html = html.replace(/Pay the booking amount and wait for review and assignment\./gi, 'The team confirms appointment availability and shares the next steps for booking through CarParakh.');
