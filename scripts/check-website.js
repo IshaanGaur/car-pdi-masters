@@ -85,8 +85,8 @@ if (!read('firebase.website.json').includes('"/locations/delhi"')) problems.push
 if (!/<meta name="robots" content="noindex/.test(read('payment.html'))) problems.push('payment.html: must stay noindex (it is not a page for Google)');
 const sitemap = read('sitemap.xml');
 const htmlSitemap = read('site-map.html');
-const htmlSitemapLinks = new Set([...htmlSitemap.matchAll(/href=["'](\\/locations\\/(?:delhi|gurugram)\\/[^"']+\\.html)["']/g)].map(m => m[1]));
-for (const m of sitemap.matchAll(/<loc>https:\\/\\/www\\.carmasters\\.co\\.in\\/(locations\\/(?:delhi|gurugram)\\/[^<]+)<\\/loc>/g)) {
+const htmlSitemapLinks = new Set([...htmlSitemap.matchAll(/href=["'](\/locations\/(?:delhi|gurugram)\/[^"']+\.html)["']/g)].map(m => m[1]));
+for (const m of sitemap.matchAll(/<loc>https:\/\/www\.carmasters\.co\.in\/(locations\/(?:delhi|gurugram)\/[^<]+)<\/loc>/g)) {
   const rel = '/' + m[1];
   if (!htmlSitemapLinks.has(rel)) problems.push(`site-map.html: missing crawlable link for ${rel}`);
 }
