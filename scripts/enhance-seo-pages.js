@@ -174,6 +174,11 @@ for (const file of htmlFiles) {
   html = html.replace(/Enter the Delhi inspection address and preferred date\/time\./gi, 'Share your vehicle location and preferred timing by WhatsApp or phone.');
   html = html.replace(/Choose the vehicle's actual inspection address during booking, subject to operational availability\./gi, 'Share the vehicle’s exact inspection address in your enquiry; appointment availability and access permission are confirmed before booking.');
   html = html.replace(/Enter the booking form[\s\S]{0,140}?preferred date\/time\./gi, 'Share your vehicle details, location and preferred timing by WhatsApp or phone.');
+  html = html.replace(/Select your inspection type, provide the vehicle details and enter the actual inspection location\. Then use the available ₹299 booking payment option through the website payment flow\./gi,
+    'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through CarParakh.');
+  html = html.replace(/For a new car PDI the inspection should happen at the dealer before you sign the delivery papers\. Enter the dealer address in the booking form\. Your home address in Adarsh Nagar is only needed if the car is already with you\./gi,
+    'For a new car PDI, share the dealer or delivery address where the vehicle will be inspected. Your home address is only needed when the vehicle is already with you.');
+
   // Sweep remaining customer-facing deposit labels, booking-first steps and malformed legacy FAQ copy.
   html = html.replace(/<p class=["']plan-pay["']>Booking\s*<b[^>]*>₹299<\/b>\s*online now\s*·\s*Balance\s*<b[^>]*>₹1,200<\/b>\s*before inspection<\/p>/gi,
     '<p class="plan-pay">Full inspection price: <b>₹1,499</b> · Enquire to confirm availability and booking steps</p>');
