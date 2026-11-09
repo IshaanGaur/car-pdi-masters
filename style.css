@@ -5682,3 +5682,54 @@ body.location-page .noida-service-grid .service-card a{
     padding:21px;
   }
 }
+
+
+/* =========================================================
+   NOIDA HUB — FULL-WIDTH PREMIUM LAYOUT
+   Uses the available desktop canvas without changing shared
+   layouts on Delhi/Gurugram/other location pages.
+   ========================================================= */
+
+.noida-page .section > .container{
+  width:calc(100% - 48px);
+  max-width:1500px;
+}
+
+.noida-page .section-head{
+  max-width:980px;
+}
+
+.noida-page .noida-service-grid,
+.noida-page .grid3{
+  width:100%;
+}
+
+.noida-page .noida-service-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+
+.noida-page .grid3{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+
+@media(max-width:980px){
+  .noida-page .section > .container{
+    width:calc(100% - 32px);
+  }
+
+  .noida-page .noida-service-grid,
+  .noida-page .grid3{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:640px){
+  .noida-page .section > .container{
+    width:calc(100% - 24px);
+  }
+
+  .noida-page .noida-service-grid,
+  .noida-page .grid3{
+    grid-template-columns:1fr;
+  }
+}
