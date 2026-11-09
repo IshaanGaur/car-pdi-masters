@@ -5389,3 +5389,232 @@ body{
   .location-page .sector-28-service-grid{grid-template-columns:1fr;}
   .location-page .sector-28-service-grid .service-card{padding:20px;}
 }
+
+
+/* =========================================================
+   DELHI LOCATION HUB — ROYAL SERVICE PRESENTATION (2026-11-09)
+   Scoped only to locations/delhi.html so existing site pages are untouched.
+   ========================================================= */
+
+.location-page .delhi-service-section{
+  position:relative;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(22,119,255,.06), transparent 34%),
+    #f7f9fc;
+  overflow:hidden;
+}
+
+.location-page .delhi-service-head{
+  max-width:900px;
+  margin-bottom:34px;
+}
+
+.location-page .delhi-service-head h2{
+  max-width:850px;
+  margin:10px 0 16px;
+  color:#0b1b32;
+  font-size:clamp(34px,4.2vw,52px);
+  line-height:1.06;
+  letter-spacing:-.045em;
+}
+
+.location-page .delhi-service-head p{
+  max-width:900px;
+  margin:0;
+  color:#5a687b;
+  font-size:16px;
+  line-height:1.72;
+}
+
+.location-page .delhi-service-head p + p{
+  margin-top:13px;
+}
+
+.location-page .delhi-service-head a{
+  color:#155fc4;
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:3px;
+}
+
+.location-page .delhi-service-intro{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin:0 0 16px;
+}
+
+.location-page .delhi-service-kicker{
+  color:#1d6fe0;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.14em;
+}
+
+.location-page .delhi-service-rule{
+  height:1px;
+  flex:1;
+  background:linear-gradient(90deg,#b9d5f4,transparent);
+}
+
+.location-page .delhi-service-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+}
+
+.location-page .delhi-service-card{
+  position:relative;
+  min-height:245px;
+  display:flex;
+  flex-direction:column;
+  padding:25px 26px 23px;
+  overflow:hidden;
+  border:1px solid rgba(39,112,188,.24);
+  border-radius:20px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(88,199,255,.12), transparent 34%),
+    linear-gradient(145deg,#071528 0%,#0b203b 100%);
+  box-shadow:0 18px 42px rgba(7,21,40,.13);
+  color:#fff;
+  transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.location-page .delhi-service-card::after{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:4px;
+  height:100%;
+  background:linear-gradient(180deg,#58c7ff,#1677ff);
+  opacity:.85;
+}
+
+.location-page .delhi-service-card:hover{
+  transform:translateY(-3px);
+  border-color:rgba(88,199,255,.48);
+  box-shadow:0 24px 52px rgba(7,21,40,.18);
+}
+
+.location-page .delhi-service-card-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  margin-bottom:18px;
+}
+
+.location-page .delhi-service-card-top span{
+  display:grid;
+  place-items:center;
+  width:34px;
+  height:34px;
+  border:1px solid rgba(88,199,255,.28);
+  border-radius:50%;
+  background:rgba(88,199,255,.08);
+  color:#74d4ff;
+  font-size:11px;
+  font-weight:900;
+}
+
+.location-page .delhi-service-card-top b{
+  margin-left:auto;
+  color:#72cffd;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.13em;
+}
+
+.location-page .delhi-service-card h3{
+  margin:0 0 11px;
+  color:#fff;
+  font-size:23px;
+  line-height:1.18;
+  letter-spacing:-.02em;
+}
+
+.location-page .delhi-service-card p{
+  margin:0;
+  color:#b9cce0;
+  font-size:14px;
+  line-height:1.68;
+}
+
+.location-page .delhi-service-card a{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  width:max-content;
+  max-width:100%;
+  margin-top:auto;
+  padding-top:20px;
+  color:#67ccff;
+  font-size:13px;
+  font-weight:900;
+}
+
+.location-page .delhi-service-card a span{
+  transition:transform .2s ease;
+}
+
+.location-page .delhi-service-card:hover a span{
+  transform:translateX(3px);
+}
+
+.location-page .delhi-keyword-note{
+  display:grid;
+  grid-template-columns:minmax(190px,.35fr) minmax(0,1fr);
+  gap:22px;
+  align-items:start;
+  margin-top:20px;
+  padding:20px 22px;
+  border:1px solid #dbe4ef;
+  border-radius:16px;
+  background:#fff;
+  box-shadow:0 8px 24px rgba(16,32,57,.055);
+}
+
+.location-page .delhi-keyword-note strong{
+  color:#102039;
+  font-size:14px;
+  line-height:1.35;
+}
+
+.location-page .delhi-keyword-note p{
+  margin:0;
+  color:#59687b;
+  font-size:13px;
+  line-height:1.7;
+}
+
+@media (max-width:760px){
+  .location-page .delhi-service-grid{
+    grid-template-columns:1fr;
+  }
+
+  .location-page .delhi-service-card{
+    min-height:0;
+  }
+
+  .location-page .delhi-keyword-note{
+    grid-template-columns:1fr;
+    gap:9px;
+  }
+}
+
+@media (max-width:520px){
+  .location-page .delhi-service-section{
+    padding-top:60px;
+    padding-bottom:60px;
+  }
+
+  .location-page .delhi-service-card{
+    padding:21px 20px 20px;
+    border-radius:17px;
+  }
+
+  .location-page .delhi-service-card h3{
+    font-size:21px;
+  }
+}
