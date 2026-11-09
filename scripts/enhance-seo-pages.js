@@ -139,7 +139,7 @@ for (const file of htmlFiles) {
     html = html.replace(/no dealer relationship is implied/gi, 'zero dealership affiliations or commissions');
     html = html.replace(/ZERO dealer(?: or shop)? tie-ups/gi, 'zero dealership affiliations or commissions');
     html = html.replace(/OBD for all cars/gi, 'OBD scanning where the selected package and vehicle support it');
-    html = html.replace(/battery health/gi, 'battery-related observations where applicable');
+    html = html.replace(/battery health/gi, 'battery condition');
     html = html.replace(/Pay ₹299 booking deposit securely through Razorpay to (?:confirm|reserve) your (?:slot|inspector slot)/gi, 'Enquire by WhatsApp or call to confirm availability and booking steps');
     html = html.replace(/Pay ₹499 booking deposit securely through Razorpay to (?:confirm|reserve) your (?:slot|inspector slot)/gi, 'Enquire by WhatsApp or call to confirm availability and booking steps');
   }
