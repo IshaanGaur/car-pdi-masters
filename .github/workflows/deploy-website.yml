@@ -68,3 +68,33 @@ jobs:
             fi
             echo "OK: $host serves the new DLF Phase 1 copy"
           done
+
+      - name: Verify Sohna Road SEO page on deployed hosts
+        run: |
+          set -euo pipefail
+          url='locations/gurugram/sohna-road.html'
+          expected_title='Car PDI in Sohna Road, Gurugram | New, Used, Luxury & EV Inspection'
+          expected_marker='SOHNA-ROAD-DEPLOY-VERIFY'
+          old_title='Car PDI on Sohna Road, Gurugram | New Car & Used Car Inspection'
+          for host in 'https://car-pdi-masters.web.app' 'https://www.carmasters.co.in'; do
+            echo "Checking $host/$url"
+            body="$(curl -fsSL --retry 5 --retry-delay 2 "$host/$url")"
+            if ! grep -Fq "$expected_title" <<<"$body"; then
+              echo "ERROR: new Sohna Road title is not live on $host"
+              if grep -Fq "$old_title" <<<"$body"; then echo "ERROR: old Sohna Road title is still being served on $host"; fi
+              exit 1
+            fi
+            if ! grep -Fq "$expected_marker" <<<"$body"; then
+              echo "ERROR: latest Sohna Road deployment marker is not live on $host"
+              exit 1
+            fi
+            if grep -Fq 'verified Tata, Škoda, Maruti Suzuki and Hyundai dealer locations' <<<"$body"; then
+              echo "ERROR: stale dealer-brand copy is still live on $host"
+              exit 1
+            fi
+            if ! grep -Fq 'FAQPage' <<<"$body"; then
+              echo "ERROR: FAQ schema is not live on $host"
+              exit 1
+            fi
+            echo "OK: $host serves the new Sohna Road SEO page"
+          done
