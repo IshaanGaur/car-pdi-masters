@@ -45,3 +45,26 @@ jobs:
 
       - name: Deploy website Hosting after API is ready
         run: firebase deploy --config firebase.website.json --only hosting:website --project car-pdi-masters --non-interactive
+
+      - name: Verify DLF Phase 1 on deployed hosts
+        run: |
+          set -euo pipefail
+          url='locations/gurugram/dlf-phase-1.html'
+          expected='This page covers DLF Phase 1 car PDI and inspection services; nearby Gurugram areas are listed below.'
+          old='Sector 28 and MG Road showroom references'
+          for host in 'https://car-pdi-masters.web.app' 'https://www.carmasters.co.in'; do
+            echo "Checking $host/$url"
+            body="$(curl -fsSL --retry 4 --retry-delay 2 "$host/$url")"
+            if ! grep -Fq "$expected" <<<"$body"; then
+              echo "ERROR: expected DLF Phase 1 text is not live on $host"
+              if grep -Fq "$old" <<<"$body"; then
+                echo "ERROR: old showroom-reference text is still being served on $host"
+              fi
+              exit 1
+            fi
+            if grep -Fq "$old" <<<"$body"; then
+              echo "ERROR: old showroom-reference text is still present on $host"
+              exit 1
+            fi
+            echo "OK: $host serves the new DLF Phase 1 copy"
+          done
