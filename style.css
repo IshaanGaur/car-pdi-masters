@@ -5618,3 +5618,67 @@ body{
     font-size:21px;
   }
 }
+
+
+/* =========================================================
+   NOIDA LOCATION HUB — PREMIUM SERVICE PRESENTATION (2026-11-09)
+   Scoped to Noida only; existing SEO structure and shared UI remain intact.
+   ========================================================= */
+
+body.location-page .noida-service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+  margin-top:24px;
+}
+
+body.location-page .noida-service-grid .service-card{
+  min-height:235px;
+  display:flex;
+  flex-direction:column;
+  padding:24px;
+  border:1px solid rgba(53,156,255,.38);
+  border-radius:18px;
+  background:linear-gradient(145deg,#071528 0%,#0b203b 100%);
+  box-shadow:0 18px 42px rgba(7,21,40,.13);
+}
+
+body.location-page .noida-service-grid .service-card h3{
+  margin:0 0 10px;
+  color:#fff;
+  font-size:21px;
+  line-height:1.22;
+}
+
+body.location-page .noida-service-grid .service-card p{
+  min-height:0;
+  margin:0;
+  color:#b9cce0;
+  font-size:14px;
+  line-height:1.65;
+}
+
+body.location-page .noida-service-grid .service-card a{
+  margin-top:auto;
+  padding-top:18px;
+  color:#58c7ff;
+  font-size:13px;
+  font-weight:900;
+}
+
+@media(max-width:980px){
+  body.location-page .noida-service-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:640px){
+  body.location-page .noida-service-grid{
+    grid-template-columns:1fr;
+  }
+
+  body.location-page .noida-service-grid .service-card{
+    min-height:0;
+    padding:21px;
+  }
+}
