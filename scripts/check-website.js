@@ -66,6 +66,36 @@ for (const f of pages) {
     }
   }
 }
+// Every indexable HTML page must have a complete, self-consistent SEO head and valid JSON-LD.
+// This catches regressions outside the locality-page-only checks below.
+for (const f of pages) {
+  const html = read(f);
+  const isRedirect = /http-equiv="refresh"/i.test(html);
+  const isNoindex = /<meta name="robots" content="[^"]*noindex/i.test(html);
+  if (isRedirect || isNoindex) continue;
+
+  const expectedUrl = f === 'index.html'
+    ? 'https://www.carmasters.co.in/'
+    : `https://www.carmasters.co.in/${f}`;
+
+  const titles = [...html.matchAll(/<title\\b[^>]*>([\\s\\S]*?)<\\/title>/gi)];
+  if (titles.length !== 1 || !titles[0][1].trim()) problems.push(`${f}: indexable page must have exactly one non-empty <title>`);
+
+  const descriptions = [...html.matchAll(/<meta\\s+name=["']description["'][^>]*content=["']([^"']*)["'][^>]*>/gi)];
+  if (descriptions.length !== 1 || !descriptions[0][1].trim()) problems.push(`${f}: indexable page must have exactly one non-empty meta description`);
+
+  const canonicals = [...html.matchAll(/<link\\s+rel=["']canonical["'][^>]*href=["']([^"']+)["'][^>]*>/gi)].map(m => m[1]);
+  if (canonicals.length !== 1 || canonicals[0] !== expectedUrl) {
+    problems.push(`${f}: canonical must be exactly ${expectedUrl} (found ${canonicals.join(', ') || 'none'})`);
+  }
+
+  if (!/<h1\\b[^>]*>/i.test(html)) problems.push(`${f}: indexable page is missing an H1`);
+
+  for (const m of html.matchAll(/<script\\s+type=["']application\\/ld\\+json["']>([\\s\\S]*?)<\\/script>/gi)) {
+    try { JSON.parse(m[1]); } catch (_) { problems.push(`${f}: broken structured data (JSON-LD)`); }
+  }
+}
+
 // Google indexing: location pages must point to themselves, be indexable and carry valid breadcrumb data.
 for (const f of pages.filter(p => p.startsWith('locations/'))) {
   const html = read(f);
