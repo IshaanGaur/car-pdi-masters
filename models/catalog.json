@@ -209,14 +209,21 @@
         "5-speed AGS/AMT"
       ],
       "variants": [
-        "LXi",
-        "VXi",
-        "VXi (O)",
-        "ZXi",
-        "ZXi+",
-        "LXi CNG",
+        "LXi MT",
+        "VXi MT",
+        "VXi (O) MT",
+        "VXi AMT",
+        "VXi (O) AMT",
         "VXi CNG",
-        "ZXi CNG"
+        "VXi CNG AGS",
+        "VXi (O) CNG",
+        "VXi (O) CNG AGS",
+        "ZXi MT",
+        "ZXi AMT",
+        "ZXi CNG",
+        "ZXi CNG AGS",
+        "ZXi+ MT",
+        "ZXi+ AMT"
       ],
       "aliases": [],
       "sourceUrls": [
@@ -254,7 +261,17 @@
         "5-speed manual",
         "5-speed AGS/AMT"
       ],
-      "variants": [],
+      "variants": [
+        "Sigma",
+        "Delta",
+        "Delta AGS",
+        "Zeta",
+        "Zeta AGS",
+        "Alpha",
+        "Alpha AGS",
+        "Delta CNG",
+        "Zeta CNG"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.marutisuzuki.com/nexa/baleno",
@@ -270,7 +287,8 @@
         "Current NEXA listing plus Sep 2026 Maruti announcement; verify final variant matrix before publish.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Maruti Suzuki",
@@ -291,10 +309,13 @@
         "5-speed AGS/AMT"
       ],
       "variants": [
-        "LXi",
-        "VXi",
-        "ZXi",
-        "ZXi+",
+        "LXi MT",
+        "VXi MT",
+        "VXi AGS",
+        "ZXi MT",
+        "ZXi AGS",
+        "ZXi+ MT",
+        "ZXi+ AGS",
         "VXi CNG",
         "ZXi CNG"
       ],
@@ -335,7 +356,16 @@
         "5-speed AGS/AMT",
         "6-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "Sigma",
+        "Delta",
+        "Delta+",
+        "Zeta",
+        "Zeta+",
+        "Alpha",
+        "Delta CNG",
+        "Zeta CNG"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.marutisuzuki.com/nexa/fronx"
@@ -350,7 +380,8 @@
         "Current NEXA model; verify current CNG/variant availability from live price page before publish.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Maruti Suzuki",
@@ -371,13 +402,20 @@
         "6-speed automatic"
       ],
       "variants": [
-        "LXi",
-        "VXi",
-        "ZXi",
-        "ZXi+",
+        "LXi MT",
+        "VXi MT",
+        "VXi AMT",
+        "ZXi MT",
+        "ZXi AMT",
+        "ZXi+ MT",
+        "ZXi+ AMT",
         "LXi CNG",
         "VXi CNG",
-        "ZXi CNG"
+        "ZXi CNG",
+        "LXi Turbo MT",
+        "VXi Turbo MT",
+        "ZXi Turbo MT",
+        "ZXi+ Turbo MT"
       ],
       "aliases": [],
       "sourceUrls": [
@@ -417,7 +455,18 @@
         "6-speed automatic",
         "e-CVT/e-Drive"
       ],
-      "variants": [],
+      "variants": [
+        "Sigma",
+        "Delta",
+        "Zeta",
+        "Alpha",
+        "Alpha+",
+        "Delta CNG",
+        "Zeta CNG",
+        "Zeta+",
+        "Alpha+ Strong Hybrid",
+        "Zeta+ Strong Hybrid"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.marutisuzuki.com/corporate/media/press-releases/2025/april/maruti-suzuki-grand-vitara-updated-with-6-airbags-as-standard-amp-new-premium-features"
@@ -433,7 +482,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Maruti Suzuki",
@@ -455,7 +505,14 @@
         "6-speed automatic",
         "e-Drive"
       ],
-      "variants": [],
+      "variants": [
+        "LXi",
+        "VXi",
+        "ZXi",
+        "ZXi (O)",
+        "ZXi+",
+        "ZXi+ (O)"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.marutisuzuki.com/arena/victoris/price"
@@ -471,7 +528,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Maruti Suzuki",
@@ -492,10 +550,13 @@
         "6-speed automatic"
       ],
       "variants": [
-        "LXi",
-        "VXi",
-        "ZXi",
-        "ZXi+",
+        "LXi MT",
+        "VXi MT",
+        "VXi AT",
+        "ZXi MT",
+        "ZXi AT",
+        "ZXi+ MT",
+        "ZXi+ AT",
         "VXi CNG",
         "ZXi CNG"
       ],
