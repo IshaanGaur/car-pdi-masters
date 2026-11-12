@@ -1,6 +1,9 @@
 name: Live audit — all brand-model PDI pages
 
 on:
+  push:
+    branches:
+      - main
   workflow_run:
     workflows:
       - Deploy website to Firebase Hosting
@@ -20,6 +23,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          if [ "${{ github.event_name }}" = "push" ]; then sleep 120; fi
           HOST='https://www.carmasters.co.in'
           sitemap="$(curl -fsSL --retry 5 --retry-delay 2 "$HOST/sitemap.xml")"
           mapfile -t urls < <(printf '%s' "$sitemap" | grep -oE 'https://www\.carmasters\.co\.in/car-pdi/[^<]+' | grep -E '/car-pdi/[^/]+/[^/]+/$' | sort -u)
