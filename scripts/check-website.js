@@ -76,7 +76,9 @@ for (const f of pages) {
 
   const expectedUrl = f === 'index.html'
     ? 'https://www.carmasters.co.in/'
-    : `https://www.carmasters.co.in/${f}`;
+    : f.endsWith('/index.html')
+      ? `https://www.carmasters.co.in/${f.slice(0, -'index.html'.length)}`
+      : `https://www.carmasters.co.in/${f}`;
 
   const titles = [...html.matchAll(/<title\b[^>]*>([\s\S]*?)<\/title>/gi)];
   if (titles.length !== 1 || !titles[0][1].trim()) problems.push(`${f}: indexable page must have exactly one non-empty <title>`);
