@@ -1184,7 +1184,11 @@
         "6-speed manual",
         "6-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "Smart",
+        "Pure X",
+        "Adventure X"
+      ],
       "aliases": [
         "Harrier.ev"
       ],
@@ -1202,7 +1206,8 @@
         "Harrier.ev is a separate pure-EV product family; retain the Harrier model URL as the authoritative family-level PDI page and mention Harrier.ev only as an applicable EV configuration, without presenting its EV specifications as the ICE Harrier's powertrain.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Tata",
@@ -1221,7 +1226,11 @@
         "6-speed manual",
         "6-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "Smart",
+        "Pure X",
+        "Adventure X+"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://cars.tatamotors.com/safari/"
@@ -1237,7 +1246,8 @@
         "Do not present Safari as an EV powertrain on the Safari page; current Tata source material distinguishes Safari MCE from separate Tata EV products. Keep any future Safari EV research as a separate validated record only if Tata India confirms a retail product.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Tata",
@@ -1362,7 +1372,11 @@
         "6-speed manual",
         "6-speed torque-converter automatic"
       ],
-      "variants": [],
+      "variants": [
+        "AXT",
+        "LXT",
+        "ZXT"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://auto.mahindra.com/suv/thar"
@@ -1377,7 +1391,8 @@
         "Official Mahindra Thar specs confirm 1.5L diesel, 2.2L diesel and 2.0L turbo-petrol families with 6-speed manual/torque-converter automatic combinations; 4WD is configuration-dependent.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Mahindra",
@@ -1955,7 +1970,15 @@
         "Direct Shift CVT",
         "E-drive transmission"
       ],
-      "variants": [],
+      "variants": [
+        "G-SLF",
+        "GX",
+        "GX(O)",
+        "VX",
+        "VX(O)",
+        "ZX",
+        "ZX(O)"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.toyotabharat.com/documents/brochures/e-brochure-hycross-spec.pdf",
@@ -1971,7 +1994,8 @@
         "Official Toyota India brochures confirm petrol/self-charging hybrid and CVT/E-drive transmission families; verify live grade naming before publish.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Toyota",
@@ -1991,7 +2015,14 @@
         "6-speed manual",
         "6-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "2.7L Petrol 4x2 MT",
+        "2.7L Petrol 4x2 AT",
+        "2.8L Diesel 4x2 MT",
+        "2.8L Diesel 4x2 AT",
+        "2.8L Diesel 4x4 MT",
+        "2.8L Diesel 4x4 AT"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.toyotabharat.com/showroom/fortuner/"
@@ -2006,7 +2037,8 @@
         "Current Toyota India model; verify current grade matrix before publish.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Toyota",
