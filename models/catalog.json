@@ -2776,7 +2776,13 @@
       "transmissions": [
         "Automatic electric drive"
       ],
-      "variants": [],
+      "variants": [
+        "Executive",
+        "Excite",
+        "Excite FC",
+        "Exclusive",
+        "Exclusive FC"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.mgmotor.co.in/vehicles/comet-ev-electric-car-in-india.html"
@@ -2790,7 +2796,8 @@
       "researchNotes": [
         "MG India confirms Comet EV with 17.4 kWh battery, PMSM motor, 230 km claimed range and automatic electric transmission."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "MG",
@@ -2811,7 +2818,13 @@
         "CVT",
         "6-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "Sprint",
+        "Shine",
+        "Select",
+        "Sharp Pro",
+        "Savvy Pro"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.mgmotor.co.in/vehicles/astor-petrol-car-in-india.html"
@@ -2827,7 +2840,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "MG",
@@ -2846,7 +2860,13 @@
       "transmissions": [
         "Single-speed electric drive"
       ],
-      "variants": [],
+      "variants": [
+        "Excite",
+        "Exclusive",
+        "Essence",
+        "Exclusive Pro",
+        "Essence Pro"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.mgmotor.co.in/content/mgmotor/language-masters/en/vehicles/windsor-ev-electric-car-in-india.html"
@@ -2860,7 +2880,8 @@
       "researchNotes": [
         "MG India confirms Windsor EV 38 kWh and 52.9 kWh Pro battery configurations; Pro variants provide 449 km certified range."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "MG",
@@ -2880,7 +2901,15 @@
         "6-speed manual",
         "CVT"
       ],
-      "variants": [],
+      "variants": [
+        "Style",
+        "Select Pro MT",
+        "Smart Pro MT",
+        "Smart Pro CVT",
+        "Sharp Pro MT",
+        "Sharp Pro CVT",
+        "Savvy Pro CVT"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.mgmotor.co.in/vehicles/hector-suv-in-india.html"
@@ -2896,7 +2925,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "MG",
@@ -2948,7 +2978,12 @@
       "transmissions": [
         "Automatic electric drive"
       ],
-      "variants": [],
+      "variants": [
+        "Executive",
+        "Excite Pro",
+        "Exclusive Plus",
+        "Essence"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.mgmotor.co.in/"
@@ -2962,7 +2997,8 @@
       "researchNotes": [
         "MG India lists ZS EV with a 50.3 kWh battery in the current India lineup; EV PDI content should emphasize battery, charging and HV diagnostics."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Skoda",
