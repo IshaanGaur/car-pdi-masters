@@ -2631,12 +2631,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "BMW India specifications vary by generation and trim; final page must distinguish current India model from older used variants and verify engine, transmission and xDrive mapping before approval."
+      ]
     },
     {
       "brand": "BMW",
@@ -2653,12 +2656,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "BMW India specifications vary by generation and trim; final page must distinguish current India model from older used variants and verify engine, transmission and xDrive mapping before approval."
+      ]
     },
     {
       "brand": "BMW",
@@ -2675,12 +2681,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "BMW India specifications vary by generation and trim; final page must distinguish current India model from older used variants and verify engine, transmission and xDrive mapping before approval."
+      ]
     },
     {
       "brand": "BMW",
@@ -2697,12 +2706,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "BMW India specifications vary by generation and trim; final page must distinguish current India model from older used variants and verify engine, transmission and xDrive mapping before approval."
+      ]
     },
     {
       "brand": "BMW",
@@ -2719,12 +2731,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "BMW India specifications vary by generation and trim; final page must distinguish current India model from older used variants and verify engine, transmission and xDrive mapping before approval."
+      ]
     },
     {
       "brand": "BMW",
@@ -2741,12 +2756,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "BMW India specifications vary by generation and trim; final page must distinguish current India model from older used variants and verify engine, transmission and xDrive mapping before approval."
+      ]
     },
     {
       "brand": "BMW",
@@ -2763,12 +2781,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "BMW India specifications vary by generation and trim; final page must distinguish current India model from older used variants and verify engine, transmission and xDrive mapping before approval."
+      ]
     },
     {
       "brand": "Mercedes-Benz",
@@ -2807,12 +2828,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Mercedes-Benz India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and 4MATIC mapping before approval."
+      ]
     },
     {
       "brand": "Mercedes-Benz",
@@ -2829,12 +2853,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Mercedes-Benz India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and 4MATIC mapping before approval."
+      ]
     },
     {
       "brand": "Mercedes-Benz",
@@ -2851,12 +2878,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Mercedes-Benz India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and 4MATIC mapping before approval."
+      ]
     },
     {
       "brand": "Mercedes-Benz",
@@ -2873,12 +2903,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Mercedes-Benz India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and 4MATIC mapping before approval."
+      ]
     },
     {
       "brand": "Mercedes-Benz",
@@ -2895,12 +2928,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Mercedes-Benz India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and 4MATIC mapping before approval."
+      ]
     },
     {
       "brand": "Mercedes-Benz",
@@ -2917,12 +2953,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Mercedes-Benz India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and 4MATIC mapping before approval."
+      ]
     },
     {
       "brand": "Mercedes-Benz",
@@ -2939,12 +2978,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Mercedes-Benz India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and 4MATIC mapping before approval."
+      ]
     },
     {
       "brand": "Audi",
@@ -2961,12 +3003,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Audi India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and quattro mapping before approval."
+      ]
     },
     {
       "brand": "Audi",
@@ -2983,12 +3028,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Audi India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and quattro mapping before approval."
+      ]
     },
     {
       "brand": "Audi",
@@ -3005,12 +3053,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Audi India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and quattro mapping before approval."
+      ]
     },
     {
       "brand": "Audi",
@@ -3027,12 +3078,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Audi India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and quattro mapping before approval."
+      ]
     },
     {
       "brand": "Audi",
@@ -3049,12 +3103,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Audi India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and quattro mapping before approval."
+      ]
     },
     {
       "brand": "Audi",
@@ -3071,12 +3128,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Audi India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and quattro mapping before approval."
+      ]
     },
     {
       "brand": "Audi",
@@ -3093,12 +3153,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Audi India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and quattro mapping before approval."
+      ]
     },
     {
       "brand": "Volvo",
@@ -3371,12 +3434,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Jaguar India specifications vary substantially by model year and generation; final page should prioritize used-car PDI and verify the exact engine/transmission for each relevant generation before approval."
+      ]
     },
     {
       "brand": "Jaguar",
@@ -3393,12 +3459,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Jaguar India specifications vary substantially by model year and generation; final page should prioritize used-car PDI and verify the exact engine/transmission for each relevant generation before approval."
+      ]
     },
     {
       "brand": "Jaguar",
@@ -3591,12 +3660,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Porsche India specifications vary by generation and derivative; final page must distinguish petrol, hybrid and EV generations and verify exact India configuration before approval."
+      ]
     },
     {
       "brand": "Porsche",
@@ -3613,12 +3685,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Porsche India specifications vary by generation and derivative; final page must distinguish petrol, hybrid and EV generations and verify exact India configuration before approval."
+      ]
     },
     {
       "brand": "Porsche",
@@ -3635,12 +3710,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Porsche India specifications vary by generation and derivative; final page must distinguish petrol, hybrid and EV generations and verify exact India configuration before approval."
+      ]
     },
     {
       "brand": "Porsche",
@@ -3657,12 +3735,15 @@
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Porsche India specifications vary by generation and derivative; final page must distinguish petrol, hybrid and EV generations and verify exact India configuration before approval."
+      ]
     },
     {
       "brand": "MINI",
