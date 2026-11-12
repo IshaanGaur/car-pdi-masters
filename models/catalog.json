@@ -1944,7 +1944,21 @@
         "5-speed manual",
         "AMT"
       ],
-      "variants": [],
+      "variants": [
+        "E MT",
+        "S MT",
+        "S AMT",
+        "S CNG MT",
+        "S CNG AMT",
+        "G MT",
+        "G AMT",
+        "G CNG MT",
+        "G CNG AMT",
+        "V MT",
+        "V AMT",
+        "V(O) MT",
+        "V(O) AMT"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.toyotabharat.com/news/2026/tkm-introduces-the-new-toyota-glanza.html",
@@ -1961,7 +1975,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Toyota",
@@ -1981,7 +1996,15 @@
         "5-speed manual",
         "6-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "S MT",
+        "S AT",
+        "G MT",
+        "G AT",
+        "V MT",
+        "V AT",
+        "S CNG MT"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.toyotabharat.com/showroom/rumion/"
@@ -1997,7 +2020,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Toyota",
@@ -2019,7 +2043,18 @@
         "6-speed automatic",
         "Intelligent Gear Shift/AMT"
       ],
-      "variants": [],
+      "variants": [
+        "E MT",
+        "E CNG MT",
+        "S MT",
+        "S AMT",
+        "S+ MT",
+        "S+ AMT",
+        "G 1.0L Turbo MT",
+        "G 1.0L Turbo AT",
+        "V 1.0L Turbo MT",
+        "V 1.0L Turbo AT"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.toyotabharat.com/news/2024/tkm-launches-the-all-new-urban-cruiser-taisor-make-your-way-with-the-new-suv.html",
@@ -2036,7 +2071,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Toyota",
@@ -2058,7 +2094,17 @@
         "6-speed automatic",
         "e-Drive"
       ],
-      "variants": [],
+      "variants": [
+        "E CNG S",
+        "E CNG G",
+        "NeoDrive E",
+        "NeoDrive S",
+        "NeoDrive G(O)",
+        "NeoDrive V",
+        "Hybrid S",
+        "Hybrid G(O)",
+        "Hybrid V"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.toyotabharat.com/showroom/urbancruiser-hyryder/",
@@ -2075,7 +2121,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Toyota",
@@ -2093,7 +2140,13 @@
       "transmissions": [
         "5-speed manual"
       ],
-      "variants": [],
+      "variants": [
+        "GX",
+        "GX Fleet",
+        "GX+",
+        "VX",
+        "ZX"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.toyotabharat.com/news/2026/toyota-introduces-the-new-innova-crysta-with-premium-styling-and-new-design-elements.html"
@@ -2109,7 +2162,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Toyota",
@@ -2216,7 +2270,11 @@
         "6-speed manual",
         "6-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "4X4 VX AT",
+        "4X4 GX AT",
+        "4X2 GX AT"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.toyotabharat.com/showroom/hilux/index.html"
@@ -2232,7 +2290,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Toyota",
@@ -2251,7 +2310,10 @@
       "transmissions": [
         "e-CVT"
       ],
-      "variants": [],
+      "variants": [
+        "Hybrid Electric Vehicle",
+        "Sprint Edition"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://tweb.toyotabharat.com/camry.html"
@@ -2267,7 +2329,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Kia",
