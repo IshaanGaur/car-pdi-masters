@@ -1412,7 +1412,15 @@
         "6-speed manual",
         "6-speed torque-converter automatic"
       ],
-      "variants": [],
+      "variants": [
+        "MX1",
+        "MX3",
+        "MX5",
+        "AX3L",
+        "AX5L",
+        "Star EDN",
+        "AX7L"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://auto.mahindra.com/suv/thar-roxx"
@@ -1427,7 +1435,8 @@
         "Official Mahindra Thar ROXX brochure confirms 2.0L turbo petrol and 2.2L diesel with 6-speed manual and torque-converter automatic options; 4x4 is configuration-dependent.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Mahindra",
