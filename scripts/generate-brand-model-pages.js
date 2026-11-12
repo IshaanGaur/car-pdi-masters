@@ -12,5 +12,14 @@ function hub(title,u,brand,models){return `<!doctype html><html lang="en-IN"><he
 fs.rmSync(OUT,{recursive:true,force:true});fs.mkdirSync(OUT,{recursive:true});
 const brands=[...new Map(approved.map(m=>[m.brandSlug,m.brand])).entries()].map(([brandSlug,brand])=>({brandSlug,brand}));
 write(path.join(OUT,'index.html'),hub('Car PDI by Brand & Model',SITE+'/car-pdi/','',brands.map(b=>({...b,modelSlug:'',model:b.brand}))));
-for(const b of brands){const ms=approved.filter(m=>m.brandSlug===b.brandSlug);write(path.join(OUT,b.brandSlug,'index.html'),hub(b.brand+' Car PDI & Inspection',SITE+'/car-pdi/'+b.brandSlug+'/ ',b.brand,ms));for(const m of ms)write(path.join(OUT,m.brandSlug,m.modelSlug,'index.html'),page(m));}
+for(const b of brands){const ms=approved.filter(m=>m.brandSlug===b.brandSlug);write(path.join(OUT,b.brandSlug,'index.html'),hub(b.brand+' Car PDI & Inspection',SITE+'/car-pdi/'+b.brandSlug+'/',b.brand,ms));for(const m of ms)write(path.join(OUT,b.brandSlug,m.modelSlug,'index.html'),page(m));}
+const sitemapFile=path.join(ROOT,'sitemap.xml');
+if(fs.existsSync(sitemapFile)){
+  let sm=fs.readFileSync(sitemapFile,'utf8');
+  sm=sm.replace(/\\s*<!-- BEGIN GENERATED BRAND MODEL PAGES -->[\\s\\S]*?<!-- END GENERATED BRAND MODEL PAGES -->\\s*/g,'\\n');
+  const urls=approved.map(m=>`  <url><loc>${url(m)}</loc><lastmod>${new Date().toISOString().slice(0,10)}</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>`).join('\\n');
+  const block='  <!-- BEGIN GENERATED BRAND MODEL PAGES -->\\n'+urls+'\\n  <!-- END GENERATED BRAND MODEL PAGES -->';
+  sm=sm.replace(/<\\/urlset>/,block+'\\n</urlset>');
+  fs.writeFileSync(sitemapFile,sm);
+}
 console.log('Generated '+approved.length+' approved model pages across '+brands.length+' brands.');
