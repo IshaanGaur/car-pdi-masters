@@ -699,7 +699,14 @@
         "5-speed manual",
         "Smart Auto AMT"
       ],
-      "variants": [],
+      "variants": [
+        "Era",
+        "Magna",
+        "Corporate",
+        "Sportz",
+        "Sportz(O)",
+        "Asta"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.hyundai.com/in/en/find-a-car",
@@ -715,7 +722,8 @@
         "Hyundai India currently lists Grand i10 NIOS with petrol/CNG and manual/Smart Auto AMT.",
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Hyundai",
@@ -734,7 +742,14 @@
         "5-speed manual",
         "IVT"
       ],
-      "variants": [],
+      "variants": [
+        "Era",
+        "Magna",
+        "Sportz",
+        "Sportz(O)",
+        "Asta",
+        "Asta(O)"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.hyundai.com/in/en/find-a-car",
@@ -750,7 +765,8 @@
         "Hyundai India currently lists i20 with 1.2L petrol and 5MT/IVT.",
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Hyundai",
@@ -770,7 +786,13 @@
         "5-speed manual",
         "AMT"
       ],
-      "variants": [],
+      "variants": [
+        "E",
+        "S",
+        "Corporate",
+        "SX",
+        "SX(O)"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.hyundai.com/in/en/find-a-car/aura/price"
@@ -786,7 +808,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Hyundai",
@@ -806,7 +829,15 @@
         "5-speed manual",
         "Smart Auto AMT"
       ],
-      "variants": [],
+      "variants": [
+        "HX 2",
+        "HX 3",
+        "HX 4",
+        "HX 4+",
+        "HX 6",
+        "HX 8",
+        "HX 10"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.hyundai.com/in/en/find-a-car/exter/price"
@@ -822,7 +853,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Hyundai",
@@ -900,10 +932,14 @@
         "E",
         "EX",
         "EX(O)",
+        "S",
         "S(O)",
         "S(O) Knight",
         "SX",
+        "SX Tech",
         "SX Premium",
+        "SX(O)",
+        "SX(O) Knight",
         "King",
         "King Knight"
       ],
@@ -980,7 +1016,14 @@
         "6-speed automatic",
         "7-speed DCT"
       ],
-      "variants": [],
+      "variants": [
+        "Executive",
+        "Prestige",
+        "Corporate",
+        "Platinum",
+        "Signature",
+        "Signature Knight"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.hyundai.com/in/en/find-a-car"
@@ -995,7 +1038,8 @@
         "Hyundai India currently lists Alcazar with 1.5L turbo petrol/diesel and 6MT/6AT/7DCT.",
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Hyundai",
@@ -1015,7 +1059,10 @@
         "6-speed automatic",
         "8-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "Platinum",
+        "Signature"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.hyundai.com/content/dam/hyundai/in/en/data/brochure/tucson-brochure.pdf"
@@ -1031,7 +1078,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Tata",
