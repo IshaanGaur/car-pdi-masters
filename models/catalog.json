@@ -3571,7 +3571,21 @@
         "Manual",
         "Automatic (generation dependent)"
       ],
-      "variants": [],
+      "variants": [
+        "Live",
+        "Live (O)",
+        "Feel",
+        "Feel (O)",
+        "Shine",
+        "Turbo Feel",
+        "Turbo Shine",
+        "Turbo Shine AT",
+        "CNG Live",
+        "CNG Live (O)",
+        "CNG Feel",
+        "CNG Feel (O)",
+        "CNG Shine"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.citroen.in/our-models/citroen-c3",
@@ -3590,7 +3604,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "used_historical",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Citroën",
@@ -3609,7 +3624,16 @@
         "Manual",
         "Automatic (generation dependent)"
       ],
-      "variants": [],
+      "variants": [
+        "You",
+        "Plus",
+        "Turbo You - 7S",
+        "Turbo Plus",
+        "Turbo Max - 5S",
+        "Turbo Max - 7S",
+        "Turbo AT Max - 5S",
+        "Turbo AT Max - 7S"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.citroen.in/our-models/citroen-c3-aircross",
@@ -3628,7 +3652,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "used_historical",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Citroën",
@@ -3682,7 +3707,14 @@
         "Manual",
         "Automatic"
       ],
-      "variants": [],
+      "variants": [
+        "You",
+        "Plus",
+        "Max",
+        "Turbo Plus",
+        "Turbo Max",
+        "Turbo Max AT"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.citroen.in/our-models/citroen-basalt",
@@ -3701,7 +3733,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Citroën",
@@ -3719,7 +3752,11 @@
       "transmissions": [
         "Single-speed electric drive"
       ],
-      "variants": [],
+      "variants": [
+        "Live",
+        "Live (O)",
+        "Shine"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://ds-prod.citroen.in/static-assets/ds-static/s3fs-public/2024-09/EC3%20Main%20E-Brochure_Rev_0.pdf"
@@ -3734,7 +3771,8 @@
         "Citroën India brochure confirms ë-C3 with 29.2 kWh battery and regenerative braking; charging and HV system checks should be prominent in PDI content.",
         "Current India retail naming has evolved toward the ë-C3X family; retain this page for ë-C3/current-stock and used-car search intent, with generation-aware wording and no duplicate ë-C3X URL."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Jeep",
