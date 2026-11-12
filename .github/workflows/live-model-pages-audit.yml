@@ -1,0 +1,82 @@
+name: Live audit — all brand-model PDI pages
+
+on:
+  workflow_run:
+    workflows:
+      - Deploy website to Firebase Hosting
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Audit every model URL from live sitemap
+        shell: bash
+        run: |
+          set -euo pipefail
+          HOST='https://www.carmasters.co.in'
+          sitemap="$(curl -fsSL --retry 5 --retry-delay 2 "$HOST/sitemap.xml")"
+          mapfile -t urls < <(printf '%s' "$sitemap" | grep -oE 'https://www\.carmasters\.co\.in/car-pdi/[^<]+' | grep -E '/car-pdi/[^/]+/[^/]+/$' | sort -u)
+
+          if [ "${#urls[@]}" -lt 100 ]; then
+            echo "ERROR: expected at least 100 model URLs, found ${#urls[@]}"
+            exit 1
+          fi
+
+          total=0
+          failed=0
+          : > model-live-audit.txt
+
+          for url in "${urls[@]}"; do
+            total=$((total+1))
+            body="$(curl -fsSL --retry 5 --retry-delay 2 "$url")"
+            errors=()
+
+            grep -Eiq '<title>[^<]*(PDI|Car PDI|Inspection)[^<]*</title>' <<<"$body" || errors+=("title")
+            grep -Eiq '<h1[^>]*>[^<]*(PDI|Inspection)[^<]*</h1>' <<<"$body" || errors+=("h1")
+            grep -Eiq '<meta[^>]+name="robots"[^>]+content="index,follow"|<meta[^>]+content="index,follow"[^>]+name="robots"' <<<"$body" || errors+=("robots")
+            grep -Fq 'rel="canonical"' <<<"$body" || errors+=("canonical")
+            grep -Fq 'FAQPage' <<<"$body" || errors+=("faq-schema")
+            grep -Fq 'id="faq"' <<<"$body" || errors+=("visible-faq")
+            grep -Eiq '<details>.*</details>|<details>' <<<"$body" || errors+=("faq-items")
+            grep -Fq '300+ checkpoint' <<<"$body" || errors+=("300-checkpoints")
+            grep -Eiq 'photo-supported|inspection report|Sample Inspection Report' <<<"$body" || errors+=("report")
+            grep -Fq 'Powertrain' <<<"$body" || errors+=("powertrain")
+            grep -Fq 'Transmission' <<<"$body" || errors+=("transmission")
+            grep -Fq 'Variants' <<<"$body" || errors+=("variants-section")
+            grep -Fq '/locations/delhi.html' <<<"$body" || errors+=("delhi-link")
+            grep -Fq '/locations/gurugram.html' <<<"$body" || errors+=("gurugram-link")
+            grep -Fq '/locations/noida.html' <<<"$body" || errors+=("noida-link")
+            grep -Fq 'tel:+919971116411' <<<"$body" || errors+=("call-cta")
+
+            if [ "${#errors[@]}" -gt 0 ]; then
+              failed=$((failed+1))
+              printf 'FAIL %s :: %s\n' "$url" "${errors[*]}" | tee -a model-live-audit.txt
+            else
+              printf 'PASS %s\n' "$url" >> model-live-audit.txt
+            fi
+          done
+
+          echo "MODEL_URLS=$total"
+          echo "FAILED=$failed"
+
+          if [ "$failed" -ne 0 ]; then
+            echo "ERROR: $failed of $total live model pages failed the audit"
+            exit 1
+          fi
+
+          echo "OK: all $total live model pages passed the complete live content/SEO audit"
+
+      - name: Upload live audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: all-model-pages-live-audit
+          path: model-live-audit.txt
+          if-no-files-found: warn
