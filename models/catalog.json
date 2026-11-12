@@ -3212,19 +3212,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L turbo petrol",
+        "2.0L turbo diesel",
+        "3.0L turbo petrol (M340i xDrive)"
+      ],
+      "transmissions": [
+        "8-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.bmw.in/en/all-models.html",
+        "https://www.bmw.in/en/index.html"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "BMW India specifications vary by generation and trim; final page must distinguish current India model from older used variants and verify engine, transmission and xDrive mapping before approval."
+        "BMW India currently lists the 3 Series family including 3 Series LWB and M340i xDrive. Current India configurations include petrol and diesel 3 LWB variants plus the M340i xDrive petrol performance model. Used-PDI content should remain generation-aware because older 3 Series generations used different engines and equipment."
       ]
     },
     {
@@ -3237,19 +3246,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L turbo petrol"
+      ],
+      "transmissions": [
+        "8-speed Steptronic automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.bmw.in/en/all-models.html",
+        "https://www.bmw.in/content/dam/bmw/marketIN/bmw_in/Brochures/2024/The-BMW-5Series-LWB_Brochure.pdf.asset.1728900429634.pdf"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "BMW India specifications vary by generation and trim; final page must distinguish current India model from older used variants and verify engine, transmission and xDrive mapping before approval."
+        "BMW India currently lists the 5 Series LWB. The India brochure identifies the 530Li M Sport with a 1,998cc petrol engine and 8-speed Steptronic transmission. Used-PDI content should distinguish current 5 Series LWB from older India 5 Series generations."
       ]
     },
     {
@@ -3262,19 +3278,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "3.0L turbo petrol 48V mild hybrid"
+      ],
+      "transmissions": [
+        "8-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.bmw.in/en/all-models/7-series/7-series-sedan/7-series-sedan-2025-g70-technical-data.html",
+        "https://www.bmw.in/en/all-models.html"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "BMW India specifications vary by generation and trim; final page must distinguish current India model from older used variants and verify engine, transmission and xDrive mapping before approval."
+        "BMW India current 7 Series technical data shows a 2,998cc six-cylinder petrol powertrain with 48V electrical assistance and 8-speed automatic transmission. The India range also includes the electric i7, but this catalog record should keep the 7 Series page generation/powertrain-aware rather than creating a separate variant URL."
       ]
     },
     {
@@ -3287,19 +3310,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L turbo petrol (X1 LWB)",
+        "2.0L turbo diesel (generation/current configuration dependent)"
+      ],
+      "transmissions": [
+        "7-speed dual-clutch automatic",
+        "8-speed automatic (generation dependent)"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.bmw.in/en/all-models/x-series/X1/bmw-x1-highlights.html",
+        "https://www.bmw.in/en/all-models.html"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "BMW India specifications vary by generation and trim; final page must distinguish current India model from older used variants and verify engine, transmission and xDrive mapping before approval."
+        "BMW India currently promotes the X1 LWB with a 1.5L turbo petrol engine and 7-speed dual-clutch transmission; the India range also lists diesel X1 configurations. Used-PDI content must distinguish X1 generations and powertrains rather than applying current LWB specifications to older cars."
       ]
     },
     {
@@ -3312,19 +3344,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L turbo petrol 48V mild hybrid",
+        "2.0L turbo diesel 48V mild hybrid",
+        "2.0L turbo petrol 48V mild hybrid higher-output xDrive"
+      ],
+      "transmissions": [
+        "8-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.bmw.in/content/dam/bmw/marketIN/bmw_in/brochure_pdf_2026/X3_Brochure_Jan_26.pdf.asset.1773130692467.pdf",
+        "https://www.bmw.in/en/all-models.html"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "BMW India specifications vary by generation and trim; final page must distinguish current India model from older used variants and verify engine, transmission and xDrive mapping before approval."
+        "BMW India 2026 X3 technical information lists X3 20 xDrive petrol, X3 20d xDrive diesel and X3 30 xDrive petrol configurations, all with 8-speed automatic transmission, xDrive AWD and 48V electrical assistance. Used-PDI content should remain generation-aware."
       ]
     },
     {
@@ -3337,19 +3378,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "3.0L turbo petrol 48V mild hybrid",
+        "3.0L turbo diesel 48V mild hybrid"
+      ],
+      "transmissions": [
+        "8-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.bmw.in/en/all-models.html"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "BMW India specifications vary by generation and trim; final page must distinguish current India model from older used variants and verify engine, transmission and xDrive mapping before approval."
+        "BMW India currently lists X5 xDrive40i petrol and X5 xDrive30d diesel configurations. The current India range is paired with automatic transmission and xDrive; older X5 generations used different engines, so used-PDI copy should be generation-aware."
       ]
     },
     {
@@ -3362,19 +3410,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "3.0L turbo petrol 48V mild hybrid",
+        "3.0L turbo diesel 48V mild hybrid"
+      ],
+      "transmissions": [
+        "8-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.bmw.in/en/all-models/x-series/x7/x7-2025-g07-ice-technical-data.html",
+        "https://www.bmw.in/en/all-models.html"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "BMW India specifications vary by generation and trim; final page must distinguish current India model from older used variants and verify engine, transmission and xDrive mapping before approval."
+        "BMW India technical data lists X7 petrol and diesel 48V mild-hybrid powertrains, both with 8-speed automatic transmission and all-wheel drive. The page should emphasize premium SUV PDI checks such as air suspension, xDrive, braking, ADAS, cameras and high-value electronics, while remaining generation-aware for used vehicles."
       ]
     },
     {
@@ -3421,19 +3477,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol mild hybrid",
+        "Diesel mild hybrid"
+      ],
+      "transmissions": [
+        "9-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.mercedes-benz.co.in/",
+        "https://www.mercedes-benz.co.in/passengercars/configurator.html?view=BODYTYPE"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Mercedes-Benz India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and 4MATIC mapping before approval."
+        "Mercedes-Benz India currently lists C-Class petrol and diesel configurations. The current India range is automatic and should be treated separately from older C-Class generations in used-PDI content."
       ]
     },
     {
@@ -3446,19 +3510,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol mild hybrid",
+        "Diesel mild hybrid"
+      ],
+      "transmissions": [
+        "9-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.mercedes-benz.co.in/",
+        "https://www.mercedes-benz.co.in/passengercars/configurator.html?view=BODYTYPE"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Mercedes-Benz India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and 4MATIC mapping before approval."
+        "Mercedes-Benz India currently lists the E-Class Sedan Long with petrol and diesel configurations. Used-PDI content should distinguish current long-wheelbase India specification from earlier E-Class generations."
       ]
     },
     {
@@ -3471,19 +3543,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol mild hybrid",
+        "Plug-in hybrid (generation/market dependent)"
+      ],
+      "transmissions": [
+        "9-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.mercedes-benz.co.in/",
+        "https://www.mercedes-benz.co.in/passengercars/configurator.html?view=BODYTYPE"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Mercedes-Benz India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and 4MATIC mapping before approval."
+        "Mercedes-Benz India currently lists S-Class in the flagship limousine range and the configurator shows plug-in-hybrid availability. Because S-Class generations and powertrains vary substantially, the model page must use generation-aware wording and avoid a single engine specification for all used cars."
       ]
     },
     {
@@ -3496,19 +3576,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.3L turbo petrol",
+        "2.0L turbo diesel"
+      ],
+      "transmissions": [
+        "7-speed dual-clutch automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.mercedes-benz.co.in/passengercars/models/suv/h247-fl-25-2-spa/overview.html",
+        "https://www.mercedes-benz.co.in/passengercars/configurator.html?view=BODYTYPE"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Mercedes-Benz India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and 4MATIC mapping before approval."
+        "Mercedes-Benz India technical data lists GLA 200 with a 1,332cc petrol engine and 7G-DCT, plus GLA 220d 4MATIC with a 1,950cc diesel engine. PDI copy should distinguish front-wheel-drive petrol and 4MATIC diesel configurations."
       ]
     },
     {
@@ -3521,19 +3609,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol mild hybrid",
+        "Diesel mild hybrid",
+        "Electric (new-generation/market dependent)"
+      ],
+      "transmissions": [
+        "9-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.mercedes-benz.co.in/passengercars/configurator.html?view=BODYTYPE",
+        "https://www.mercedes-benz.co.in/"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Mercedes-Benz India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and 4MATIC mapping before approval."
+        "Mercedes-Benz India currently lists GLC petrol and diesel configurations and also a new electric GLC entry. The authoritative model page should distinguish combustion and electric generations/configurations and use powertrain-specific PDI checks."
       ]
     },
     {
@@ -3546,19 +3643,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol mild hybrid",
+        "Diesel mild hybrid"
+      ],
+      "transmissions": [
+        "9-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.mercedes-benz.co.in/passengercars/configurator.html?view=BODYTYPE",
+        "https://www.mercedes-benz.co.in/"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Mercedes-Benz India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and 4MATIC mapping before approval."
+        "Mercedes-Benz India currently lists GLE petrol and diesel configurations, including the GLE 300d 4MATIC LWB. PDI copy should cover 4MATIC, suspension, ADAS, cameras and premium electronic systems, with generation-aware treatment for used cars."
       ]
     },
     {
@@ -3571,19 +3676,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol mild hybrid",
+        "Diesel mild hybrid"
+      ],
+      "transmissions": [
+        "9-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.mercedes-benz.co.in/passengercars/configurator.html?view=BODYTYPE",
+        "https://www.mercedes-benz.co.in/"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Mercedes-Benz India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and 4MATIC mapping before approval."
+        "Mercedes-Benz India currently lists GLS petrol and diesel configurations. The model page should be generation-aware and emphasize 4MATIC, air suspension, braking, ADAS, cameras, tyres and premium electronics for PDI."
       ]
     },
     {
@@ -3596,19 +3709,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L TFSI petrol 12V mild hybrid"
+      ],
+      "transmissions": [
+        "7-speed S tronic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.audi.in/en/models/",
+        "https://www.audi.in/dam/nemo/in/Downloads/A4/050_Audi%20A4%20Digital%20Brochure%20_2024%20Small.pdf"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Audi India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and quattro mapping before approval."
+        "Audi India's A4 brochure identifies a 2.0L TFSI petrol engine with 12V mild-hybrid assistance and 7-speed S tronic. Audi India currently lists A4 among its models; used-PDI content should remain generation-aware."
       ]
     },
     {
@@ -3621,19 +3741,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L TFSI petrol (India generation dependent)"
+      ],
+      "transmissions": [
+        "7-speed S tronic (generation dependent)"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.audi.in/en/models/",
+        "https://www.audi.in/en/models/compare-models/"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Audi India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and quattro mapping before approval."
+        "Audi India currently lists A6 Sedan. Exact India powertrain/transmission can vary by generation, so the page should avoid presenting one specification as universal and should prioritize generation-aware used-PDI guidance."
       ]
     },
     {
@@ -3646,19 +3773,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "3.0L TFSI petrol (India generation dependent)"
+      ],
+      "transmissions": [
+        "8-speed tiptronic (generation dependent)"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.audi.in/en/models/",
+        "https://www.audi.in/en/models/compare-models/"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Audi India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and quattro mapping before approval."
+        "Audi India's current model navigation does not list A8 among its current eight model families, so A8 should be treated as a used/luxury PDI target in India rather than a current new-car model. Generation-specific powertrain verification is required before approval."
       ]
     },
     {
@@ -3671,19 +3805,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L TFSI petrol"
+      ],
+      "transmissions": [
+        "7-speed S tronic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.audi.in/en/models/",
+        "https://www.audi.in/dam/nemo/in/Downloads/Q3/Q3%20Brochure%20Final%20Small.pdf"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Audi India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and quattro mapping before approval."
+        "Audi India brochure confirms the Q3 with a 2.0L TFSI quattro powertrain producing 190 hp and 320 Nm. Current Audi India model listings include Q3. Verify current derivative details again before final approval."
       ]
     },
     {
@@ -3696,19 +3837,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L TFSI petrol"
+      ],
+      "transmissions": [
+        "7-speed S tronic (generation dependent)"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.audi.in/en/models/",
+        "https://www.audi.in/dam/nemo/in/models/Q5/123_Audi%20Q5%20Digital%20Brochure-FINAL.pdf"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Audi India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and quattro mapping before approval."
+        "Audi India Q5 material confirms a 2.0L TFSI petrol powertrain with quattro all-wheel drive. Current Audi India listings include Q5. Because the India Q5 has changed across generations, final page copy should be generation-aware and avoid over-specific variant claims without current configuration verification."
       ]
     },
     {
@@ -3721,19 +3869,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "3.0L TFSI 48V mild hybrid petrol"
+      ],
+      "transmissions": [
+        "8-speed tiptronic (generation dependent)"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.audi.in/en/models/",
+        "https://www.audi.in/dam/nemo/in/Downloads/Q7/137_Audi%20Q7_E-Brochure_Small.pdf"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Audi India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and quattro mapping before approval."
+        "Audi India Q7 brochure confirms a 3.0L TFSI 48V mild-hybrid petrol engine, quattro all-wheel drive and 340 hp in the documented generation. Current Audi India listings include Q7. Used-PDI content should be generation-aware."
       ]
     },
     {
@@ -3746,19 +3901,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "3.0L TFSI petrol 48V mild hybrid",
+        "Performance derivatives vary by model"
+      ],
+      "transmissions": [
+        "8-speed tiptronic (generation dependent)"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.audi.in/en/models/",
+        "https://www.audi.in/en/sitemap"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Audi India specifications vary by generation and trim; final page must distinguish current India configuration from older used variants and verify engine, transmission and quattro mapping before approval."
+        "Audi India currently lists Q8 along with RS Q8 and SQ8 derivatives. The Q8 model page should distinguish the standard Q8 from performance derivatives and use generation-aware powertrain wording rather than one specification for every Q8 sold in India."
       ]
     },
     {
