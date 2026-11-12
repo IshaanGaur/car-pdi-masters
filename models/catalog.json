@@ -1593,17 +1593,32 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
-      "variants": [],
+      "powertrains": [
+        "1.2L i-VTEC petrol"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "CVT automatic"
+      ],
+      "variants": [
+        "V",
+        "VX",
+        "ZX"
+      ],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.hondacarindia.com/honda-amaze",
+        "https://www.hondacarindia.com/honda-amaze/tech-specs"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 1,
-      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Honda India confirms current 1.2L petrol, 5-speed MT/CVT and V/VX/ZX grades; no factory diesel/CNG model."
+      ]
     },
     {
       "brand": "Honda",
@@ -1615,17 +1630,36 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
-      "variants": [],
+      "powertrains": [
+        "1.5L i-VTEC petrol",
+        "1.5L self-charging strong hybrid e:HEV"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "CVT automatic",
+        "e-CVT automatic"
+      ],
+      "variants": [
+        "SV",
+        "V",
+        "ZX",
+        "ZX+",
+        "e:HEV ZX+"
+      ],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.hondacarindia.com/honda-city",
+        "https://www.hondacarindia.com/honda-city/tech-specs"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 1,
-      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Honda India confirms petrol and e:HEV powertrains, MT/CVT/e-CVT and current grade structure; model page should distinguish petrol vs hybrid inspection checks."
+      ]
     },
     {
       "brand": "Honda",
