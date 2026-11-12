@@ -2430,17 +2430,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L TSI petrol"
+      ],
+      "transmissions": [
+        "7-speed DSG"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.volkswagen.co.in/en/models/tiguan.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Volkswagen India current Tiguan is a 2.0 TSI petrol SUV with DSG automatic; verify exact current generation/4MOTION specification before approval."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Renault",
@@ -2452,17 +2462,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.0L petrol",
+        "1.0L petrol+CNG (market/variant dependent)"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "AMT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.renault.co.in/cars/kwid.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Renault India current Kwid is a 1.0L petrol hatchback with manual/AMT; final page should verify whether any CNG reference is applicable to India before publication."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Renault",
@@ -2474,17 +2496,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.0L petrol"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "AMT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.renault.co.in/cars/triber.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Renault India Triber is a 1.0L petrol 7-seater with manual/AMT options."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Renault",
@@ -2567,17 +2600,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L naturally aspirated petrol",
+        "1.2L turbo petrol"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.citroen.in/our-models/citroen-c3"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Citroën India C3 powertrain varies by generation/update; verify the current India configuration before approval."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Citroën",
@@ -2589,17 +2634,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L turbo petrol"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.citroen.in/our-models/citroen-c3-aircross"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Citroën India C3 Aircross is a 1.2L turbo-petrol SUV with manual/automatic options depending on generation."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Citroën",
@@ -2611,17 +2667,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L turbo petrol"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.citroen.in/"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Treat C3 Aircross X as a current/updated naming variant only after final Citroën India retail confirmation; avoid creating duplicate intent pages if it maps to the same product."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Citroën",
@@ -2633,17 +2700,30 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L naturally aspirated petrol",
+        "1.2L turbo petrol"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "6-speed manual",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.citroen.in/our-models/citroen-basalt"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Citroën India Basalt is offered with naturally aspirated and turbo petrol configurations; transmission depends on powertrain/grade."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Citroën",
@@ -2915,17 +2995,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Electric battery system"
+      ],
+      "transmissions": [
+        "Single-speed electric drive"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.byd.com/en-in"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "BYD Seal U naming is market-dependent; verify India retail availability before publication to avoid creating a non-India model page."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "BMW",
@@ -2937,17 +3027,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol"
+      ],
+      "transmissions": [
+        "7-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.bmw.in/en/all-models/2-series.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "BMW India 2 Series model naming is generation/derivative dependent; final page must verify the current India model and distinguish used variants."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "BMW",
@@ -3134,17 +3234,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol"
+      ],
+      "transmissions": [
+        "7-speed DCT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.mercedes-benz.co.in/passengercars/models/hatchback/a-class/overview.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Mercedes A-Class India is primarily a used-PDI target after the A-Class Limousine transition; final page should distinguish A-Class hatchback from A-Class Limousine."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Mercedes-Benz",
@@ -3506,17 +3616,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Electric battery system"
+      ],
+      "transmissions": [
+        "Single-speed electric drive"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.volvocars.com/in/cars/ex30-electric/"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Volvo EX30 is a fully electric model; India availability/specification should be verified before publication and EV-specific PDI checks should be used."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Volvo",
@@ -3740,17 +3860,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol hybrid"
+      ],
+      "transmissions": [
+        "e-CVT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.lexusindia.co.in/models/lm"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Lexus LM is a luxury MPV with hybrid powertrain and e-CVT; final India specification should be verified from the current configurator."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Jaguar",
@@ -3812,17 +3942,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol"
+      ],
+      "transmissions": [
+        "8-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.jaguar.in/jaguar-range/f-type/index.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Jaguar F-TYPE is discontinued/used-market focused in India; exact engine and transmission vary by generation and derivative."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Land Rover",
@@ -4088,17 +4228,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol",
+        "Electric (generation dependent)"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Single-speed electric drive (EV)"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.mini.in/en_IN/home/range/mini-cooper.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "MINI Cooper naming covers petrol and newer electric generations; final page must distinguish generations and powertrains."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "MINI",
@@ -4110,17 +4262,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol",
+        "Electric (generation dependent)"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Single-speed electric drive (EV)"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.mini.in/en_IN/home/range/mini-countryman.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "MINI Countryman spans petrol and electric generations; verify current India specification before approval."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Force Motors",
@@ -4132,17 +4296,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.6L diesel"
+      ],
+      "transmissions": [
+        "5-speed manual"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.forcemotors.com/gurkha"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Force Motors Gurkha is a diesel 4x4 utility SUV; current and older generations should be separated in used-PDI content."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Force Motors",
@@ -4154,17 +4328,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.6L diesel"
+      ],
+      "transmissions": [
+        "5-speed manual"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.forcemotors.com/trax-cruiser"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Force Motors Trax Cruiser is a utility passenger vehicle; commercial PDI content should emphasize used-vehicle and fleet/utility inspection intent."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "VinFast",
