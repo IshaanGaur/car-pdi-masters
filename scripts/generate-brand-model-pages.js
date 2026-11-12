@@ -26,12 +26,11 @@ function modelChecks(m){
   if(isPremium(m))checks.push('Premium/luxury equipment, electronic features, ADAS-related visible warnings and high-value trim/equipment checks');
   return checks;
 }
-function faq(m){
-  const b=m.brand,n=m.model,ev=isEv(m);
+function faq(m){const b=m.brand,n=m.model,ev=isEv(m),historical=m.demandValidation==='used_historical';
   const out=[
     ['What does a '+b+' '+n+' PDI include?','A structured 300+ checkpoint inspection covering applicable exterior, paint, tyres, interior, electrical, accessible mechanical areas, safety observations and reporting. Paint thickness measurement and selected OBD scanning are used where applicable.'],
-    ['Can you inspect a new '+b+' '+n+' before delivery?','Yes. A new-car PDI focuses on delivery-condition checks, paint/body condition, equipment, warning indicators, tyres, documentation-related observations and other applicable inspection points, subject to vehicle access and appointment confirmation.'],
-    ['Can you inspect a used '+b+' '+n+' before purchase?','Yes. The used-car inspection focuses on visible condition, accident/paint indicators, tyres, interior, electrical functions, accessible mechanical areas, warning lights and other applicable pre-purchase checks.'],\n    ['Can I book a pre delivery inspection for an old '+b+' '+n+'?','For an old or used vehicle, the appropriate service is normally a used-car or pre-purchase inspection rather than a new-car delivery PDI. The inspection can still cover the relevant vehicle-condition checks before purchase.'],
+    ...(historical?[]:[['Can you inspect a new '+b+' '+n+' before delivery?','Yes. A new-car PDI focuses on delivery-condition checks, paint/body condition, equipment, warning indicators, tyres and other applicable inspection points before acceptance, subject to vehicle access and appointment confirmation.']]),
+    ['Can you inspect a used '+b+' '+n+' before purchase?','Yes. The used-car inspection focuses on visible condition, accident/paint indicators, tyres, interior, electrical functions, accessible mechanical areas, warning lights and other applicable pre-purchase checks.'],
     ['What is included in a '+b+' '+n+' pre-purchase inspection?','The inspection is tailored to the exact vehicle and configuration. It uses the 300+ checkpoint framework where applicable, with photo-supported findings and selected diagnostics when supported.'],
     ['Do you provide '+b+' '+n+' PDI service in Delhi NCR?','Yes, service coverage includes Delhi, Gurugram and Noida, subject to exact vehicle location, access and appointment confirmation.'],
     ['Do you inspect different '+n+' variants?','Yes. The exact variant and configuration are checked at enquiry time; features are not assumed across every variant.'],
@@ -39,7 +38,7 @@ function faq(m){
     ['What should I check most carefully on a '+b+' '+n+'?','The inspection prioritises the exact vehicle configuration, body and paint condition, tyres and wheels, warning indicators, electrical features, accessible mechanical areas and any model-relevant systems identified for that configuration.'],
     ['How do I book a '+b+' '+n+' car inspection?','Call 99711 16411 or enquire on WhatsApp with the vehicle, location and preferred timing. Booking coordination follows availability confirmation through CarParakh.']
   ];
-  if(ev)out.splice(3,0,['Do you provide '+b+' '+n+' EV PDI?','Yes, where the vehicle and inspection package support it. EV-focused observations can include charging interface, battery-related warnings, electric drive system indicators and other applicable checks.']);
+  if(ev)out.splice(historical?3:4,0,['Do you provide '+b+' '+n+' EV PDI?','Yes, where the vehicle and inspection package support it. EV-focused observations can include charging interface, battery-related warnings, electric drive system indicators and other applicable checks.']);
   return out;
 }
 function jsonld(m,u){return JSON.stringify({'@context':'https://schema.org','@graph':[{'@type':'WebPage','url':u,'name':m.brand+' '+m.model+' PDI & Car Inspection | Car PDI Masters'},{'@type':'Service','name':m.brand+' '+m.model+' PDI & Car Inspection','provider':{'@type':'Organization','name':'Car PDI Masters','url':SITE},'areaServed':['Delhi','Gurugram','Noida','Faridabad'],'url':u},{'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Home','item':SITE+'/'},{'@type':'ListItem','position':2,'name':'Car PDI','item':SITE+'/car-pdi/'},{'@type':'ListItem','position':3,'name':m.brand,'item':SITE+'/car-pdi/'+m.brandSlug+'/'},{'@type':'ListItem','position':4,'name':m.model,'item':u}]},{'@type':'FAQPage','mainEntity':faq(m).map(x=>({'@type':'Question',name:x[0],acceptedAnswer:{'@type':'Answer',text:x[1]}}))}]},null,2)};
