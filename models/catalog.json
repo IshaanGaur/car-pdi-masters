@@ -4031,7 +4031,9 @@
       "transmissions": [
         "Single-speed electric drive"
       ],
-      "variants": [],
+      "variants": [
+        "GL"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://bydautoindia.com/"
@@ -4047,7 +4049,8 @@
         "BYD India later launched eMAX 7 as the successor to e6; treat e6 as used/historical India-market PDI intent, not as the current new-car MPV."
       ],
       "approvedForPublication": true,
-      "demandValidation": "used_historical"
+      "demandValidation": "used_historical",
+      "variantResearchStatus": "verified_historical_market"
     },
     {
       "brand": "BYD",
@@ -4099,7 +4102,10 @@
       "transmissions": [
         "Automatic"
       ],
-      "variants": [],
+      "variants": [
+        "218 M Sport",
+        "218 M Sport Pro"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.bmw.in/en/all-models/2-series.html",
@@ -4118,7 +4124,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "BMW",
@@ -5039,7 +5046,9 @@
         "8-speed automatic",
         "Single-speed electric drive"
       ],
-      "variants": [],
+      "variants": [
+        "B4 Ultimate"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.volvocars.com/in/news/technology/Volvo-Car-India-launches-new-Petrol-Mild-Hybrid-range-Transitions-to-complete-mild-hybrid/",
@@ -5057,7 +5066,8 @@
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
       "approvedForPublication": true,
-      "demandValidation": "used_historical"
+      "demandValidation": "used_historical",
+      "variantResearchStatus": "verified_historical_market"
     },
     {
       "brand": "Volvo",
@@ -5350,7 +5360,10 @@
       "transmissions": [
         "8-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "S R-Dynamic 2.0 Petrol",
+        "S R-Dynamic 2.0 Diesel"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://retailers.jaguar.in/amp-motors-southdelhi",
@@ -5367,7 +5380,8 @@
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
       "approvedForPublication": true,
-      "demandValidation": "used_historical"
+      "demandValidation": "used_historical",
+      "variantResearchStatus": "verified_historical_market"
     },
     {
       "brand": "Jaguar",
@@ -5386,7 +5400,12 @@
       "transmissions": [
         "Single-speed electric drive"
       ],
-      "variants": [],
+      "variants": [
+        "HSE",
+        "S",
+        "SE",
+        "SE Black Edition"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://retailers.jaguar.in/modi-motors",
@@ -5403,7 +5422,8 @@
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
       "approvedForPublication": true,
-      "demandValidation": "used_historical"
+      "demandValidation": "used_historical",
+      "variantResearchStatus": "verified_historical_market"
     },
     {
       "brand": "Jaguar",
@@ -5421,7 +5441,17 @@
       "transmissions": [
         "8-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "Coupe 2.0",
+        "Coupe R-Dynamic 2.0",
+        "Coupe First Edition 2.0",
+        "Convertible R Dynamic",
+        "V8 Coupe First Edition 5.0",
+        "V8 Coupe R-Dynamic 5.0",
+        "V8 Convertible R-Dynamic 5.0",
+        "V8 Coupe R AWD 5.0",
+        "V8 Convertible R AWD 5.0"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.jaguar.in/jaguar-range/f-type/index.html",
@@ -5439,7 +5469,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "used_historical",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_historical_market"
     },
     {
       "brand": "Land Rover",
@@ -5834,7 +5865,15 @@
         "Automatic",
         "Single-speed electric drive (EV)"
       ],
-      "variants": [],
+      "variants": [
+        "S",
+        "Classic Pack",
+        "Favoured Pack",
+        "Oxford Edition",
+        "JCW",
+        "S Victory Edition",
+        "GP Inspired Edition"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.mini.in/en_IN/home/range/mini-cooper.html",
@@ -5853,7 +5892,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "MINI",
@@ -5995,7 +6035,11 @@
       "transmissions": [
         "Single-speed electric drive"
       ],
-      "variants": [],
+      "variants": [
+        "Earth",
+        "Wind",
+        "Wind Infinity"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://vinfastauto.in/en/vf6"
@@ -6009,7 +6053,8 @@
       "researchNotes": [
         "VinFast India confirms VF 6 with 59.6 kWh battery, FWD electric drive and CCS2 charging; variants include 130 kW/250 Nm and 150 kW/310 Nm outputs."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "VinFast",
@@ -6028,7 +6073,13 @@
       "transmissions": [
         "Single-speed electric drive"
       ],
-      "variants": [],
+      "variants": [
+        "Earth",
+        "Wind",
+        "Wind Infinity",
+        "Sky",
+        "Sky Infinity"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://vinfastauto.in/en/vf7"
@@ -6042,7 +6093,8 @@
       "researchNotes": [
         "VinFast India confirms VF 7 with 59.6/70 kWh battery variants, FWD and AWD configurations, and CCS2 charging."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "VinFast",
@@ -6094,7 +6146,19 @@
         "5-speed manual",
         "6-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "Ambiente",
+        "TrendL",
+        "Trend",
+        "Titanium",
+        "Titanium +",
+        "Thunder",
+        "Titanium+",
+        "SEL",
+        "S",
+        "SE",
+        "Titanium Plus"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.india.ford.com/about-ford/media/newsroom/2021/ford-restructures-india-operations/"
@@ -6110,7 +6174,8 @@
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
       "demandValidation": "used_historical",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_historical_market"
     },
     {
       "brand": "Ford",
@@ -6130,7 +6195,11 @@
         "10-speed automatic",
         "6-speed automatic (older generations)"
       ],
-      "variants": [],
+      "variants": [
+        "Titanium",
+        "Titanium Plus",
+        "Sport"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.india.ford.com/about-ford/media/newsroom/2021/ford-restructures-india-operations/"
@@ -6146,7 +6215,8 @@
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
       "demandValidation": "used_historical",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_historical_market"
     },
     {
       "brand": "Ford",
@@ -6167,7 +6237,13 @@
         "5-speed manual",
         "6-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "Ambiente",
+        "Titanium",
+        "Trend",
+        "Titanium Blu",
+        "Titanium Plus"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.india.ford.com/about-ford/media/newsroom/2021/ford-restructures-india-operations/"
@@ -6183,7 +6259,8 @@
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
       "demandValidation": "used_historical",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_historical_market"
     },
     {
       "brand": "Ford",
@@ -6204,7 +6281,14 @@
         "5-speed manual",
         "6-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "Ambiente",
+        "Trend",
+        "Trend Plus",
+        "Titanium",
+        "Titanium Blu",
+        "Titanium Plus"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.india.ford.com/about-ford/media/newsroom/2021/ford-restructures-india-operations/"
@@ -6220,7 +6304,8 @@
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
       "demandValidation": "used_historical",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_historical_market"
     },
     {
       "brand": "Ford",
@@ -6239,7 +6324,14 @@
       "transmissions": [
         "5-speed manual"
       ],
-      "variants": [],
+      "variants": [
+        "Ambiente",
+        "Trend",
+        "Trend Plus",
+        "Titanium",
+        "Titanium Plus",
+        "Flair Edition"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.india.ford.com/about-ford/media/newsroom/2021/ford-restructures-india-operations/"
@@ -6255,7 +6347,8 @@
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
       "demandValidation": "used_historical",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_historical_market"
     }
   ],
   "researchPlan": {
