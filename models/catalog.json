@@ -1862,17 +1862,31 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.0L turbo-petrol",
+        "1.5L diesel"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "6-speed iMT",
+        "7-speed DCT",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.kia.com/in/our-vehicles/syros/showroom.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
+      "researchNotes": [
+        "Kia India current Syros range includes turbo-petrol and diesel powertrains with manual/iMT/DCT/automatic combinations depending on variant."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Honda",
@@ -2015,17 +2029,30 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L petrol",
+        "1.3L turbo-petrol"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "CVT",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.mgmotor.co.in/vehicles/astor-petrol-car-in-india.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
+      "researchNotes": [
+        "MG India lists Astor with 1.5L petrol and 1.3L turbo-petrol options across its India range; exact transmission mapping varies by grade."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "MG",
@@ -2069,17 +2096,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L turbo-petrol",
+        "2.0L diesel"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "CVT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.mgmotor.co.in/vehicles/hector-suv-in-india.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
+      "researchNotes": [
+        "MG India current Hector is offered with 1.5L turbo-petrol and 2.0L diesel families; transmission pairing varies by powertrain."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "MG",
@@ -2091,17 +2130,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L diesel twin-turbo"
+      ],
+      "transmissions": [
+        "8-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.mgmotor.co.in/vehicles/gloster-suv-in-india.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
+      "researchNotes": [
+        "MG India Gloster is a diesel automatic premium SUV; current variants should be verified from the live product page before approval."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "MG",
@@ -2213,17 +2262,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.0L TSI petrol"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "6-speed torque-converter automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.skoda-auto.co.in/models/range"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
+      "researchNotes": [
+        "Škoda India current Kylaq is a 1.0 TSI petrol SUV with manual and automatic transmission options."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Skoda",
@@ -2235,17 +2295,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L TSI petrol"
+      ],
+      "transmissions": [
+        "7-speed DSG"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.skoda-auto.co.in/models/range"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
+      "researchNotes": [
+        "Škoda India current Kodiaq is a 2.0 TSI petrol SUV with 7-speed DSG; exact 4x4/current generation specification should be verified before approval."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Skoda",
@@ -2257,17 +2327,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L TSI petrol"
+      ],
+      "transmissions": [
+        "7-speed DSG"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.skoda-auto.co.in/models/range"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
+      "researchNotes": [
+        "Škoda Superb is a premium sedan/wagon family with 2.0 TSI + DSG in relevant India generations; current India retail status must be verified before publishing."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Volkswagen",
@@ -2606,17 +2686,30 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L Multijet diesel",
+        "1.4L turbo-petrol (older India generation)"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "9-speed automatic",
+        "7-speed DCT (older petrol)"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.jeep-india.com/compass.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
+      "researchNotes": [
+        "Jeep Compass India spans current/older generations; diesel automatic/manual and older petrol DCT configurations should be separated by model year."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Jeep",
@@ -2628,17 +2721,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L Multijet diesel"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "9-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.jeep-india.com/meridian.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
+      "researchNotes": [
+        "Jeep India Meridian is a diesel SUV with manual/automatic configurations; exact current grade/4x4 mapping should be verified before approval."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Isuzu",
@@ -2650,17 +2754,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.9L diesel",
+        "3.0L diesel (generation/market dependent)"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.isuzu.in/product/d-max/"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
+      "researchNotes": [
+        "Isuzu India D-Max is a utility pickup with diesel generations; final PDI page should separate current and used-generation specifications."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Isuzu",
@@ -2672,17 +2788,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "3.0L diesel"
+      ],
+      "transmissions": [
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.isuzu.in/product/mu-x/"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
+      "researchNotes": [
+        "Isuzu India MU-X is a diesel automatic SUV; generation-specific engine/transmission and 4WD details should be verified before approval."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "BYD",
