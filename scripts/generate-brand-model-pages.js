@@ -89,7 +89,7 @@ if(fs.existsSync(sitemapFile)){
   const modelUrls=approved.map(m=>'  <url><loc>'+url(m)+'</loc><lastmod>'+today+'</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>');
   const urls=hubUrls.concat(modelUrls).join('\\n');
   const block='  <!-- BEGIN GENERATED BRAND MODEL PAGES -->\\n'+urls+'\\n  <!-- END GENERATED BRAND MODEL PAGES -->';
-  sm=sm.replace(/<\\/urlset>/,block+'\\n</urlset>');
+  sm=sm.replace(/<\/urlset>/,block+'\n</urlset>');
   fs.writeFileSync(sitemapFile,sm);
 }
 console.log('Generated '+approved.length+' approved model pages across '+brands.length+' brands.');
