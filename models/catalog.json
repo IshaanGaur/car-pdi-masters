@@ -24,7 +24,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Maruti Suzuki",
@@ -44,7 +46,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Maruti Suzuki",
@@ -64,7 +68,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Maruti Suzuki",
@@ -84,7 +90,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
     },
     {
       "brand": "Maruti Suzuki",
@@ -96,14 +104,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L petrol",
+        "1.2L S-CNG"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "5-speed AGS/AMT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.marutisuzuki.com/arena/swift",
+        "https://www.marutisuzuki.com/corporate/media/press-releases/2026/september/maruti-suzuki-launches-auto-green-mission-with-the-introduction-of-automatic-s-cng-swift-dzire-and-baleno"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Official Maruti India sources confirm 1.2L petrol/S-CNG and manual/AGS; verify final variant list before publish."
       ]
     },
     {
@@ -124,7 +146,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
     },
     {
       "brand": "Maruti Suzuki",
@@ -136,14 +160,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L petrol",
+        "1.2L S-CNG"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "5-speed AGS/AMT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.marutisuzuki.com/arena/dzire",
+        "https://www.marutisuzuki.com/arena/dzire/price"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Official Maruti India sources confirm petrol/CNG, MT and AGS; current listings include CNG AGS, so the generator must not assume CNG is manual-only."
       ]
     },
     {
@@ -164,7 +202,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
     },
     {
       "brand": "Maruti Suzuki",
@@ -184,7 +224,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
     },
     {
       "brand": "Maruti Suzuki",
@@ -204,7 +246,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Maruti Suzuki",
@@ -224,7 +268,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Maruti Suzuki",
@@ -236,14 +282,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L petrol Smart Hybrid",
+        "1.5L S-CNG"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.marutisuzuki.com/arena/ertiga",
+        "https://www.marutisuzuki.com/corporate/technology/automatic",
+        "https://www.marutisuzuki.com/corporate/technology/cng"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Official Maruti India sources confirm petrol/Smart Hybrid, factory CNG, manual and automatic options; verify final variant list before publish."
       ]
     },
     {
@@ -264,7 +325,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Maruti Suzuki",
@@ -284,7 +347,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Maruti Suzuki",
@@ -304,7 +369,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 4,
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
     },
     {
       "brand": "Hyundai",
@@ -324,7 +391,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Hyundai",
@@ -344,7 +413,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Hyundai",
@@ -364,7 +435,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Hyundai",
@@ -384,7 +457,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Hyundai",
@@ -404,7 +479,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
     },
     {
       "brand": "Hyundai",
@@ -416,14 +493,31 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L naturally aspirated petrol",
+        "1.5L turbo petrol",
+        "1.5L diesel"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "IVT",
+        "6-speed automatic",
+        "7-speed DCT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.hyundai.com/in/en/find-a-car",
+        "https://www.hyundai.com/in/en"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Official Hyundai India sources confirm current Creta petrol/diesel powertrains and multiple transmission types; recheck variant names before publish."
       ]
     },
     {
@@ -444,7 +538,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Hyundai",
@@ -464,7 +560,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Hyundai",
@@ -484,7 +582,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Tata",
@@ -504,7 +604,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Tata",
@@ -524,7 +626,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Tata",
@@ -544,7 +648,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
     },
     {
       "brand": "Tata",
@@ -564,7 +670,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
     },
     {
       "brand": "Tata",
@@ -576,14 +684,30 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L turbo petrol",
+        "1.2L turbo petrol + CNG",
+        "1.5L turbo diesel"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "6-speed manual",
+        "6-speed AMT",
+        "7-speed DCA"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://cars.tatamotors.com/content/dam/tml/pv/products/nexon/year-2024/ice/promoting-vc/brochures/sep-2024/Nexon-Brochure.pdf"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Official Tata brochure confirms petrol/CNG/diesel and 5MT/6MT/6AMT/7DCA in the referenced specification set; recheck current 2026 variant matrix before publish."
       ]
     },
     {
@@ -604,7 +728,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Tata",
@@ -624,7 +750,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
     },
     {
       "brand": "Tata",
@@ -644,7 +772,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
     },
     {
       "brand": "Tata",
@@ -664,7 +794,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Mahindra",
@@ -684,7 +816,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Mahindra",
@@ -704,7 +838,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Mahindra",
@@ -724,7 +860,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
     },
     {
       "brand": "Mahindra",
@@ -744,7 +882,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
     },
     {
       "brand": "Mahindra",
@@ -764,7 +904,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Mahindra",
@@ -784,7 +926,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
     },
     {
       "brand": "Mahindra",
@@ -804,7 +948,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
     },
     {
       "brand": "Mahindra",
@@ -824,7 +970,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Mahindra",
@@ -844,7 +992,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
     },
     {
       "brand": "Mahindra",
@@ -864,7 +1014,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Mahindra",
@@ -884,7 +1036,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 4,
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
     },
     {
       "brand": "Mahindra",
@@ -904,7 +1058,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 4,
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
     },
     {
       "brand": "Mahindra",
@@ -924,7 +1080,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 4,
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
     },
     {
       "brand": "Toyota",
@@ -944,7 +1102,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Toyota",
@@ -964,7 +1124,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Toyota",
@@ -984,7 +1146,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Toyota",
@@ -1004,7 +1168,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Toyota",
@@ -1024,7 +1190,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Toyota",
@@ -1036,14 +1204,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L petrol",
+        "2.0L self-charging hybrid petrol"
+      ],
+      "transmissions": [
+        "Direct Shift CVT",
+        "E-drive transmission"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.toyotabharat.com/documents/brochures/e-brochure-hycross-spec.pdf",
+        "https://www.toyotabharat.com/documents/brochures/e-brochure-hycross.pdf"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Official Toyota India brochures confirm petrol/self-charging hybrid and CVT/E-drive transmission families; verify live grade naming before publish."
       ]
     },
     {
@@ -1064,7 +1246,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
     },
     {
       "brand": "Toyota",
@@ -1084,7 +1268,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Toyota",
@@ -1104,7 +1290,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Kia",
@@ -1124,7 +1312,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
     },
     {
       "brand": "Kia",
@@ -1136,14 +1326,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L petrol",
+        "1.5L turbo petrol",
+        "1.5L diesel"
+      ],
+      "transmissions": [
+        "manual",
+        "automatic variants including DCT/IVT/AT depending on engine"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.kia.com/in/our-vehicles/seltos/showroom.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Official Kia India page confirms the current engine families and multiple transmission configurations; capture exact variant mapping from the live configurator before publish."
       ]
     },
     {
@@ -1164,7 +1368,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Kia",
@@ -1184,7 +1390,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Honda",
@@ -1204,7 +1412,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
     },
     {
       "brand": "Honda",
@@ -1224,7 +1434,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 1,
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
     },
     {
       "brand": "Honda",
@@ -1244,7 +1456,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "MG",
@@ -1264,7 +1478,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 4,
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
     },
     {
       "brand": "MG",
@@ -1284,7 +1500,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "MG",
@@ -1304,7 +1522,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 4,
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
     },
     {
       "brand": "MG",
@@ -1324,7 +1544,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "MG",
@@ -1344,7 +1566,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "MG",
@@ -1364,7 +1588,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 4,
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
     },
     {
       "brand": "Skoda",
@@ -1384,7 +1610,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Skoda",
@@ -1404,7 +1632,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Skoda",
@@ -1424,7 +1654,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Skoda",
@@ -1444,7 +1676,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Skoda",
@@ -1464,7 +1698,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Volkswagen",
@@ -1484,7 +1720,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Volkswagen",
@@ -1504,7 +1742,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Volkswagen",
@@ -1524,7 +1764,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Renault",
@@ -1544,7 +1786,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Renault",
@@ -1564,7 +1808,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Renault",
@@ -1584,7 +1830,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Nissan",
@@ -1604,7 +1852,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Citroën",
@@ -1624,7 +1874,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Citroën",
@@ -1644,7 +1896,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Citroën",
@@ -1664,7 +1918,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Citroën",
@@ -1684,7 +1940,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Citroën",
@@ -1704,7 +1962,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 4,
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
     },
     {
       "brand": "Jeep",
@@ -1724,7 +1984,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Jeep",
@@ -1744,7 +2006,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Isuzu",
@@ -1764,7 +2028,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Isuzu",
@@ -1784,7 +2050,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "BYD",
@@ -1804,7 +2072,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 4,
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
     },
     {
       "brand": "BYD",
@@ -1824,7 +2094,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 4,
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
     },
     {
       "brand": "BYD",
@@ -1844,7 +2116,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 4,
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
     },
     {
       "brand": "BYD",
@@ -1864,7 +2138,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "BMW",
@@ -1884,7 +2160,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "BMW",
@@ -1904,7 +2182,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "BMW",
@@ -1924,7 +2204,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "BMW",
@@ -1944,7 +2226,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "BMW",
@@ -1964,7 +2248,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "BMW",
@@ -1984,7 +2270,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "BMW",
@@ -2004,7 +2292,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "BMW",
@@ -2024,7 +2314,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Mercedes-Benz",
@@ -2044,7 +2336,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Mercedes-Benz",
@@ -2064,7 +2358,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Mercedes-Benz",
@@ -2084,7 +2380,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Mercedes-Benz",
@@ -2104,7 +2402,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Mercedes-Benz",
@@ -2124,7 +2424,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Mercedes-Benz",
@@ -2144,7 +2446,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Mercedes-Benz",
@@ -2164,7 +2468,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Mercedes-Benz",
@@ -2184,7 +2490,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Audi",
@@ -2204,7 +2512,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Audi",
@@ -2224,7 +2534,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Audi",
@@ -2244,7 +2556,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Audi",
@@ -2264,7 +2578,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Audi",
@@ -2284,7 +2600,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Audi",
@@ -2304,7 +2622,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Audi",
@@ -2324,7 +2644,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Volvo",
@@ -2344,7 +2666,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Volvo",
@@ -2364,7 +2688,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Volvo",
@@ -2384,7 +2710,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Volvo",
@@ -2404,7 +2732,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Lexus",
@@ -2424,7 +2754,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Lexus",
@@ -2444,7 +2776,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Lexus",
@@ -2464,7 +2798,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Lexus",
@@ -2484,7 +2820,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Lexus",
@@ -2504,7 +2842,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Jaguar",
@@ -2524,7 +2864,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Jaguar",
@@ -2544,7 +2886,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Jaguar",
@@ -2564,7 +2908,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Land Rover",
@@ -2584,7 +2930,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Land Rover",
@@ -2604,7 +2952,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Land Rover",
@@ -2624,7 +2974,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Land Rover",
@@ -2644,7 +2996,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Land Rover",
@@ -2664,7 +3018,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Porsche",
@@ -2684,7 +3040,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Porsche",
@@ -2704,7 +3062,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Porsche",
@@ -2724,7 +3084,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "Porsche",
@@ -2744,7 +3106,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
     },
     {
       "brand": "MINI",
@@ -2764,7 +3128,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "MINI",
@@ -2784,7 +3150,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Force Motors",
@@ -2804,7 +3172,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "Force Motors",
@@ -2824,7 +3194,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
-      ]
+      ],
+      "priorityTier": 5,
+      "priorityReason": "Catalog coverage; research and demand validation before publishing."
     },
     {
       "brand": "VinFast",
@@ -2844,7 +3216,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
-      ]
+      ],
+      "priorityTier": 4,
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
     },
     {
       "brand": "VinFast",
@@ -2864,7 +3238,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
-      ]
+      ],
+      "priorityTier": 4,
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
     },
     {
       "brand": "VinFast",
@@ -2884,7 +3260,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
-      ]
+      ],
+      "priorityTier": 4,
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
     },
     {
       "brand": "Ford",
@@ -2904,7 +3282,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Ford",
@@ -2924,7 +3304,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Ford",
@@ -2944,7 +3326,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Ford",
@@ -2964,7 +3348,9 @@
       "checkedAt": null,
       "notes": [
         "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     },
     {
       "brand": "Ford",
@@ -2984,7 +3370,17 @@
       "checkedAt": null,
       "notes": [
         "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
-      ]
+      ],
+      "priorityTier": 2,
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
     }
-  ]
+  ],
+  "researchPlan": {
+    "tier1": "Verify official India model page, current powertrains, transmissions and variant families; first publishing wave.",
+    "tier2": "Verify current/discontinued status and used-market intent; include discontinued models where used PDI demand is commercially relevant.",
+    "tier3": "Verify official India model/variant data and premium-specific inspection angles.",
+    "tier4": "Verify India availability/current status before publication; do not publish on catalog seed alone.",
+    "tier5": "Keep research_pending until demand and official product data are verified.",
+    "publicationRule": "No model is published merely because it exists in the catalog. status/researchStatus must be explicitly approved after source verification."
+  }
 }
