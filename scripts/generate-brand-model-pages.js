@@ -5,7 +5,7 @@ const data=JSON.parse(fs.readFileSync(CAT,'utf8'));if(!Array.isArray(data.models
 const approved=data.models.filter(m=>m.status==='approved'&&m.researchStatus==='approved'&&m.seoStatus!=='blocked');
 const url=m=>`${SITE}/car-pdi/${m.brandSlug||slug(m.brand)}/${m.modelSlug||slug(m.model)}/`;
 const write=(f,s)=>{fs.mkdirSync(path.dirname(f),{recursive:true});fs.writeFileSync(f,s)};
-function isEv(m){const t=[...(m.powertrains||[]),...(m.transmissions||[]),...(m.aliases||[])].join(' ').toLowerCase();return /ev|electric|battery|bev|recharge|single-speed electric/.test(t);}
+function isEv(m){const t=[...(m.powertrains||[]),...(m.transmissions||[])].join(' ').toLowerCase();return /\belectric\b|\bev\b|battery|bev|single-speed electric/.test(t);}
 function isPremium(m){return (m.priorityTier===3)||/bmw|mercedes|audi|volvo|lexus|jaguar|land rover|porsche|mini/i.test(m.brand);}
 function keywordMap(m){
   const b=m.brand, n=m.model;
@@ -22,7 +22,7 @@ function modelChecks(m){
   if(isEv(m))checks.push('EV-specific checks where applicable: charging interface, battery-related warnings, electric drive system observations and range/charging information available at inspection');
   if(/cng/.test(p))checks.push('CNG-related visible checks where applicable, including cylinder/installation observations and relevant warning indicators');
   if(/diesel/.test(p))checks.push('Diesel-specific observations where applicable, including warning indicators and visible emissions/after-treatment related concerns');
-  if(/awd|4wd/.test(p))checks.push('Applicable AWD/4WD controls, drive modes and visible drivetrain observations');
+  if(/awd|4wd/.test(p)||/thar|scorpio-n|xuv700|fortuner/i.test(m.model))checks.push('Applicable AWD/4WD controls, drive modes, tyre matching and visible drivetrain observations where the exact configuration supports them');
   if(isPremium(m))checks.push('Premium/luxury equipment, electronic features, ADAS-related visible warnings and high-value trim/equipment checks');
   return checks;
 }
