@@ -3355,7 +3355,10 @@
         "5-speed manual",
         "AMT"
       ],
-      "variants": [],
+      "variants": [
+        "Evolution",
+        "Climber"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.renault.co.in/cars/kwid.html",
@@ -3373,7 +3376,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Renault",
@@ -3392,7 +3396,12 @@
         "5-speed manual",
         "AMT"
       ],
-      "variants": [],
+      "variants": [
+        "Authentic",
+        "Evolution",
+        "Techno",
+        "Emotion"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.renault.co.in/cars/triber.html",
@@ -3411,7 +3420,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Renault",
@@ -3432,7 +3442,13 @@
         "5-speed AMT",
         "CVT automatic"
       ],
-      "variants": [],
+      "variants": [
+        "Authentic",
+        "Evolution",
+        "Evolution+",
+        "Techno",
+        "Emotion"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.renault.co.in/",
@@ -3449,7 +3465,8 @@
         "Renault India currently lists Kiger and confirms current Turbo range; exact 2026 variant/transmission matrix should be taken from the current brochure before approval.",
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Nissan",
