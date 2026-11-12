@@ -428,17 +428,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L petrol Smart Hybrid"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.marutisuzuki.com/corporate/technology/engine"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Maruti Suzuki lists XL6 with the 1.5L K15 petrol Smart Hybrid engine; current automatic lineup information lists 6-speed automatic and 5-speed manual."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Maruti Suzuki",
@@ -450,17 +461,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L petrol strong hybrid"
+      ],
+      "transmissions": [
+        "e-CVT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.marutisuzuki.com/corporate/media/press-releases/2023/july/maruti-suzuki-launches-the-invicto-a-new-era-of-luxury-starting"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Maruti Suzuki describes Invicto with a 2.0L Intelligent Electric Hybrid powertrain and e-CVT."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Maruti Suzuki",
@@ -1499,17 +1520,30 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L petrol",
+        "1.2L CNG"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "AMT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.toyotabharat.com/news/2026/tkm-introduces-the-new-toyota-glanza.html",
+        "https://www.toyotabharat.com/showroom/glanza/"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Toyota launched the new Glanza in October 2026 with a new-generation 1.2L petrol engine and CNG, including AMT availability for CNG variants."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Toyota",
@@ -1521,17 +1555,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L petrol",
+        "1.5L CNG"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.toyotabharat.com/showroom/rumion/"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Toyota India currently lists Rumion; final powertrain/transmission matrix should be checked against the current brochure before approval."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Toyota",
@@ -1701,17 +1747,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.8L diesel"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.toyotabharat.com/showroom/hilux/index.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Toyota India current Hilux listing shows a 2.8L diesel with 6-speed automatic across current grades; earlier/current material also documents 6-speed manual, so used-model generation checks remain important."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Toyota",
@@ -1976,17 +2033,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L i-VTEC petrol"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "CVT with 7-speed paddle shift"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://stage.hondacarindia.com/media/press-releases/honda-unveils-the-new-honda-elevate"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Honda Cars India unveiled the new Elevate in October 2026 with a 1.5L i-VTEC petrol engine, 6-speed manual or CVT with 7-speed paddle shift."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "MG",
@@ -2434,12 +2502,14 @@
         "2.0L TSI petrol"
       ],
       "transmissions": [
-        "7-speed DSG"
+        "7-speed DSG",
+        "4MOTION"
       ],
       "variants": [],
       "aliases": [],
       "sourceUrls": [
-        "https://www.volkswagen.co.in/en/models/tiguan.html"
+        "https://www.volkswagen.co.in/en/models/tiguan.html",
+        "https://www.volkswagen.co.in/idhub/content/dam/onehub_pkw/importers/in/models/common/brochure/volkswagen-tiguan-e-brochure.pdf"
       ],
       "checkedAt": "2026-11-12",
       "notes": [
@@ -2448,7 +2518,8 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
-        "Volkswagen India current Tiguan is a 2.0 TSI petrol SUV with DSG automatic; verify exact current generation/4MOTION specification before approval."
+        "Volkswagen India current Tiguan is a 2.0 TSI petrol SUV with DSG automatic; verify exact current generation/4MOTION specification before approval.",
+        "Volkswagen India brochure specifies a 2.0L TSI petrol with 7-speed DSG and 4MOTION for the referenced Tiguan generation; generation-specific used-PDI content is required."
       ],
       "demandValidation": "candidate"
     },
@@ -2767,18 +2838,16 @@
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
-        "2.0L Multijet diesel",
-        "1.4L turbo-petrol (older India generation)"
+        "2.0L Multijet II turbo diesel"
       ],
       "transmissions": [
-        "6-speed manual",
-        "9-speed automatic",
-        "7-speed DCT (older petrol)"
+        "9-speed automatic"
       ],
       "variants": [],
       "aliases": [],
       "sourceUrls": [
-        "https://www.jeep-india.com/compass.html"
+        "https://www.jeep-india.com/compass.html",
+        "https://www.jeep-india.com/new-compass/capability.html"
       ],
       "checkedAt": "2026-11-12",
       "notes": [
@@ -2787,7 +2856,8 @@
       "priorityTier": 5,
       "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "Jeep Compass India spans current/older generations; diesel automatic/manual and older petrol DCT configurations should be separated by model year."
+        "Jeep Compass India spans current/older generations; diesel automatic/manual and older petrol DCT configurations should be separated by model year.",
+        "Jeep India current Compass capability page specifies a 2.0L Multijet II diesel and 9-speed automatic; older India generations may include other engine/transmission combinations for used-PDI intent."
       ],
       "demandValidation": "candidate"
     },
@@ -2802,16 +2872,16 @@
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
-        "2.0L Multijet diesel"
+        "2.0L Multijet II turbo diesel"
       ],
       "transmissions": [
-        "6-speed manual",
         "9-speed automatic"
       ],
       "variants": [],
       "aliases": [],
       "sourceUrls": [
-        "https://www.jeep-india.com/meridian.html"
+        "https://www.jeep-india.com/meridian.html",
+        "https://www.jeep-india.com/new-jeep-meridian.html/1000"
       ],
       "checkedAt": "2026-11-12",
       "notes": [
@@ -2820,7 +2890,8 @@
       "priorityTier": 5,
       "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "Jeep India Meridian is a diesel SUV with manual/automatic configurations; exact current grade/4x4 mapping should be verified before approval."
+        "Jeep India Meridian is a diesel SUV with manual/automatic configurations; exact current grade/4x4 mapping should be verified before approval.",
+        "Jeep India current Meridian materials specify a 2.0L Multijet II diesel with 9-speed automatic; used-model content should account for 4x2/4x4 configurations and generation differences."
       ],
       "demandValidation": "candidate"
     },
