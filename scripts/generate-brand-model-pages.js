@@ -5,7 +5,7 @@ const data=JSON.parse(fs.readFileSync(CAT,'utf8'));if(!Array.isArray(data.models
 const approved=data.models.filter(m=>m.status==='approved'&&m.researchStatus==='approved'&&m.seoStatus!=='blocked');
 const url=m=>`${SITE}/car-pdi/${m.brandSlug||slug(m.brand)}/${m.modelSlug||slug(m.model)}/`;
 const write=(f,s)=>{fs.mkdirSync(path.dirname(f),{recursive:true});fs.writeFileSync(f,s)};
-function isEv(m){const t=[...(m.powertrains||[]),...(m.transmissions||[])].join(' ').toLowerCase();return /\belectric\b|\bev\b|battery|bev|single-speed electric/.test(t);}
+function isEv(m){const t=[...(m.powertrains||[]),...(m.transmissions||[]),...(m.aliases||[])].join(' ').toLowerCase();return /\belectric\b|\bev\b|battery|bev|single-speed electric/.test(t);}
 function isPremium(m){return (m.priorityTier===3)||/bmw|mercedes|audi|volvo|lexus|jaguar|land rover|porsche|mini/i.test(m.brand);}
 function keywordMap(m){
   const b=m.brand, n=m.model;
