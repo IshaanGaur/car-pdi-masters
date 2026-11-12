@@ -3790,7 +3790,14 @@
       "transmissions": [
         "9-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "Sport",
+        "Longitude",
+        "TRAIL",
+        "Limited (O)",
+        "Model S (O)",
+        "Track"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.jeep-india.com/compass.html",
@@ -3808,7 +3815,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Jeep",
@@ -3826,7 +3834,14 @@
       "transmissions": [
         "9-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "Longitude",
+        "Longitude Plus",
+        "Limited (O)",
+        "Trail",
+        "Overland",
+        "Track"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.jeep-india.com/meridian.html",
@@ -3844,7 +3859,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Isuzu",
