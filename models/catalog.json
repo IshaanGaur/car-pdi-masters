@@ -113,8 +113,8 @@
       "brandSlug": "maruti-suzuki",
       "model": "Wagon R",
       "modelSlug": "wagon-r",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -138,16 +138,18 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Current Maruti Arena listing; verify final variant matrix before publish."
-      ]
+        "Current Maruti Arena listing; verify final variant matrix before publish.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Maruti Suzuki",
       "brandSlug": "maruti-suzuki",
       "model": "Swift",
       "modelSlug": "swift",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -172,16 +174,18 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Official Maruti India sources confirm 1.2L petrol/S-CNG and manual/AGS; verify final variant list before publish."
-      ]
+        "Official Maruti India sources confirm 1.2L petrol/S-CNG and manual/AGS; verify final variant list before publish.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Maruti Suzuki",
       "brandSlug": "maruti-suzuki",
       "model": "Baleno",
       "modelSlug": "baleno",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -206,16 +210,18 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Current NEXA listing plus Sep 2026 Maruti announcement; verify final variant matrix before publish."
-      ]
+        "Current NEXA listing plus Sep 2026 Maruti announcement; verify final variant matrix before publish.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Maruti Suzuki",
       "brandSlug": "maruti-suzuki",
       "model": "Dzire",
       "modelSlug": "dzire",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -240,16 +246,18 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Official Maruti India sources confirm petrol/CNG, MT and AGS; current listings include CNG AGS, so the generator must not assume CNG is manual-only."
-      ]
+        "Official Maruti India sources confirm petrol/CNG, MT and AGS; current listings include CNG AGS, so the generator must not assume CNG is manual-only.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Maruti Suzuki",
       "brandSlug": "maruti-suzuki",
       "model": "Fronx",
       "modelSlug": "fronx",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -274,16 +282,18 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Current NEXA model; verify current CNG/variant availability from live price page before publish."
-      ]
+        "Current NEXA model; verify current CNG/variant availability from live price page before publish.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Maruti Suzuki",
       "brandSlug": "maruti-suzuki",
       "model": "Brezza",
       "modelSlug": "brezza",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -308,8 +318,10 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Current Arena model and price/variant page; verify exact variant matrix before publish."
-      ]
+        "Current Arena model and price/variant page; verify exact variant matrix before publish.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Maruti Suzuki",
@@ -388,8 +400,8 @@
       "brandSlug": "maruti-suzuki",
       "model": "Ertiga",
       "modelSlug": "ertiga",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -415,8 +427,10 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Official Maruti India sources confirm petrol/Smart Hybrid, factory CNG, manual and automatic options; verify final variant list before publish."
-      ]
+        "Official Maruti India sources confirm petrol/Smart Hybrid, factory CNG, manual and automatic options; verify final variant list before publish.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Maruti Suzuki",
@@ -655,8 +669,8 @@
       "brandSlug": "hyundai",
       "model": "Venue",
       "modelSlug": "venue",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -681,16 +695,18 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Current Hyundai India listing; exact engine/transmission mapping should be taken from current configurator before publish."
-      ]
+        "Current Hyundai India listing; exact engine/transmission mapping should be taken from current configurator before publish.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Hyundai",
       "brandSlug": "hyundai",
       "model": "Creta",
       "modelSlug": "creta",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -718,8 +734,10 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Official Hyundai India sources confirm current Creta petrol/diesel powertrains and multiple transmission types; recheck variant names before publish."
-      ]
+        "Official Hyundai India sources confirm current Creta petrol/diesel powertrains and multiple transmission types; recheck variant names before publish.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Hyundai",
@@ -896,8 +914,8 @@
       "brandSlug": "tata",
       "model": "Altroz",
       "modelSlug": "altroz",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -922,16 +940,18 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Current Tata Altroz family; verify exact current engine/transmission/variant mapping before publish."
-      ]
+        "Current Tata Altroz family; verify exact current engine/transmission/variant mapping before publish.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Tata",
       "brandSlug": "tata",
       "model": "Punch",
       "modelSlug": "punch",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -957,16 +977,18 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Tata current product family includes Punch ICE/CNG and Punch.ev; keep fuel/powertrain distinctions in page content and verify live matrix before publish."
-      ]
+        "Tata current product family includes Punch ICE/CNG and Punch.ev; keep fuel/powertrain distinctions in page content and verify live matrix before publish.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Tata",
       "brandSlug": "tata",
       "model": "Nexon",
       "modelSlug": "nexon",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -993,8 +1015,10 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Official Tata brochure confirms petrol/CNG/diesel and 5MT/6MT/6AMT/7DCA in the referenced specification set; recheck current 2026 variant matrix before publish."
-      ]
+        "Official Tata brochure confirms petrol/CNG/diesel and 5MT/6MT/6AMT/7DCA in the referenced specification set; recheck current 2026 variant matrix before publish.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Tata",
@@ -1035,8 +1059,8 @@
       "brandSlug": "tata",
       "model": "Harrier",
       "modelSlug": "harrier",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1062,16 +1086,18 @@
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
         "Harrier has ICE and EV variants; generator should present powertrain-specific checks without creating separate default URLs.",
-        "Harrier.ev is a separate pure-EV product family; retain the Harrier model URL as the authoritative family-level PDI page and mention Harrier.ev only as an applicable EV configuration, without presenting its EV specifications as the ICE Harrier's powertrain."
-      ]
+        "Harrier.ev is a separate pure-EV product family; retain the Harrier model URL as the authoritative family-level PDI page and mention Harrier.ev only as an applicable EV configuration, without presenting its EV specifications as the ICE Harrier's powertrain.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Tata",
       "brandSlug": "tata",
       "model": "Safari",
       "modelSlug": "safari",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1095,8 +1121,10 @@
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
         "Safari ICE and EV naming/specs should be rechecked against current Tata product pages before publish.",
-        "Do not present Safari as an EV powertrain on the Safari page; current Tata source material distinguishes Safari MCE from separate Tata EV products. Keep any future Safari EV research as a separate validated record only if Tata India confirms a retail product."
-      ]
+        "Do not present Safari as an EV powertrain on the Safari page; current Tata source material distinguishes Safari MCE from separate Tata EV products. Keep any future Safari EV research as a separate validated record only if Tata India confirms a retail product.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Tata",
@@ -1201,8 +1229,8 @@
       "brandSlug": "mahindra",
       "model": "Thar",
       "modelSlug": "thar",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1227,16 +1255,18 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Official Mahindra Thar specs confirm 1.5L diesel, 2.2L diesel and 2.0L turbo-petrol families with 6-speed manual/torque-converter automatic combinations; 4WD is configuration-dependent."
-      ]
+        "Official Mahindra Thar specs confirm 1.5L diesel, 2.2L diesel and 2.0L turbo-petrol families with 6-speed manual/torque-converter automatic combinations; 4WD is configuration-dependent.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Mahindra",
       "brandSlug": "mahindra",
       "model": "Thar Roxx",
       "modelSlug": "thar-roxx",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1260,8 +1290,10 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Official Mahindra Thar ROXX brochure confirms 2.0L turbo petrol and 2.2L diesel with 6-speed manual and torque-converter automatic options; 4x4 is configuration-dependent."
-      ]
+        "Official Mahindra Thar ROXX brochure confirms 2.0L turbo petrol and 2.2L diesel with 6-speed manual and torque-converter automatic options; 4x4 is configuration-dependent.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Mahindra",
@@ -1301,8 +1333,8 @@
       "brandSlug": "mahindra",
       "model": "Scorpio-N",
       "modelSlug": "scorpio-n",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1326,16 +1358,18 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Current Mahindra model; verify exact 2026 variant/engine availability before publish."
-      ]
+        "Current Mahindra model; verify exact 2026 variant/engine availability before publish.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Mahindra",
       "brandSlug": "mahindra",
       "model": "XUV 3XO",
       "modelSlug": "xuv-3xo",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1359,8 +1393,10 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Current Mahindra model; verify exact engine/transmission combinations before publish."
-      ]
+        "Current Mahindra model; verify exact engine/transmission combinations before publish.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Mahindra",
@@ -1402,8 +1438,8 @@
       "brandSlug": "mahindra",
       "model": "XUV700",
       "modelSlug": "xuv700",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1430,9 +1466,11 @@
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
         "Current Mahindra India portfolio now lists XUV 7XO as the successor/current nameplate; retain XUV700 as a historical/used-car search-intent record and do not present old XUV700 specifications as current XUV 7XO specifications. Current XUV 7XO has separate official product data and should be treated as a distinct model record if targeted for new-car PDI.",
-        "Do not use XUV 7XO as an alias on the historical XUV700 record because XUV 7XO has its own current model record and should have a distinct authoritative URL."
+        "Do not use XUV 7XO as an alias on the historical XUV700 record because XUV 7XO has its own current model record and should have a distinct authoritative URL.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "used_historical"
+      "demandValidation": "used_historical",
+      "approvedForPublication": true
     },
     {
       "brand": "Mahindra",
@@ -1744,8 +1782,8 @@
       "brandSlug": "toyota",
       "model": "Innova Hycross",
       "modelSlug": "innova-hycross",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1770,16 +1808,18 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Official Toyota India brochures confirm petrol/self-charging hybrid and CVT/E-drive transmission families; verify live grade naming before publish."
-      ]
+        "Official Toyota India brochures confirm petrol/self-charging hybrid and CVT/E-drive transmission families; verify live grade naming before publish.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Toyota",
       "brandSlug": "toyota",
       "model": "Fortuner",
       "modelSlug": "fortuner",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1803,8 +1843,10 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Current Toyota India model; verify current grade matrix before publish."
-      ]
+        "Current Toyota India model; verify current grade matrix before publish.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Toyota",
@@ -1877,8 +1919,8 @@
       "brandSlug": "kia",
       "model": "Sonet",
       "modelSlug": "sonet",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1906,16 +1948,18 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Current Kia India model; exact variant-to-transmission mapping must be verified before publish."
-      ]
+        "Current Kia India model; exact variant-to-transmission mapping must be verified before publish.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Kia",
       "brandSlug": "kia",
       "model": "Seltos",
       "modelSlug": "seltos",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1940,8 +1984,10 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Official Kia India page confirms the current engine families and multiple transmission configurations; capture exact variant mapping from the live configurator before publish."
-      ]
+        "Official Kia India page confirms the current engine families and multiple transmission configurations; capture exact variant mapping from the live configurator before publish.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Kia",
@@ -2019,8 +2065,8 @@
       "brandSlug": "honda",
       "model": "Amaze",
       "modelSlug": "amaze",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2048,16 +2094,18 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Honda India confirms current 1.2L petrol, 5-speed MT/CVT and V/VX/ZX grades; no factory diesel/CNG model."
-      ]
+        "Honda India confirms current 1.2L petrol, 5-speed MT/CVT and V/VX/ZX grades; no factory diesel/CNG model.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Honda",
       "brandSlug": "honda",
       "model": "City",
       "modelSlug": "city",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2089,8 +2137,10 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Honda India confirms petrol and e:HEV powertrains, MT/CVT/e-CVT and current grade structure; model page should distinguish petrol vs hybrid inspection checks."
-      ]
+        "Honda India confirms petrol and e:HEV powertrains, MT/CVT/e-CVT and current grade structure; model page should distinguish petrol vs hybrid inspection checks.",
+        "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Honda",
