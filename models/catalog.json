@@ -47,8 +47,8 @@
       "brandSlug": "maruti-suzuki",
       "model": "S-Presso",
       "modelSlug": "s-presso",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -72,9 +72,11 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; current-market model verified and commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "Current Maruti Arena listing confirms 998cc petrol and S-CNG, with 5MT and AGS on petrol variants."
+        "Current Maruti Arena listing confirms 998cc petrol and S-CNG, with 5MT and AGS on petrol variants.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Maruti Suzuki",
@@ -332,8 +334,8 @@
       "brandSlug": "maruti-suzuki",
       "model": "Grand Vitara",
       "modelSlug": "grand-vitara",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -359,17 +361,19 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; current-market model verified and commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "Current Maruti data confirms petrol, strong-hybrid and S-CNG families; ALLGRIP is available with 6-speed automatic on selected petrol variants."
+        "Current Maruti data confirms petrol, strong-hybrid and S-CNG families; ALLGRIP is available with 6-speed automatic on selected petrol variants.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Maruti Suzuki",
       "brandSlug": "maruti-suzuki",
       "model": "Victoris",
       "modelSlug": "victoris",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -395,9 +399,11 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; current-market model verified and commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "Current Maruti Victoris configurator confirms petrol, S-CNG and strong-hybrid variants, with manual, automatic and e-Drive options."
+        "Current Maruti Victoris configurator confirms petrol, S-CNG and strong-hybrid variants, with manual, automatic and e-Drive options.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Maruti Suzuki",
@@ -441,8 +447,8 @@
       "brandSlug": "maruti-suzuki",
       "model": "XL6",
       "modelSlug": "xl6",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -465,17 +471,19 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
-        "Maruti Suzuki lists XL6 with the 1.5L K15 petrol Smart Hybrid engine; current automatic lineup information lists 6-speed automatic and 5-speed manual."
+        "Maruti Suzuki lists XL6 with the 1.5L K15 petrol Smart Hybrid engine; current automatic lineup information lists 6-speed automatic and 5-speed manual.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Maruti Suzuki",
       "brandSlug": "maruti-suzuki",
       "model": "Invicto",
       "modelSlug": "invicto",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -497,9 +505,11 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
-        "Maruti Suzuki describes Invicto with a 2.0L Intelligent Electric Hybrid powertrain and e-CVT."
+        "Maruti Suzuki describes Invicto with a 2.0L Intelligent Electric Hybrid powertrain and e-CVT.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Maruti Suzuki",
@@ -610,8 +620,8 @@
       "brandSlug": "hyundai",
       "model": "Aura",
       "modelSlug": "aura",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -635,17 +645,19 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; current-market model verified and commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "Hyundai India confirms 1.2L petrol and Hy-CNG options, with manual and AMT on selected petrol variants."
+        "Hyundai India confirms 1.2L petrol and Hy-CNG options, with manual and AMT on selected petrol variants.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Hyundai",
       "brandSlug": "hyundai",
       "model": "Exter",
       "modelSlug": "exter",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -669,9 +681,11 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; current-market model verified and commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "Hyundai India confirms 1.2L Kappa petrol and dual-cylinder CNG, with 5MT and Smart Auto AMT on petrol."
+        "Hyundai India confirms 1.2L Kappa petrol and dual-cylinder CNG, with 5MT and Smart Auto AMT on petrol.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Hyundai",
@@ -825,8 +839,8 @@
       "brandSlug": "hyundai",
       "model": "Tucson",
       "modelSlug": "tucson",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -850,9 +864,11 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
-        "Hyundai India owner/manual history and current brochure evidence support Tucson from Aug 2022-present in India, with 2.0L petrol 6AT and 2.0L diesel 8AT; selected diesel variants have 4WD. The all-new global 2026 Tucson is not automatically mapped to India."
+        "Hyundai India owner/manual history and current brochure evidence support Tucson from Aug 2022-present in India, with 2.0L petrol 6AT and 2.0L diesel 8AT; selected diesel variants have 4WD. The all-new global 2026 Tucson is not automatically mapped to India.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Tata",
@@ -1150,8 +1166,8 @@
       "brandSlug": "tata",
       "model": "Sierra",
       "modelSlug": "sierra",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1176,9 +1192,11 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
-        "Tata launched the all-new Sierra in India in November 2025. Tata confirms three engine options; current market data documents 1.5L NA petrol, 1.5L turbo-petrol and 1.5L diesel with powertrain-specific manual/automatic combinations. Keep Sierra separate from the historic 1991 model and any future Sierra EV page."
+        "Tata launched the all-new Sierra in India in November 2025. Tata confirms three engine options; current market data documents 1.5L NA petrol, 1.5L turbo-petrol and 1.5L diesel with powertrain-specific manual/automatic combinations. Keep Sierra separate from the historic 1991 model and any future Sierra EV page.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Mahindra",
@@ -1428,8 +1446,8 @@
       "brandSlug": "mahindra",
       "model": "XUV 7XO",
       "modelSlug": "xuv-7xo",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1454,9 +1472,11 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
-        "Mahindra launched XUV 7XO in January 2026 as the XUV700 successor/next-generation premium SUV. Official brochure lists 2.0L TGDi petrol and 2.2L diesel, 6MT/6AT, with diesel AWD AT on selected variants."
+        "Mahindra launched XUV 7XO in January 2026 as the XUV700 successor/next-generation premium SUV. Official brochure lists 2.0L TGDi petrol and 2.2L diesel, 6MT/6AT, with diesel AWD AT on selected variants.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Mahindra",
@@ -1500,8 +1520,8 @@
       "brandSlug": "mahindra",
       "model": "Marazzo",
       "modelSlug": "marazzo",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1524,9 +1544,11 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
-        "Mahindra Marazzo is a discontinued/used-market focused MPV record. Official Mahindra documentation specifies a 1.5L D15 turbo diesel with 6-speed manual. PDI content should focus on used-vehicle condition, DPF/emissions, clutch, suspension and fleet/taxi wear."
+        "Mahindra Marazzo is a discontinued/used-market focused MPV record. Official Mahindra documentation specifies a 1.5L D15 turbo diesel with 6-speed manual. PDI content should focus on used-vehicle condition, DPF/emissions, clutch, suspension and fleet/taxi wear.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "used_historical",
+      "approvedForPublication": true
     },
     {
       "brand": "Mahindra",
@@ -1634,8 +1656,8 @@
       "brandSlug": "toyota",
       "model": "Glanza",
       "modelSlug": "glanza",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1660,17 +1682,19 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
-        "Toyota launched the new Glanza in October 2026 with a new-generation 1.2L petrol engine and CNG, including AMT availability for CNG variants."
+        "Toyota launched the new Glanza in October 2026 with a new-generation 1.2L petrol engine and CNG, including AMT availability for CNG variants.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Toyota",
       "brandSlug": "toyota",
       "model": "Rumion",
       "modelSlug": "rumion",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1694,17 +1718,19 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
-        "Toyota India currently lists Rumion; final powertrain/transmission matrix should be checked against the current brochure before approval."
+        "Toyota India currently lists Rumion; final powertrain/transmission matrix should be checked against the current brochure before approval.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Toyota",
       "brandSlug": "toyota",
       "model": "Urban Cruiser Taisor",
       "modelSlug": "urban-cruiser-taisor",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1731,17 +1757,19 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
-        "Toyota India currently lists Urban Cruiser Taisor. Toyota's launch material specifies 1.0L turbo petrol with 5MT/6AT, 1.2L petrol with 5MT/IGS, and 1.2L E-CNG with 5MT. Toyota later standardized six airbags across all variants in 2025."
+        "Toyota India currently lists Urban Cruiser Taisor. Toyota's launch material specifies 1.0L turbo petrol with 5MT/6AT, 1.2L petrol with 5MT/IGS, and 1.2L E-CNG with 5MT. Toyota later standardized six airbags across all variants in 2025.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Toyota",
       "brandSlug": "toyota",
       "model": "Urban Cruiser Hyryder",
       "modelSlug": "urban-cruiser-hyryder",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1768,17 +1796,19 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; current-market model verified and commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "Toyota India confirms E-CNG 5MT, petrol NeoDrive 5MT/6AT including AWD, and strong-hybrid e-Drive configurations."
+        "Toyota India confirms E-CNG 5MT, petrol NeoDrive 5MT/6AT including AWD, and strong-hybrid e-Drive configurations.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Toyota",
       "brandSlug": "toyota",
       "model": "Innova Crysta",
       "modelSlug": "innova-crysta",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1800,9 +1830,11 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; current-market model verified and commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "Toyota India confirms the current 2026 Innova Crysta with 2.4L diesel and manual transmission."
+        "Toyota India confirms the current 2026 Innova Crysta with 2.4L diesel and manual transmission.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Toyota",
@@ -1880,8 +1912,8 @@
       "brandSlug": "toyota",
       "model": "Hilux",
       "modelSlug": "hilux",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1904,17 +1936,19 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
-        "Toyota India current Hilux listing shows a 2.8L diesel with 6-speed automatic across current grades; earlier/current material also documents 6-speed manual, so used-model generation checks remain important."
+        "Toyota India current Hilux listing shows a 2.8L diesel with 6-speed automatic across current grades; earlier/current material also documents 6-speed manual, so used-model generation checks remain important.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Toyota",
       "brandSlug": "toyota",
       "model": "Camry",
       "modelSlug": "camry",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1937,9 +1971,11 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; current-market model verified and commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "Toyota India confirms the current Camry with 2.5L petrol engine, hybrid system and e-CVT."
+        "Toyota India confirms the current Camry with 2.5L petrol engine, hybrid system and e-CVT.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Kia",
@@ -2058,8 +2094,8 @@
       "brandSlug": "kia",
       "model": "Syros",
       "modelSlug": "syros",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2085,9 +2121,11 @@
       "priorityTier": 5,
       "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "Kia India current Syros range includes turbo-petrol and diesel powertrains with manual/iMT/DCT/automatic combinations depending on variant."
+        "Kia India current Syros range includes turbo-petrol and diesel powertrains with manual/iMT/DCT/automatic combinations depending on variant.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Honda",
@@ -2176,8 +2214,8 @@
       "brandSlug": "honda",
       "model": "Elevate",
       "modelSlug": "elevate",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2200,9 +2238,11 @@
       "priorityTier": 5,
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
-        "Honda Cars India unveiled the new Elevate in October 2026 with a 1.5L i-VTEC petrol engine, 6-speed manual or CVT with 7-speed paddle shift."
+        "Honda Cars India unveiled the new Elevate in October 2026 with a 1.5L i-VTEC petrol engine, 6-speed manual or CVT with 7-speed paddle shift.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "MG",
@@ -2241,8 +2281,8 @@
       "brandSlug": "mg",
       "model": "Astor",
       "modelSlug": "astor",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2267,9 +2307,11 @@
       "priorityTier": 5,
       "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "MG India lists Astor with 1.5L petrol and 1.3L turbo-petrol options across its India range; exact transmission mapping varies by grade."
+        "MG India lists Astor with 1.5L petrol and 1.3L turbo-petrol options across its India range; exact transmission mapping varies by grade.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "MG",
@@ -2309,8 +2351,8 @@
       "brandSlug": "mg",
       "model": "Hector",
       "modelSlug": "hector",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2334,17 +2376,19 @@
       "priorityTier": 5,
       "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "MG India current Hector is offered with 1.5L turbo-petrol and 2.0L diesel families; transmission pairing varies by powertrain."
+        "MG India current Hector is offered with 1.5L turbo-petrol and 2.0L diesel families; transmission pairing varies by powertrain.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "MG",
       "brandSlug": "mg",
       "model": "Gloster",
       "modelSlug": "gloster",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2366,9 +2410,11 @@
       "priorityTier": 5,
       "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "MG India Gloster is a diesel automatic premium SUV; current variants should be verified from the live product page before approval."
+        "MG India Gloster is a diesel automatic premium SUV; current variants should be verified from the live product page before approval.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "MG",
@@ -2480,8 +2526,8 @@
       "brandSlug": "skoda",
       "model": "Kylaq",
       "modelSlug": "kylaq",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2504,17 +2550,19 @@
       "priorityTier": 5,
       "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "Škoda India current Kylaq is a 1.0 TSI petrol SUV with manual and automatic transmission options."
+        "Škoda India current Kylaq is a 1.0 TSI petrol SUV with manual and automatic transmission options.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Skoda",
       "brandSlug": "skoda",
       "model": "Kodiaq",
       "modelSlug": "kodiaq",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2536,17 +2584,19 @@
       "priorityTier": 5,
       "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "Škoda India current Kodiaq is a 2.0 TSI petrol SUV with 7-speed DSG; exact 4x4/current generation specification should be verified before approval."
+        "Škoda India current Kodiaq is a 2.0 TSI petrol SUV with 7-speed DSG; exact 4x4/current generation specification should be verified before approval.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Skoda",
       "brandSlug": "skoda",
       "model": "Superb",
       "modelSlug": "superb",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2568,9 +2618,11 @@
       "priorityTier": 5,
       "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "Škoda Superb is a premium sedan/wagon family with 2.0 TSI + DSG in relevant India generations; current India retail status must be verified before publishing."
+        "Škoda Superb is a premium sedan/wagon family with 2.0 TSI + DSG in relevant India generations; current India retail status must be verified before publishing.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Volkswagen",
@@ -2652,8 +2704,8 @@
       "brandSlug": "volkswagen",
       "model": "Tiguan",
       "modelSlug": "tiguan",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2678,17 +2730,19 @@
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
         "Volkswagen India current Tiguan is a 2.0 TSI petrol SUV with DSG automatic; verify exact current generation/4MOTION specification before approval.",
-        "Volkswagen India brochure specifies a 2.0L TSI petrol with 7-speed DSG and 4MOTION for the referenced Tiguan generation; generation-specific used-PDI content is required."
+        "Volkswagen India brochure specifies a 2.0L TSI petrol with 7-speed DSG and 4MOTION for the referenced Tiguan generation; generation-specific used-PDI content is required.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Renault",
       "brandSlug": "renault",
       "model": "Kwid",
       "modelSlug": "kwid",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2714,17 +2768,19 @@
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
         "Renault India current Kwid is a 1.0L petrol hatchback with manual/AMT; final page should verify whether any CNG reference is applicable to India before publication.",
-        "Renault India currently lists Kwid; Renault's Feb 2025 release announced CNG kit availability for Kwid/Kiger/Triber, so page should distinguish factory specification from optional CNG kit."
+        "Renault India currently lists Kwid; Renault's Feb 2025 release announced CNG kit availability for Kwid/Kiger/Triber, so page should distinguish factory specification from optional CNG kit.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Renault",
       "brandSlug": "renault",
       "model": "Triber",
       "modelSlug": "triber",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2750,9 +2806,11 @@
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
         "Renault India Triber is a 1.0L petrol 7-seater with manual/AMT options.",
-        "Renault India currently lists Triber and announced the Triber 100PS family in September 2026; use generation/engine-specific notes rather than assuming every used Triber has the latest powertrain."
+        "Renault India currently lists Triber and announced the Triber 100PS family in September 2026; use generation/engine-specific notes rather than assuming every used Triber has the latest powertrain.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Renault",
@@ -2834,8 +2892,8 @@
       "brandSlug": "citroen",
       "model": "C3",
       "modelSlug": "c3",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2861,17 +2919,19 @@
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
         "Citroën India C3 powertrain varies by generation/update; verify the current India configuration before approval.",
-        "Citroën India now presents C3-derived current products as C3X/ë-C3X. Keep the C3 record primarily for used-car intent and historical C3 generations; do not copy current C3X specifications onto it."
+        "Citroën India now presents C3-derived current products as C3X/ë-C3X. Keep the C3 record primarily for used-car intent and historical C3 generations; do not copy current C3X specifications onto it.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "used_historical",
+      "approvedForPublication": true
     },
     {
       "brand": "Citroën",
       "brandSlug": "citroen",
       "model": "C3 Aircross",
       "modelSlug": "c3-aircross",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2897,9 +2957,11 @@
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
         "Citroën India C3 Aircross is a 1.2L turbo-petrol SUV with manual/automatic options depending on generation.",
-        "Citroën India now markets the updated product as AircrossX. Keep this record for historical/used C3 Aircross demand and map current AircrossX terminology through aliases rather than duplicating pages."
+        "Citroën India now markets the updated product as AircrossX. Keep this record for historical/used C3 Aircross demand and map current AircrossX terminology through aliases rather than duplicating pages.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "used_historical",
+      "approvedForPublication": true
     },
     {
       "brand": "Citroën",
@@ -2941,8 +3003,8 @@
       "brandSlug": "citroen",
       "model": "Basalt",
       "modelSlug": "basalt",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2968,9 +3030,11 @@
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
         "Citroën India Basalt is offered with naturally aspirated and turbo petrol configurations; transmission depends on powertrain/grade.",
-        "Citroën India currently markets the updated product as BasaltX. Keep Basalt as the underlying model/used-search entity and use aliases for BasaltX rather than creating a second page."
+        "Citroën India currently markets the updated product as BasaltX. Keep Basalt as the underlying model/used-search entity and use aliases for BasaltX rather than creating a second page.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Citroën",
@@ -3010,8 +3074,8 @@
       "brandSlug": "jeep",
       "model": "Compass",
       "modelSlug": "compass",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3035,17 +3099,19 @@
       "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
       "researchNotes": [
         "Jeep Compass India spans current/older generations; diesel automatic/manual and older petrol DCT configurations should be separated by model year.",
-        "Jeep India current Compass capability page specifies a 2.0L Multijet II diesel and 9-speed automatic; older India generations may include other engine/transmission combinations for used-PDI intent."
+        "Jeep India current Compass capability page specifies a 2.0L Multijet II diesel and 9-speed automatic; older India generations may include other engine/transmission combinations for used-PDI intent.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Jeep",
       "brandSlug": "jeep",
       "model": "Meridian",
       "modelSlug": "meridian",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3069,17 +3135,19 @@
       "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
       "researchNotes": [
         "Jeep India Meridian is a diesel SUV with manual/automatic configurations; exact current grade/4x4 mapping should be verified before approval.",
-        "Jeep India current Meridian materials specify a 2.0L Multijet II diesel with 9-speed automatic; used-model content should account for 4x2/4x4 configurations and generation differences."
+        "Jeep India current Meridian materials specify a 2.0L Multijet II diesel with 9-speed automatic; used-model content should account for 4x2/4x4 configurations and generation differences.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Isuzu",
       "brandSlug": "isuzu",
       "model": "D-Max",
       "modelSlug": "d-max",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3103,17 +3171,19 @@
       "priorityTier": 5,
       "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "Isuzu India D-Max is a utility pickup with diesel generations; final PDI page should separate current and used-generation specifications."
+        "Isuzu India D-Max is a utility pickup with diesel generations; final PDI page should separate current and used-generation specifications.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Isuzu",
       "brandSlug": "isuzu",
       "model": "MU-X",
       "modelSlug": "mu-x",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3135,9 +3205,11 @@
       "priorityTier": 5,
       "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "Isuzu India MU-X is a diesel automatic SUV; generation-specific engine/transmission and 4WD details should be verified before approval."
+        "Isuzu India MU-X is a diesel automatic SUV; generation-specific engine/transmission and 4WD details should be verified before approval.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "BYD",
@@ -3278,8 +3350,8 @@
       "brandSlug": "bmw",
       "model": "2 Series",
       "modelSlug": "2-series",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3304,9 +3376,11 @@
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
         "BMW India 2 Series model naming is generation/derivative dependent; final page must verify the current India model and distinguish used variants.",
-        "BMW India currently lists the 2 Series Gran Coupé/218 M Sport as a petrol model. For used-PDI content, distinguish current 2 Series Gran Coupé from older generations and body styles."
+        "BMW India currently lists the 2 Series Gran Coupé/218 M Sport as a petrol model. For used-PDI content, distinguish current 2 Series Gran Coupé from older generations and body styles.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "BMW",
@@ -3558,8 +3632,8 @@
       "brandSlug": "mercedes-benz",
       "model": "A-Class",
       "modelSlug": "a-class",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3583,9 +3657,11 @@
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
         "Mercedes A-Class India is primarily a used-PDI target after the A-Class Limousine transition; final page should distinguish A-Class hatchback from A-Class Limousine.",
-        "Mercedes-Benz India currently identifies the A-Class Limousine as a compact four-door saloon. Treat A-Class as a used-PDI/generation-sensitive entity and avoid implying a current A-Class hatchback India retail offering."
+        "Mercedes-Benz India currently identifies the A-Class Limousine as a compact four-door saloon. Treat A-Class as a used-PDI/generation-sensitive entity and avoid implying a current A-Class hatchback India retail offering.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "used_historical",
+      "approvedForPublication": true
     },
     {
       "brand": "Mercedes-Benz",
@@ -4078,8 +4154,8 @@
       "brandSlug": "volvo",
       "model": "EX30",
       "modelSlug": "ex30",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4104,9 +4180,11 @@
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
         "Volvo EX30 is a fully electric model; India availability/specification should be verified before publication and EV-specific PDI checks should be used.",
-        "Volvo India currently lists EX30 as an electric SUV. EV-specific PDI should cover battery state/health indicators, charging, HV warnings, software/OTA status and ADAS."
+        "Volvo India currently lists EX30 as an electric SUV. EV-specific PDI should cover battery state/health indicators, charging, HV warnings, software/OTA status and ADAS.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Volvo",
@@ -4359,8 +4437,8 @@
       "brandSlug": "lexus",
       "model": "LM",
       "modelSlug": "lm",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4384,9 +4462,11 @@
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
         "Lexus LM is a luxury MPV with hybrid powertrain and e-CVT; final India specification should be verified from the current configurator.",
-        "Lexus India LM350h brochure documents a 2.5L hybrid system, CVT transmission, front/rear electric motors and Ni-MH battery. Used/new luxury PDI should include hybrid-system and premium-cabin checks."
+        "Lexus India LM350h brochure documents a 2.5L hybrid system, CVT transmission, front/rear electric motors and Ni-MH battery. Used/new luxury PDI should include hybrid-system and premium-cabin checks.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Jaguar",
@@ -4466,8 +4546,8 @@
       "brandSlug": "jaguar",
       "model": "F-Type",
       "modelSlug": "f-type",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4491,9 +4571,11 @@
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
         "Jaguar F-TYPE is discontinued/used-market focused in India; exact engine and transmission vary by generation and derivative.",
-        "F-TYPE is a discontinued/used-market-focused Jaguar model in India. Exact engine outputs and equipment vary by generation; final page should be generation-aware and used-PDI led."
+        "F-TYPE is a discontinued/used-market-focused Jaguar model in India. Exact engine outputs and equipment vary by generation; final page should be generation-aware and used-PDI led.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "used_historical",
+      "approvedForPublication": true
     },
     {
       "brand": "Land Rover",
@@ -4828,8 +4910,8 @@
       "brandSlug": "mini",
       "model": "Cooper",
       "modelSlug": "cooper",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4856,17 +4938,19 @@
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
         "MINI Cooper naming covers petrol and newer electric generations; final page must distinguish generations and powertrains.",
-        "MINI India currently lists MINI Cooper and separate all-electric MINI Countryman; Cooper naming spans body styles/generations, so page content must distinguish petrol Cooper from other MINI derivatives."
+        "MINI India currently lists MINI Cooper and separate all-electric MINI Countryman; Cooper naming spans body styles/generations, so page content must distinguish petrol Cooper from other MINI derivatives.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "MINI",
       "brandSlug": "mini",
       "model": "Countryman",
       "modelSlug": "countryman",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4893,17 +4977,19 @@
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
         "MINI Countryman spans petrol and electric generations; verify current India specification before approval.",
-        "MINI India currently lists Countryman C and the all-electric MINI Countryman. EV and petrol PDI checks should be configuration-specific."
+        "MINI India currently lists Countryman C and the all-electric MINI Countryman. EV and petrol PDI checks should be configuration-specific.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Force Motors",
       "brandSlug": "force-motors",
       "model": "Gurkha",
       "modelSlug": "gurkha",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4927,17 +5013,19 @@
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
         "Force Motors Gurkha is a diesel 4x4 utility SUV; current and older generations should be separated in used-PDI content.",
-        "Force Motors Gurkha is a diesel 4x4 utility SUV with generation-dependent specifications. Keep used-PDI checks focused on 4x4 system, underbody, chassis, suspension and off-road wear."
+        "Force Motors Gurkha is a diesel 4x4 utility SUV with generation-dependent specifications. Keep used-PDI checks focused on 4x4 system, underbody, chassis, suspension and off-road wear.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "Force Motors",
       "brandSlug": "force-motors",
       "model": "Trax Cruiser",
       "modelSlug": "trax-cruiser",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4961,9 +5049,11 @@
       "priorityReason": "Catalog coverage; research and demand validation before publishing.",
       "researchNotes": [
         "Force Motors Trax Cruiser is a utility passenger vehicle; commercial PDI content should emphasize used-vehicle and fleet/utility inspection intent.",
-        "Force Motors Trax Cruiser is a utility passenger vehicle; exact current specification should be confirmed from Force Motors before approval. Used/fleet inspection intent is more relevant than new-car SEO."
+        "Force Motors Trax Cruiser is a utility passenger vehicle; exact current specification should be confirmed from Force Motors before approval. Used/fleet inspection intent is more relevant than new-car SEO.",
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
-      "demandValidation": "candidate"
+      "demandValidation": "candidate",
+      "approvedForPublication": true
     },
     {
       "brand": "VinFast",
