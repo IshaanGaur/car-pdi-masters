@@ -3970,23 +3970,28 @@
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
-        "Petrol",
-        "Electric (EX40 generation)"
+        "1.969L petrol mild hybrid",
+        "Pure electric (XC40 Recharge; India 2021-2024 generation)"
       ],
       "transmissions": [
-        "Automatic"
+        "8-speed automatic",
+        "Single-speed electric drive"
       ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.volvocars.com/in/news/technology/Volvo-Car-India-launches-new-Petrol-Mild-Hybrid-range-Transitions-to-complete-mild-hybrid/",
+        "https://www.volvocars.com/in/news/electrification/Volvo-Car-India-launches-its-Pure-Electric-XC40-Recharge-at-Rs-5590000-ex-showroom/",
+        "https://www.volvocars.com/in/support/car/xc40-recharge-pure-electric/"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+        "XC40 has generation/powertrain-sensitive India intent. Volvo launched the petrol mild-hybrid XC40 B4 in 2022 and the XC40 Recharge Pure Electric in India earlier; current Volvo India consumer range has moved toward XC60/XC90 and newer EV naming, so this should be treated as current/used-market coverage rather than assuming a current new-car XC40 listing. EV PDI should include battery/charging/software checks."
       ]
     },
     {
@@ -4000,23 +4005,29 @@
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
-        "Petrol mild-hybrid",
-        "Plug-in hybrid"
+        "2.0L petrol B5 48V mild hybrid",
+        "2.0L petrol plug-in hybrid (generation/market dependent)",
+        "2.0L diesel mild hybrid (older India generation)"
       ],
       "transmissions": [
-        "Automatic"
+        "Automatic",
+        "8-speed automatic Geartronic (generation dependent)"
       ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.volvocars.com/in/cars/xc60/",
+        "https://www.volvocars.com/in/cars/xc60/specifications/",
+        "https://www.volvocars.com/files/cs/v3/assets/blt0feaa88e629251fc/blt5fe9a87f7d599154/xc60-my24-27_10_2023.pdf"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+        "Current Volvo Cars India XC60 is B5 AWD petrol mild hybrid with automatic transmission. Older India XC60 generations also included diesel mild hybrid and plug-in-hybrid variants, so used-PDI copy must remain generation-aware."
       ]
     },
     {
@@ -4030,23 +4041,27 @@
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
-        "Petrol mild-hybrid",
-        "Plug-in hybrid"
+        "2.0L petrol B5 48V mild hybrid",
+        "Plug-in hybrid (older/current market dependent)"
       ],
       "transmissions": [
-        "Automatic"
+        "Automatic",
+        "8-speed automatic (generation dependent)"
       ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.volvocars.com/in/cars/xc90/",
+        "https://www.volvocars.com/in/cars/xc90/specifications/"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+        "Current Volvo India XC90 is a 7-seat B5 AWD petrol mild hybrid with automatic transmission. Older XC90 generations include diesel and plug-in-hybrid configurations, so used-PDI content must be generation-aware and powertrain-specific."
       ]
     },
     {
@@ -4060,23 +4075,24 @@
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
-        "Petrol",
-        "Hybrid"
+        "2.5L petrol hybrid"
       ],
       "transmissions": [
-        "Automatic"
+        "E-CVT"
       ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.lexusindia.co.in/wp-content/uploads/2025/09/Lexus-ES-300-Brochure-2025_LR.pdf"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+        "Lexus India ES 300h brochure confirms 2.5L four-cylinder hybrid system, 160 kW total system output and E-CVT. PDI should include hybrid battery/system diagnostics, brake regeneration behaviour, electronics and luxury cabin equipment."
       ]
     },
     {
@@ -4090,24 +4106,24 @@
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
-        "Petrol",
-        "Hybrid",
-        "Plug-in hybrid"
+        "2.5L petrol hybrid (NX 350h)"
       ],
       "transmissions": [
-        "Automatic"
+        "E-CVT"
       ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.lexusindia.co.in/wp-content/uploads/2024/11/nx-350h-brochure-2024.pdf"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+        "Lexus India NX 350h is a petrol hybrid SUV with E-CVT and EV mode; official brochure covers Exquisite, Overtrail, Luxury and F Sport grades. Model page should emphasize hybrid-system health, AWD/electronics, cameras, ADAS and trim-specific equipment."
       ]
     },
     {
@@ -4121,24 +4137,26 @@
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
-        "Petrol",
-        "Hybrid",
-        "Plug-in hybrid"
+        "2.5L petrol hybrid (RX 350h)",
+        "2.4L turbo petrol hybrid (RX 500h)"
       ],
       "transmissions": [
-        "Automatic"
+        "E-CVT / Hybrid Sequential Shift Matic",
+        "6-speed automatic (RX 500h configuration dependent)"
       ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.lexusindia.co.in/wp-content/uploads/2024/11/rx-brochure-2023.pdf"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+        "Lexus India RX brochure covers RX 350h and RX 500h. The model page should distinguish the standard hybrid and performance-hybrid configurations and focus on hybrid system, AWD, four-wheel steering where equipped, cameras and premium electronics."
       ]
     },
     {
@@ -4152,23 +4170,24 @@
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
-        "Petrol",
-        "Diesel (generation dependent)"
+        "3.3L twin-turbo diesel (LX 500d)"
       ],
       "transmissions": [
-        "Automatic"
+        "10-speed Direct Shift automatic"
       ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.lexusindia.co.in/wp-content/uploads/2025/03/LX-500d-digital-brochure.pdf"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+        "Lexus India LX 500d brochure confirms 3.346L V6 twin-turbo diesel, 700 Nm and Direct Shift-10AT, with active-height/adaptive suspension and multi-terrain systems. PDI should emphasize chassis/4x4 systems, suspension, underbody, tyres, cameras and premium electronics."
       ]
     },
     {
@@ -4215,19 +4234,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L petrol",
+        "2.0L diesel mild hybrid",
+        "3.0L petrol (generation/variant dependent)"
+      ],
+      "transmissions": [
+        "8-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://retailers.jaguar.in/amp-motors-southdelhi",
+        "https://retailers.jaguar.in/navjivan"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Jaguar India specifications vary substantially by model year and generation; final page should prioritize used-car PDI and verify the exact engine/transmission for each relevant generation before approval."
+        "Jaguar India authorised retailers currently show approved used F-PACE examples including 2.0L petrol and 2.0L diesel MHEV cars. The model is best treated as premium used/new-generation-aware PDI content; verify exact engine and drivetrain by VIN/model year rather than using one universal specification."
       ]
     },
     {
@@ -4300,24 +4328,26 @@
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
-        "Petrol",
-        "Diesel (generation dependent)",
-        "Plug-in hybrid"
+        "2.0L petrol",
+        "2.0L diesel"
       ],
       "transmissions": [
-        "Automatic"
+        "9-speed automatic (generation dependent)"
       ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.landrover.in/explore-land-rover/news/new-range-rover-evoque-introduced-in-india.html",
+        "https://www.landrover.in/download-a-brochure/index.html"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+        "Land Rover India materials confirm Evoque petrol and diesel Ingenium configurations and current model documentation. Used-PDI content should be generation-aware, especially drivetrain, infotainment and suspension/electronics differences."
       ]
     },
     {
@@ -4331,24 +4361,28 @@
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
-        "Petrol",
-        "Diesel",
-        "Plug-in hybrid"
+        "2.0L petrol",
+        "2.0L diesel",
+        "3.0L diesel (older India generation)"
       ],
       "transmissions": [
-        "Automatic"
+        "8-speed automatic"
       ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.landrover.in/explore-land-rover/news/new-range-rover-velar-introduced-in-india.html",
+        "https://www.landrover.in/explore-land-rover/news/velar-launch.html",
+        "https://www.landrover.in/download-a-brochure/index.html"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+        "Land Rover India confirms Velar has used 2.0L petrol/diesel and older 3.0L diesel configurations. Later India material adds Pivi Pro and electronic air suspension. PDI should check suspension, drivetrain, cameras, infotainment and electrical systems."
       ]
     },
     {
@@ -4362,24 +4396,27 @@
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
-        "Petrol",
-        "Diesel",
-        "Plug-in hybrid"
+        "3.0L petrol",
+        "3.0L diesel",
+        "Performance/V8 petrol variants (generation dependent)"
       ],
       "transmissions": [
-        "Automatic"
+        "8-speed automatic"
       ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.landrover.in/download-a-brochure/index.html",
+        "https://www.landrover.in/content/dam/lrdx/pdfs/in/wltp/land-rover-vehicles-price-in-india.pdf"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+        "Land Rover India documentation lists Range Rover Sport petrol and diesel configurations, with performance derivatives varying by generation. Premium PDI should cover air suspension, AWD, Terrain Response, brakes, tyres, ADAS, cameras and high-value electronics."
       ]
     },
     {
@@ -4393,24 +4430,29 @@
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
-        "Petrol",
-        "Diesel",
-        "Plug-in hybrid"
+        "2.0L petrol",
+        "3.0L petrol",
+        "3.0L diesel",
+        "V8/performance petrol variants (generation dependent)"
       ],
       "transmissions": [
-        "Automatic"
+        "8-speed automatic"
       ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.landrover.in/defender/defender/models-and-specifications.html",
+        "https://www.landrover.in/defender/defender-110/models-and-specifications.html",
+        "https://www.landrover.in/explore-land-rover/news/new-land-rover-defender-launch-in-india.html"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+        "Current Defender India documentation covers 90/110/130 body styles and multiple petrol/diesel/performance configurations. Key PDI checks should include 4x4 system, transfer box, Terrain Response, suspension, underbody/chassis, towing hardware, cameras and electronic systems."
       ]
     },
     {
@@ -4424,23 +4466,26 @@
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
-        "Petrol",
-        "Diesel"
+        "3.0L diesel",
+        "3.0L petrol/diesel six-cylinder configurations (generation dependent)"
       ],
       "transmissions": [
-        "Automatic"
+        "8-speed automatic"
       ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.landrover.in/explore-land-rover/news/new-land-rover-discovery.html",
+        "https://www.landrover.in/download-a-brochure/index.html"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+        "Land Rover India documentation confirms Discovery six-cylinder Ingenium configurations with intelligent AWD and Terrain Response 2. Used-PDI content should focus on 4x4 system, air suspension, wading/underbody condition, ADAS, cameras and infotainment."
       ]
     },
     {
@@ -4453,19 +4498,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol turbo engines (older/current Macan generations)",
+        "Battery-electric dual-motor AWD (Macan Electric)"
+      ],
+      "transmissions": [
+        "7-speed PDK (petrol generation dependent)",
+        "Electric drive with multi-speed rear axle (Macan Electric)"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://dealer.porsche.com/in/delhi",
+        "https://dealer.porsche.com/in/india/",
+        "https://finder.porsche.com/in/en-IN/search"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Porsche India specifications vary by generation and derivative; final page must distinguish petrol, hybrid and EV generations and verify exact India configuration before approval."
+        "Porsche India currently markets Macan as an all-electric SUV while Porsche Finder India continues to show approved used petrol Macans. The authoritative page must distinguish petrol generations from the Macan Electric and apply EV-specific PDI checks only to electric cars."
       ]
     },
     {
@@ -4478,19 +4533,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Turbocharged petrol",
+        "Petrol plug-in hybrid",
+        "V8/performance variants (generation dependent)"
+      ],
+      "transmissions": [
+        "8-speed Tiptronic S"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://dealer.porsche.com/in/delhi",
+        "https://dealer.porsche.com/in/india/",
+        "https://finder.porsche.com/in/en-IN/search"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Porsche India specifications vary by generation and derivative; final page must distinguish petrol, hybrid and EV generations and verify exact India configuration before approval."
+        "Porsche India currently lists Cayenne and Porsche Finder shows approved used petrol Cayenne examples. Powertrain and performance derivatives vary by generation; PDI should cover air suspension where equipped, AWD, brakes, tyres, electronics and hybrid-system checks where applicable."
       ]
     },
     {
@@ -4503,19 +4568,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Turbocharged flat-six petrol",
+        "Hybrid-assisted flat-six variants (current generation dependent)"
+      ],
+      "transmissions": [
+        "8-speed PDK",
+        "7-speed manual (variant dependent)"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://dealer.porsche.com/in/delhi",
+        "https://dealer.porsche.com/in/india/",
+        "https://www.porsche.com/international/models/"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Porsche India specifications vary by generation and derivative; final page must distinguish petrol, hybrid and EV generations and verify exact India configuration before approval."
+        "Porsche India currently markets the 911 model family. The 911 page must remain derivative/generation-aware because Carrera, Turbo, GT and hybrid-assisted variants differ materially. PDI should emphasize paint/body repair, tyres, brakes, suspension, engine/transmission, cooling and electronic systems."
       ]
     },
     {
@@ -4528,19 +4603,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Battery-electric single/dual-motor configurations",
+        "Performance dual-motor AWD variants"
+      ],
+      "transmissions": [
+        "2-speed rear-axle electric transmission (generation dependent)"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://dealer.porsche.com/in/delhi",
+        "https://dealer.porsche.com/in/india/",
+        "https://finder.porsche.com/in/en-IN/search"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Porsche India specifications vary by generation and derivative; final page must distinguish petrol, hybrid and EV generations and verify exact India configuration before approval."
+        "Porsche India currently markets Taycan as its electric sports-car family and Porsche Finder shows approved used Taycan examples. EV PDI should prioritize high-voltage battery condition, charging system, thermal management, regenerative braking, HV isolation, software and accident/underbody inspection."
       ]
     },
     {
