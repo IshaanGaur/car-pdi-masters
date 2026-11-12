@@ -16,17 +16,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.0L K-Series petrol",
+        "1.0L S-CNG"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "5-speed AGS/AMT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.marutisuzuki.com/arena/alto-k10",
+        "https://www.marutisuzuki.com/arena/car-manuals"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Current Maruti Arena page confirms 1.0L K-Series petrol and manual/AGS; Maruti current range also lists S-CNG. Verify exact CNG variant matrix before publish."
+      ]
     },
     {
       "brand": "Maruti Suzuki",
@@ -60,17 +72,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.0L K10C petrol",
+        "1.0L S-CNG"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "5-speed AGS/AMT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.marutisuzuki.com/arena/celerio",
+        "https://www.marutisuzuki.com/arena/celerio/price"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Current Maruti pages confirm 998cc K10C petrol, 5MT/AGS and S-CNG availability; exact CNG grade matrix should be rechecked before publish."
+      ]
     },
     {
       "brand": "Maruti Suzuki",
@@ -430,17 +454,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L petrol",
+        "1.2L CNG"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "Smart Auto AMT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.hyundai.com/in/en/find-a-car",
+        "https://www.hyundai.com/in/en/click-to-buy/request-a-brochure"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Hyundai India currently lists Grand i10 NIOS with petrol/CNG and manual/Smart Auto AMT."
+      ]
     },
     {
       "brand": "Hyundai",
@@ -452,17 +488,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L petrol"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "IVT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.hyundai.com/in/en/find-a-car",
+        "https://www.hyundai.com/in/en/click-to-buy/request-a-brochure"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Hyundai India currently lists i20 with 1.2L petrol and 5MT/IVT."
+      ]
     },
     {
       "brand": "Hyundai",
@@ -589,17 +636,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L MPi petrol",
+        "1.5L Turbo GDi petrol"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "IVT",
+        "7-speed DCT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.hyundai.com/in/en/find-a-car"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Hyundai India currently lists Verna with 1.5L MPi and Turbo GDi petrol and 6MT/IVT/7DCT."
+      ]
     },
     {
       "brand": "Hyundai",
@@ -611,17 +670,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L turbo petrol",
+        "1.5L diesel"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "6-speed automatic",
+        "7-speed DCT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.hyundai.com/in/en/find-a-car"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Hyundai India currently lists Alcazar with 1.5L turbo petrol/diesel and 6MT/6AT/7DCT."
+      ]
     },
     {
       "brand": "Hyundai",
