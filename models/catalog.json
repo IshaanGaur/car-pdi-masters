@@ -1663,7 +1663,10 @@
         "5-speed manual",
         "6-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "Classic S",
+        "Classic S11"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://auto.mahindra.com/suv/scorpio-classic.html",
@@ -1679,7 +1682,8 @@
         "Scorpio Classic is a diesel-only used/new inspection target; Mahindra history confirms 2.2L mHawk with 6-speed automatic, while current Scorpio Classic availability should be verified before publish.",
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Mahindra",
@@ -1884,7 +1888,11 @@
       "transmissions": [
         "6-speed manual"
       ],
-      "variants": [],
+      "variants": [
+        "M2",
+        "M4+",
+        "M6+"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dwa00130f0/Marazzo/Marazzo_Brochure.pdf",
@@ -1901,7 +1909,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "used_historical",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_historical"
     },
     {
       "brand": "Mahindra",
