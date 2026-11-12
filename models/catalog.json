@@ -3132,17 +3132,25 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol",
+        "Electric (EX40 generation)"
+      ],
+      "transmissions": [
+        "Automatic"
+      ],
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+      ]
     },
     {
       "brand": "Volvo",
@@ -3154,17 +3162,25 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol mild-hybrid",
+        "Plug-in hybrid"
+      ],
+      "transmissions": [
+        "Automatic"
+      ],
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+      ]
     },
     {
       "brand": "Volvo",
@@ -3176,17 +3192,25 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol mild-hybrid",
+        "Plug-in hybrid"
+      ],
+      "transmissions": [
+        "Automatic"
+      ],
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+      ]
     },
     {
       "brand": "Lexus",
@@ -3198,17 +3222,25 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol",
+        "Hybrid"
+      ],
+      "transmissions": [
+        "Automatic"
+      ],
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+      ]
     },
     {
       "brand": "Lexus",
@@ -3220,17 +3252,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol",
+        "Hybrid",
+        "Plug-in hybrid"
+      ],
+      "transmissions": [
+        "Automatic"
+      ],
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+      ]
     },
     {
       "brand": "Lexus",
@@ -3242,17 +3283,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol",
+        "Hybrid",
+        "Plug-in hybrid"
+      ],
+      "transmissions": [
+        "Automatic"
+      ],
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+      ]
     },
     {
       "brand": "Lexus",
@@ -3264,17 +3314,25 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol",
+        "Diesel (generation dependent)"
+      ],
+      "transmissions": [
+        "Automatic"
+      ],
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+      ]
     },
     {
       "brand": "Lexus",
@@ -3374,17 +3432,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol",
+        "Diesel (generation dependent)",
+        "Plug-in hybrid"
+      ],
+      "transmissions": [
+        "Automatic"
+      ],
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+      ]
     },
     {
       "brand": "Land Rover",
@@ -3396,17 +3463,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol",
+        "Diesel",
+        "Plug-in hybrid"
+      ],
+      "transmissions": [
+        "Automatic"
+      ],
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+      ]
     },
     {
       "brand": "Land Rover",
@@ -3418,17 +3494,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol",
+        "Diesel",
+        "Plug-in hybrid"
+      ],
+      "transmissions": [
+        "Automatic"
+      ],
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+      ]
     },
     {
       "brand": "Land Rover",
@@ -3440,17 +3525,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol",
+        "Diesel",
+        "Plug-in hybrid"
+      ],
+      "transmissions": [
+        "Automatic"
+      ],
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+      ]
     },
     {
       "brand": "Land Rover",
@@ -3462,17 +3556,25 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Petrol",
+        "Diesel"
+      ],
+      "transmissions": [
+        "Automatic"
+      ],
       "variants": [],
       "aliases": [],
       "sourceUrls": [],
-      "checkedAt": null,
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent."
+      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "researchNotes": [
+        "Premium SUV/sedan research requires generation-specific engine, transmission and electrified-powertrain treatment; use current India manufacturer configuration plus used-market generations before approval."
+      ]
     },
     {
       "brand": "Porsche",
