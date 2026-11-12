@@ -980,7 +980,14 @@
         "IVT",
         "7-speed DCT"
       ],
-      "variants": [],
+      "variants": [
+        "HX 2",
+        "HX 4",
+        "HX 6",
+        "HX 6+",
+        "HX 8",
+        "HX 10"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.hyundai.com/in/en/find-a-car"
@@ -995,7 +1002,8 @@
         "Hyundai India currently lists Verna with 1.5L MPi and Turbo GDi petrol and 6MT/IVT/7DCT.",
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Hyundai",
