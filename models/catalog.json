@@ -1,16 +1,2830 @@
 {
-  "schemaVersion": 1,
-  "purpose": "Editorial research registry; not a list of published URLs.",
+  "schemaVersion": 2,
+  "purpose": "Single source of truth for scalable brand/model PDI SEO publishing.",
   "publishingPolicy": "research_then_review_then_publish",
+  "pagePolicy": "one_authoritative_model_url_covers_new_used_powertrain_transmission_and_variants; no variant/powertrain URLs by default",
+  "generatedRoot": "/car-pdi/",
+  "locationPolicy": "reuse existing location/locality pages; do not generate model x location pages by default",
   "models": [
+    {
+      "brand": "Maruti Suzuki",
+      "brandSlug": "maruti-suzuki",
+      "model": "Alto K10",
+      "modelSlug": "alto-k10",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Maruti Suzuki",
+      "brandSlug": "maruti-suzuki",
+      "model": "S-Presso",
+      "modelSlug": "s-presso",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Maruti Suzuki",
+      "brandSlug": "maruti-suzuki",
+      "model": "Celerio",
+      "modelSlug": "celerio",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Maruti Suzuki",
+      "brandSlug": "maruti-suzuki",
+      "model": "Wagon R",
+      "modelSlug": "wagon-r",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Maruti Suzuki",
+      "brandSlug": "maruti-suzuki",
+      "model": "Swift",
+      "modelSlug": "swift",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Maruti Suzuki",
+      "brandSlug": "maruti-suzuki",
+      "model": "Baleno",
+      "modelSlug": "baleno",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Maruti Suzuki",
+      "brandSlug": "maruti-suzuki",
+      "model": "Dzire",
+      "modelSlug": "dzire",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Maruti Suzuki",
+      "brandSlug": "maruti-suzuki",
+      "model": "Fronx",
+      "modelSlug": "fronx",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Maruti Suzuki",
+      "brandSlug": "maruti-suzuki",
+      "model": "Brezza",
+      "modelSlug": "brezza",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Maruti Suzuki",
+      "brandSlug": "maruti-suzuki",
+      "model": "Grand Vitara",
+      "modelSlug": "grand-vitara",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Maruti Suzuki",
+      "brandSlug": "maruti-suzuki",
+      "model": "Victoris",
+      "modelSlug": "victoris",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Maruti Suzuki",
+      "brandSlug": "maruti-suzuki",
+      "model": "Ertiga",
+      "modelSlug": "ertiga",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Maruti Suzuki",
+      "brandSlug": "maruti-suzuki",
+      "model": "XL6",
+      "modelSlug": "xl6",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Maruti Suzuki",
+      "brandSlug": "maruti-suzuki",
+      "model": "Invicto",
+      "modelSlug": "invicto",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Maruti Suzuki",
+      "brandSlug": "maruti-suzuki",
+      "model": "e Vitara",
+      "modelSlug": "e-vitara",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "brandSlug": "hyundai",
+      "model": "Grand i10 Nios",
+      "modelSlug": "grand-i10-nios",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "brandSlug": "hyundai",
+      "model": "i20",
+      "modelSlug": "i20",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "brandSlug": "hyundai",
+      "model": "Aura",
+      "modelSlug": "aura",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "brandSlug": "hyundai",
+      "model": "Exter",
+      "modelSlug": "exter",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "brandSlug": "hyundai",
+      "model": "Venue",
+      "modelSlug": "venue",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "brandSlug": "hyundai",
+      "model": "Creta",
+      "modelSlug": "creta",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "brandSlug": "hyundai",
+      "model": "Verna",
+      "modelSlug": "verna",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "brandSlug": "hyundai",
+      "model": "Alcazar",
+      "modelSlug": "alcazar",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Hyundai",
+      "brandSlug": "hyundai",
+      "model": "Tucson",
+      "modelSlug": "tucson",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Tata",
+      "brandSlug": "tata",
+      "model": "Tiago",
+      "modelSlug": "tiago",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Tata",
+      "brandSlug": "tata",
+      "model": "Tigor",
+      "modelSlug": "tigor",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
     {
       "brand": "Tata",
       "brandSlug": "tata",
       "model": "Altroz",
       "modelSlug": "altroz",
       "status": "research_pending",
-      "variantsFile": "tata/altroz/variants.json",
-      "searchConsoleEvidence": "No Tata Altroz query rows in the reviewed 6-month GSC export; do not publish yet."
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Tata",
+      "brandSlug": "tata",
+      "model": "Punch",
+      "modelSlug": "punch",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Tata",
+      "brandSlug": "tata",
+      "model": "Nexon",
+      "modelSlug": "nexon",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Tata",
+      "brandSlug": "tata",
+      "model": "Curvv",
+      "modelSlug": "curvv",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Tata",
+      "brandSlug": "tata",
+      "model": "Harrier",
+      "modelSlug": "harrier",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Tata",
+      "brandSlug": "tata",
+      "model": "Safari",
+      "modelSlug": "safari",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Tata",
+      "brandSlug": "tata",
+      "model": "Sierra",
+      "modelSlug": "sierra",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mahindra",
+      "brandSlug": "mahindra",
+      "model": "Bolero",
+      "modelSlug": "bolero",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mahindra",
+      "brandSlug": "mahindra",
+      "model": "Bolero Neo",
+      "modelSlug": "bolero-neo",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mahindra",
+      "brandSlug": "mahindra",
+      "model": "Thar",
+      "modelSlug": "thar",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mahindra",
+      "brandSlug": "mahindra",
+      "model": "Thar Roxx",
+      "modelSlug": "thar-roxx",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mahindra",
+      "brandSlug": "mahindra",
+      "model": "Scorpio",
+      "modelSlug": "scorpio",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mahindra",
+      "brandSlug": "mahindra",
+      "model": "Scorpio-N",
+      "modelSlug": "scorpio-n",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mahindra",
+      "brandSlug": "mahindra",
+      "model": "XUV 3XO",
+      "modelSlug": "xuv-3xo",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mahindra",
+      "brandSlug": "mahindra",
+      "model": "XUV 7XO",
+      "modelSlug": "xuv-7xo",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mahindra",
+      "brandSlug": "mahindra",
+      "model": "XUV700",
+      "modelSlug": "xuv700",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mahindra",
+      "brandSlug": "mahindra",
+      "model": "Marazzo",
+      "modelSlug": "marazzo",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mahindra",
+      "brandSlug": "mahindra",
+      "model": "BE 6",
+      "modelSlug": "be-6",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mahindra",
+      "brandSlug": "mahindra",
+      "model": "XEV 9e",
+      "modelSlug": "xev-9e",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mahindra",
+      "brandSlug": "mahindra",
+      "model": "XEV 9S",
+      "modelSlug": "xev-9s",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "brandSlug": "toyota",
+      "model": "Glanza",
+      "modelSlug": "glanza",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "brandSlug": "toyota",
+      "model": "Rumion",
+      "modelSlug": "rumion",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "brandSlug": "toyota",
+      "model": "Urban Cruiser Taisor",
+      "modelSlug": "urban-cruiser-taisor",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "brandSlug": "toyota",
+      "model": "Urban Cruiser Hyryder",
+      "modelSlug": "urban-cruiser-hyryder",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "brandSlug": "toyota",
+      "model": "Innova Crysta",
+      "modelSlug": "innova-crysta",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "brandSlug": "toyota",
+      "model": "Innova Hycross",
+      "modelSlug": "innova-hycross",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "brandSlug": "toyota",
+      "model": "Fortuner",
+      "modelSlug": "fortuner",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "brandSlug": "toyota",
+      "model": "Hilux",
+      "modelSlug": "hilux",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Toyota",
+      "brandSlug": "toyota",
+      "model": "Camry",
+      "modelSlug": "camry",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Kia",
+      "brandSlug": "kia",
+      "model": "Sonet",
+      "modelSlug": "sonet",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Kia",
+      "brandSlug": "kia",
+      "model": "Seltos",
+      "modelSlug": "seltos",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Kia",
+      "brandSlug": "kia",
+      "model": "Carens",
+      "modelSlug": "carens",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Kia",
+      "brandSlug": "kia",
+      "model": "Syros",
+      "modelSlug": "syros",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Honda",
+      "brandSlug": "honda",
+      "model": "Amaze",
+      "modelSlug": "amaze",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Honda",
+      "brandSlug": "honda",
+      "model": "City",
+      "modelSlug": "city",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Honda",
+      "brandSlug": "honda",
+      "model": "Elevate",
+      "modelSlug": "elevate",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "MG",
+      "brandSlug": "mg",
+      "model": "Comet EV",
+      "modelSlug": "comet-ev",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "MG",
+      "brandSlug": "mg",
+      "model": "Astor",
+      "modelSlug": "astor",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "MG",
+      "brandSlug": "mg",
+      "model": "Windsor EV",
+      "modelSlug": "windsor-ev",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "MG",
+      "brandSlug": "mg",
+      "model": "Hector",
+      "modelSlug": "hector",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "MG",
+      "brandSlug": "mg",
+      "model": "Gloster",
+      "modelSlug": "gloster",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "MG",
+      "brandSlug": "mg",
+      "model": "ZS EV",
+      "modelSlug": "zs-ev",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "brandSlug": "skoda",
+      "model": "Slavia",
+      "modelSlug": "slavia",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "brandSlug": "skoda",
+      "model": "Kushaq",
+      "modelSlug": "kushaq",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "brandSlug": "skoda",
+      "model": "Kylaq",
+      "modelSlug": "kylaq",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "brandSlug": "skoda",
+      "model": "Kodiaq",
+      "modelSlug": "kodiaq",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Skoda",
+      "brandSlug": "skoda",
+      "model": "Superb",
+      "modelSlug": "superb",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "brandSlug": "volkswagen",
+      "model": "Virtus",
+      "modelSlug": "virtus",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "brandSlug": "volkswagen",
+      "model": "Taigun",
+      "modelSlug": "taigun",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "brandSlug": "volkswagen",
+      "model": "Tiguan",
+      "modelSlug": "tiguan",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Renault",
+      "brandSlug": "renault",
+      "model": "Kwid",
+      "modelSlug": "kwid",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Renault",
+      "brandSlug": "renault",
+      "model": "Triber",
+      "modelSlug": "triber",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Renault",
+      "brandSlug": "renault",
+      "model": "Kiger",
+      "modelSlug": "kiger",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Nissan",
+      "brandSlug": "nissan",
+      "model": "Magnite",
+      "modelSlug": "magnite",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Citroën",
+      "brandSlug": "citroen",
+      "model": "C3",
+      "modelSlug": "c3",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Citroën",
+      "brandSlug": "citroen",
+      "model": "C3 Aircross",
+      "modelSlug": "c3-aircross",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Citroën",
+      "brandSlug": "citroen",
+      "model": "C3 Aircross X",
+      "modelSlug": "c3-aircross-x",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Citroën",
+      "brandSlug": "citroen",
+      "model": "Basalt",
+      "modelSlug": "basalt",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Citroën",
+      "brandSlug": "citroen",
+      "model": "eC3",
+      "modelSlug": "ec3",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Jeep",
+      "brandSlug": "jeep",
+      "model": "Compass",
+      "modelSlug": "compass",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Jeep",
+      "brandSlug": "jeep",
+      "model": "Meridian",
+      "modelSlug": "meridian",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Isuzu",
+      "brandSlug": "isuzu",
+      "model": "D-Max",
+      "modelSlug": "d-max",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Isuzu",
+      "brandSlug": "isuzu",
+      "model": "MU-X",
+      "modelSlug": "mu-x",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "BYD",
+      "brandSlug": "byd",
+      "model": "Atto 3",
+      "modelSlug": "atto-3",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "BYD",
+      "brandSlug": "byd",
+      "model": "Seal",
+      "modelSlug": "seal",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "BYD",
+      "brandSlug": "byd",
+      "model": "e6",
+      "modelSlug": "e6",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "BYD",
+      "brandSlug": "byd",
+      "model": "Seal U",
+      "modelSlug": "seal-u",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "BMW",
+      "brandSlug": "bmw",
+      "model": "2 Series",
+      "modelSlug": "2-series",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "BMW",
+      "brandSlug": "bmw",
+      "model": "3 Series",
+      "modelSlug": "3-series",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "BMW",
+      "brandSlug": "bmw",
+      "model": "5 Series",
+      "modelSlug": "5-series",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "BMW",
+      "brandSlug": "bmw",
+      "model": "7 Series",
+      "modelSlug": "7-series",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "BMW",
+      "brandSlug": "bmw",
+      "model": "X1",
+      "modelSlug": "x1",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "BMW",
+      "brandSlug": "bmw",
+      "model": "X3",
+      "modelSlug": "x3",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "BMW",
+      "brandSlug": "bmw",
+      "model": "X5",
+      "modelSlug": "x5",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "BMW",
+      "brandSlug": "bmw",
+      "model": "X7",
+      "modelSlug": "x7",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandSlug": "mercedes-benz",
+      "model": "A-Class",
+      "modelSlug": "a-class",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandSlug": "mercedes-benz",
+      "model": "C-Class",
+      "modelSlug": "c-class",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandSlug": "mercedes-benz",
+      "model": "E-Class",
+      "modelSlug": "e-class",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandSlug": "mercedes-benz",
+      "model": "S-Class",
+      "modelSlug": "s-class",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandSlug": "mercedes-benz",
+      "model": "GLA",
+      "modelSlug": "gla",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandSlug": "mercedes-benz",
+      "model": "GLC",
+      "modelSlug": "glc",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandSlug": "mercedes-benz",
+      "model": "GLE",
+      "modelSlug": "gle",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandSlug": "mercedes-benz",
+      "model": "GLS",
+      "modelSlug": "gls",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Audi",
+      "brandSlug": "audi",
+      "model": "A4",
+      "modelSlug": "a4",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Audi",
+      "brandSlug": "audi",
+      "model": "A6",
+      "modelSlug": "a6",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Audi",
+      "brandSlug": "audi",
+      "model": "A8",
+      "modelSlug": "a8",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Audi",
+      "brandSlug": "audi",
+      "model": "Q3",
+      "modelSlug": "q3",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Audi",
+      "brandSlug": "audi",
+      "model": "Q5",
+      "modelSlug": "q5",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Audi",
+      "brandSlug": "audi",
+      "model": "Q7",
+      "modelSlug": "q7",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Audi",
+      "brandSlug": "audi",
+      "model": "Q8",
+      "modelSlug": "q8",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Volvo",
+      "brandSlug": "volvo",
+      "model": "EX30",
+      "modelSlug": "ex30",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Volvo",
+      "brandSlug": "volvo",
+      "model": "XC40",
+      "modelSlug": "xc40",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Volvo",
+      "brandSlug": "volvo",
+      "model": "XC60",
+      "modelSlug": "xc60",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Volvo",
+      "brandSlug": "volvo",
+      "model": "XC90",
+      "modelSlug": "xc90",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "brandSlug": "lexus",
+      "model": "ES",
+      "modelSlug": "es",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "brandSlug": "lexus",
+      "model": "NX",
+      "modelSlug": "nx",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "brandSlug": "lexus",
+      "model": "RX",
+      "modelSlug": "rx",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "brandSlug": "lexus",
+      "model": "LX",
+      "modelSlug": "lx",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "brandSlug": "lexus",
+      "model": "LM",
+      "modelSlug": "lm",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Jaguar",
+      "brandSlug": "jaguar",
+      "model": "F-Pace",
+      "modelSlug": "f-pace",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Jaguar",
+      "brandSlug": "jaguar",
+      "model": "I-Pace",
+      "modelSlug": "i-pace",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Jaguar",
+      "brandSlug": "jaguar",
+      "model": "F-Type",
+      "modelSlug": "f-type",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "brandSlug": "land-rover",
+      "model": "Range Rover Evoque",
+      "modelSlug": "range-rover-evoque",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "brandSlug": "land-rover",
+      "model": "Range Rover Velar",
+      "modelSlug": "range-rover-velar",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "brandSlug": "land-rover",
+      "model": "Range Rover Sport",
+      "modelSlug": "range-rover-sport",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "brandSlug": "land-rover",
+      "model": "Defender",
+      "modelSlug": "defender",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Land Rover",
+      "brandSlug": "land-rover",
+      "model": "Discovery",
+      "modelSlug": "discovery",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "brandSlug": "porsche",
+      "model": "Macan",
+      "modelSlug": "macan",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "brandSlug": "porsche",
+      "model": "Cayenne",
+      "modelSlug": "cayenne",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "brandSlug": "porsche",
+      "model": "911",
+      "modelSlug": "911",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Porsche",
+      "brandSlug": "porsche",
+      "model": "Taycan",
+      "modelSlug": "taycan",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "MINI",
+      "brandSlug": "mini",
+      "model": "Cooper",
+      "modelSlug": "cooper",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "MINI",
+      "brandSlug": "mini",
+      "model": "Countryman",
+      "modelSlug": "countryman",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Force Motors",
+      "brandSlug": "force-motors",
+      "model": "Gurkha",
+      "modelSlug": "gurkha",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
+    },
+    {
+      "brand": "Force Motors",
+      "brandSlug": "force-motors",
+      "model": "Trax Cruiser",
+      "modelSlug": "trax-cruiser",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+      ]
     }
   ]
 }
