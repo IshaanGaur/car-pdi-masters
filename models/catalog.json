@@ -3019,7 +3019,14 @@
         "8-speed torque-converter automatic",
         "7-speed DSG"
       ],
-      "variants": [],
+      "variants": [
+        "Classic",
+        "Classic+",
+        "Signature",
+        "Sportline",
+        "Prestige",
+        "Monte Carlo"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.skoda-auto.co.in/news/news-detail/the-new-slavia-a-new-chapter-in-skoda-sedan-legacy"
@@ -3034,7 +3041,8 @@
         "Skoda India announced the 2026 Slavia with 1.0 TSI + 8-speed torque-converter automatic and 6MT, plus 1.5 TSI with 7-speed DSG.",
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Skoda",
@@ -3055,7 +3063,13 @@
         "8-speed automatic",
         "7-speed DSG"
       ],
-      "variants": [],
+      "variants": [
+        "Classic+",
+        "Signature",
+        "Sportline",
+        "Prestige",
+        "Monte Carlo"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.skoda-auto.co.in/models/range",
@@ -3071,7 +3085,8 @@
         "Skoda India current range and 2026 service material confirm Kushaq 1.0/1.5 petrol families and current MT/AT/DSG combinations; verify exact grade mapping before publication.",
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Skoda",
@@ -3090,7 +3105,15 @@
         "6-speed manual",
         "6-speed torque-converter automatic"
       ],
-      "variants": [],
+      "variants": [
+        "Classic",
+        "Classic+",
+        "Signature",
+        "Signature+",
+        "Sportline",
+        "Prestige",
+        "Prestige+"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.skoda-auto.co.in/models/range"
@@ -3106,7 +3129,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Skoda",
@@ -3124,7 +3148,10 @@
       "transmissions": [
         "7-speed DSG"
       ],
-      "variants": [],
+      "variants": [
+        "Selection L&K",
+        "Sportline"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.skoda-auto.co.in/models/range"
@@ -3140,7 +3167,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Skoda",
