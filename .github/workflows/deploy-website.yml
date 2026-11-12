@@ -78,7 +78,7 @@ jobs:
               body="$(curl -fsSL --retry 5 --retry-delay 2 "$host/$path")"
               if ! grep -Eiq '<title>[^<]*(PDI|Car PDI)[^<]*</title>' <<<"$body"; then echo "ERROR: missing PDI title on $host/$path"; exit 1; fi
               if ! grep -Eiq '<h1[^>]*>[^<]*(PDI|Inspection)[^<]*</h1>' <<<"$body"; then echo "ERROR: missing PDI/Inspection H1 on $host/$path"; exit 1; fi
-              if ! grep -Eiq 'rel="canonical"[^>]+href="https://www\\.carmasters\\.co\\.in/[^" ]+/' <<<"$body"; then echo "ERROR: missing trailing-slash canonical on $host/$path"; exit 1; fi
+              if ! grep -Eiq 'rel="canonical"[^>]+href="https://www\.carmasters\.co\.in/[^" ]+/' <<<"$body"; then echo "ERROR: missing trailing-slash canonical on $host/$path"; exit 1; fi
               if ! grep -Eiq 'content="index,follow"' <<<"$body"; then echo "ERROR: missing index,follow on $host/$path"; exit 1; fi
             done
             echo "Checking $host/sitemap.xml"
