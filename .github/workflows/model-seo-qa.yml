@@ -1,0 +1,31 @@
+name: Model SEO QA
+
+on:
+  push:
+    branches:
+      - "seo/brand-model-pdi-engine"
+  workflow_dispatch:
+
+jobs:
+  model-seo-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Generate brand-model pages
+        run: node scripts/generate-brand-model-pages.js
+      - name: Run model SEO QA
+        run: node scripts/check-brand-model-pages.js
+      - name: Upload generated QA output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: brand-model-seo-qa-output
+          path: |
+            car-pdi/
+            sitemap.xml
+          retention-days: 7
