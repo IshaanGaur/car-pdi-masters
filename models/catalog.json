@@ -2825,6 +2825,166 @@
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ]
+    },
+    {
+      "brand": "VinFast",
+      "brandSlug": "vinfast",
+      "model": "VF 6",
+      "modelSlug": "vf-6",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
+      ]
+    },
+    {
+      "brand": "VinFast",
+      "brandSlug": "vinfast",
+      "model": "VF 7",
+      "modelSlug": "vf-7",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
+      ]
+    },
+    {
+      "brand": "VinFast",
+      "brandSlug": "vinfast",
+      "model": "VF e34",
+      "modelSlug": "vf-e34",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
+      ]
+    },
+    {
+      "brand": "Ford",
+      "brandSlug": "ford",
+      "model": "EcoSport",
+      "modelSlug": "ecosport",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
+      ]
+    },
+    {
+      "brand": "Ford",
+      "brandSlug": "ford",
+      "model": "Endeavour",
+      "modelSlug": "endeavour",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
+      ]
+    },
+    {
+      "brand": "Ford",
+      "brandSlug": "ford",
+      "model": "Figo",
+      "modelSlug": "figo",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
+      ]
+    },
+    {
+      "brand": "Ford",
+      "brandSlug": "ford",
+      "model": "Aspire",
+      "modelSlug": "aspire",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
+      ]
+    },
+    {
+      "brand": "Ford",
+      "brandSlug": "ford",
+      "model": "Freestyle",
+      "modelSlug": "freestyle",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [],
+      "transmissions": [],
+      "variants": [],
+      "aliases": [],
+      "sourceUrls": [],
+      "checkedAt": null,
+      "notes": [
+        "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
+      ]
     }
   ]
 }
