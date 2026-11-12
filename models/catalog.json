@@ -2974,7 +2974,17 @@
       "transmissions": [
         "8-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "GLOSTER 4X2 7S SHARP",
+        "GLOSTER 4X2 6S SAVVY",
+        "GLOSTER 4X2 7S SAVVY",
+        "GLOSTER 4X2 6S BLACK STORM",
+        "GLOSTER 4X2 7S BLACK STORM",
+        "GLOSTER 4X4 6S SAVVY",
+        "GLOSTER 4X4 7S SAVVY",
+        "GLOSTER 4X4 6S BLACK STORM",
+        "GLOSTER 4X4 7S BLACK STORM"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.mgmotor.co.in/vehicles/gloster-suv-in-india.html"
@@ -2990,7 +3000,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "MG",
