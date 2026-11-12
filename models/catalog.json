@@ -1041,16 +1041,16 @@
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
-        "2.0L diesel",
-        "electric"
+        "2.0L diesel"
       ],
       "transmissions": [
         "6-speed manual",
-        "6-speed automatic",
-        "single-speed electric"
+        "6-speed automatic"
       ],
       "variants": [],
-      "aliases": [],
+      "aliases": [
+        "Harrier.ev"
+      ],
       "sourceUrls": [
         "https://cars.tatamotors.com/harrier/"
       ],
@@ -1061,7 +1061,8 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Harrier has ICE and EV variants; generator should present powertrain-specific checks without creating separate default URLs."
+        "Harrier has ICE and EV variants; generator should present powertrain-specific checks without creating separate default URLs.",
+        "Harrier.ev is a separate pure-EV product family; retain the Harrier model URL as the authoritative family-level PDI page and mention Harrier.ev only as an applicable EV configuration, without presenting its EV specifications as the ICE Harrier's powertrain."
       ]
     },
     {
@@ -1075,13 +1076,11 @@
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
-        "2.0L diesel",
-        "electric"
+        "2.0L diesel"
       ],
       "transmissions": [
         "6-speed manual",
-        "6-speed automatic",
-        "single-speed electric"
+        "6-speed automatic"
       ],
       "variants": [],
       "aliases": [],
@@ -1095,7 +1094,8 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Safari ICE and EV naming/specs should be rechecked against current Tata product pages before publish."
+        "Safari ICE and EV naming/specs should be rechecked against current Tata product pages before publish.",
+        "Do not present Safari as an EV powertrain on the Safari page; current Tata source material distinguishes Safari MCE from separate Tata EV products. Keep any future Safari EV research as a separate validated record only if Tata India confirms a retail product."
       ]
     },
     {
@@ -1429,7 +1429,8 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Current Mahindra India portfolio now lists XUV 7XO as the successor/current nameplate; retain XUV700 as a historical/used-car search-intent record and do not present old XUV700 specifications as current XUV 7XO specifications. Current XUV 7XO has separate official product data and should be treated as a distinct model record if targeted for new-car PDI."
+        "Current Mahindra India portfolio now lists XUV 7XO as the successor/current nameplate; retain XUV700 as a historical/used-car search-intent record and do not present old XUV700 specifications as current XUV 7XO specifications. Current XUV 7XO has separate official product data and should be treated as a distinct model record if targeted for new-car PDI.",
+        "Do not use XUV 7XO as an alias on the historical XUV700 record because XUV 7XO has its own current model record and should have a distinct authoritative URL."
       ],
       "demandValidation": "used_historical"
     },
