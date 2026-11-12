@@ -82,17 +82,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.0L petrol",
+        "1.0L S-CNG"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "5-speed AGS/AMT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.marutisuzuki.com/arena/wagon-r"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 1,
-      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Current Maruti Arena listing; verify final variant matrix before publish."
+      ]
     },
     {
       "brand": "Maruti Suzuki",
@@ -138,17 +149,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L petrol",
+        "1.2L S-CNG"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "5-speed AGS/AMT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.marutisuzuki.com/nexa/baleno",
+        "https://www.marutisuzuki.com/corporate/media/press-releases/2026/september/maruti-suzuki-launches-auto-green-mission-with-the-introduction-of-automatic-s-cng-swift-dzire-and-baleno"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 1,
-      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Current NEXA listing plus Sep 2026 Maruti announcement; verify final variant matrix before publish."
+      ]
     },
     {
       "brand": "Maruti Suzuki",
@@ -194,17 +217,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L petrol",
+        "1.0L turbo petrol"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "5-speed AGS/AMT",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.marutisuzuki.com/nexa/fronx"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 1,
-      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Current NEXA model; verify current CNG/variant availability from live price page before publish."
+      ]
     },
     {
       "brand": "Maruti Suzuki",
@@ -216,17 +251,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L petrol",
+        "1.5L S-CNG"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.marutisuzuki.com/arena/brezza",
+        "https://www.marutisuzuki.com/arena/brezza/price"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 1,
-      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Current Arena model and price/variant page; verify exact variant matrix before publish."
+      ]
     },
     {
       "brand": "Maruti Suzuki",
@@ -471,17 +518,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L petrol",
+        "1.0L turbo petrol",
+        "1.5L diesel"
+      ],
+      "transmissions": [
+        "manual",
+        "DCT/automatic depending on powertrain"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.hyundai.com/in/en/find-a-car"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 1,
-      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Current Hyundai India listing; exact engine/transmission mapping should be taken from current configurator before publish."
+      ]
     },
     {
       "brand": "Hyundai",
@@ -640,17 +699,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "petrol",
+        "CNG",
+        "diesel"
+      ],
+      "transmissions": [
+        "manual",
+        "DCA automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://cars.tatamotors.com/altroz/"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 1,
-      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Current Tata Altroz family; verify exact current engine/transmission/variant mapping before publish."
+      ]
     },
     {
       "brand": "Tata",
@@ -662,17 +733,30 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "petrol",
+        "CNG",
+        "electric"
+      ],
+      "transmissions": [
+        "manual",
+        "AMT",
+        "single-speed electric"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://cars.tatamotors.com/punch/"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 1,
-      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Tata current product family includes Punch ICE/CNG and Punch.ev; keep fuel/powertrain distinctions in page content and verify live matrix before publish."
+      ]
     },
     {
       "brand": "Tata",
@@ -742,17 +826,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L diesel",
+        "electric"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "6-speed automatic",
+        "single-speed electric"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://cars.tatamotors.com/harrier/"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 1,
-      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Harrier has ICE and EV variants; generator should present powertrain-specific checks without creating separate default URLs."
+      ]
     },
     {
       "brand": "Tata",
@@ -764,17 +860,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L diesel",
+        "electric"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "6-speed automatic",
+        "single-speed electric"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://cars.tatamotors.com/safari/"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 1,
-      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Safari ICE and EV naming/specs should be rechecked against current Tata product pages before publish."
+      ]
     },
     {
       "brand": "Tata",
@@ -852,17 +960,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "petrol",
+        "diesel"
+      ],
+      "transmissions": [
+        "manual",
+        "automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://auto.mahindra.com/suv/thar"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 1,
-      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Current Thar family; verify exact 2026 powertrain and variant matrix before publish."
+      ]
     },
     {
       "brand": "Mahindra",
@@ -874,17 +993,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "petrol",
+        "diesel"
+      ],
+      "transmissions": [
+        "manual",
+        "automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://auto.mahindra.com/suv/thar-roxx"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 1,
-      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Current Mahindra model; verify exact 2026 variant matrix before publish."
+      ]
     },
     {
       "brand": "Mahindra",
@@ -918,17 +1048,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L turbo petrol",
+        "2.2L diesel"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://auto.mahindra.com/suv/scorpio-n"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 1,
-      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Current Mahindra model; verify exact 2026 variant/engine availability before publish."
+      ]
     },
     {
       "brand": "Mahindra",
@@ -940,17 +1081,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "petrol",
+        "diesel"
+      ],
+      "transmissions": [
+        "manual",
+        "automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://auto.mahindra.com/suv/xuv-3xo"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 1,
-      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Current Mahindra model; verify exact engine/transmission combinations before publish."
+      ]
     },
     {
       "brand": "Mahindra",
@@ -984,17 +1136,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L turbo petrol",
+        "2.2L diesel"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://auto.mahindra.com/suv/xuv700"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 1,
-      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Current Mahindra model; verify exact 2026 variant/engine availability before publish."
+      ]
     },
     {
       "brand": "Mahindra",
@@ -1238,17 +1401,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.7L petrol",
+        "2.8L diesel"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.toyotabharat.com/showroom/fortuner/"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 1,
-      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Current Toyota India model; verify current grade matrix before publish."
+      ]
     },
     {
       "brand": "Toyota",
@@ -1304,17 +1478,32 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L petrol",
+        "1.0L turbo petrol",
+        "1.5L diesel"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "6-speed manual",
+        "6-speed iMT",
+        "7-speed DCT",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.kia.com/in/our-vehicles/sonet/showroom.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 1,
-      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave."
+      "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
+      "researchNotes": [
+        "Current Kia India model; exact variant-to-transmission mapping must be verified before publish."
+      ]
     },
     {
       "brand": "Kia",
