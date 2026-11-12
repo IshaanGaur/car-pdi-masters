@@ -132,7 +132,14 @@
         "5-speed manual",
         "5-speed AGS/AMT"
       ],
-      "variants": [],
+      "variants": [
+        "LXi",
+        "VXi",
+        "ZXi",
+        "LXi CNG",
+        "VXi CNG",
+        "ZXi CNG"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.marutisuzuki.com/arena/wagon-r"
@@ -147,7 +154,8 @@
         "Current Maruti Arena listing; verify final variant matrix before publish.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Maruti Suzuki",
@@ -167,7 +175,16 @@
         "5-speed manual",
         "5-speed AGS/AMT"
       ],
-      "variants": [],
+      "variants": [
+        "LXi",
+        "VXi",
+        "VXi (O)",
+        "ZXi",
+        "ZXi+",
+        "LXi CNG",
+        "VXi CNG",
+        "ZXi CNG"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.marutisuzuki.com/arena/swift",
@@ -183,7 +200,8 @@
         "Official Maruti India sources confirm 1.2L petrol/S-CNG and manual/AGS; verify final variant list before publish.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Maruti Suzuki",
@@ -239,7 +257,14 @@
         "5-speed manual",
         "5-speed AGS/AMT"
       ],
-      "variants": [],
+      "variants": [
+        "LXi",
+        "VXi",
+        "ZXi",
+        "ZXi+",
+        "VXi CNG",
+        "ZXi CNG"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.marutisuzuki.com/arena/dzire",
@@ -255,7 +280,8 @@
         "Official Maruti India sources confirm petrol/CNG, MT and AGS; current listings include CNG AGS, so the generator must not assume CNG is manual-only.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Maruti Suzuki",
@@ -311,7 +337,15 @@
         "5-speed manual",
         "6-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "LXi",
+        "VXi",
+        "ZXi",
+        "ZXi+",
+        "LXi CNG",
+        "VXi CNG",
+        "ZXi CNG"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.marutisuzuki.com/arena/brezza",
@@ -327,7 +361,8 @@
         "Current Arena model and price/variant page; verify exact variant matrix before publish.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Maruti Suzuki",
@@ -423,7 +458,14 @@
         "5-speed manual",
         "6-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "LXi",
+        "VXi",
+        "ZXi",
+        "ZXi+",
+        "VXi CNG",
+        "ZXi CNG"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.marutisuzuki.com/arena/ertiga",
@@ -440,7 +482,8 @@
         "Official Maruti India sources confirm petrol/Smart Hybrid, factory CNG, manual and automatic options; verify final variant list before publish.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Maruti Suzuki",
@@ -706,7 +749,21 @@
         "manual",
         "DCT/automatic depending on powertrain"
       ],
-      "variants": [],
+      "variants": [
+        "HX2",
+        "HX4",
+        "HX5",
+        "HX5+",
+        "HX5 Knight",
+        "HX6",
+        "HX6T",
+        "HX6T Knight",
+        "HX7",
+        "HX8",
+        "HX8 Knight",
+        "HX10",
+        "HX10 Knight"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.hyundai.com/in/en/find-a-car"
@@ -721,7 +778,8 @@
         "Current Hyundai India listing; exact engine/transmission mapping should be taken from current configurator before publish.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Hyundai",
@@ -744,7 +802,17 @@
         "6-speed automatic",
         "7-speed DCT"
       ],
-      "variants": [],
+      "variants": [
+        "E",
+        "EX",
+        "EX(O)",
+        "S(O)",
+        "S(O) Knight",
+        "SX",
+        "SX Premium",
+        "King",
+        "King Knight"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.hyundai.com/in/en/find-a-car",
@@ -760,7 +828,8 @@
         "Official Hyundai India sources confirm current Creta petrol/diesel powertrains and multiple transmission types; recheck variant names before publish.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Hyundai",
@@ -961,7 +1030,15 @@
         "manual",
         "DCA automatic"
       ],
-      "variants": [],
+      "variants": [
+        "Smart",
+        "Pure",
+        "Pure S",
+        "Creative",
+        "Creative S",
+        "Accomplished S",
+        "Accomplished + S"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://cars.tatamotors.com/altroz/"
@@ -976,7 +1053,8 @@
         "Current Tata Altroz family; verify exact current engine/transmission/variant mapping before publish.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Tata",
@@ -1389,7 +1467,15 @@
         "6-speed manual",
         "6-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "Z2",
+        "Z4",
+        "Z6",
+        "Z8S",
+        "Z8",
+        "Z8T",
+        "Z8L"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://auto.mahindra.com/suv/scorpio-n"
@@ -1404,7 +1490,8 @@
         "Current Mahindra model; verify exact 2026 variant/engine availability before publish.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Mahindra",
@@ -1424,7 +1511,20 @@
         "manual",
         "automatic"
       ],
-      "variants": [],
+      "variants": [
+        "MX1",
+        "MX2",
+        "MX2 Pro",
+        "MX3",
+        "MX3 Pro",
+        "AX5",
+        "AX5L",
+        "AX7",
+        "AX7L",
+        "REVX M",
+        "REVX M(O)",
+        "REVX A"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://auto.mahindra.com/suv/xuv-3xo"
@@ -1439,7 +1539,8 @@
         "Current Mahindra model; verify exact engine/transmission combinations before publish.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Mahindra",
