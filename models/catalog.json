@@ -3721,110 +3721,166 @@
       "brandSlug": "ford",
       "model": "EcoSport",
       "modelSlug": "ecosport",
-      "status": "research_pending",
+      "status": "draft",
       "researchStatus": "pending",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L Ti-VCT petrol",
+        "1.5L TDCi diesel"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.india.ford.com/about-ford/media/newsroom/2021/ford-restructures-india-operations/"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Ford India officially ceased local vehicle sales/manufacturing plans in 2021; EcoSport remains a strong used-car PDI target. Ford's 2020/2021 India material confirms 1.5L petrol and 1.5L diesel, with automatic offered on petrol."
+      ]
     },
     {
       "brand": "Ford",
       "brandSlug": "ford",
       "model": "Endeavour",
       "modelSlug": "endeavour",
-      "status": "research_pending",
+      "status": "draft",
       "researchStatus": "pending",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L EcoBlue diesel",
+        "3.2L TDCi diesel (older generations)"
+      ],
+      "transmissions": [
+        "10-speed automatic",
+        "6-speed automatic (older generations)"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.india.ford.com/about-ford/media/newsroom/2021/ford-restructures-india-operations/"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Ford India ceased new-vehicle sales in 2021. The 2020 India Endeavour used a 2.0L EcoBlue diesel with 10-speed automatic; older used examples also include 3.2L diesel/6-speed automatic. Treat as used-PDI focused."
+      ]
     },
     {
       "brand": "Ford",
       "brandSlug": "ford",
       "model": "Figo",
       "modelSlug": "figo",
-      "status": "research_pending",
+      "status": "draft",
       "researchStatus": "pending",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L petrol",
+        "1.5L TDCi diesel",
+        "1.5L petrol (later automatic)"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.india.ford.com/about-ford/media/newsroom/2021/ford-restructures-india-operations/"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Ford India ended new sales in 2021. Official India material confirms Figo was sold with petrol/diesel powertrains and later received automatic variants; exact year/variant mapping should be handled as historical, not current."
+      ]
     },
     {
       "brand": "Ford",
       "brandSlug": "ford",
       "model": "Aspire",
       "modelSlug": "aspire",
-      "status": "research_pending",
+      "status": "draft",
       "researchStatus": "pending",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L petrol",
+        "1.5L TDCi diesel",
+        "1.5L petrol (automatic, later)"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.india.ford.com/about-ford/media/newsroom/2021/ford-restructures-india-operations/"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Ford Aspire is a discontinued India model and should target used-car inspection intent. Ford's 2021 India announcement confirms sales ceased after existing inventory; historical Ford material confirms petrol/diesel and later automatic variants."
+      ]
     },
     {
       "brand": "Ford",
       "brandSlug": "ford",
       "model": "Freestyle",
       "modelSlug": "freestyle",
-      "status": "research_pending",
+      "status": "draft",
       "researchStatus": "pending",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L Ti-VCT petrol",
+        "1.5L TDCi diesel"
+      ],
+      "transmissions": [
+        "5-speed manual"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.india.ford.com/about-ford/media/newsroom/2021/ford-restructures-india-operations/"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Ford Freestyle was discontinued in India after Ford's 2021 restructuring. Ford India describes it as a compact utility vehicle; used-PDI intent is the appropriate commercial focus."
+      ]
     }
   ],
   "researchPlan": {
