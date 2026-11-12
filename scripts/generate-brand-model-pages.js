@@ -43,7 +43,7 @@ function faq(m){
 function jsonld(m,u){return JSON.stringify({'@context':'https://schema.org','@graph':[{'@type':'WebPage','url':u,'name':m.brand+' '+m.model+' PDI & Car Inspection | Car PDI Masters'},{'@type':'Service','name':m.brand+' '+m.model+' PDI & Car Inspection','provider':{'@type':'Organization','name':'Car PDI Masters','url':SITE},'areaServed':['Delhi','Gurugram','Noida','Faridabad'],'url':u},{'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Home','item':SITE+'/'},{'@type':'ListItem','position':2,'name':'Car PDI','item':SITE+'/car-pdi/'},{'@type':'ListItem','position':3,'name':m.brand,'item':SITE+'/car-pdi/'+m.brandSlug+'/'},{'@type':'ListItem','position':4,'name':m.model,'item':u}]},{'@type':'FAQPage','mainEntity':faq(m).map(x=>({'@type':'Question',name:x[0],acceptedAnswer:{'@type':'Answer',text:x[1]}}))}]},null,2)};
 function page(m){
   const u=url(m),k=keywordMap(m),f=faq(m),checks=modelChecks(m),ev=isEv(m),premium=isPremium(m);
-  const title=m.brand+' '+m.model+' PDI & Car Inspection | Car PDI Masters';
+  const title=m.brand+' '+m.model+' PDI | Car PDI Masters';
   const desc=m.brand+' '+m.model+' PDI in Delhi NCR for new-car delivery or used-car purchase. 300+ checks, paint thickness and applicable diagnostics.';
   const powers=m.powertrains?.length?m.powertrains:['Verify exact powertrain at inspection'];
   const trans=m.transmissions?.length?m.transmissions:['Verify exact transmission at inspection'];
