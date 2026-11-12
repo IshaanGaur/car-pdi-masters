@@ -11,8 +11,8 @@
       "brandSlug": "maruti-suzuki",
       "model": "Alto K10",
       "modelSlug": "alto-k10",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -37,8 +37,10 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Current Maruti Arena page confirms 1.0L K-Series petrol and manual/AGS; Maruti current range also lists S-CNG. Verify exact CNG variant matrix before publish."
-      ]
+        "Current Maruti Arena page confirms 1.0L K-Series petrol and manual/AGS; Maruti current range also lists S-CNG. Verify exact CNG variant matrix before publish.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Maruti Suzuki",
@@ -79,8 +81,8 @@
       "brandSlug": "maruti-suzuki",
       "model": "Celerio",
       "modelSlug": "celerio",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -105,8 +107,10 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Current Maruti pages confirm 998cc K10C petrol, 5MT/AGS and S-CNG availability; exact CNG grade matrix should be rechecked before publish."
-      ]
+        "Current Maruti pages confirm 998cc K10C petrol, 5MT/AGS and S-CNG availability; exact CNG grade matrix should be rechecked before publish.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Maruti Suzuki",
@@ -534,8 +538,8 @@
       "brandSlug": "hyundai",
       "model": "Grand i10 Nios",
       "modelSlug": "grand-i10-nios",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -560,16 +564,18 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Hyundai India currently lists Grand i10 NIOS with petrol/CNG and manual/Smart Auto AMT."
-      ]
+        "Hyundai India currently lists Grand i10 NIOS with petrol/CNG and manual/Smart Auto AMT.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Hyundai",
       "brandSlug": "hyundai",
       "model": "i20",
       "modelSlug": "i20",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -593,8 +599,10 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Hyundai India currently lists i20 with 1.2L petrol and 5MT/IVT."
-      ]
+        "Hyundai India currently lists i20 with 1.2L petrol and 5MT/IVT.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Hyundai",
@@ -744,8 +752,8 @@
       "brandSlug": "hyundai",
       "model": "Verna",
       "modelSlug": "verna",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -770,16 +778,18 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Hyundai India currently lists Verna with 1.5L MPi and Turbo GDi petrol and 6MT/IVT/7DCT."
-      ]
+        "Hyundai India currently lists Verna with 1.5L MPi and Turbo GDi petrol and 6MT/IVT/7DCT.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Hyundai",
       "brandSlug": "hyundai",
       "model": "Alcazar",
       "modelSlug": "alcazar",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -804,8 +814,10 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Hyundai India currently lists Alcazar with 1.5L turbo petrol/diesel and 6MT/6AT/7DCT."
-      ]
+        "Hyundai India currently lists Alcazar with 1.5L turbo petrol/diesel and 6MT/6AT/7DCT.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Hyundai",
@@ -846,8 +858,8 @@
       "brandSlug": "tata",
       "model": "Tiago",
       "modelSlug": "tiago",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -872,16 +884,18 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Tata official material confirms 1.2L petrol and iCNG with manual/AMT; CNG AMT is offered on selected variants."
-      ]
+        "Tata official material confirms 1.2L petrol and iCNG with manual/AMT; CNG AMT is offered on selected variants.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Tata",
       "brandSlug": "tata",
       "model": "Tigor",
       "modelSlug": "tigor",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -906,8 +920,10 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Tata product material confirms 1.2L petrol and iCNG families with manual/AMT; verify exact current grade matrix before publication."
-      ]
+        "Tata product material confirms 1.2L petrol and iCNG families with manual/AMT; verify exact current grade matrix before publication.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Tata",
@@ -1025,8 +1041,8 @@
       "brandSlug": "tata",
       "model": "Curvv",
       "modelSlug": "curvv",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1051,8 +1067,10 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Tata official Curvv specification sheet confirms two petrol and one diesel ICE powertrains, with 6MT and 7-speed dual-clutch automatic."
-      ]
+        "Tata official Curvv specification sheet confirms two petrol and one diesel ICE powertrains, with 6MT and 7-speed dual-clutch automatic.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Tata",
@@ -1166,8 +1184,8 @@
       "brandSlug": "mahindra",
       "model": "Bolero",
       "modelSlug": "bolero",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1189,16 +1207,18 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Mahindra identifies Bolero as diesel-only in its current SUV guidance; model remains relevant for used PDI and rural/utility vehicle inspections."
-      ]
+        "Mahindra identifies Bolero as diesel-only in its current SUV guidance; model remains relevant for used PDI and rural/utility vehicle inspections.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Mahindra",
       "brandSlug": "mahindra",
       "model": "Bolero Neo",
       "modelSlug": "bolero-neo",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1221,8 +1241,10 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Mahindra official specifications confirm 1493cc mHawk100 diesel, 5-speed manual, 7 seats and 2WD; N10(O) includes Multi-Terrain Technology."
-      ]
+        "Mahindra official specifications confirm 1493cc mHawk100 diesel, 5-speed manual, 7 seats and 2WD; N10(O) includes Multi-Terrain Technology.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Mahindra",
@@ -1300,8 +1322,8 @@
       "brandSlug": "mahindra",
       "model": "Scorpio",
       "modelSlug": "scorpio",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1325,8 +1347,10 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Scorpio Classic is a diesel-only used/new inspection target; Mahindra history confirms 2.2L mHawk with 6-speed automatic, while current Scorpio Classic availability should be verified before publish."
-      ]
+        "Scorpio Classic is a diesel-only used/new inspection target; Mahindra history confirms 2.2L mHawk with 6-speed automatic, while current Scorpio Classic availability should be verified before publish.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Mahindra",
@@ -1992,8 +2016,8 @@
       "brandSlug": "kia",
       "model": "Carens",
       "modelSlug": "carens",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2019,8 +2043,10 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Kia India confirms 1.5L petrol/diesel, 6/7-seat configurations and current CNG variants; exact transmission pairing varies by powertrain/grade and should be presented from the live configurator."
-      ]
+        "Kia India confirms 1.5L petrol/diesel, 6/7-seat configurations and current CNG variants; exact transmission pairing varies by powertrain/grade and should be presented from the live configurator.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Kia",
@@ -2373,8 +2399,8 @@
       "brandSlug": "skoda",
       "model": "Slavia",
       "modelSlug": "slavia",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2399,16 +2425,18 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Skoda India announced the 2026 Slavia with 1.0 TSI + 8-speed torque-converter automatic and 6MT, plus 1.5 TSI with 7-speed DSG."
-      ]
+        "Skoda India announced the 2026 Slavia with 1.0 TSI + 8-speed torque-converter automatic and 6MT, plus 1.5 TSI with 7-speed DSG.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Skoda",
       "brandSlug": "skoda",
       "model": "Kushaq",
       "modelSlug": "kushaq",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2434,8 +2462,10 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Skoda India current range and 2026 service material confirm Kushaq 1.0/1.5 petrol families and current MT/AT/DSG combinations; verify exact grade mapping before publication."
-      ]
+        "Skoda India current range and 2026 service material confirm Kushaq 1.0/1.5 petrol families and current MT/AT/DSG combinations; verify exact grade mapping before publication.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Skoda",
@@ -2539,8 +2569,8 @@
       "brandSlug": "volkswagen",
       "model": "Virtus",
       "modelSlug": "virtus",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2566,16 +2596,18 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Volkswagen India confirms current Virtus family with 1.0 TSI MT/AT and 1.5 TSI DSG; current range also has Chrome and Sport variants."
-      ]
+        "Volkswagen India confirms current Virtus family with 1.0 TSI MT/AT and 1.5 TSI DSG; current range also has Chrome and Sport variants.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Volkswagen",
       "brandSlug": "volkswagen",
       "model": "Taigun",
       "modelSlug": "taigun",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2602,8 +2634,10 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Volkswagen announced the 2026 Taigun with a new 8-speed automatic on 1.0 TSI; the 1.5 TSI Evo remains paired with 7-speed DSG in the technical material."
-      ]
+        "Volkswagen announced the 2026 Taigun with a new 8-speed automatic on 1.0 TSI; the 1.5 TSI Evo remains paired with 7-speed DSG in the technical material.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Volkswagen",
@@ -2717,8 +2751,8 @@
       "brandSlug": "renault",
       "model": "Kiger",
       "modelSlug": "kiger",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2745,16 +2779,18 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Renault India currently lists Kiger and confirms current Turbo range; exact 2026 variant/transmission matrix should be taken from the current brochure before approval."
-      ]
+        "Renault India currently lists Kiger and confirms current Turbo range; exact 2026 variant/transmission matrix should be taken from the current brochure before approval.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Nissan",
       "brandSlug": "nissan",
       "model": "Magnite",
       "modelSlug": "magnite",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2780,8 +2816,10 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Nissan India current price/configuration pages confirm NA and turbo petrol, MT, EZ-Shift AMT and turbo CVT; Nissan also confirms both powertrains are E20 compatible."
-      ]
+        "Nissan India current price/configuration pages confirm NA and turbo petrol, MT, EZ-Shift AMT and turbo CVT; Nissan also confirms both powertrains are E20 compatible.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Citroën",
@@ -4930,8 +4968,8 @@
       "brandSlug": "ford",
       "model": "EcoSport",
       "modelSlug": "ecosport",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4955,16 +4993,19 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Ford India officially ceased local vehicle sales/manufacturing plans in 2021; EcoSport remains a strong used-car PDI target. Ford's 2020/2021 India material confirms 1.5L petrol and 1.5L diesel, with automatic offered on petrol."
-      ]
+        "Ford India officially ceased local vehicle sales/manufacturing plans in 2021; EcoSport remains a strong used-car PDI target. Ford's 2020/2021 India material confirms 1.5L petrol and 1.5L diesel, with automatic offered on petrol.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "demandValidation": "used_historical",
+      "approvedForPublication": true
     },
     {
       "brand": "Ford",
       "brandSlug": "ford",
       "model": "Endeavour",
       "modelSlug": "endeavour",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4988,16 +5029,19 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Ford India ceased new-vehicle sales in 2021. The 2020 India Endeavour used a 2.0L EcoBlue diesel with 10-speed automatic; older used examples also include 3.2L diesel/6-speed automatic. Treat as used-PDI focused."
-      ]
+        "Ford India ceased new-vehicle sales in 2021. The 2020 India Endeavour used a 2.0L EcoBlue diesel with 10-speed automatic; older used examples also include 3.2L diesel/6-speed automatic. Treat as used-PDI focused.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "demandValidation": "used_historical",
+      "approvedForPublication": true
     },
     {
       "brand": "Ford",
       "brandSlug": "ford",
       "model": "Figo",
       "modelSlug": "figo",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -5022,16 +5066,19 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Ford India ended new sales in 2021. Official India material confirms Figo was sold with petrol/diesel powertrains and later received automatic variants; exact year/variant mapping should be handled as historical, not current."
-      ]
+        "Ford India ended new sales in 2021. Official India material confirms Figo was sold with petrol/diesel powertrains and later received automatic variants; exact year/variant mapping should be handled as historical, not current.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "demandValidation": "used_historical",
+      "approvedForPublication": true
     },
     {
       "brand": "Ford",
       "brandSlug": "ford",
       "model": "Aspire",
       "modelSlug": "aspire",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -5056,16 +5103,19 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Ford Aspire is a discontinued India model and should target used-car inspection intent. Ford's 2021 India announcement confirms sales ceased after existing inventory; historical Ford material confirms petrol/diesel and later automatic variants."
-      ]
+        "Ford Aspire is a discontinued India model and should target used-car inspection intent. Ford's 2021 India announcement confirms sales ceased after existing inventory; historical Ford material confirms petrol/diesel and later automatic variants.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "demandValidation": "used_historical",
+      "approvedForPublication": true
     },
     {
       "brand": "Ford",
       "brandSlug": "ford",
       "model": "Freestyle",
       "modelSlug": "freestyle",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -5088,8 +5138,11 @@
       "priorityTier": 2,
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
-        "Ford Freestyle was discontinued in India after Ford's 2021 restructuring. Ford India describes it as a compact utility vehicle; used-PDI intent is the appropriate commercial focus."
-      ]
+        "Ford Freestyle was discontinued in India after Ford's 2021 restructuring. Ford India describes it as a compact utility vehicle; used-PDI intent is the appropriate commercial focus.",
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+      ],
+      "demandValidation": "used_historical",
+      "approvedForPublication": true
     }
   ],
   "researchPlan": {
