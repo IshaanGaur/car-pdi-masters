@@ -1207,12 +1207,13 @@
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
-        "petrol",
-        "diesel"
+        "1.5L diesel",
+        "2.2L diesel",
+        "2.0L turbo petrol"
       ],
       "transmissions": [
-        "manual",
-        "automatic"
+        "6-speed manual",
+        "6-speed torque-converter automatic"
       ],
       "variants": [],
       "aliases": [],
@@ -1226,7 +1227,7 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Current Thar family; verify exact 2026 powertrain and variant matrix before publish."
+        "Official Mahindra Thar specs confirm 1.5L diesel, 2.2L diesel and 2.0L turbo-petrol families with 6-speed manual/torque-converter automatic combinations; 4WD is configuration-dependent."
       ]
     },
     {
@@ -1240,12 +1241,12 @@
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
-        "petrol",
-        "diesel"
+        "2.0L turbo petrol",
+        "2.2L diesel"
       ],
       "transmissions": [
-        "manual",
-        "automatic"
+        "6-speed manual",
+        "6-speed torque-converter automatic"
       ],
       "variants": [],
       "aliases": [],
@@ -1259,7 +1260,7 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Current Mahindra model; verify exact 2026 variant matrix before publish."
+        "Official Mahindra Thar ROXX brochure confirms 2.0L turbo petrol and 2.2L diesel with 6-speed manual and torque-converter automatic options; 4x4 is configuration-dependent."
       ]
     },
     {
@@ -1415,7 +1416,9 @@
         "6-speed automatic"
       ],
       "variants": [],
-      "aliases": [],
+      "aliases": [
+        "XUV 7XO"
+      ],
       "sourceUrls": [
         "https://auto.mahindra.com/suv/xuv700"
       ],
@@ -1426,8 +1429,9 @@
       "priorityTier": 1,
       "priorityReason": "High new-car volume plus strong used-car search potential; first publishing wave.",
       "researchNotes": [
-        "Current Mahindra model; verify exact 2026 variant/engine availability before publish."
-      ]
+        "Current Mahindra India portfolio now lists XUV 7XO as the successor/current nameplate; retain XUV700 as a historical/used-car search-intent record and do not present old XUV700 specifications as current XUV 7XO specifications. Current XUV 7XO has separate official product data and should be treated as a distinct model record if targeted for new-car PDI."
+      ],
+      "demandValidation": "used_historical"
     },
     {
       "brand": "Mahindra",
