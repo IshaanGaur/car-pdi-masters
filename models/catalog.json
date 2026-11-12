@@ -596,7 +596,12 @@
         "5-speed manual",
         "6-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "Zeta",
+        "Alpha",
+        "Alpha+",
+        "Zeta CNG"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.marutisuzuki.com/corporate/technology/engine"
@@ -612,7 +617,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Maruti Suzuki",
@@ -630,7 +636,11 @@
       "transmissions": [
         "e-CVT"
       ],
-      "variants": [],
+      "variants": [
+        "Zeta+ 7 STR",
+        "Zeta+ 8 STR",
+        "Alpha+ 7 STR"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.marutisuzuki.com/corporate/media/press-releases/2023/july/maruti-suzuki-launches-the-invicto-a-new-era-of-luxury-starting"
@@ -646,7 +656,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Maruti Suzuki",
@@ -665,7 +676,11 @@
       "transmissions": [
         "Single-speed electric transmission"
       ],
-      "variants": [],
+      "variants": [
+        "Delta",
+        "Zeta",
+        "Alpha"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.marutisuzuki.com/corporate/media/press-releases/2025/january/maruti-suzuki-unveils-its-first-electric-suv-e-vitara"
@@ -679,7 +694,8 @@
       "researchNotes": [
         "Maruti Suzuki confirms e VITARA with 49 kWh and 61 kWh battery options, single-speed electric drive, and deliveries in India from February 2026."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Hyundai",
