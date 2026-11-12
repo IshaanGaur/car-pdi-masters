@@ -4268,19 +4268,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "90 kWh lithium-ion battery",
+        "Dual-motor electric AWD"
+      ],
+      "transmissions": [
+        "Single-speed electric drive"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://retailers.jaguar.in/modi-motors",
+        "https://retailers.jaguar.in/navnit"
+      ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Final Tier-3 premium research: official/authorised India sources verified; publication remains gated pending full catalog QA and content review."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Jaguar India specifications vary substantially by model year and generation; final page should prioritize used-car PDI and verify the exact engine/transmission for each relevant generation before approval."
+        "Jaguar authorised Indian retailers continue to show approved used I-PACE vehicles, including 2021-2023 examples. Treat I-PACE as EV/used-PDI focused: battery health, charging system, thermal management, regenerative braking, software and HV-system diagnostics are key."
       ]
     },
     {
@@ -4869,7 +4877,7 @@
       "brandSlug": "ford",
       "model": "EcoSport",
       "modelSlug": "ecosport",
-      "status": "draft",
+      "status": "research_pending",
       "researchStatus": "pending",
       "seoStatus": "not_published",
       "newCarPdi": null,
@@ -4902,7 +4910,7 @@
       "brandSlug": "ford",
       "model": "Endeavour",
       "modelSlug": "endeavour",
-      "status": "draft",
+      "status": "research_pending",
       "researchStatus": "pending",
       "seoStatus": "not_published",
       "newCarPdi": null,
@@ -4935,7 +4943,7 @@
       "brandSlug": "ford",
       "model": "Figo",
       "modelSlug": "figo",
-      "status": "draft",
+      "status": "research_pending",
       "researchStatus": "pending",
       "seoStatus": "not_published",
       "newCarPdi": null,
@@ -4969,7 +4977,7 @@
       "brandSlug": "ford",
       "model": "Aspire",
       "modelSlug": "aspire",
-      "status": "draft",
+      "status": "research_pending",
       "researchStatus": "pending",
       "seoStatus": "not_published",
       "newCarPdi": null,
@@ -5003,7 +5011,7 @@
       "brandSlug": "ford",
       "model": "Freestyle",
       "modelSlug": "freestyle",
-      "status": "draft",
+      "status": "research_pending",
       "researchStatus": "pending",
       "seoStatus": "not_published",
       "newCarPdi": null,
