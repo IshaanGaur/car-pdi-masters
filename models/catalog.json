@@ -1479,7 +1479,20 @@
         "Manual",
         "Automatic / DCT depending powertrain"
       ],
-      "variants": [],
+      "variants": [
+        "Smart+",
+        "Smart+ L",
+        "Pure",
+        "Pure L",
+        "Pure L (O)",
+        "Pure+",
+        "Pure+ L",
+        "Adventure",
+        "Adventure+",
+        "Adventure+ L",
+        "Accomplished",
+        "Accomplished+"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.tata.com/newsroom/business/tata-sierra-launch"
@@ -1495,7 +1508,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Mahindra",
