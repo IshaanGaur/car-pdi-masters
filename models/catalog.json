@@ -799,17 +799,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L petrol",
+        "2.0L diesel"
+      ],
+      "transmissions": [
+        "6-speed automatic",
+        "8-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.hyundai.com/content/dam/hyundai/in/en/data/brochure/tucson-brochure.pdf"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Hyundai India owner/manual history and current brochure evidence support Tucson from Aug 2022-present in India, with 2.0L petrol 6AT and 2.0L diesel 8AT; selected diesel variants have 4WD. The all-new global 2026 Tucson is not automatically mapped to India."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Tata",
@@ -1096,17 +1108,30 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L naturally aspirated petrol",
+        "1.5L turbo petrol",
+        "1.5L diesel"
+      ],
+      "transmissions": [
+        "Manual",
+        "Automatic / DCT depending powertrain"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.tata.com/newsroom/business/tata-sierra-launch"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Tata launched the all-new Sierra in India in November 2025. Tata confirms three engine options; current market data documents 1.5L NA petrol, 1.5L turbo-petrol and 1.5L diesel with powertrain-specific manual/automatic combinations. Keep Sierra separate from the historic 1991 model and any future Sierra EV page."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Mahindra",
@@ -1346,17 +1371,30 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.0L turbo petrol",
+        "2.2L turbo diesel"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://auto.mahindra.com/press-release/hello-mahindra-xuv-7xo.html",
+        "https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw6049e40c/XUV-7XO/brochures/XUV7XO_brochure.pdf"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Mahindra launched XUV 7XO in January 2026 as the XUV700 successor/next-generation premium SUV. Official brochure lists 2.0L TGDi petrol and 2.2L diesel, 6MT/6AT, with diesel AWD AT on selected variants."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Mahindra",
@@ -1401,17 +1439,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L turbo diesel"
+      ],
+      "transmissions": [
+        "6-speed manual"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dwa00130f0/Marazzo/Marazzo_Brochure.pdf",
+        "https://mvault-cloudfront.mahindra.com/2025/08/26/Owners-Manuals/MARAZZO/Marazzo-Owner-Manual.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Mahindra Marazzo is a discontinued/used-market focused MPV record. Official Mahindra documentation specifies a 1.5L D15 turbo diesel with 6-speed manual. PDI content should focus on used-vehicle condition, DPF/emissions, clutch, suspension and fleet/taxi wear."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Mahindra",
@@ -1589,17 +1638,32 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.0L turbo petrol",
+        "1.2L petrol",
+        "1.2L E-CNG"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "6-speed automatic",
+        "Intelligent Gear Shift/AMT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.toyotabharat.com/news/2024/tkm-launches-the-all-new-urban-cruiser-taisor-make-your-way-with-the-new-suv.html",
+        "https://www.toyotabharat.com/showroom/urbancruiser-taisor/"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; research and demand validation before publishing.",
+      "researchNotes": [
+        "Toyota India currently lists Urban Cruiser Taisor. Toyota's launch material specifies 1.0L turbo petrol with 5MT/6AT, 1.2L petrol with 5MT/IGS, and 1.2L E-CNG with 5MT. Toyota later standardized six airbags across all variants in 2025."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Toyota",
