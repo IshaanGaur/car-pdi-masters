@@ -3223,7 +3223,15 @@
         "6-speed automatic",
         "7-speed DSG"
       ],
-      "variants": [],
+      "variants": [
+        "Comfortline",
+        "Highline",
+        "Highline Plus",
+        "Topline",
+        "GT Plus Chrome",
+        "GT Line",
+        "GT Plus Sport"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.volkswagen.co.in/en/models.html",
@@ -3239,7 +3247,8 @@
         "Volkswagen India confirms current Virtus family with 1.0 TSI MT/AT and 1.5 TSI DSG; current range also has Chrome and Sport variants.",
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Volkswagen",
@@ -3260,7 +3269,15 @@
         "8-speed automatic",
         "7-speed DSG"
       ],
-      "variants": [],
+      "variants": [
+        "Comfortline",
+        "Highline",
+        "Highline Plus",
+        "Topline",
+        "GT Plus Chrome",
+        "GT Line",
+        "GT Plus Sport"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.volkswagen.co.in/en/models.html",
@@ -3277,7 +3294,8 @@
         "Volkswagen announced the 2026 Taigun with a new 8-speed automatic on 1.0 TSI; the 1.5 TSI Evo remains paired with 7-speed DSG in the technical material.",
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Volkswagen",
@@ -3296,7 +3314,9 @@
         "7-speed DSG",
         "4MOTION"
       ],
-      "variants": [],
+      "variants": [
+        "R-Line"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.volkswagen.co.in/en/models/tiguan.html",
@@ -3314,7 +3334,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Renault",
