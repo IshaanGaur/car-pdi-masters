@@ -506,8 +506,8 @@
       "brandSlug": "maruti-suzuki",
       "model": "e Vitara",
       "modelSlug": "e-vitara",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -531,7 +531,8 @@
       "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
       "researchNotes": [
         "Maruti Suzuki confirms e VITARA with 49 kWh and 61 kWh battery options, single-speed electric drive, and deliveries in India from February 2026."
-      ]
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Hyundai",
@@ -1532,13 +1533,14 @@
       "brandSlug": "mahindra",
       "model": "BE 6",
       "modelSlug": "be-6",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
         "59 kWh LFP battery",
+        "70 kWh LFP battery",
         "79 kWh LFP battery"
       ],
       "transmissions": [
@@ -1557,15 +1559,16 @@
       "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
       "researchNotes": [
         "Mahindra confirms BE 6 on INGLO architecture with 59/79 kWh battery options; current BE 6 SPORTEQ adds OTA-updatable software features."
-      ]
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Mahindra",
       "brandSlug": "mahindra",
       "model": "XEV 9e",
       "modelSlug": "xev-9e",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1589,15 +1592,16 @@
       "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
       "researchNotes": [
         "Mahindra confirms XEV 9e with 59/79 kWh LFP battery options and INGLO electric architecture."
-      ]
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Mahindra",
       "brandSlug": "mahindra",
       "model": "XEV 9S",
       "modelSlug": "xev-9s",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -1622,7 +1626,8 @@
       "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
       "researchNotes": [
         "Mahindra confirms XEV 9S as an electric 7-seater with 59/70/79 kWh battery variants and up to 210 kW output."
-      ]
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Toyota",
@@ -2204,8 +2209,8 @@
       "brandSlug": "mg",
       "model": "Comet EV",
       "modelSlug": "comet-ev",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2228,7 +2233,8 @@
       "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
       "researchNotes": [
         "MG India confirms Comet EV with 17.4 kWh battery, PMSM motor, 230 km claimed range and automatic electric transmission."
-      ]
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "MG",
@@ -2270,8 +2276,8 @@
       "brandSlug": "mg",
       "model": "Windsor EV",
       "modelSlug": "windsor-ev",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2295,7 +2301,8 @@
       "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
       "researchNotes": [
         "MG India confirms Windsor EV 38 kWh and 52.9 kWh Pro battery configurations; Pro variants provide 449 km certified range."
-      ]
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "MG",
@@ -2368,8 +2375,8 @@
       "brandSlug": "mg",
       "model": "ZS EV",
       "modelSlug": "zs-ev",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2392,7 +2399,8 @@
       "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
       "researchNotes": [
         "MG India lists ZS EV with a 50.3 kWh battery in the current India lineup; EV PDI content should emphasize battery, charging and HV diagnostics."
-      ]
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Skoda",
@@ -2969,8 +2977,8 @@
       "brandSlug": "citroen",
       "model": "eC3",
       "modelSlug": "ec3",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -2992,8 +3000,10 @@
       "priorityTier": 4,
       "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
       "researchNotes": [
-        "Citroën India brochure confirms ë-C3 with 29.2 kWh battery and regenerative braking; charging and HV system checks should be prominent in PDI content."
-      ]
+        "Citroën India brochure confirms ë-C3 with 29.2 kWh battery and regenerative braking; charging and HV system checks should be prominent in PDI content.",
+        "Current India retail naming has evolved toward the ë-C3X family; retain this page for ë-C3/current-stock and used-car search intent, with generation-aware wording and no duplicate ë-C3X URL."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Jeep",
@@ -3134,8 +3144,8 @@
       "brandSlug": "byd",
       "model": "Atto 3",
       "modelSlug": "atto-3",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3159,15 +3169,16 @@
       "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
       "researchNotes": [
         "BYD India confirms Dynamic with 49.92 kWh and Premium/Superior with 60.48 kWh Blade Battery; EV PDI should cover battery health, charging and underbody protection."
-      ]
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "BYD",
       "brandSlug": "byd",
       "model": "Seal",
       "modelSlug": "seal",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3191,15 +3202,16 @@
       "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
       "researchNotes": [
         "BYD India confirms Seal Dynamic 61.44 kWh RWD, Premium 82.56 kWh RWD and Performance 82.56 kWh AWD configurations."
-      ]
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "BYD",
       "brandSlug": "byd",
       "model": "e6",
       "modelSlug": "e6",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3221,8 +3233,11 @@
       "priorityTier": 4,
       "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
       "researchNotes": [
-        "BYD e6 is an India-market electric MPV; final model content should verify the latest India fleet/private-market availability and exact battery specification before approval."
-      ]
+        "BYD e6 is an India-market electric MPV; final model content should verify the latest India fleet/private-market availability and exact battery specification before approval.",
+        "BYD India later launched eMAX 7 as the successor to e6; treat e6 as used/historical India-market PDI intent, not as the current new-car MPV."
+      ],
+      "approvedForPublication": true,
+      "demandValidation": "used_historical"
     },
     {
       "brand": "BYD",
@@ -4955,8 +4970,8 @@
       "brandSlug": "vinfast",
       "model": "VF 6",
       "modelSlug": "vf-6",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4979,15 +4994,16 @@
       "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
       "researchNotes": [
         "VinFast India confirms VF 6 with 59.6 kWh battery, FWD electric drive and CCS2 charging; variants include 130 kW/250 Nm and 150 kW/310 Nm outputs."
-      ]
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "VinFast",
       "brandSlug": "vinfast",
       "model": "VF 7",
       "modelSlug": "vf-7",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -5011,7 +5027,8 @@
       "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
       "researchNotes": [
         "VinFast India confirms VF 7 with 59.6/70 kWh battery variants, FWD and AWD configurations, and CCS2 charging."
-      ]
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "VinFast",
