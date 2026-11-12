@@ -1,0 +1,100 @@
+name: Live Brand-Model SEO Audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  audit-live-brand-model-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Audit every deployed brand-model URL
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          host="https://www.carmasters.co.in"
+          sitemap="$host/sitemap.xml"
+          mkdir -p audit-output
+
+          echo "Fetching live sitemap: $sitemap"
+          curl -fsSL --retry 5 --retry-delay 2 "$sitemap" -o audit-output/sitemap.xml
+
+          grep -oE '<loc>https://www\.carmasters\.co\.in/car-pdi/[^/]+/[^/]+/</loc>' audit-output/sitemap.xml             | sed -E 's#</?loc>##g'             | sort -u > audit-output/model-urls.txt
+
+          count="$(wc -l < audit-output/model-urls.txt | tr -d ' ')"
+          echo "Discovered $count model URLs in the live sitemap."
+
+          if [ "$count" -lt 146 ]; then
+            echo "ERROR: expected at least 146 approved model URLs, found $count"
+            exit 1
+          fi
+
+          : > audit-output/failures.txt
+
+          while IFS= read -r url; do
+            echo "AUDIT $url"
+
+            body_file="audit-output/body.html"
+            if ! curl -fsSL --retry 5 --retry-delay 1 "$url" -o "$body_file"; then
+              echo "$url | HTTP fetch failed" >> audit-output/failures.txt
+              continue
+            fi
+
+            if [ "$(wc -c < "$body_file")" -lt 5000 ]; then
+              echo "$url | page body unexpectedly small" >> audit-output/failures.txt
+            fi
+
+            grep -Eiq '<title>[^<]*PDI[^<]*</title>' "$body_file"               || echo "$url | missing PDI title" >> audit-output/failures.txt
+
+            grep -Eiq '<h1[^>]*>[^<]*(PDI|Inspection)[^<]*</h1>' "$body_file"               || echo "$url | missing PDI/Inspection H1" >> audit-output/failures.txt
+
+            grep -Fq "<link rel="canonical" href="$url">" "$body_file"               || echo "$url | canonical mismatch" >> audit-output/failures.txt
+
+            grep -Fq 'name="robots" content="index,follow"' "$body_file"               || echo "$url | missing index,follow" >> audit-output/failures.txt
+
+            grep -Fq 'application/ld+json' "$body_file"               || echo "$url | missing JSON-LD" >> audit-output/failures.txt
+
+            grep -Fq '"@type":"FAQPage"' "$body_file"               || echo "$url | missing FAQPage schema" >> audit-output/failures.txt
+
+            grep -Fq 'id="faq"' "$body_file"               || echo "$url | missing visible FAQ section" >> audit-output/failures.txt
+
+            grep -Fq '300+ checkpoint' "$body_file"               || echo "$url | missing 300+ checkpoint content" >> audit-output/failures.txt
+
+            grep -Fq 'Photo-supported report' "$body_file"               || echo "$url | missing photo-supported report content" >> audit-output/failures.txt
+
+            grep -Fq '/sample-report.html' "$body_file"               || echo "$url | missing sample report link" >> audit-output/failures.txt
+
+            grep -Fq '/locations/delhi.html' "$body_file"               || echo "$url | missing Delhi location link" >> audit-output/failures.txt
+
+            grep -Fq '/locations/gurugram.html' "$body_file"               || echo "$url | missing Gurugram location link" >> audit-output/failures.txt
+
+            grep -Fq '/locations/noida.html' "$body_file"               || echo "$url | missing Noida location link" >> audit-output/failures.txt
+
+            grep -Fq 'tel:+919971116411' "$body_file"               || echo "$url | missing call CTA" >> audit-output/failures.txt
+
+            grep -Fq 'QUICK ANSWER' "$body_file"               || echo "$url | missing quick-answer section" >> audit-output/failures.txt
+          done < audit-output/model-urls.txt
+
+          failures="$(wc -l < audit-output/failures.txt | tr -d ' ')"
+          echo "Live model URL audit complete: $count URLs checked, $failures failures."
+
+          if [ "$failures" -ne 0 ]; then
+            echo "---- FAILURES ----"
+            cat audit-output/failures.txt
+            exit 1
+          fi
+
+          echo "PASS: every model URL passed all live SEO/content checks."
+
+      - name: Upload complete live audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-brand-model-seo-audit
+          path: audit-output/
