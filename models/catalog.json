@@ -4418,7 +4418,13 @@
       "transmissions": [
         "Automatic / DCT (generation dependent)"
       ],
-      "variants": [],
+      "variants": [
+        "A 200",
+        "A 200d",
+        "A 180",
+        "A 200d Night Edition",
+        "A 180 Night Edition"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.mercedes-benz.co.in/passengercars/models/hatchback/a-class/overview.html",
@@ -4436,7 +4442,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "used_historical",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_historical_market"
     },
     {
       "brand": "Mercedes-Benz",
@@ -4778,7 +4785,10 @@
       "transmissions": [
         "7-speed S tronic (generation dependent)"
       ],
-      "variants": [],
+      "variants": [
+        "Premium Plus",
+        "Technology"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.audi.in/en/models/",
@@ -4794,7 +4804,8 @@
         "Audi India currently lists A6 Sedan. Exact India powertrain/transmission can vary by generation, so the page should avoid presenting one specification as universal and should prioritize generation-aware used-PDI guidance.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Audi",
