@@ -74,7 +74,11 @@ const sitemapFile=path.join(ROOT,'sitemap.xml');
 if(fs.existsSync(sitemapFile)){
   let sm=fs.readFileSync(sitemapFile,'utf8');
   sm=sm.replace(/\\s*<!-- BEGIN GENERATED BRAND MODEL PAGES -->[\\s\\S]*?<!-- END GENERATED BRAND MODEL PAGES -->\\s*/g,'\\n');
-  const urls=approved.map(m=>`  <url><loc>${url(m)}</loc><lastmod>${new Date().toISOString().slice(0,10)}</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>`).join('\\n');
+  const today=new Date().toISOString().slice(0,10);
+  const hubUrls=['  <url><loc>'+SITE+'/car-pdi/</loc><lastmod>'+today+'</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>']
+    .concat(brands.map(b=>'  <url><loc>'+SITE+'/car-pdi/'+b.brandSlug+'/</loc><lastmod>'+today+'</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>'));
+  const modelUrls=approved.map(m=>'  <url><loc>'+url(m)+'</loc><lastmod>'+today+'</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>');
+  const urls=hubUrls.concat(modelUrls).join('\\n');
   const block='  <!-- BEGIN GENERATED BRAND MODEL PAGES -->\\n'+urls+'\\n  <!-- END GENERATED BRAND MODEL PAGES -->';
   sm=sm.replace(/<\\/urlset>/,block+'\\n</urlset>');
   fs.writeFileSync(sitemapFile,sm);
