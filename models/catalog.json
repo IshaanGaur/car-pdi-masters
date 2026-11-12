@@ -24,7 +24,16 @@
         "5-speed manual",
         "5-speed AGS/AMT"
       ],
-      "variants": [],
+      "variants": [
+        "Std (O) MT",
+        "LXi (O) MT",
+        "VXi (O) MT",
+        "LXi (O) CNG",
+        "VXi (O) CNG",
+        "VXi (O) AGS",
+        "VXi+ (O) MT",
+        "VXi+ (O) AGS"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.marutisuzuki.com/arena/alto-k10",
@@ -38,9 +47,11 @@
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
         "Current Maruti Arena page confirms 1.0L K-Series petrol and manual/AGS; Maruti current range also lists S-CNG. Verify exact CNG variant matrix before publish.",
-        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection.",
+        "Current India-market variant list verified against Maruti Suzuki official model/price material on 2026-11-12. Exact model-year configuration should still be confirmed at inspection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Maruti Suzuki",
@@ -60,7 +71,16 @@
         "5-speed manual",
         "5-speed AGS"
       ],
-      "variants": [],
+      "variants": [
+        "Std (O) MT",
+        "LXi (O) MT",
+        "VXi (O) MT",
+        "VXi (O) AGS",
+        "VXi+ (O) MT",
+        "VXi+ (O) AGS",
+        "LXi (O) CNG",
+        "VXi (O) CNG"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.marutisuzuki.com/arena/s-presso/price"
@@ -73,10 +93,12 @@
       "priorityReason": "Catalog coverage; current-market model verified and commercial PDI demand validation required before publication.",
       "researchNotes": [
         "Current Maruti Arena listing confirms 998cc petrol and S-CNG, with 5MT and AGS on petrol variants.",
-        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
+        "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator.",
+        "Current India-market variant list verified against Maruti Suzuki official model/price material on 2026-11-12. Exact model-year configuration should still be confirmed at inspection."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Maruti Suzuki",
@@ -96,7 +118,16 @@
         "5-speed manual",
         "5-speed AGS/AMT"
       ],
-      "variants": [],
+      "variants": [
+        "LXi MT",
+        "VXi MT",
+        "VXi AGS",
+        "ZXi MT",
+        "ZXi AGS",
+        "ZXi+ MT",
+        "ZXi+ AGS",
+        "LXi CNG"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.marutisuzuki.com/arena/celerio",
@@ -110,9 +141,11 @@
       "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
       "researchNotes": [
         "Current Maruti pages confirm 998cc K10C petrol, 5MT/AGS and S-CNG availability; exact CNG grade matrix should be rechecked before publish.",
-        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
+        "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection.",
+        "Current India-market variant list verified against Maruti Suzuki official model/price material on 2026-11-12. Exact model-year configuration should still be confirmed at inspection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Maruti Suzuki",
