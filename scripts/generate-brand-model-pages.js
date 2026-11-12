@@ -35,6 +35,8 @@ function faq(m){
     ['What is included in a '+b+' '+n+' pre-purchase inspection?','The inspection is tailored to the exact vehicle and configuration. It uses the 300+ checkpoint framework where applicable, with photo-supported findings and selected diagnostics when supported.'],
     ['Do you provide '+b+' '+n+' PDI service in Delhi NCR?','Yes, service coverage includes Delhi, Gurugram and Noida, subject to exact vehicle location, access and appointment confirmation.'],
     ['Do you inspect different '+n+' variants?','Yes. The exact variant and configuration are checked at enquiry time; features are not assumed across every variant.'],
+    ['Does the '+b+' '+n+' PDI check the exact engine and transmission?','Yes. The inspection is matched to the actual vehicle configuration. Powertrain, transmission, variant equipment and applicable systems are verified rather than assuming that every '+n+' has the same specification.'],
+    ['What should I check most carefully on a '+b+' '+n+'?','The inspection prioritises the exact vehicle configuration, body and paint condition, tyres and wheels, warning indicators, electrical features, accessible mechanical areas and any model-relevant systems identified for that configuration.'],
     ['How do I book a '+b+' '+n+' car inspection?','Call 99711 16411 or enquire on WhatsApp with the vehicle, location and preferred timing. Booking coordination follows availability confirmation through CarParakh.']
   ];
   if(ev)out.splice(3,0,['Do you provide '+b+' '+n+' EV PDI?','Yes, where the vehicle and inspection package support it. EV-focused observations can include charging interface, battery-related warnings, electric drive system indicators and other applicable checks.']);
