@@ -50,17 +50,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.0L petrol",
+        "1.0L S-CNG"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "5-speed AGS"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.marutisuzuki.com/arena/s-presso/price"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; current-market model verified and commercial PDI demand validation required before publication.",
+      "researchNotes": [
+        "Current Maruti Arena listing confirms 998cc petrol and S-CNG, with 5MT and AGS on petrol variants."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Maruti Suzuki",
@@ -309,17 +321,31 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L petrol",
+        "1.5L strong hybrid",
+        "1.5L S-CNG"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "6-speed automatic",
+        "e-CVT/e-Drive"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.marutisuzuki.com/corporate/media/press-releases/2025/april/maruti-suzuki-grand-vitara-updated-with-6-airbags-as-standard-amp-new-premium-features"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; current-market model verified and commercial PDI demand validation required before publication.",
+      "researchNotes": [
+        "Current Maruti data confirms petrol, strong-hybrid and S-CNG families; ALLGRIP is available with 6-speed automatic on selected petrol variants."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Maruti Suzuki",
@@ -331,17 +357,31 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L petrol",
+        "1.5L S-CNG",
+        "1.5L strong hybrid"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "6-speed automatic",
+        "e-Drive"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.marutisuzuki.com/arena/victoris/price"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; current-market model verified and commercial PDI demand validation required before publication.",
+      "researchNotes": [
+        "Current Maruti Victoris configurator confirms petrol, S-CNG and strong-hybrid variants, with manual, automatic and e-Drive options."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Maruti Suzuki",
@@ -531,17 +571,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L petrol",
+        "1.2L petrol+CNG"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "AMT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.hyundai.com/in/en/find-a-car/aura/price"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; current-market model verified and commercial PDI demand validation required before publication.",
+      "researchNotes": [
+        "Hyundai India confirms 1.2L petrol and Hy-CNG options, with manual and AMT on selected petrol variants."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Hyundai",
@@ -553,17 +605,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L petrol",
+        "1.2L petrol+CNG"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "Smart Auto AMT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.hyundai.com/in/en/find-a-car/exter/price"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; current-market model verified and commercial PDI demand validation required before publication.",
+      "researchNotes": [
+        "Hyundai India confirms 1.2L Kappa petrol and dual-cylinder CNG, with 5MT and Smart Auto AMT on petrol."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Hyundai",
@@ -1501,17 +1565,32 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L petrol",
+        "1.5L petrol+CNG",
+        "1.5L strong hybrid"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "6-speed automatic",
+        "e-Drive"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.toyotabharat.com/showroom/urbancruiser-hyryder/",
+        "https://www.toyotabharat.com/documents/brochures/e-brochure-urbancruiser-hyryder-spec.pdf"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; current-market model verified and commercial PDI demand validation required before publication.",
+      "researchNotes": [
+        "Toyota India confirms E-CNG 5MT, petrol NeoDrive 5MT/6AT including AWD, and strong-hybrid e-Drive configurations."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Toyota",
@@ -1523,17 +1602,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.4L diesel"
+      ],
+      "transmissions": [
+        "5-speed manual"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.toyotabharat.com/news/2026/toyota-introduces-the-new-innova-crysta-with-premium-styling-and-new-design-elements.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; current-market model verified and commercial PDI demand validation required before publication.",
+      "researchNotes": [
+        "Toyota India confirms the current 2026 Innova Crysta with 2.4L diesel and manual transmission."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Toyota",
@@ -1634,17 +1723,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.5L petrol",
+        "2.5L strong hybrid"
+      ],
+      "transmissions": [
+        "e-CVT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://tweb.toyotabharat.com/camry.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 5,
-      "priorityReason": "Catalog coverage; research and demand validation before publishing."
+      "priorityReason": "Catalog coverage; current-market model verified and commercial PDI demand validation required before publication.",
+      "researchNotes": [
+        "Toyota India confirms the current Camry with 2.5L petrol engine, hybrid system and e-CVT."
+      ],
+      "demandValidation": "candidate"
     },
     {
       "brand": "Kia",
