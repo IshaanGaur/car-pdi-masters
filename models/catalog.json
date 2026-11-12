@@ -726,17 +726,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L Revotron petrol",
+        "1.2L iCNG"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "5-speed AMT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://cars.tatamotors.com/tiago/",
+        "https://cars.tatamotors.com/content/dam/tml/pv/products/tiago/year-2024/ice/promoting-vc/brochures/tiago-iCNG-brochure-2024.pdf"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Tata official material confirms 1.2L petrol and iCNG with manual/AMT; CNG AMT is offered on selected variants."
+      ]
     },
     {
       "brand": "Tata",
@@ -748,17 +760,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L petrol",
+        "1.2L iCNG"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "5-speed AMT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.tatamotors.com/",
+        "https://www.tatamotors.com/wp-content/uploads/2024/09/product-note-tigor-22jan20.pdf"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Tata product material confirms 1.2L petrol and iCNG families with manual/AMT; verify exact current grade matrix before publication."
+      ]
     },
     {
       "brand": "Tata",
@@ -875,17 +899,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.2L Revotron petrol",
+        "1.2L Hyperion turbo-petrol",
+        "1.5L Kryojet diesel"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "7-speed DCA"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.tatamotors.com/wp-content/uploads/2024/08/Tata-Curvv-Product-Note-and-Spec-Sheet.pdf"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Tata official Curvv specification sheet confirms two petrol and one diesel ICE powertrains, with 6MT and 7-speed dual-clutch automatic."
+      ]
     },
     {
       "brand": "Tata",
@@ -987,17 +1023,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L mHawk diesel"
+      ],
+      "transmissions": [
+        "5-speed manual"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://auto.mahindra.com/suv/bolero.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Mahindra identifies Bolero as diesel-only in its current SUV guidance; model remains relevant for used PDI and rural/utility vehicle inspections."
+      ]
     },
     {
       "brand": "Mahindra",
@@ -1009,17 +1054,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L mHawk100 diesel"
+      ],
+      "transmissions": [
+        "5-speed manual"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://auto.mahindra.com/suv/bolero-neo-n10-opt-diesel/NEOM082618116083.html",
+        "https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw628a4bf0/brochure/Bolero%20Neo%20Brochure.pdf"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Mahindra official specifications confirm 1493cc mHawk100 diesel, 5-speed manual, 7 seats and 2WD; N10(O) includes Multi-Terrain Technology."
+      ]
     },
     {
       "brand": "Mahindra",
@@ -1097,17 +1152,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "2.2L mHawk diesel"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "6-speed automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://auto.mahindra.com/suv/scorpio-classic.html",
+        "https://www.mahindra.com/news-room/press-release/en/mahindra-launches-the-scorpio-automatic"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Scorpio Classic is a diesel-only used/new inspection target; Mahindra history confirms 2.2L mHawk with 6-speed automatic, while current Scorpio Classic availability should be verified before publish."
+      ]
     },
     {
       "brand": "Mahindra",
@@ -1620,17 +1686,30 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.5L Smartstream petrol",
+        "1.5L CRDi VGT diesel",
+        "1.5L CNG"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "6-speed automatic",
+        "7-speed DCT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.kia.com/in/our-vehicles/carens/showroom.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Kia India confirms 1.5L petrol/diesel, 6/7-seat configurations and current CNG variants; exact transmission pairing varies by powertrain/grade and should be presented from the live configurator."
+      ]
     },
     {
       "brand": "Kia",
@@ -1896,17 +1975,29 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.0L TSI petrol",
+        "1.5L TSI petrol"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "8-speed torque-converter automatic",
+        "7-speed DSG"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.skoda-auto.co.in/news/news-detail/the-new-slavia-a-new-chapter-in-skoda-sedan-legacy"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Skoda India announced the 2026 Slavia with 1.0 TSI + 8-speed torque-converter automatic and 6MT, plus 1.5 TSI with 7-speed DSG."
+      ]
     },
     {
       "brand": "Skoda",
@@ -1918,17 +2009,30 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.0L TSI petrol",
+        "1.5L TSI petrol"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "8-speed automatic",
+        "7-speed DSG"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.skoda-auto.co.in/models/range",
+        "https://www.skoda-auto.co.in/_doc/388307fd-1342-48c9-b2fd-debf648d6e3b"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Skoda India current range and 2026 service material confirm Kushaq 1.0/1.5 petrol families and current MT/AT/DSG combinations; verify exact grade mapping before publication."
+      ]
     },
     {
       "brand": "Skoda",
@@ -2006,17 +2110,30 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.0L TSI petrol",
+        "1.5L TSI Evo with ACT petrol"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "6-speed automatic",
+        "7-speed DSG"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.volkswagen.co.in/en/models.html",
+        "https://www.volkswagen.co.in/en/models/virtus.html/__layer/layers/specifications/virtus/virtus-chrome-technical-specifications.layer"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Volkswagen India confirms current Virtus family with 1.0 TSI MT/AT and 1.5 TSI DSG; current range also has Chrome and Sport variants."
+      ]
     },
     {
       "brand": "Volkswagen",
@@ -2028,17 +2145,31 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.0L TSI petrol",
+        "1.5L TSI Evo with ACT petrol"
+      ],
+      "transmissions": [
+        "6-speed manual",
+        "8-speed automatic",
+        "7-speed DSG"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.volkswagen.co.in/en/models.html",
+        "https://www.volkswagen.co.in/en/discover-volkswagen/news/news-and-updates/the-new-volkswagen-taigun-is-here-welcome-to-driving.html",
+        "https://www.volkswagen.co.in/idhub/content/dam/onehub_pkw/importers/in/models/new-virtus/brochures/volkswagen-taigun-sport-e-brochure.pdf"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Volkswagen announced the 2026 Taigun with a new 8-speed automatic on 1.0 TSI; the 1.5 TSI Evo remains paired with 7-speed DSG in the technical material."
+      ]
     },
     {
       "brand": "Volkswagen",
@@ -2116,17 +2247,31 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.0L naturally aspirated petrol",
+        "1.0L turbo petrol"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "5-speed AMT",
+        "CVT automatic"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.renault.co.in/",
+        "https://www.renault.co.in/owners-manual.html",
+        "https://www.renault.co.in/press-and-media.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Renault India currently lists Kiger and confirms current Turbo range; exact 2026 variant/transmission matrix should be taken from the current brochure before approval."
+      ]
     },
     {
       "brand": "Nissan",
@@ -2138,17 +2283,30 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "1.0L naturally aspirated petrol",
+        "1.0L turbo petrol"
+      ],
+      "transmissions": [
+        "5-speed manual",
+        "EZ-Shift AMT",
+        "Turbo X-Tronic CVT"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.nissan.in/prices-list.html",
+        "https://www.nissan.in/latest-news/nissan-motor-india-confirms-e20-compatible-vehicles-and-continued-warranty-protection-for-new-nissan-magnite-customers.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 2,
-      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave."
+      "priorityReason": "Strong used/new demand or discontinued-model commercial intent; second wave.",
+      "researchNotes": [
+        "Nissan India current price/configuration pages confirm NA and turbo petrol, MT, EZ-Shift AMT and turbo CVT; Nissan also confirms both powertrains are E20 compatible."
+      ]
     },
     {
       "brand": "Citroën",
