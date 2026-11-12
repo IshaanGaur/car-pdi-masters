@@ -1497,7 +1497,12 @@
       "transmissions": [
         "5-speed manual"
       ],
-      "variants": [],
+      "variants": [
+        "B4",
+        "B6",
+        "B6(O)",
+        "B8"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://auto.mahindra.com/suv/bolero.html"
@@ -1512,7 +1517,8 @@
         "Mahindra identifies Bolero as diesel-only in its current SUV guidance; model remains relevant for used PDI and rural/utility vehicle inspections.",
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Mahindra",
@@ -1530,7 +1536,13 @@
       "transmissions": [
         "5-speed manual"
       ],
-      "variants": [],
+      "variants": [
+        "N4",
+        "N8",
+        "N10 OPT",
+        "N11",
+        "N10 (R)"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://auto.mahindra.com/suv/bolero-neo-n10-opt-diesel/NEOM082618116083.html",
@@ -1546,7 +1558,8 @@
         "Mahindra official specifications confirm 1493cc mHawk100 diesel, 5-speed manual, 7 seats and 2WD; N10(O) includes Multi-Terrain Technology.",
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Mahindra",
@@ -1779,7 +1792,19 @@
         "6-speed manual",
         "6-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "AX Petrol",
+        "AX3 Petrol",
+        "AX5 Petrol",
+        "AX7 Petrol",
+        "AX3 Diesel",
+        "AX5 Diesel",
+        "AX7 Diesel",
+        "AX7T Diesel",
+        "AX7T Diesel AWD",
+        "AX7L Diesel",
+        "AX7L Diesel AWD"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://auto.mahindra.com/press-release/hello-mahindra-xuv-7xo.html",
@@ -1796,7 +1821,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Mahindra",
@@ -1816,7 +1842,13 @@
         "6-speed manual",
         "6-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "MX",
+        "AX3",
+        "AX5",
+        "AX7",
+        "AX7L"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://auto.mahindra.com/suv/xuv700"
@@ -1833,7 +1865,8 @@
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "used_historical",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Mahindra",
@@ -1888,7 +1921,16 @@
       "transmissions": [
         "Single-speed electric drive"
       ],
-      "variants": [],
+      "variants": [
+        "ONE",
+        "TWO",
+        "THREE",
+        "THREE+",
+        "FOUR",
+        "FE",
+        "FE FOUR",
+        "Launch Edition"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://auto.mahindra.com/press-release/mahindra-introduces-the-be-6-sporteq.html"
@@ -1902,7 +1944,8 @@
       "researchNotes": [
         "Mahindra confirms BE 6 on INGLO architecture with 59/79 kWh battery options; current BE 6 SPORTEQ adds OTA-updatable software features."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Mahindra",
@@ -1921,7 +1964,13 @@
       "transmissions": [
         "Single-speed electric drive"
       ],
-      "variants": [],
+      "variants": [
+        "Pack One",
+        "Pack One Above",
+        "Pack Two",
+        "Pack Three Select",
+        "Pack Three"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://auto.mahindra.com/press-release/mahindra-esuvs-to-open-bookings-from-fourteenth-feb.html"
@@ -1935,7 +1984,8 @@
       "researchNotes": [
         "Mahindra confirms XEV 9e with 59/79 kWh LFP battery options and INGLO electric architecture."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Mahindra",
@@ -1955,7 +2005,12 @@
       "transmissions": [
         "Single-speed electric drive"
       ],
-      "variants": [],
+      "variants": [
+        "Pack One",
+        "Pack Two",
+        "Pack Three Select",
+        "Pack Three"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://auto.mahindra.com/press-release/mahindra-leadership-team.html"
@@ -1969,7 +2024,8 @@
       "researchNotes": [
         "Mahindra confirms XEV 9S as an electric 7-seater with 59/70/79 kWh battery variants and up to 210 kW output."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Toyota",
