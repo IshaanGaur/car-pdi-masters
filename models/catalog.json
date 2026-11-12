@@ -1107,7 +1107,13 @@
         "5-speed manual",
         "5-speed AMT"
       ],
-      "variants": [],
+      "variants": [
+        "XE",
+        "XM",
+        "XT",
+        "XZ",
+        "XZ+"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://cars.tatamotors.com/tiago/",
@@ -1123,7 +1129,8 @@
         "Tata official material confirms 1.2L petrol and iCNG with manual/AMT; CNG AMT is offered on selected variants.",
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Tata",
@@ -1143,7 +1150,12 @@
         "5-speed manual",
         "5-speed AMT"
       ],
-      "variants": [],
+      "variants": [
+        "XE",
+        "XM",
+        "XZ",
+        "XZ+"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.tatamotors.com/",
@@ -1159,7 +1171,8 @@
         "Tata product material confirms 1.2L petrol and iCNG families with manual/AMT; verify exact current grade matrix before publication.",
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Tata",
@@ -1226,7 +1239,17 @@
         "AMT",
         "single-speed electric"
       ],
-      "variants": [],
+      "variants": [
+        "Pure",
+        "Pure(O)",
+        "Adventure",
+        "Adventure Rhythm",
+        "Adventure Sunroof",
+        "Adventure+ Sunroof",
+        "Creative+",
+        "Creative+ Sunroof",
+        "Accomplished+"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://cars.tatamotors.com/punch/"
@@ -1241,7 +1264,8 @@
         "Tata current product family includes Punch ICE/CNG and Punch.ev; keep fuel/powertrain distinctions in page content and verify live matrix before publish.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Tata",
@@ -1264,7 +1288,17 @@
         "6-speed AMT",
         "7-speed DCA"
       ],
-      "variants": [],
+      "variants": [
+        "Smart",
+        "Smart+",
+        "Smart+ S",
+        "Pure+",
+        "Pure+ S",
+        "Creative",
+        "Creative+ S",
+        "Creative+ PS",
+        "Fearless+ PS"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://cars.tatamotors.com/content/dam/tml/pv/products/nexon/year-2024/ice/promoting-vc/brochures/sep-2024/Nexon-Brochure.pdf"
@@ -1279,7 +1313,8 @@
         "Official Tata brochure confirms petrol/CNG/diesel and 5MT/6MT/6AMT/7DCA in the referenced specification set; recheck current 2026 variant matrix before publish.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Tata",
@@ -1300,7 +1335,16 @@
         "6-speed manual",
         "7-speed DCA"
       ],
-      "variants": [],
+      "variants": [
+        "Smart",
+        "Pure+",
+        "Pure+ S",
+        "Creative",
+        "Creative S",
+        "Creative+ S",
+        "Accomplished S",
+        "Accomplished+ A"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.tatamotors.com/wp-content/uploads/2024/08/Tata-Curvv-Product-Note-and-Spec-Sheet.pdf"
@@ -1315,7 +1359,8 @@
         "Tata official Curvv specification sheet confirms two petrol and one diesel ICE powertrains, with 6MT and 7-speed dual-clutch automatic.",
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Tata",
