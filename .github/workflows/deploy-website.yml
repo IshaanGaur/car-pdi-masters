@@ -23,6 +23,9 @@ jobs:
         with:
           node-version: 22
 
+      - name: Generate brand-model SEO pages from catalog
+        run: node scripts/generate-brand-model-pages.js
+
       - name: Authenticate to Google Cloud
         uses: google-github-actions/auth@v2
         with:
