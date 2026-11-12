@@ -122,9 +122,10 @@ for (const m of sitemap.matchAll(/<loc>https:\/\/www\.carmasters\.co\.in\/(locat
 }
 if (sitemap.includes('/payment.html')) problems.push('sitemap.xml: must not list payment.html');
 for (const m of sitemap.matchAll(/<loc>https:\/\/www\.carmasters\.co\.in\/([^<]*)<\/loc>/g)) {
-  const f = m[1] === '' ? 'index.html' : m[1];
-  if (!fs.existsSync(path.join(root, f))) problems.push(`sitemap.xml: lists ${m[1]} but that page does not exist`);
-  else if (/<meta name="robots" content="[^"]*noindex/i.test(read(f))) problems.push(`sitemap.xml: lists ${m[1]} but that page is noindex`);
+  const sitemapPath = m[1];
+  const f = sitemapPath === '' ? 'index.html' : (sitemapPath.endsWith('/') ? sitemapPath + 'index.html' : sitemapPath);
+  if (!fs.existsSync(path.join(root, f))) problems.push(`sitemap.xml: lists ${sitemapPath} but that page does not exist`);
+  else if (/<meta name="robots" content="[^"]*noindex/i.test(read(f))) problems.push(`sitemap.xml: lists ${sitemapPath} but that page is noindex`);
 }
 for (const f of ['favicon.ico', 'cpm-icon-48.png', 'cpm-icon-96.png', 'cpm-icon-192.png', 'apple-touch-icon.png'])
   if (!fs.existsSync(path.join(root, f))) problems.push(`${f}: site icon file is missing`);
