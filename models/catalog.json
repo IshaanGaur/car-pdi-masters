@@ -2291,7 +2291,16 @@
         "7-speed DCT",
         "6-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "HTE",
+        "HTE(O)",
+        "HTK(O)",
+        "HTK+",
+        "HTK+(O)",
+        "HTX",
+        "GTX+",
+        "X-Line"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.kia.com/in/our-vehicles/sonet/showroom.html"
@@ -2306,7 +2315,8 @@
         "Current Kia India model; exact variant-to-transmission mapping must be verified before publish.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Kia",
@@ -2327,7 +2337,18 @@
         "manual",
         "automatic variants including DCT/IVT/AT depending on engine"
       ],
-      "variants": [],
+      "variants": [
+        "HTE(O)",
+        "HTK",
+        "HTK(O)",
+        "HTX",
+        "HTX(A)",
+        "GTX",
+        "GTX(A)",
+        "X-Line(A)",
+        "GTX(O)",
+        "X-Line(O)"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.kia.com/in/our-vehicles/seltos/showroom.html"
@@ -2342,7 +2363,8 @@
         "Official Kia India page confirms the current engine families and multiple transmission configurations; capture exact variant mapping from the live configurator before publish.",
         "Final Tier-1 approval: current India model presence/powertrain/transmission context reviewed against official manufacturer material and the existing research record. Publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Kia",
@@ -2364,7 +2386,17 @@
         "6-speed automatic",
         "7-speed DCT"
       ],
-      "variants": [],
+      "variants": [
+        "Premium",
+        "Premium (O)",
+        "Gravity",
+        "Prestige",
+        "Prestige (O)",
+        "Prestige Plus",
+        "Prestige Plus (O)",
+        "Luxury Plus",
+        "X-Line"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.kia.com/in/our-vehicles/carens/showroom.html"
@@ -2379,7 +2411,8 @@
         "Kia India confirms 1.5L petrol/diesel, 6/7-seat configurations and current CNG variants; exact transmission pairing varies by powertrain/grade and should be presented from the live configurator.",
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Kia",
@@ -2401,7 +2434,15 @@
         "7-speed DCT",
         "6-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "HTE",
+        "HTE(O)",
+        "HTK(EX)",
+        "HTK+",
+        "HTX",
+        "HTX+",
+        "HTX+(O)"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.kia.com/in/our-vehicles/syros/showroom.html"
@@ -2417,7 +2458,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Honda",
