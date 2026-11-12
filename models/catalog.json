@@ -3956,7 +3956,11 @@
       "transmissions": [
         "Single-speed electric drive"
       ],
-      "variants": [],
+      "variants": [
+        "Dynamic",
+        "Premium",
+        "Superior"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://bydautoindia.com/news/BYD-India-launches-Three-All-New-Variants-of-the-BYD-ATTO-3-Starting-at-an-Introductory-Ex-showroom-Price-of-INR-24.99-Lakh"
@@ -3970,7 +3974,8 @@
       "researchNotes": [
         "BYD India confirms Dynamic with 49.92 kWh and Premium/Superior with 60.48 kWh Blade Battery; EV PDI should cover battery health, charging and underbody protection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "BYD",
@@ -3989,7 +3994,11 @@
       "transmissions": [
         "Single-speed electric drive"
       ],
-      "variants": [],
+      "variants": [
+        "Dynamic",
+        "Premium",
+        "Performance"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://bydautoindia.com/bydseal"
@@ -4003,7 +4012,8 @@
       "researchNotes": [
         "BYD India confirms Seal Dynamic 61.44 kWh RWD, Premium 82.56 kWh RWD and Performance 82.56 kWh AWD configurations."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "BYD",
@@ -4128,7 +4138,10 @@
       "transmissions": [
         "8-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "330Li M Sport",
+        "320Ld M Sport"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.bmw.in/en/all-models.html",
@@ -4144,7 +4157,8 @@
         "BMW India currently lists the 3 Series family including 3 Series LWB and M340i xDrive. Current India configurations include petrol and diesel 3 LWB variants plus the M340i xDrive petrol performance model. Used-PDI content should remain generation-aware because older 3 Series generations used different engines and equipment.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "BMW",
@@ -4162,7 +4176,9 @@
       "transmissions": [
         "8-speed Steptronic automatic"
       ],
-      "variants": [],
+      "variants": [
+        "530Li"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.bmw.in/en/all-models.html",
@@ -4178,7 +4194,8 @@
         "BMW India currently lists the 5 Series LWB. The India brochure identifies the 530Li M Sport with a 1,998cc petrol engine and 8-speed Steptronic transmission. Used-PDI content should distinguish current 5 Series LWB from older India 5 Series generations.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "BMW",
@@ -4196,7 +4213,10 @@
       "transmissions": [
         "8-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "740d M Sport",
+        "740i M Sport"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.bmw.in/en/all-models/7-series/7-series-sedan/7-series-sedan-2025-g70-technical-data.html",
@@ -4212,7 +4232,8 @@
         "BMW India current 7 Series technical data shows a 2,998cc six-cylinder petrol powertrain with 48V electrical assistance and 8-speed automatic transmission. The India range also includes the electric i7, but this catalog record should keep the 7 Series page generation/powertrain-aware rather than creating a separate variant URL.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "BMW",
@@ -4232,7 +4253,10 @@
         "7-speed dual-clutch automatic",
         "8-speed automatic (generation dependent)"
       ],
-      "variants": [],
+      "variants": [
+        "sDrive18i M Sport",
+        "sDrive18d M Sport"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.bmw.in/en/all-models/x-series/X1/bmw-x1-highlights.html",
@@ -4248,7 +4272,8 @@
         "BMW India currently promotes the X1 LWB with a 1.5L turbo petrol engine and 7-speed dual-clutch transmission; the India range also lists diesel X1 configurations. Used-PDI content must distinguish X1 generations and powertrains rather than applying current LWB specifications to older cars.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "BMW",
@@ -4268,7 +4293,11 @@
       "transmissions": [
         "8-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "xDrive20",
+        "xDrive 30 M Sport Pro",
+        "xDrive20d"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.bmw.in/content/dam/bmw/marketIN/bmw_in/brochure_pdf_2026/X3_Brochure_Jan_26.pdf.asset.1773130692467.pdf",
@@ -4284,7 +4313,8 @@
         "BMW India 2026 X3 technical information lists X3 20 xDrive petrol, X3 20d xDrive diesel and X3 30 xDrive petrol configurations, all with 8-speed automatic transmission, xDrive AWD and 48V electrical assistance. Used-PDI content should remain generation-aware.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "BMW",
@@ -4303,7 +4333,12 @@
       "transmissions": [
         "8-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "xDrive40i xLine",
+        "xDrive30d xLine",
+        "xDrive40i M Sport",
+        "xDrive30d M Sport"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.bmw.in/en/all-models.html"
@@ -4318,7 +4353,8 @@
         "BMW India currently lists X5 xDrive40i petrol and X5 xDrive30d diesel configurations. The current India range is paired with automatic transmission and xDrive; older X5 generations used different engines, so used-PDI copy should be generation-aware.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "BMW",
@@ -4337,7 +4373,10 @@
       "transmissions": [
         "8-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "xDrive40d",
+        "xDrive40i"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.bmw.in/en/all-models/x-series/x7/x7-2025-g07-ice-technical-data.html",
@@ -4353,7 +4392,8 @@
         "BMW India technical data lists X7 petrol and diesel 48V mild-hybrid powertrains, both with 8-speed automatic transmission and all-wheel drive. The page should emphasize premium SUV PDI checks such as air suspension, xDrive, braking, ADAS, cameras and high-value electronics, while remaining generation-aware for used vehicles.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Mercedes-Benz",
@@ -4408,7 +4448,12 @@
       "transmissions": [
         "9-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "C 200",
+        "C 220d",
+        "C 200 Celebration Edition",
+        "C 300"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.mercedes-benz.co.in/",
@@ -4424,7 +4469,8 @@
         "Mercedes-Benz India currently lists C-Class petrol and diesel configurations. The current India range is automatic and should be treated separately from older C-Class generations in used-PDI content.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Mercedes-Benz",
@@ -4443,7 +4489,12 @@
       "transmissions": [
         "9-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "E 200 LWB",
+        "E 200 LWB Celebration Edition",
+        "E 220d LWB",
+        "450 4MATIC LWB"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.mercedes-benz.co.in/",
@@ -4459,7 +4510,8 @@
         "Mercedes-Benz India currently lists the E-Class Sedan Long with petrol and diesel configurations. Used-PDI content should distinguish current long-wheelbase India specification from earlier E-Class generations.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Mercedes-Benz",
@@ -4478,7 +4530,10 @@
       "transmissions": [
         "9-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "S 450e Launch Edition",
+        "S 450e MANUFAKTUR Edition"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.mercedes-benz.co.in/",
@@ -4494,7 +4549,8 @@
         "Mercedes-Benz India currently lists S-Class in the flagship limousine range and the configurator shows plug-in-hybrid availability. Because S-Class generations and powertrains vary substantially, the model page must use generation-aware wording and avoid a single engine specification for all used cars.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Mercedes-Benz",
@@ -4513,7 +4569,11 @@
       "transmissions": [
         "7-speed dual-clutch automatic"
       ],
-      "variants": [],
+      "variants": [
+        "GLA 200",
+        "GLA 220d 4MATIC",
+        "GLA 220d AMG Line 4MATIC"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.mercedes-benz.co.in/passengercars/models/suv/h247-fl-25-2-spa/overview.html",
@@ -4529,7 +4589,8 @@
         "Mercedes-Benz India technical data lists GLA 200 with a 1,332cc petrol engine and 7G-DCT, plus GLA 220d 4MATIC with a 1,950cc diesel engine. PDI copy should distinguish front-wheel-drive petrol and 4MATIC diesel configurations.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Mercedes-Benz",
@@ -4549,7 +4610,10 @@
       "transmissions": [
         "9-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "GLC 300 4MATIC",
+        "GLC 220d 4MATIC"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.mercedes-benz.co.in/passengercars/configurator.html?view=BODYTYPE",
@@ -4565,7 +4629,8 @@
         "Mercedes-Benz India currently lists GLC petrol and diesel configurations and also a new electric GLC entry. The authoritative model page should distinguish combustion and electric generations/configurations and use powertrain-specific PDI checks.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Mercedes-Benz",
@@ -4584,7 +4649,13 @@
       "transmissions": [
         "9-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "GLE AMG Line",
+        "GLE 300d 4MATIC LWB Night Edition",
+        "GLE 450 4MATIC LWB",
+        "GLE 450 4MATIC LWB Night Edition",
+        "GLE 450d 4MATIC LWB"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.mercedes-benz.co.in/passengercars/configurator.html?view=BODYTYPE",
@@ -4600,7 +4671,8 @@
         "Mercedes-Benz India currently lists GLE petrol and diesel configurations, including the GLE 300d 4MATIC LWB. PDI copy should cover 4MATIC, suspension, ADAS, cameras and premium electronic systems, with generation-aware treatment for used cars.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Mercedes-Benz",
@@ -4619,7 +4691,12 @@
       "transmissions": [
         "9-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "GLS 450 4MATIC",
+        "GLS 450d 4MATIC",
+        "GLS 450 4MATIC Night Edition",
+        "GLS 450d 4MATIC Night Edition"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.mercedes-benz.co.in/passengercars/configurator.html?view=BODYTYPE",
@@ -4635,7 +4712,8 @@
         "Mercedes-Benz India currently lists GLS petrol and diesel configurations. The model page should be generation-aware and emphasize 4MATIC, air suspension, braking, ADAS, cameras, tyres and premium electronics for PDI.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Audi",
@@ -4653,7 +4731,12 @@
       "transmissions": [
         "7-speed S tronic"
       ],
-      "variants": [],
+      "variants": [
+        "Premium 40 TFSI",
+        "Premium Plus 40 TFSI",
+        "Signature Edition",
+        "Technology 40 TFSI"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.audi.in/en/models/",
@@ -4669,7 +4752,8 @@
         "Audi India's A4 brochure identifies a 2.0L TFSI petrol engine with 12V mild-hybrid assistance and 7-speed S tronic. Audi India currently lists A4 among its models; used-PDI content should remain generation-aware.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Audi",
@@ -4721,7 +4805,10 @@
       "transmissions": [
         "8-speed tiptronic (generation dependent)"
       ],
-      "variants": [],
+      "variants": [
+        "Celebration",
+        "Technology"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.audi.in/en/models/",
@@ -4738,7 +4825,8 @@
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
       "approvedForPublication": true,
-      "demandValidation": "used_historical"
+      "demandValidation": "used_historical",
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Audi",
@@ -4756,7 +4844,10 @@
       "transmissions": [
         "7-speed S tronic"
       ],
-      "variants": [],
+      "variants": [
+        "Nova",
+        "Zenith"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.audi.in/en/models/",
@@ -4772,7 +4863,8 @@
         "Audi India brochure confirms the Q3 with a 2.0L TFSI quattro powertrain producing 190 hp and 320 Nm. Current Audi India model listings include Q3. Verify current derivative details again before final approval.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Audi",
@@ -4790,7 +4882,12 @@
       "transmissions": [
         "7-speed S tronic (generation dependent)"
       ],
-      "variants": [],
+      "variants": [
+        "Premium Plus 45 TFSI",
+        "Bold Edition",
+        "Signature Edition",
+        "Technology 45 TFSI"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.audi.in/en/models/",
@@ -4806,7 +4903,8 @@
         "Audi India Q5 material confirms a 2.0L TFSI petrol powertrain with quattro all-wheel drive. Current Audi India listings include Q5. Because the India Q5 has changed across generations, final page copy should be generation-aware and avoid over-specific variant claims without current configuration verification.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Audi",
@@ -4824,7 +4922,12 @@
       "transmissions": [
         "8-speed tiptronic (generation dependent)"
       ],
-      "variants": [],
+      "variants": [
+        "Premium Plus",
+        "Bold Edition",
+        "Signature Edition",
+        "Technology"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.audi.in/en/models/",
@@ -4840,7 +4943,8 @@
         "Audi India Q7 brochure confirms a 3.0L TFSI 48V mild-hybrid petrol engine, quattro all-wheel drive and 340 hp in the documented generation. Current Audi India listings include Q7. Used-PDI content should be generation-aware.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Audi",
@@ -4893,7 +4997,9 @@
       "transmissions": [
         "Single-speed electric drive"
       ],
-      "variants": [],
+      "variants": [
+        "Ultra"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.volvocars.com/in/cars/ex30-electric/",
@@ -4912,7 +5018,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Volvo",
@@ -4971,7 +5078,9 @@
         "Automatic",
         "8-speed automatic Geartronic (generation dependent)"
       ],
-      "variants": [],
+      "variants": [
+        "B5 Ultra"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.volvocars.com/in/cars/xc60/",
@@ -4988,7 +5097,8 @@
         "Current Volvo Cars India XC60 is B5 AWD petrol mild hybrid with automatic transmission. Older India XC60 generations also included diesel mild hybrid and plug-in-hybrid variants, so used-PDI copy must remain generation-aware.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Volvo",
@@ -5008,7 +5118,9 @@
         "Automatic",
         "8-speed automatic (generation dependent)"
       ],
-      "variants": [],
+      "variants": [
+        "B5 Ultra"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.volvocars.com/in/cars/xc90/",
@@ -5024,7 +5136,8 @@
         "Current Volvo India XC90 is a 7-seat B5 AWD petrol mild hybrid with automatic transmission. Older XC90 generations include diesel and plug-in-hybrid configurations, so used-PDI content must be generation-aware and powertrain-specific.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Lexus",
@@ -5042,7 +5155,10 @@
       "transmissions": [
         "E-CVT"
       ],
-      "variants": [],
+      "variants": [
+        "ES 350h Exquisite",
+        "ES 350h Luxury"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.lexusindia.co.in/wp-content/uploads/2025/09/Lexus-ES-300-Brochure-2025_LR.pdf"
@@ -5057,7 +5173,8 @@
         "Lexus India ES 300h brochure confirms 2.5L four-cylinder hybrid system, 160 kW total system output and E-CVT. PDI should include hybrid battery/system diagnostics, brake regeneration behaviour, electronics and luxury cabin equipment.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Lexus",
@@ -5075,7 +5192,12 @@
       "transmissions": [
         "E-CVT"
       ],
-      "variants": [],
+      "variants": [
+        "NX 350h Exquisite",
+        "NX 350h Overtrail Grade",
+        "NX 350h Luxury",
+        "NX 350h F-Sport"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.lexusindia.co.in/wp-content/uploads/2024/11/nx-350h-brochure-2024.pdf"
@@ -5090,7 +5212,8 @@
         "Lexus India NX 350h is a petrol hybrid SUV with E-CVT and EV mode; official brochure covers Exquisite, Overtrail, Luxury and F Sport grades. Model page should emphasize hybrid-system health, AWD/electronics, cameras, ADAS and trim-specific equipment.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Lexus",
@@ -5110,7 +5233,11 @@
         "E-CVT / Hybrid Sequential Shift Matic",
         "6-speed automatic (RX 500h configuration dependent)"
       ],
-      "variants": [],
+      "variants": [
+        "RX 350h Exquisite",
+        "RX 350h Exquisite with Mark Levinson Audio",
+        "RX 500h F-Sport Plus"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.lexusindia.co.in/wp-content/uploads/2024/11/rx-brochure-2023.pdf"
@@ -5125,7 +5252,8 @@
         "Lexus India RX brochure covers RX 350h and RX 500h. The model page should distinguish the standard hybrid and performance-hybrid configurations and focus on hybrid system, AWD, four-wheel steering where equipped, cameras and premium electronics.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Lexus",
@@ -5143,7 +5271,10 @@
       "transmissions": [
         "10-speed Direct Shift automatic"
       ],
-      "variants": [],
+      "variants": [
+        "500d Urban",
+        "500d Overtrail Edition"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.lexusindia.co.in/wp-content/uploads/2025/03/LX-500d-digital-brochure.pdf"
@@ -5158,7 +5289,8 @@
         "Lexus India LX 500d brochure confirms 3.346L V6 twin-turbo diesel, 700 Nm and Direct Shift-10AT, with active-height/adaptive suspension and multi-terrain systems. PDI should emphasize chassis/4x4 systems, suspension, underbody, tyres, cameras and premium electronics.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Lexus",
@@ -5176,7 +5308,10 @@
       "transmissions": [
         "CVT / e-CVT hybrid system"
       ],
-      "variants": [],
+      "variants": [
+        "2.5 Hybrid 350h VIP (7 seat)",
+        "2.5 Hybrid 350h Ultra Luxury (4 seat)"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.lexusindia.co.in/models/lm",
@@ -5194,7 +5329,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Jaguar",
@@ -5322,7 +5458,10 @@
       "transmissions": [
         "9-speed automatic (generation dependent)"
       ],
-      "variants": [],
+      "variants": [
+        "Autobiography Petrol",
+        "Autobiography Diesel"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.landrover.in/explore-land-rover/news/new-range-rover-evoque-introduced-in-india.html",
@@ -5338,7 +5477,8 @@
         "Land Rover India materials confirm Evoque petrol and diesel Ingenium configurations and current model documentation. Used-PDI content should be generation-aware, especially drivetrain, infotainment and suspension/electronics differences.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Land Rover",
@@ -5358,7 +5498,11 @@
       "transmissions": [
         "8-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "Dynamic SE 2.0 Petrol",
+        "Autobiography 2.0 Petrol",
+        "Autobiography 2.0 Diesel"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.landrover.in/explore-land-rover/news/new-range-rover-velar-introduced-in-india.html",
@@ -5375,7 +5519,8 @@
         "Land Rover India confirms Velar has used 2.0L petrol/diesel and older 3.0L diesel configurations. Later India material adds Pivi Pro and electronic air suspension. PDI should check suspension, drivetrain, cameras, infotainment and electrical systems.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Land Rover",
@@ -5395,7 +5540,13 @@
       "transmissions": [
         "8-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "Dynamic HSE D350",
+        "Dynamic HSE P400",
+        "Autobiography P400",
+        "Autobiography D350",
+        "SV Carbon P635"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.landrover.in/download-a-brochure/index.html",
@@ -5411,7 +5562,8 @@
         "Land Rover India documentation lists Range Rover Sport petrol and diesel configurations, with performance derivatives varying by generation. Premium PDI should cover air suspension, AWD, Terrain Response, brakes, tyres, ADAS, cameras and high-value electronics.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Land Rover",
@@ -5432,7 +5584,12 @@
       "transmissions": [
         "8-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "90",
+        "110",
+        "130",
+        "OCTA"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.landrover.in/defender/defender/models-and-specifications.html",
@@ -5449,7 +5606,8 @@
         "Current Defender India documentation covers 90/110/130 body styles and multiple petrol/diesel/performance configurations. Key PDI checks should include 4x4 system, transfer box, Terrain Response, suspension, underbody/chassis, towing hardware, cameras and electronic systems.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Land Rover",
@@ -5468,7 +5626,13 @@
       "transmissions": [
         "8-speed automatic"
       ],
-      "variants": [],
+      "variants": [
+        "S",
+        "Gemini",
+        "Dynamic HSE",
+        "Metropolitan Edition",
+        "Tempest"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.landrover.in/explore-land-rover/news/new-land-rover-discovery.html",
@@ -5484,7 +5648,8 @@
         "Land Rover India documentation confirms Discovery six-cylinder Ingenium configurations with intelligent AWD and Terrain Response 2. Used-PDI content should focus on 4x4 system, air suspension, wading/underbody condition, ADAS, cameras and infotainment.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Porsche",
@@ -5504,7 +5669,9 @@
         "7-speed PDK (petrol generation dependent)",
         "Electric drive with multi-speed rear axle (Macan Electric)"
       ],
-      "variants": [],
+      "variants": [
+        "Petrol"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://dealer.porsche.com/in/delhi",
@@ -5521,7 +5688,8 @@
         "Porsche India currently markets Macan as an all-electric SUV while Porsche Finder India continues to show approved used petrol Macans. The authoritative page must distinguish petrol generations from the Macan Electric and apply EV-specific PDI checks only to electric cars.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Porsche",
@@ -5541,7 +5709,10 @@
       "transmissions": [
         "8-speed Tiptronic S"
       ],
-      "variants": [],
+      "variants": [
+        "3.0 V6 Petrol",
+        "GTS 4.0 V8"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://dealer.porsche.com/in/delhi",
@@ -5558,7 +5729,8 @@
         "Porsche India currently lists Cayenne and Porsche Finder shows approved used petrol Cayenne examples. Powertrain and performance derivatives vary by generation; PDI should cover air suspension where equipped, AWD, brakes, tyres, electronics and hybrid-system checks where applicable.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Porsche",
@@ -5578,7 +5750,12 @@
         "8-speed PDK",
         "7-speed manual (variant dependent)"
       ],
-      "variants": [],
+      "variants": [
+        "Carrera",
+        "Carrera 4 GTS",
+        "GT3",
+        "Turbo S"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://dealer.porsche.com/in/delhi",
@@ -5595,7 +5772,8 @@
         "Porsche India currently markets the 911 model family. The 911 page must remain derivative/generation-aware because Carrera, Turbo, GT and hybrid-assisted variants differ materially. PDI should emphasize paint/body repair, tyres, brakes, suspension, engine/transmission, cooling and electronic systems.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Porsche",
@@ -5614,7 +5792,11 @@
       "transmissions": [
         "2-speed rear-axle electric transmission (generation dependent)"
       ],
-      "variants": [],
+      "variants": [
+        "EV",
+        "EV 4S",
+        "EV Turbo"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://dealer.porsche.com/in/delhi",
@@ -5631,7 +5813,8 @@
         "Porsche India currently markets Taycan as its electric sports-car family and Porsche Finder shows approved used Taycan examples. EV PDI should prioritize high-voltage battery condition, charging system, thermal management, regenerative braking, HV isolation, software and accident/underbody inspection.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "MINI",
@@ -5690,7 +5873,9 @@
         "Automatic",
         "Single-speed electric drive (EV)"
       ],
-      "variants": [],
+      "variants": [
+        "JCW All4"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.mini.in/en_IN/home/range/mini-countryman.html",
@@ -5709,7 +5894,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Force Motors",
@@ -5727,7 +5913,10 @@
       "transmissions": [
         "Manual (generation dependent)"
       ],
-      "variants": [],
+      "variants": [
+        "3 Door",
+        "5-door"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.forcemotors.com/gurkha",
@@ -5745,7 +5934,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Force Motors",
@@ -5763,7 +5953,12 @@
       "transmissions": [
         "Manual"
       ],
-      "variants": [],
+      "variants": [
+        "9 STR",
+        "12 STR",
+        "12 STR AC",
+        "9 STR AC"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.forcemotors.com/trax-cruiser",
@@ -5781,7 +5976,8 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "VinFast",
