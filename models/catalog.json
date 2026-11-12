@@ -3487,7 +3487,14 @@
         "EZ-Shift AMT",
         "Turbo X-Tronic CVT"
       ],
-      "variants": [],
+      "variants": [
+        "Visia",
+        "Visia+",
+        "Acenta",
+        "N-Connecta",
+        "Tekna",
+        "Tekna+"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.nissan.in/prices-list.html",
@@ -3503,7 +3510,8 @@
         "Nissan India current price/configuration pages confirm NA and turbo petrol, MT, EZ-Shift AMT and turbo CVT; Nissan also confirms both powertrains are E20 compatible.",
         "Final Tier-2 approval: current India availability or historical/used-market status reviewed against the catalog research record and manufacturer material. Exact model year, variant and configuration must be verified at inspection."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_official_current"
     },
     {
       "brand": "Citroën",
