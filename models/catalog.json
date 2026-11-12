@@ -3298,8 +3298,8 @@
       "brandSlug": "bmw",
       "model": "3 Series",
       "modelSlug": "3-series",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3324,16 +3324,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "BMW India currently lists the 3 Series family including 3 Series LWB and M340i xDrive. Current India configurations include petrol and diesel 3 LWB variants plus the M340i xDrive petrol performance model. Used-PDI content should remain generation-aware because older 3 Series generations used different engines and equipment."
-      ]
+        "BMW India currently lists the 3 Series family including 3 Series LWB and M340i xDrive. Current India configurations include petrol and diesel 3 LWB variants plus the M340i xDrive petrol performance model. Used-PDI content should remain generation-aware because older 3 Series generations used different engines and equipment.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "BMW",
       "brandSlug": "bmw",
       "model": "5 Series",
       "modelSlug": "5-series",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3356,16 +3358,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "BMW India currently lists the 5 Series LWB. The India brochure identifies the 530Li M Sport with a 1,998cc petrol engine and 8-speed Steptronic transmission. Used-PDI content should distinguish current 5 Series LWB from older India 5 Series generations."
-      ]
+        "BMW India currently lists the 5 Series LWB. The India brochure identifies the 530Li M Sport with a 1,998cc petrol engine and 8-speed Steptronic transmission. Used-PDI content should distinguish current 5 Series LWB from older India 5 Series generations.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "BMW",
       "brandSlug": "bmw",
       "model": "7 Series",
       "modelSlug": "7-series",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3388,16 +3392,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "BMW India current 7 Series technical data shows a 2,998cc six-cylinder petrol powertrain with 48V electrical assistance and 8-speed automatic transmission. The India range also includes the electric i7, but this catalog record should keep the 7 Series page generation/powertrain-aware rather than creating a separate variant URL."
-      ]
+        "BMW India current 7 Series technical data shows a 2,998cc six-cylinder petrol powertrain with 48V electrical assistance and 8-speed automatic transmission. The India range also includes the electric i7, but this catalog record should keep the 7 Series page generation/powertrain-aware rather than creating a separate variant URL.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "BMW",
       "brandSlug": "bmw",
       "model": "X1",
       "modelSlug": "x1",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3422,16 +3428,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "BMW India currently promotes the X1 LWB with a 1.5L turbo petrol engine and 7-speed dual-clutch transmission; the India range also lists diesel X1 configurations. Used-PDI content must distinguish X1 generations and powertrains rather than applying current LWB specifications to older cars."
-      ]
+        "BMW India currently promotes the X1 LWB with a 1.5L turbo petrol engine and 7-speed dual-clutch transmission; the India range also lists diesel X1 configurations. Used-PDI content must distinguish X1 generations and powertrains rather than applying current LWB specifications to older cars.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "BMW",
       "brandSlug": "bmw",
       "model": "X3",
       "modelSlug": "x3",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3456,16 +3464,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "BMW India 2026 X3 technical information lists X3 20 xDrive petrol, X3 20d xDrive diesel and X3 30 xDrive petrol configurations, all with 8-speed automatic transmission, xDrive AWD and 48V electrical assistance. Used-PDI content should remain generation-aware."
-      ]
+        "BMW India 2026 X3 technical information lists X3 20 xDrive petrol, X3 20d xDrive diesel and X3 30 xDrive petrol configurations, all with 8-speed automatic transmission, xDrive AWD and 48V electrical assistance. Used-PDI content should remain generation-aware.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "BMW",
       "brandSlug": "bmw",
       "model": "X5",
       "modelSlug": "x5",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3488,16 +3498,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "BMW India currently lists X5 xDrive40i petrol and X5 xDrive30d diesel configurations. The current India range is paired with automatic transmission and xDrive; older X5 generations used different engines, so used-PDI copy should be generation-aware."
-      ]
+        "BMW India currently lists X5 xDrive40i petrol and X5 xDrive30d diesel configurations. The current India range is paired with automatic transmission and xDrive; older X5 generations used different engines, so used-PDI copy should be generation-aware.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "BMW",
       "brandSlug": "bmw",
       "model": "X7",
       "modelSlug": "x7",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3521,8 +3533,10 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "BMW India technical data lists X7 petrol and diesel 48V mild-hybrid powertrains, both with 8-speed automatic transmission and all-wheel drive. The page should emphasize premium SUV PDI checks such as air suspension, xDrive, braking, ADAS, cameras and high-value electronics, while remaining generation-aware for used vehicles."
-      ]
+        "BMW India technical data lists X7 petrol and diesel 48V mild-hybrid powertrains, both with 8-speed automatic transmission and all-wheel drive. The page should emphasize premium SUV PDI checks such as air suspension, xDrive, braking, ADAS, cameras and high-value electronics, while remaining generation-aware for used vehicles.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Mercedes-Benz",
@@ -3563,8 +3577,8 @@
       "brandSlug": "mercedes-benz",
       "model": "C-Class",
       "modelSlug": "c-class",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3588,16 +3602,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Mercedes-Benz India currently lists C-Class petrol and diesel configurations. The current India range is automatic and should be treated separately from older C-Class generations in used-PDI content."
-      ]
+        "Mercedes-Benz India currently lists C-Class petrol and diesel configurations. The current India range is automatic and should be treated separately from older C-Class generations in used-PDI content.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Mercedes-Benz",
       "brandSlug": "mercedes-benz",
       "model": "E-Class",
       "modelSlug": "e-class",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3621,16 +3637,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Mercedes-Benz India currently lists the E-Class Sedan Long with petrol and diesel configurations. Used-PDI content should distinguish current long-wheelbase India specification from earlier E-Class generations."
-      ]
+        "Mercedes-Benz India currently lists the E-Class Sedan Long with petrol and diesel configurations. Used-PDI content should distinguish current long-wheelbase India specification from earlier E-Class generations.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Mercedes-Benz",
       "brandSlug": "mercedes-benz",
       "model": "S-Class",
       "modelSlug": "s-class",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3654,16 +3672,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Mercedes-Benz India currently lists S-Class in the flagship limousine range and the configurator shows plug-in-hybrid availability. Because S-Class generations and powertrains vary substantially, the model page must use generation-aware wording and avoid a single engine specification for all used cars."
-      ]
+        "Mercedes-Benz India currently lists S-Class in the flagship limousine range and the configurator shows plug-in-hybrid availability. Because S-Class generations and powertrains vary substantially, the model page must use generation-aware wording and avoid a single engine specification for all used cars.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Mercedes-Benz",
       "brandSlug": "mercedes-benz",
       "model": "GLA",
       "modelSlug": "gla",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3687,16 +3707,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Mercedes-Benz India technical data lists GLA 200 with a 1,332cc petrol engine and 7G-DCT, plus GLA 220d 4MATIC with a 1,950cc diesel engine. PDI copy should distinguish front-wheel-drive petrol and 4MATIC diesel configurations."
-      ]
+        "Mercedes-Benz India technical data lists GLA 200 with a 1,332cc petrol engine and 7G-DCT, plus GLA 220d 4MATIC with a 1,950cc diesel engine. PDI copy should distinguish front-wheel-drive petrol and 4MATIC diesel configurations.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Mercedes-Benz",
       "brandSlug": "mercedes-benz",
       "model": "GLC",
       "modelSlug": "glc",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3721,16 +3743,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Mercedes-Benz India currently lists GLC petrol and diesel configurations and also a new electric GLC entry. The authoritative model page should distinguish combustion and electric generations/configurations and use powertrain-specific PDI checks."
-      ]
+        "Mercedes-Benz India currently lists GLC petrol and diesel configurations and also a new electric GLC entry. The authoritative model page should distinguish combustion and electric generations/configurations and use powertrain-specific PDI checks.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Mercedes-Benz",
       "brandSlug": "mercedes-benz",
       "model": "GLE",
       "modelSlug": "gle",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3754,16 +3778,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Mercedes-Benz India currently lists GLE petrol and diesel configurations, including the GLE 300d 4MATIC LWB. PDI copy should cover 4MATIC, suspension, ADAS, cameras and premium electronic systems, with generation-aware treatment for used cars."
-      ]
+        "Mercedes-Benz India currently lists GLE petrol and diesel configurations, including the GLE 300d 4MATIC LWB. PDI copy should cover 4MATIC, suspension, ADAS, cameras and premium electronic systems, with generation-aware treatment for used cars.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Mercedes-Benz",
       "brandSlug": "mercedes-benz",
       "model": "GLS",
       "modelSlug": "gls",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3787,16 +3813,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Mercedes-Benz India currently lists GLS petrol and diesel configurations. The model page should be generation-aware and emphasize 4MATIC, air suspension, braking, ADAS, cameras, tyres and premium electronics for PDI."
-      ]
+        "Mercedes-Benz India currently lists GLS petrol and diesel configurations. The model page should be generation-aware and emphasize 4MATIC, air suspension, braking, ADAS, cameras, tyres and premium electronics for PDI.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Audi",
       "brandSlug": "audi",
       "model": "A4",
       "modelSlug": "a4",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3819,16 +3847,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Audi India's A4 brochure identifies a 2.0L TFSI petrol engine with 12V mild-hybrid assistance and 7-speed S tronic. Audi India currently lists A4 among its models; used-PDI content should remain generation-aware."
-      ]
+        "Audi India's A4 brochure identifies a 2.0L TFSI petrol engine with 12V mild-hybrid assistance and 7-speed S tronic. Audi India currently lists A4 among its models; used-PDI content should remain generation-aware.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Audi",
       "brandSlug": "audi",
       "model": "A6",
       "modelSlug": "a6",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3851,16 +3881,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Audi India currently lists A6 Sedan. Exact India powertrain/transmission can vary by generation, so the page should avoid presenting one specification as universal and should prioritize generation-aware used-PDI guidance."
-      ]
+        "Audi India currently lists A6 Sedan. Exact India powertrain/transmission can vary by generation, so the page should avoid presenting one specification as universal and should prioritize generation-aware used-PDI guidance.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Audi",
       "brandSlug": "audi",
       "model": "A8",
       "modelSlug": "a8",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3883,16 +3915,19 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Audi India's current model navigation does not list A8 among its current eight model families, so A8 should be treated as a used/luxury PDI target in India rather than a current new-car model. Generation-specific powertrain verification is required before approval."
-      ]
+        "Audi India's current model navigation does not list A8 among its current eight model families, so A8 should be treated as a used/luxury PDI target in India rather than a current new-car model. Generation-specific powertrain verification is required before approval.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true,
+      "demandValidation": "used_historical"
     },
     {
       "brand": "Audi",
       "brandSlug": "audi",
       "model": "Q3",
       "modelSlug": "q3",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3915,16 +3950,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Audi India brochure confirms the Q3 with a 2.0L TFSI quattro powertrain producing 190 hp and 320 Nm. Current Audi India model listings include Q3. Verify current derivative details again before final approval."
-      ]
+        "Audi India brochure confirms the Q3 with a 2.0L TFSI quattro powertrain producing 190 hp and 320 Nm. Current Audi India model listings include Q3. Verify current derivative details again before final approval.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Audi",
       "brandSlug": "audi",
       "model": "Q5",
       "modelSlug": "q5",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3947,16 +3984,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Audi India Q5 material confirms a 2.0L TFSI petrol powertrain with quattro all-wheel drive. Current Audi India listings include Q5. Because the India Q5 has changed across generations, final page copy should be generation-aware and avoid over-specific variant claims without current configuration verification."
-      ]
+        "Audi India Q5 material confirms a 2.0L TFSI petrol powertrain with quattro all-wheel drive. Current Audi India listings include Q5. Because the India Q5 has changed across generations, final page copy should be generation-aware and avoid over-specific variant claims without current configuration verification.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Audi",
       "brandSlug": "audi",
       "model": "Q7",
       "modelSlug": "q7",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -3979,16 +4018,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Audi India Q7 brochure confirms a 3.0L TFSI 48V mild-hybrid petrol engine, quattro all-wheel drive and 340 hp in the documented generation. Current Audi India listings include Q7. Used-PDI content should be generation-aware."
-      ]
+        "Audi India Q7 brochure confirms a 3.0L TFSI 48V mild-hybrid petrol engine, quattro all-wheel drive and 340 hp in the documented generation. Current Audi India listings include Q7. Used-PDI content should be generation-aware.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Audi",
       "brandSlug": "audi",
       "model": "Q8",
       "modelSlug": "q8",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4012,8 +4053,10 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Audi India currently lists Q8 along with RS Q8 and SQ8 derivatives. The Q8 model page should distinguish the standard Q8 from performance derivatives and use generation-aware powertrain wording rather than one specification for every Q8 sold in India."
-      ]
+        "Audi India currently lists Q8 along with RS Q8 and SQ8 derivatives. The Q8 model page should distinguish the standard Q8 from performance derivatives and use generation-aware powertrain wording rather than one specification for every Q8 sold in India.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Volvo",
@@ -4055,8 +4098,8 @@
       "brandSlug": "volvo",
       "model": "XC40",
       "modelSlug": "xc40",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4082,16 +4125,19 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "XC40 has generation/powertrain-sensitive India intent. Volvo launched the petrol mild-hybrid XC40 B4 in 2022 and the XC40 Recharge Pure Electric in India earlier; current Volvo India consumer range has moved toward XC60/XC90 and newer EV naming, so this should be treated as current/used-market coverage rather than assuming a current new-car XC40 listing. EV PDI should include battery/charging/software checks."
-      ]
+        "XC40 has generation/powertrain-sensitive India intent. Volvo launched the petrol mild-hybrid XC40 B4 in 2022 and the XC40 Recharge Pure Electric in India earlier; current Volvo India consumer range has moved toward XC60/XC90 and newer EV naming, so this should be treated as current/used-market coverage rather than assuming a current new-car XC40 listing. EV PDI should include battery/charging/software checks.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true,
+      "demandValidation": "used_historical"
     },
     {
       "brand": "Volvo",
       "brandSlug": "volvo",
       "model": "XC60",
       "modelSlug": "xc60",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4118,16 +4164,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Current Volvo Cars India XC60 is B5 AWD petrol mild hybrid with automatic transmission. Older India XC60 generations also included diesel mild hybrid and plug-in-hybrid variants, so used-PDI copy must remain generation-aware."
-      ]
+        "Current Volvo Cars India XC60 is B5 AWD petrol mild hybrid with automatic transmission. Older India XC60 generations also included diesel mild hybrid and plug-in-hybrid variants, so used-PDI copy must remain generation-aware.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Volvo",
       "brandSlug": "volvo",
       "model": "XC90",
       "modelSlug": "xc90",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4152,16 +4200,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Current Volvo India XC90 is a 7-seat B5 AWD petrol mild hybrid with automatic transmission. Older XC90 generations include diesel and plug-in-hybrid configurations, so used-PDI content must be generation-aware and powertrain-specific."
-      ]
+        "Current Volvo India XC90 is a 7-seat B5 AWD petrol mild hybrid with automatic transmission. Older XC90 generations include diesel and plug-in-hybrid configurations, so used-PDI content must be generation-aware and powertrain-specific.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Lexus",
       "brandSlug": "lexus",
       "model": "ES",
       "modelSlug": "es",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4183,16 +4233,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Lexus India ES 300h brochure confirms 2.5L four-cylinder hybrid system, 160 kW total system output and E-CVT. PDI should include hybrid battery/system diagnostics, brake regeneration behaviour, electronics and luxury cabin equipment."
-      ]
+        "Lexus India ES 300h brochure confirms 2.5L four-cylinder hybrid system, 160 kW total system output and E-CVT. PDI should include hybrid battery/system diagnostics, brake regeneration behaviour, electronics and luxury cabin equipment.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Lexus",
       "brandSlug": "lexus",
       "model": "NX",
       "modelSlug": "nx",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4214,16 +4266,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Lexus India NX 350h is a petrol hybrid SUV with E-CVT and EV mode; official brochure covers Exquisite, Overtrail, Luxury and F Sport grades. Model page should emphasize hybrid-system health, AWD/electronics, cameras, ADAS and trim-specific equipment."
-      ]
+        "Lexus India NX 350h is a petrol hybrid SUV with E-CVT and EV mode; official brochure covers Exquisite, Overtrail, Luxury and F Sport grades. Model page should emphasize hybrid-system health, AWD/electronics, cameras, ADAS and trim-specific equipment.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Lexus",
       "brandSlug": "lexus",
       "model": "RX",
       "modelSlug": "rx",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4247,16 +4301,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Lexus India RX brochure covers RX 350h and RX 500h. The model page should distinguish the standard hybrid and performance-hybrid configurations and focus on hybrid system, AWD, four-wheel steering where equipped, cameras and premium electronics."
-      ]
+        "Lexus India RX brochure covers RX 350h and RX 500h. The model page should distinguish the standard hybrid and performance-hybrid configurations and focus on hybrid system, AWD, four-wheel steering where equipped, cameras and premium electronics.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Lexus",
       "brandSlug": "lexus",
       "model": "LX",
       "modelSlug": "lx",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4278,8 +4334,10 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Lexus India LX 500d brochure confirms 3.346L V6 twin-turbo diesel, 700 Nm and Direct Shift-10AT, with active-height/adaptive suspension and multi-terrain systems. PDI should emphasize chassis/4x4 systems, suspension, underbody, tyres, cameras and premium electronics."
-      ]
+        "Lexus India LX 500d brochure confirms 3.346L V6 twin-turbo diesel, 700 Nm and Direct Shift-10AT, with active-height/adaptive suspension and multi-terrain systems. PDI should emphasize chassis/4x4 systems, suspension, underbody, tyres, cameras and premium electronics.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Lexus",
@@ -4320,8 +4378,8 @@
       "brandSlug": "jaguar",
       "model": "F-Pace",
       "modelSlug": "f-pace",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4346,16 +4404,19 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Jaguar India authorised retailers currently show approved used F-PACE examples including 2.0L petrol and 2.0L diesel MHEV cars. The model is best treated as premium used/new-generation-aware PDI content; verify exact engine and drivetrain by VIN/model year rather than using one universal specification."
-      ]
+        "Jaguar India authorised retailers currently show approved used F-PACE examples including 2.0L petrol and 2.0L diesel MHEV cars. The model is best treated as premium used/new-generation-aware PDI content; verify exact engine and drivetrain by VIN/model year rather than using one universal specification.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true,
+      "demandValidation": "used_historical"
     },
     {
       "brand": "Jaguar",
       "brandSlug": "jaguar",
       "model": "I-Pace",
       "modelSlug": "i-pace",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4379,8 +4440,11 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Jaguar authorised Indian retailers continue to show approved used I-PACE vehicles, including 2021-2023 examples. Treat I-PACE as EV/used-PDI focused: battery health, charging system, thermal management, regenerative braking, software and HV-system diagnostics are key."
-      ]
+        "Jaguar authorised Indian retailers continue to show approved used I-PACE vehicles, including 2021-2023 examples. Treat I-PACE as EV/used-PDI focused: battery health, charging system, thermal management, regenerative braking, software and HV-system diagnostics are key.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true,
+      "demandValidation": "used_historical"
     },
     {
       "brand": "Jaguar",
@@ -4421,8 +4485,8 @@
       "brandSlug": "land-rover",
       "model": "Range Rover Evoque",
       "modelSlug": "range-rover-evoque",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4446,16 +4510,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Land Rover India materials confirm Evoque petrol and diesel Ingenium configurations and current model documentation. Used-PDI content should be generation-aware, especially drivetrain, infotainment and suspension/electronics differences."
-      ]
+        "Land Rover India materials confirm Evoque petrol and diesel Ingenium configurations and current model documentation. Used-PDI content should be generation-aware, especially drivetrain, infotainment and suspension/electronics differences.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Land Rover",
       "brandSlug": "land-rover",
       "model": "Range Rover Velar",
       "modelSlug": "range-rover-velar",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4481,16 +4547,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Land Rover India confirms Velar has used 2.0L petrol/diesel and older 3.0L diesel configurations. Later India material adds Pivi Pro and electronic air suspension. PDI should check suspension, drivetrain, cameras, infotainment and electrical systems."
-      ]
+        "Land Rover India confirms Velar has used 2.0L petrol/diesel and older 3.0L diesel configurations. Later India material adds Pivi Pro and electronic air suspension. PDI should check suspension, drivetrain, cameras, infotainment and electrical systems.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Land Rover",
       "brandSlug": "land-rover",
       "model": "Range Rover Sport",
       "modelSlug": "range-rover-sport",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4515,16 +4583,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Land Rover India documentation lists Range Rover Sport petrol and diesel configurations, with performance derivatives varying by generation. Premium PDI should cover air suspension, AWD, Terrain Response, brakes, tyres, ADAS, cameras and high-value electronics."
-      ]
+        "Land Rover India documentation lists Range Rover Sport petrol and diesel configurations, with performance derivatives varying by generation. Premium PDI should cover air suspension, AWD, Terrain Response, brakes, tyres, ADAS, cameras and high-value electronics.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Land Rover",
       "brandSlug": "land-rover",
       "model": "Defender",
       "modelSlug": "defender",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4551,16 +4621,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Current Defender India documentation covers 90/110/130 body styles and multiple petrol/diesel/performance configurations. Key PDI checks should include 4x4 system, transfer box, Terrain Response, suspension, underbody/chassis, towing hardware, cameras and electronic systems."
-      ]
+        "Current Defender India documentation covers 90/110/130 body styles and multiple petrol/diesel/performance configurations. Key PDI checks should include 4x4 system, transfer box, Terrain Response, suspension, underbody/chassis, towing hardware, cameras and electronic systems.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Land Rover",
       "brandSlug": "land-rover",
       "model": "Discovery",
       "modelSlug": "discovery",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4584,16 +4656,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Land Rover India documentation confirms Discovery six-cylinder Ingenium configurations with intelligent AWD and Terrain Response 2. Used-PDI content should focus on 4x4 system, air suspension, wading/underbody condition, ADAS, cameras and infotainment."
-      ]
+        "Land Rover India documentation confirms Discovery six-cylinder Ingenium configurations with intelligent AWD and Terrain Response 2. Used-PDI content should focus on 4x4 system, air suspension, wading/underbody condition, ADAS, cameras and infotainment.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Porsche",
       "brandSlug": "porsche",
       "model": "Macan",
       "modelSlug": "macan",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4619,16 +4693,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Porsche India currently markets Macan as an all-electric SUV while Porsche Finder India continues to show approved used petrol Macans. The authoritative page must distinguish petrol generations from the Macan Electric and apply EV-specific PDI checks only to electric cars."
-      ]
+        "Porsche India currently markets Macan as an all-electric SUV while Porsche Finder India continues to show approved used petrol Macans. The authoritative page must distinguish petrol generations from the Macan Electric and apply EV-specific PDI checks only to electric cars.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Porsche",
       "brandSlug": "porsche",
       "model": "Cayenne",
       "modelSlug": "cayenne",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4654,16 +4730,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Porsche India currently lists Cayenne and Porsche Finder shows approved used petrol Cayenne examples. Powertrain and performance derivatives vary by generation; PDI should cover air suspension where equipped, AWD, brakes, tyres, electronics and hybrid-system checks where applicable."
-      ]
+        "Porsche India currently lists Cayenne and Porsche Finder shows approved used petrol Cayenne examples. Powertrain and performance derivatives vary by generation; PDI should cover air suspension where equipped, AWD, brakes, tyres, electronics and hybrid-system checks where applicable.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Porsche",
       "brandSlug": "porsche",
       "model": "911",
       "modelSlug": "911",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4689,16 +4767,18 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Porsche India currently markets the 911 model family. The 911 page must remain derivative/generation-aware because Carrera, Turbo, GT and hybrid-assisted variants differ materially. PDI should emphasize paint/body repair, tyres, brakes, suspension, engine/transmission, cooling and electronic systems."
-      ]
+        "Porsche India currently markets the 911 model family. The 911 page must remain derivative/generation-aware because Carrera, Turbo, GT and hybrid-assisted variants differ materially. PDI should emphasize paint/body repair, tyres, brakes, suspension, engine/transmission, cooling and electronic systems.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "Porsche",
       "brandSlug": "porsche",
       "model": "Taycan",
       "modelSlug": "taycan",
-      "status": "research_pending",
-      "researchStatus": "pending",
+      "status": "approved",
+      "researchStatus": "approved",
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
@@ -4723,8 +4803,10 @@
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
       "researchNotes": [
-        "Porsche India currently markets Taycan as its electric sports-car family and Porsche Finder shows approved used Taycan examples. EV PDI should prioritize high-voltage battery condition, charging system, thermal management, regenerative braking, HV isolation, software and accident/underbody inspection."
-      ]
+        "Porsche India currently markets Taycan as its electric sports-car family and Porsche Finder shows approved used Taycan examples. EV PDI should prioritize high-voltage battery condition, charging system, thermal management, regenerative braking, HV isolation, software and accident/underbody inspection.",
+        "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
+      ],
+      "approvedForPublication": true
     },
     {
       "brand": "MINI",
