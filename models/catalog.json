@@ -4981,7 +4981,9 @@
       "transmissions": [
         "8-speed tiptronic (generation dependent)"
       ],
-      "variants": [],
+      "variants": [
+        "55 TFSI quattro"
+      ],
       "aliases": [],
       "sourceUrls": [
         "https://www.audi.in/en/models/",
@@ -4997,7 +4999,8 @@
         "Audi India currently lists Q8 along with RS Q8 and SQ8 derivatives. The Q8 model page should distinguish the standard Q8 from performance derivatives and use generation-aware powertrain wording rather than one specification for every Q8 sold in India.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
-      "approvedForPublication": true
+      "approvedForPublication": true,
+      "variantResearchStatus": "verified_current_market"
     },
     {
       "brand": "Volvo",
