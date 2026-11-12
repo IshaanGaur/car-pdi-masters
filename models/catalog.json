@@ -432,17 +432,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "49 kWh battery",
+        "61 kWh battery"
+      ],
+      "transmissions": [
+        "Single-speed electric transmission"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.marutisuzuki.com/corporate/media/press-releases/2025/january/maruti-suzuki-unveils-its-first-electric-suv-e-vitara"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 4,
-      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
+      "researchNotes": [
+        "Maruti Suzuki confirms e VITARA with 49 kWh and 61 kWh battery options, single-speed electric drive, and deliveries in India from February 2026."
+      ]
     },
     {
       "brand": "Hyundai",
@@ -1328,17 +1338,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "59 kWh LFP battery",
+        "79 kWh LFP battery"
+      ],
+      "transmissions": [
+        "Single-speed electric drive"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://auto.mahindra.com/press-release/mahindra-introduces-the-be-6-sporteq.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 4,
-      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
+      "researchNotes": [
+        "Mahindra confirms BE 6 on INGLO architecture with 59/79 kWh battery options; current BE 6 SPORTEQ adds OTA-updatable software features."
+      ]
     },
     {
       "brand": "Mahindra",
@@ -1350,17 +1370,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "59 kWh LFP battery",
+        "79 kWh LFP battery"
+      ],
+      "transmissions": [
+        "Single-speed electric drive"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://auto.mahindra.com/press-release/mahindra-esuvs-to-open-bookings-from-fourteenth-feb.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 4,
-      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
+      "researchNotes": [
+        "Mahindra confirms XEV 9e with 59/79 kWh LFP battery options and INGLO electric architecture."
+      ]
     },
     {
       "brand": "Mahindra",
@@ -1372,17 +1402,28 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "59 kWh battery",
+        "70 kWh battery",
+        "79 kWh battery"
+      ],
+      "transmissions": [
+        "Single-speed electric drive"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://auto.mahindra.com/press-release/mahindra-leadership-team.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 4,
-      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
+      "researchNotes": [
+        "Mahindra confirms XEV 9S as an electric 7-seater with 59/70/79 kWh battery variants and up to 210 kW output."
+      ]
     },
     {
       "brand": "Toyota",
@@ -1843,17 +1884,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "17.4 kWh battery"
+      ],
+      "transmissions": [
+        "Automatic electric drive"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.mgmotor.co.in/vehicles/comet-ev-electric-car-in-india.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 4,
-      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
+      "researchNotes": [
+        "MG India confirms Comet EV with 17.4 kWh battery, PMSM motor, 230 km claimed range and automatic electric transmission."
+      ]
     },
     {
       "brand": "MG",
@@ -1887,17 +1937,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "38 kWh battery",
+        "52.9 kWh battery (Pro)"
+      ],
+      "transmissions": [
+        "Single-speed electric drive"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.mgmotor.co.in/content/mgmotor/language-masters/en/vehicles/windsor-ev-electric-car-in-india.html"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 4,
-      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
+      "researchNotes": [
+        "MG India confirms Windsor EV 38 kWh and 52.9 kWh Pro battery configurations; Pro variants provide 449 km certified range."
+      ]
     },
     {
       "brand": "MG",
@@ -1953,17 +2013,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "50.3 kWh battery"
+      ],
+      "transmissions": [
+        "Automatic electric drive"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://www.mgmotor.co.in/"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 4,
-      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
+      "researchNotes": [
+        "MG India lists ZS EV with a 50.3 kWh battery in the current India lineup; EV PDI content should emphasize battery, charging and HV diagnostics."
+      ]
     },
     {
       "brand": "Skoda",
@@ -2406,17 +2475,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "29.2 kWh battery"
+      ],
+      "transmissions": [
+        "Single-speed electric drive"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://ds-prod.citroen.in/static-assets/ds-static/s3fs-public/2024-09/EC3%20Main%20E-Brochure_Rev_0.pdf"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 4,
-      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
+      "researchNotes": [
+        "Citroën India brochure confirms ë-C3 with 29.2 kWh battery and regenerative braking; charging and HV system checks should be prominent in PDI content."
+      ]
     },
     {
       "brand": "Jeep",
@@ -2516,17 +2594,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "49.92 kWh battery",
+        "60.48 kWh battery"
+      ],
+      "transmissions": [
+        "Single-speed electric drive"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://bydautoindia.com/news/BYD-India-launches-Three-All-New-Variants-of-the-BYD-ATTO-3-Starting-at-an-Introductory-Ex-showroom-Price-of-INR-24.99-Lakh"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 4,
-      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
+      "researchNotes": [
+        "BYD India confirms Dynamic with 49.92 kWh and Premium/Superior with 60.48 kWh Blade Battery; EV PDI should cover battery health, charging and underbody protection."
+      ]
     },
     {
       "brand": "BYD",
@@ -2538,17 +2626,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "61.44 kWh battery",
+        "82.56 kWh battery"
+      ],
+      "transmissions": [
+        "Single-speed electric drive"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://bydautoindia.com/bydseal"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 4,
-      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
+      "researchNotes": [
+        "BYD India confirms Seal Dynamic 61.44 kWh RWD, Premium 82.56 kWh RWD and Performance 82.56 kWh AWD configurations."
+      ]
     },
     {
       "brand": "BYD",
@@ -2560,17 +2658,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "71.7 kWh battery"
+      ],
+      "transmissions": [
+        "Single-speed electric drive"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://bydautoindia.com/"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
       ],
       "priorityTier": 4,
-      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
+      "researchNotes": [
+        "BYD e6 is an India-market electric MPV; final model content should verify the latest India fleet/private-market availability and exact battery specification before approval."
+      ]
     },
     {
       "brand": "BYD",
@@ -3843,17 +3950,26 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "59.6 kWh battery"
+      ],
+      "transmissions": [
+        "Single-speed electric drive"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://vinfastauto.in/en/vf6"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
       ],
       "priorityTier": 4,
-      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
+      "researchNotes": [
+        "VinFast India confirms VF 6 with 59.6 kWh battery, FWD electric drive and CCS2 charging; variants include 130 kW/250 Nm and 150 kW/310 Nm outputs."
+      ]
     },
     {
       "brand": "VinFast",
@@ -3865,17 +3981,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "59.6 kWh battery",
+        "70 kWh battery"
+      ],
+      "transmissions": [
+        "Single-speed electric drive"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://vinfastauto.in/en/vf7"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
       ],
       "priorityTier": 4,
-      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
+      "researchNotes": [
+        "VinFast India confirms VF 7 with 59.6/70 kWh battery variants, FWD and AWD configurations, and CCS2 charging."
+      ]
     },
     {
       "brand": "VinFast",
@@ -3887,17 +4013,27 @@
       "seoStatus": "not_published",
       "newCarPdi": null,
       "usedCarPdi": null,
-      "powertrains": [],
-      "transmissions": [],
+      "powertrains": [
+        "Electric battery system"
+      ],
+      "transmissions": [
+        "Single-speed electric drive"
+      ],
       "variants": [],
       "aliases": [],
-      "sourceUrls": [],
-      "checkedAt": null,
+      "sourceUrls": [
+        "https://vinfastauto.in/en/about-us",
+        "https://vinfastauto.in/en/press-release/vinfast-officially-enters-the-indian-market-unveils-vf7-and-vf6"
+      ],
+      "checkedAt": "2026-11-12",
       "notes": [
         "Seeded as a priority new/used PDI target; verify current model status and exact powertrain/variant data before publishing."
       ],
       "priorityTier": 4,
-      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification."
+      "priorityReason": "EV/new-entrant or strategic emerging demand; publish after official India data verification.",
+      "researchNotes": [
+        "VF e34 was showcased by VinFast in India alongside VF 6 and VF 7, but its India retail specification/status should be verified before publication; keep research pending."
+      ]
     },
     {
       "brand": "Ford",
