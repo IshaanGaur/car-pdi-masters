@@ -3222,17 +3222,21 @@
       "newCarPdi": null,
       "usedCarPdi": null,
       "powertrains": [
-        "2.0L TSI petrol"
+        "2.0 TDI diesel (current India return)",
+        "1.8 TSI petrol (used-market generation)",
+        "2.0 TSI petrol (used-market generation)",
+        "2.0 TDI diesel (used-market generation)"
       ],
       "transmissions": [
-        "7-speed DSG"
+        "7-speed DSG (current India return)",
+        "DSG automatic (used-market generations)"
       ],
       "variants": [],
       "aliases": [],
       "sourceUrls": [
         "https://www.skoda-auto.co.in/models/range"
       ],
-      "checkedAt": "2026-11-12",
+      "checkedAt": "2026-11-13",
       "notes": [
         "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing.",
         "Excluded from universal model-page publication until explicit demand/market validation is approved."
@@ -3240,9 +3244,9 @@
       "priorityTier": 5,
       "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
       "researchNotes": [
-        "Škoda Superb is a premium sedan/wagon family with 2.0 TSI + DSG in relevant India generations; current India retail status must be verified before publishing.",
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator.",
-        "Used-car PDI demand validated on 2026-11-13: Delhi NCR has active used Skoda Superb listings across multiple generations and variants on major marketplaces; the model is therefore commercially relevant for pre-purchase/used-car inspection intent."
+        "Used-car PDI demand validated on 2026-11-13: Delhi NCR has active used Skoda Superb listings across multiple generations and variants on major marketplaces; the model is therefore commercially relevant for pre-purchase/used-car inspection intent.",
+        "Current India model page confirms the returning Superb as 2.0 TDI 110 kW with 7-speed DSG FWD; used-market research confirms active Delhi NCR listings across multiple generations and variants. Exact model-year configuration must be verified at inspection."
       ],
       "demandValidation": "validated",
       "approvedForPublication": true
