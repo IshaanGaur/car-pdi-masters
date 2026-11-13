@@ -67,6 +67,52 @@ jobs:
             exit 1
           fi
 
+          echo "Crawling all published sitemap pages for internal links..."
+          : > audit-output/internal-links.txt
+          : > audit-output/internal-link-fetch-failures.txt
+
+          while IFS= read -r page_url; do
+            page_file="audit-output/page.html"
+            if ! curl -fsSL --retry 3 --retry-delay 1 "$page_url" -o "$page_file"; then
+              echo "$page_url | page fetch failed during internal-link crawl" >> audit-output/internal-link-fetch-failures.txt
+              continue
+            fi
+
+            python3 - "$page_file" "$host" <<'PY' >> audit-output/internal-links.txt
+          import re, sys
+          from pathlib import Path
+          from urllib.parse import urljoin, urlsplit, urlunsplit
+
+          html = Path(sys.argv[1]).read_text(errors="ignore")
+          host = sys.argv[2]
+          for raw in re.findall(r'<a\\b[^>]*\\bhref=["\\\']([^"\\\']+)["\\\']', html, re.I):
+              if raw.startswith(('#','mailto:','tel:','javascript:','data:')):
+                  continue
+              url = urljoin(host + '/', raw)
+              p = urlsplit(url)
+              if p.netloc.lower() not in ('www.carmasters.co.in','carmasters.co.in'):
+                  continue
+              clean = urlunsplit((p.scheme or 'https', 'www.carmasters.co.in', p.path or '/', p.query, ''))
+              print(clean)
+          PY
+          done < audit-output/all-sitemap-urls.txt
+
+          sort -u audit-output/internal-links.txt -o audit-output/internal-links.txt
+          internal_link_count="$(wc -l < audit-output/internal-links.txt | tr -d ' ')"
+          echo "Discovered $internal_link_count unique same-site internal links."
+
+          : > audit-output/internal-link-failures.txt
+          internal_link_failures=0
+          while IFS= read -r url; do
+            code="$(curl -sS -L --retry 3 --retry-delay 1 -o /dev/null -w '%{http_code}' "$url" || true)"
+            case "$code" in
+              200|301|302|307|308) ;;
+              *) echo "$url | HTTP $code" >> audit-output/internal-link-failures.txt; internal_link_failures=$((internal_link_failures+1)) ;;
+            esac
+          done < audit-output/internal-links.txt
+
+          echo "Internal-link availability check complete: $internal_link_failures failures across $internal_link_count unique links."
+
           : > audit-output/failures.txt
 
           while IFS= read -r url; do
@@ -142,15 +188,17 @@ jobs:
           echo "Live model URL audit complete: $count URLs checked, $failures failures."
           echo "Full sitemap URL availability audit: $sitemap_url_count URLs checked, $sitemap_failures failures."
 
-          if [ "$sitemap_failures" -ne 0 ] || [ "$failures" -ne 0 ]; then
+          if [ "$sitemap_failures" -ne 0 ] || [ "$internal_link_failures" -ne 0 ] || [ "$failures" -ne 0 ]; then
             echo "---- SITEMAP URL AVAILABILITY FAILURES ----"
             if [ -s audit-output/sitemap-failures.txt ]; then cat audit-output/sitemap-failures.txt; fi
+            echo "---- INTERNAL LINK FAILURES ----"
+            if [ -s audit-output/internal-link-failures.txt ]; then cat audit-output/internal-link-failures.txt; fi
             echo "---- MODEL SEO/CONTENT FAILURES ----"
             if [ -s audit-output/failures.txt ]; then cat audit-output/failures.txt; fi
             exit 1
           fi
 
-          echo "PASS: every sitemap URL passed HTTP availability and every model URL passed all live SEO/content checks."
+          echo "PASS: every sitemap URL, discovered same-site internal link, and model URL passed all live checks."
 
       - name: Upload complete live audit
         if: always()
