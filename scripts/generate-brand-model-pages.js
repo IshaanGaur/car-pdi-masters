@@ -2,7 +2,7 @@ const fs=require('fs'),path=require('path');const ROOT=path.join(__dirname,'..')
 const esc=s=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
 const slug=s=>String(s).toLowerCase().normalize('NFKD').replace(/[^\\w\\s-]/g,'').replace(/[\\s_]+/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,'');
 const data=JSON.parse(fs.readFileSync(CAT,'utf8'));if(!Array.isArray(data.models))throw Error('catalog models must be an array');
-const approved=data.models.filter(m=>m.status==='approved'&&m.researchStatus==='approved'&&m.seoStatus!=='blocked');
+const approved=data.models.filter(m=>m.status==='approved'&&m.researchStatus==='approved'&&m.seoStatus!=='blocked'&&m.approvedForPublication===true);
 const url=m=>`${SITE}/car-pdi/${m.brandSlug||slug(m.brand)}/${m.modelSlug||slug(m.model)}/`;
 const write=(f,s)=>{fs.mkdirSync(path.dirname(f),{recursive:true});fs.writeFileSync(f,s)};
 function isEv(m){const t=[...(m.powertrains||[]),...(m.transmissions||[]),...(m.aliases||[])].join(' ').toLowerCase();return /\belectric\b|\bev\b|battery|bev|single-speed electric/.test(t);}
