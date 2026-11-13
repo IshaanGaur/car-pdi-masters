@@ -55,8 +55,8 @@ jobs:
           sitemap_url_count="$(wc -l < audit-output/all-sitemap-urls.txt | tr -d ' ')"
           echo "Sitemap URL availability check complete: $sitemap_failures failures across $sitemap_url_count URLs."
 
-          if [ "$sitemap_url_count" -lt 283 ]; then
-            echo "ERROR: expected at least 283 total sitemap URLs (109 legacy + 174 approved brand/model architecture), found $sitemap_url_count"
+          if [ "$sitemap_url_count" -lt 282 ]; then
+            echo "ERROR: expected at least 282 sitemap URLs (108 indexable legacy + 174 approved brand/model architecture; payment page is intentionally noindex and excluded), found $sitemap_url_count"
             echo "Sitemap count failure" > audit-output/sitemap-count-failure.txt
             exit 1
           fi
