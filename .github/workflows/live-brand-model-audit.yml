@@ -38,7 +38,7 @@ jobs:
           fi
 
           echo "Checking every URL published in the live sitemap for HTTP availability..."
-          grep -oE '<loc>https://www\\.carmasters\\.co\\.in/[^<]+</loc>' audit-output/sitemap.xml |
+          grep -oE '<loc>https://www\.carmasters\.co\.in/[^<]+</loc>' audit-output/sitemap.xml |
             sed -E 's#</?loc>##g' |
             sort -u > audit-output/all-sitemap-urls.txt
 
