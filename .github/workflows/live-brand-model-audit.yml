@@ -139,7 +139,7 @@ jobs:
           from pathlib import Path
           html = Path(sys.argv[1]).read_text(errors="ignore")
           url = sys.argv[2]
-          canonicals = re.findall(r'<link\b[^>]*\brel=["']canonical["'][^>]*\bhref=["']([^"']+)["']', html, re.I)
+          canonicals = re.findall(r"<link\b[^>]*\brel=['\"]canonical['\"][^>]*\bhref=['\"]([^'\"]+)['\"]", html, re.I)
           faq_schema = bool(re.search(r'"@type"\s*:\s*"FAQPage"', html))
           if url not in canonicals:
               print("CANONICAL_MISMATCH:", canonicals[:3])
