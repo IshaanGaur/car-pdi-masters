@@ -85,7 +85,7 @@ jobs:
 
           html = Path(sys.argv[1]).read_text(errors="ignore")
           host = sys.argv[2]
-          for raw in re.findall(r'<a\\b[^>]*\\bhref=["\\\']([^"\\\']+)["\\\']', html, re.I):
+          for raw in re.findall(r'href\\s*=\\s*["\\\']([^"\\\']+)["\\\']', html, re.I):
               if raw.startswith(('#','mailto:','tel:','javascript:','data:')):
                   continue
               url = urljoin(host + '/', raw)
