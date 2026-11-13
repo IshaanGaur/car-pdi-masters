@@ -52,7 +52,20 @@ jobs:
             esac
           done < audit-output/all-sitemap-urls.txt
 
-          echo "Sitemap URL availability check complete: $sitemap_failures failures."
+          sitemap_url_count="$(wc -l < audit-output/all-sitemap-urls.txt | tr -d ' ')"
+          echo "Sitemap URL availability check complete: $sitemap_failures failures across $sitemap_url_count URLs."
+
+          if [ "$sitemap_url_count" -lt 283 ]; then
+            echo "ERROR: expected at least 283 total sitemap URLs (109 legacy + 174 approved brand/model architecture), found $sitemap_url_count"
+            echo "Sitemap count failure" > audit-output/sitemap-count-failure.txt
+            exit 1
+          fi
+
+          if grep -Fq '/car-pdi/skoda/superb/' audit-output/all-sitemap-urls.txt; then
+            echo "ERROR: gated Skoda Superb must not be published in the sitemap."
+            echo "https://www.carmasters.co.in/car-pdi/skoda/superb/" > audit-output/gated-url-failure.txt
+            exit 1
+          fi
 
           : > audit-output/failures.txt
 
@@ -127,7 +140,7 @@ jobs:
 
           failures="$(wc -l < audit-output/failures.txt | tr -d ' ')"
           echo "Live model URL audit complete: $count URLs checked, $failures failures."
-          echo "Full sitemap URL availability audit: $(wc -l < audit-output/all-sitemap-urls.txt | tr -d ' ') URLs checked, $sitemap_failures failures."
+          echo "Full sitemap URL availability audit: $sitemap_url_count URLs checked, $sitemap_failures failures."
 
           if [ "$sitemap_failures" -ne 0 ] || [ "$failures" -ne 0 ]; then
             echo "---- SITEMAP URL AVAILABILITY FAILURES ----"
