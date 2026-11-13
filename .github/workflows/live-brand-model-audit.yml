@@ -134,13 +134,12 @@ jobs:
             grep -Eiq '<h1[^>]*>[^<]*(PDI|Inspection)[^<]*</h1>' "$body_file" ||
               echo "$url | missing PDI/Inspection H1" >> audit-output/failures.txt
 
-            python3 - "$body_file" "$url" <<'PY' ||
-          echo "$url | canonical or FAQPage schema mismatch" >> audit-output/failures.txt
+            if ! python3 - "$body_file" "$url" <<'PY'
           import re, sys
           from pathlib import Path
           html = Path(sys.argv[1]).read_text(errors="ignore")
           url = sys.argv[2]
-          canonicals = re.findall(r'<link\b[^>]*\brel=["\']canonical["\'][^>]*\bhref=["\']([^"\']+)["\']', html, re.I)
+          canonicals = re.findall(r'<link\b[^>]*\brel=["']canonical["'][^>]*\bhref=["']([^"']+)["']', html, re.I)
           faq_schema = bool(re.search(r'"@type"\s*:\s*"FAQPage"', html))
           if url not in canonicals:
               print("CANONICAL_MISMATCH:", canonicals[:3])
@@ -149,6 +148,9 @@ jobs:
               print("FAQPAGE_SCHEMA_MISSING")
               raise SystemExit(1)
           PY
+            then
+              echo "$url | canonical or FAQPage schema mismatch" >> audit-output/failures.txt
+            fi
 
             grep -Fq 'name="robots" content="index,follow"' "$body_file" ||
               echo "$url | missing index,follow" >> audit-output/failures.txt
