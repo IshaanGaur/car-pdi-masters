@@ -3234,7 +3234,8 @@
       ],
       "checkedAt": "2026-11-12",
       "notes": [
-        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing."
+        "Seeded from the existing booking model list; verify current official model, powertrain, transmission and variant information before publishing.",
+        "Excluded from universal model-page publication until explicit demand/market validation is approved."
       ],
       "priorityTier": 5,
       "priorityReason": "Current-market model verified; commercial PDI demand validation required before publication.",
@@ -3243,7 +3244,7 @@
         "Final Tier-5 validation: India-market model status and manufacturer-source evidence reviewed on 2026-11-12. Exact model year, variant, powertrain, transmission and drivetrain must be verified at inspection; publish through the approval-gated universal model SEO generator."
       ],
       "demandValidation": "candidate",
-      "approvedForPublication": true
+      "approvedForPublication": false
     },
     {
       "brand": "Volkswagen",
