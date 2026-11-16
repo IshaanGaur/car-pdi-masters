@@ -251,6 +251,7 @@
   window.CPM_MONEY=money;
   window.CPM_SUBMIT_BOOKING=async function(e){
     e.preventDefault();
+    if(typeof window.gtag==='function') window.gtag('event','booking_start',{event_category:'lead',lead_source:'website_booking_form',page_location:window.location.href});
     const f=e.target, get=id=>(document.getElementById(id)?.value||'').trim(), msg=document.getElementById('bookingMsg'), btn=f.querySelector('button[type="submit"]');
     const make=get('carMake'), model=get('carModel'), otherMake=get('otherMake'), otherModel=get('otherModel'), variantSelect=get('variant'), otherVariant=get('otherVariant');
     const data={name:get('name'),mobile:get('mobile'),type:get('type'),car:make==='Other'?(otherMake||'Other'):make+' '+model,vehicleMake:make,vehicleModel:model,otherMake,otherModel,variant:variantSelect==='Other'?(otherVariant||''):variantSelect,dealer:'',address:get('address'),location:get('location'),date:get('date'),time:get('time'),notes:get('notes'),registrationNumber:get('registrationNumber')};
@@ -285,9 +286,11 @@
       const code=`CPM-${data.date.replaceAll('-','')}-${Math.random().toString(36).slice(2,7).toUpperCase()}`;
       const ref=await fs.addDoc(fs.collection(firestoreDb,'bookings'),{customerName:data.name,customerPhone:data.mobile,inspectionType:data.type,packageId:plan,packageName,vehicleMakeModel:data.car,vehicleMake:data.vehicleMake,vehicleModel:data.vehicleModel,otherMake:data.otherMake,otherModel:data.otherModel,variant:data.variant,dealerSeller:data.dealer,registrationNumber:data.registrationNumber,inspectionLocation:data.location,locationSlug,inspectionDate:data.date,timeSlot:data.time,inspectionAddress:data.address,additionalInformation:data.notes||'',bookingId:code,bookingStatus:'PAYMENT_PENDING',bookingPaymentStatus:'PENDING',balancePaymentStatus:'PENDING',totalServicePrice:total,servicePrice:plan==='comprehensive-360-pdi'?Number(p.comprehensivePrice??total):servicePrice,serviceCharges:serviceCharges,taxApplicable:taxApplicable,taxAmount:plan==='comprehensive-360-pdi'?Number(p.comprehensiveTaxAmount||0):taxAmount,finalAmount:total,bookingAmount:booking,balanceAmount:balance,paymentMode:p.paymentMode||'LIVE',currency:'INR',source:'WEBSITE',createdAt:fs.serverTimestamp(),updatedAt:fs.serverTimestamp()});
       try{localStorage.setItem('cpm_booking',JSON.stringify({...data,packageId:plan,packageName,bookingId:code,firestoreId:ref.id,totalServicePrice:total,servicePrice:servicePrice,serviceCharges:serviceCharges,taxApplicable:taxApplicable,taxAmount:taxAmount,finalAmount:total,bookingAmount:booking,balanceAmount:balance}))}catch(_){ }
+      if(typeof window.gtag==='function') window.gtag('event','booking_submit',{event_category:'lead',lead_source:'website_booking_form',booking_plan:plan,inspection_type:data.type,page_location:window.location.href});
       if(msg)msg.textContent=`Booking ${code} created. Opening payment page…`;
       // Only booking references go in the address; customer details stay in localStorage (cpm_booking).
       const params=new URLSearchParams({bookingId:code,bookingDocId:ref.id,bookingAmount:String(booking)});
+      if(typeof window.gtag==='function') window.gtag('event','payment_start',{event_category:'conversion',payment_stage:'booking_to_payment',booking_plan:plan,page_location:window.location.href});
       setTimeout(()=>location.href='/payment.html?'+params.toString(),250);
     }catch(err){if(msg)msg.textContent=err.message||'Booking could not be created. Please call or WhatsApp us.';if(btn){btn.disabled=false;btn.textContent=`Continue to \u20B9${Number(window.CPM_PRICING?.bookingAmount||0).toLocaleString('en-IN')} Payment`}}
     return false;
@@ -590,6 +593,22 @@
         event_label:link.getAttribute('href'),
         page_location:window.location.href
       });
+    }
+  });
+})();
+
+
+/* Track high-value resource and payment clicks for GA4. */
+(function(){
+  document.addEventListener('click',event=>{
+    const link=event.target.closest?.('a[href]');
+    if(!link||typeof window.gtag!=='function') return;
+    const href=link.getAttribute('href')||'';
+    if(href.includes('/sample-report.html')||href.includes('/reports/')){
+      window.gtag('event','sample_report_view',{event_category:'engagement',resource:'sample_report',page_location:window.location.href});
+    }
+    if(href.includes('/payment.html')){
+      window.gtag('event','payment_start',{event_category:'conversion',payment_stage:'payment_link_click',page_location:window.location.href});
     }
   });
 })();
