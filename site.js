@@ -70,37 +70,49 @@
     return type==='Luxury Car PDI'?luxuryPricing(p):null;
   }
   function apply(p){
-    p=p||fallback;
-    const configuredTotal=p.finalAmount??p.totalServicePrice??p.servicePrice;
-    const pricingReady=configuredTotal!=null && Number.isFinite(Number(configuredTotal));
-    const basePrice=pricingReady?Number(p.servicePrice??p.totalServicePrice??configuredTotal):NaN;
-    const charges=pricingReady?Number(p.serviceCharges||0):0;
-    const taxApplicable=String(p.taxApplicable||'NO').toUpperCase()==='YES';
-    const taxAmount=taxApplicable?Number(p.taxAmount||0):0;
-    const finalAmount=pricingReady?Number(p.finalAmount??(basePrice+charges+taxAmount)):NaN;
-    const price=finalAmount;
-    const booking=pricingReady?Number(p.bookingAmount??0):NaN;
-    const balance=pricingReady?finalAmount-booking:NaN;
-    const compTotal=Number(p.comprehensiveFinalAmount), compBalance=Number(p.comprehensiveBalanceAmount);
-    // Comprehensive has its own booking amount; older pricing records without one use the Standard booking amount.
-    const compBooking=Number(p.comprehensiveBookingAmount??p.bookingAmount);
-    const compReady=pricingReady&&p.comprehensiveFinalAmount!=null&&Number.isFinite(compTotal)&&Number.isFinite(compBalance)&&Number.isFinite(compBooking);
-    PLAN_PRICES['standard-pdi']=pricingReady?{total:finalAmount,booking,balance}:null;
+    // Always normalize missing/invalid dashboard pricing to the known website fallback.
+    // This prevents a transient/partial Firestore record from rendering ₹—.
+    const raw=p&&typeof p==='object'?p:{};
+    const validNumber=(v)=>v!=null&&v!==''&&Number.isFinite(Number(v));
+    const source={
+      ...fallback,
+      ...raw,
+      servicePrice:validNumber(raw.servicePrice)?Number(raw.servicePrice):fallback.servicePrice,
+      finalAmount:validNumber(raw.finalAmount)?Number(raw.finalAmount):fallback.finalAmount,
+      bookingAmount:validNumber(raw.bookingAmount)?Number(raw.bookingAmount):fallback.bookingAmount,
+      balanceAmount:validNumber(raw.balanceAmount)?Number(raw.balanceAmount):fallback.balanceAmount,
+      comprehensivePrice:validNumber(raw.comprehensivePrice)?Number(raw.comprehensivePrice):fallback.comprehensivePrice,
+      comprehensiveFinalAmount:validNumber(raw.comprehensiveFinalAmount)?Number(raw.comprehensiveFinalAmount):fallback.comprehensiveFinalAmount,
+      comprehensiveBookingAmount:validNumber(raw.comprehensiveBookingAmount)?Number(raw.comprehensiveBookingAmount):fallback.comprehensiveBookingAmount,
+      comprehensiveBalanceAmount:validNumber(raw.comprehensiveBalanceAmount)?Number(raw.comprehensiveBalanceAmount):fallback.comprehensiveBalanceAmount
+    };
+    const basePrice=Number(source.servicePrice);
+    const charges=validNumber(raw.serviceCharges)?Number(raw.serviceCharges):0;
+    const taxApplicable=String(raw.taxApplicable||'NO').toUpperCase()==='YES';
+    const taxAmount=taxApplicable&&validNumber(raw.taxAmount)?Number(raw.taxAmount):0;
+    const finalAmount=validNumber(raw.finalAmount)?Number(raw.finalAmount):(basePrice+charges+taxAmount);
+    const booking=Number(source.bookingAmount);
+    const balance=validNumber(raw.balanceAmount)?Number(raw.balanceAmount):finalAmount-booking;
+    const compTotal=Number(source.comprehensiveFinalAmount);
+    const compBalance=validNumber(raw.comprehensiveBalanceAmount)?Number(raw.comprehensiveBalanceAmount):compTotal-Number(source.comprehensiveBookingAmount);
+    const compBooking=Number(source.comprehensiveBookingAmount);
+    const compReady=Number.isFinite(compTotal)&&Number.isFinite(compBalance)&&Number.isFinite(compBooking)&&compBooking>0&&compBooking<=compTotal;
+    PLAN_PRICES['standard-pdi']={total:finalAmount,booking,balance};
     PLAN_PRICES['comprehensive-360-pdi']=compReady?{total:compTotal,booking:compBooking,balance:compBalance}:null;
-    const chosen=PLAN_PRICES[selectedPlan]||null;
-    const luxury=selectedBookingPricing(p);
+    const chosen=PLAN_PRICES[selectedPlan]||PLAN_PRICES['standard-pdi'];
+    const luxury=selectedBookingPricing(source);
     const values=luxury
       ? {service:luxury.total,balance:luxury.balance,booking:luxury.booking,standard:luxury.total,'standard-booking':luxury.booking,'standard-balance':luxury.balance,comprehensive:luxury.total,'comprehensive-booking':luxury.booking,'comprehensive-balance':luxury.balance,'luxury-service':luxury.total,'luxury-booking':luxury.booking,'luxury-balance':luxury.balance}
-      : {service:chosen?.total,balance:chosen?.balance,booking:chosen?chosen.booking:booking,standard:pricingReady?finalAmount:NaN,'standard-booking':booking,'standard-balance':balance,comprehensive:compReady?compTotal:NaN,'comprehensive-booking':compReady?compBooking:NaN,'comprehensive-balance':compReady?compBalance:NaN,'luxury-service':p.services?.luxuryCarPdi?.price,'luxury-booking':p.services?.luxuryCarPdi?.bookingAmount,'luxury-balance':p.services?.luxuryCarPdi?.balanceAmount};
-    document.querySelectorAll('[data-price]').forEach(el=>{const val=values[el.dataset.price]; el.textContent=pricingReady&&Number.isFinite(Number(val))&&val!=null?money(val):'₹—'});
+      : {service:chosen.total,balance:chosen.balance,booking:chosen.booking,standard:finalAmount,'standard-booking':booking,'standard-balance':balance,comprehensive:compReady?compTotal:fallback.comprehensiveFinalAmount,'comprehensive-booking':compReady?compBooking:fallback.comprehensiveBookingAmount,'comprehensive-balance':compReady?compBalance:fallback.comprehensiveBalanceAmount,'luxury-service':source.services?.luxuryCarPdi?.price??4999,'luxury-booking':source.services?.luxuryCarPdi?.bookingAmount??1999,'luxury-balance':source.services?.luxuryCarPdi?.balanceAmount??3000};
+    document.querySelectorAll('[data-price]').forEach(el=>{const val=values[el.dataset.price]; el.textContent=validNumber(val)?money(val):'₹—'});
     document.querySelectorAll('[data-plan-name]').forEach(el=>{el.textContent=PLANS[selectedPlan].name});
-    document.querySelectorAll('input[name="plan"]').forEach(r=>{r.checked=r.value===selectedPlan; const off=!PLAN_PRICES[r.value]&&pricingReady; r.disabled=off; r.closest('label')?.classList.toggle('plan-unavailable',off)});
-    document.querySelectorAll('[data-service-price]').forEach(el=>{const key=el.dataset.servicePrice; const svc=p.services&&p.services[key]; el.textContent=pricingReady?money(svc&&svc.price!=null?svc.price:price):'₹—'});
-    const priceInput=document.getElementById('bookingPrice'); if(priceInput) priceInput.value=luxury?luxury.total:(chosen?chosen.total:'');
-    const bookingInput=document.getElementById('bookingAmount'); if(bookingInput) bookingInput.value=luxury?luxury.booking:(chosen?chosen.booking:'');
-    const balanceInput=document.getElementById('balanceAmount'); if(balanceInput) balanceInput.value=luxury?luxury.balance:(chosen?chosen.balance:'');
-    lastPricing=p;
-    window.CPM_PRICING={...p,defaultServicePrice:luxury?luxury.total:(chosen?chosen.total:price),bookingAmount:luxury?luxury.booking:(chosen?chosen.booking:booking),balanceAmount:luxury?luxury.balance:(chosen?chosen.balance:balance)};
+    document.querySelectorAll('input[name="plan"]').forEach(r=>{r.checked=r.value===selectedPlan; const off=!PLAN_PRICES[r.value]; r.disabled=off; r.closest('label')?.classList.toggle('plan-unavailable',off)});
+    document.querySelectorAll('[data-service-price]').forEach(el=>{const key=el.dataset.servicePrice; const svc=source.services&&source.services[key]; const serviceValue=validNumber(svc?.price)?Number(svc.price):basePrice; el.textContent=money(serviceValue)});
+    const priceInput=document.getElementById('bookingPrice'); if(priceInput) priceInput.value=luxury?luxury.total:chosen.total;
+    const bookingInput=document.getElementById('bookingAmount'); if(bookingInput) bookingInput.value=luxury?luxury.booking:chosen.booking;
+    const balanceInput=document.getElementById('balanceAmount'); if(balanceInput) balanceInput.value=luxury?luxury.balance:chosen.balance;
+    lastPricing=source;
+    window.CPM_PRICING={...source,defaultServicePrice:luxury?luxury.total:chosen.total,bookingAmount:luxury?luxury.booking:chosen.booking,balanceAmount:luxury?luxury.balance:chosen.balance};
     return window.CPM_PRICING;
   }
 
