@@ -516,16 +516,12 @@
 <script>
   (function () {
     const section = document.getElementById('real-inspection-video');
-    const source = section && section.querySelector('source');
-    if (!section || !source) return;
+    const video = section && section.querySelector('video');
+    if (!section || !video) return;
 
-    fetch(source.src, { method: 'HEAD', cache: 'no-store' })
-      .then(function (response) {
-        if (response.ok) section.hidden = false;
-      })
-      .catch(function () {
-        /* Keep the section hidden until the video asset is available. */
-      });
+    video.addEventListener('loadedmetadata', function () {
+      section.hidden = false;
+    });
   })();
 </script>
 
