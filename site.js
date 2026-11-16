@@ -46,7 +46,7 @@
 
   setupLegacyNavigation();
   const firebaseConfig={apiKey:'AIzaSyD60AqqE6Hs6GlEORAkCa-UydrEtTg1P5w',authDomain:'car-pdi-masters.firebaseapp.com',projectId:'car-pdi-masters',storageBucket:'car-pdi-masters.firebasestorage.app',messagingSenderId:'540105751171',appId:'1:540105751171:web:5edba36edd0effcccb79b6',measurementId:'G-BGWPW2HG1J'};
-  const fallback={paymentMode:'LIVE',serviceActive:true};
+  const fallback={paymentMode:'LIVE',serviceActive:true,currency:'INR',servicePrice:1499,finalAmount:1499,bookingAmount:299,balanceAmount:1200,comprehensivePrice:2499,comprehensiveFinalAmount:2499,comprehensiveBookingAmount:499,comprehensiveBalanceAmount:2000};
   const money=n=>'\u20B9'+Number(n||0).toLocaleString('en-IN');
   let dbPromise;
   async function db(){
