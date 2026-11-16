@@ -18,7 +18,7 @@ need('site.js', 'ensureMobileMenu', 'the mobile menu button for every page');
 need('site.js', 'const CMS_PAGE_OVERRIDES=false', 'GitHub-as-master for page content (old CMS copies must not replace pages)');
 need('index.html', 'CPM_SUBMIT_BOOKING', 'the original paid booking form');
 need('index.html', 'id="mobile"', 'the customer mobile number field');
-need('scripts/enhance-seo-pages.js', 'function linkifyCarParakh', 'static CarParakh links');
+need('scripts/enhance-seo-pages.js', 'function removeLegacyBookingCoordinatorReferences', 'legacy booking reference cleanup');
 need('site.js', 'ensureSitewidePaidBookingForm', 'sitewide paid booking form for service and locality pages');
 need('site.js', 'window.CPM_SUBMIT_BOOKING=async function(e)', 'the paid booking handler');
 need('site.js', "bookingStatus:'PAYMENT_PENDING'", 'pending-payment Firestore booking creation');
