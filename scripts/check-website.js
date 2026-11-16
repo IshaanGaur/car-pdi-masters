@@ -142,8 +142,20 @@ const walkHtml = dir => fs.readdirSync(dir, { withFileTypes: true }).flatMap(ent
   return entry.isDirectory() ? walkHtml(full) : (entry.isFile() && entry.name.endsWith('.html') ? [full] : []);
 });
 if (!fs.existsSync(path.join(root, 'llms.txt'))) problems.push('llms.txt: missing AI-readable business/service summary');
+const robots = read('robots.txt');
+for (const bot of ['OAI-SearchBot','Google-Extended','Claude-SearchBot','PerplexityBot']) {
+  if (!new RegExp('User-agent\\s*:\\s*' + bot + '[\\s\\S]{0,120}?Allow\\s*:\\s*\\/','i').test(robots)) {
+    problems.push('robots.txt: explicit AI/search crawler allow missing for ' + bot);
+  }
+}
+if (!/2,500\+/.test(read('llms.txt')) || !/10\+ years/.test(read('llms.txt')) || !/300\+ checkpoints/.test(read('llms.txt'))) {
+  problems.push('llms.txt: core factual trust signals are incomplete');
+}
 for (const file of walkHtml(root)) {
   const html = fs.readFileSync(file, 'utf8');
+  if (/\\bCarParakh\\b|https?:\\/\\/(?:www\\.)?carparakh\\.com/i.test(html)) {
+    problems.push(path.relative(root, file) + ': stale CarParakh customer-facing reference remains after SEO build');
+  }
   const badEnquiry = [...html.matchAll(/<a\b[^>]*href=["']([^"']*)["'][^>]*>([\s\S]*?)<\/a>/gi)]
     .filter(match => /enquire on whatsapp/i.test(match[2].replace(/<[^>]*>/g, ' ')) && !/^https:\/\/wa\.me\//i.test(match[1]));
   if (badEnquiry.length) problems.push(path.relative(root, file) + ': Enquire on WhatsApp CTA does not open WhatsApp');
