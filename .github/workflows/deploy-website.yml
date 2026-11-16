@@ -83,11 +83,16 @@ jobs:
               if ! grep -Eiq '<h1[^>]*>[^<]*(PDI|Inspection)[^<]*</h1>' <<<"$body"; then echo "ERROR: missing PDI/Inspection H1 on $host/$path"; exit 1; fi
               if ! grep -Eiq 'rel="canonical"[^>]+href="https://www\.carmasters\.co\.in/[^" ]+/' <<<"$body"; then echo "ERROR: missing trailing-slash canonical on $host/$path"; exit 1; fi
               if ! grep -Eiq 'content="index,follow"' <<<"$body"; then echo "ERROR: missing index,follow on $host/$path"; exit 1; fi
+              if grep -Eiq 'CarParakh|carparakh\.com' <<<"$body"; then echo "ERROR: stale CarParakh reference still live on $host/$path"; exit 1; fi
             done
             echo "Checking $host/sitemap.xml"
             sitemap="$(curl -fsSL --retry 5 --retry-delay 2 "$host/sitemap.xml")"
             if ! grep -Fq 'https://www.carmasters.co.in/car-pdi/' <<<"$sitemap"; then echo "ERROR: model SEO root missing from sitemap on $host"; exit 1; fi
             if ! grep -Fq 'https://www.carmasters.co.in/car-pdi/maruti-suzuki/swift/' <<<"$sitemap"; then echo "ERROR: Swift model URL missing from sitemap on $host"; exit 1; fi
+            home="$(curl -fsSL --retry 5 --retry-delay 2 "$host/")"
+            for bad in '₹—' 'No locations currently accepting orders'; do
+              if grep -Fq "$bad" <<<"$home"; then echo "ERROR: fallback UI text '$bad' is live on $host/"; exit 1; fi
+            done
             echo "OK: brand-model pages and sitemap are live on $host"
           done
 
