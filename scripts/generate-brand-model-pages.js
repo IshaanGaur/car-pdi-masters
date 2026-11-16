@@ -1,6 +1,6 @@
 const fs=require('fs'),path=require('path');const ROOT=path.join(__dirname,'..'),SITE='https://www.carmasters.co.in',CAT=path.join(ROOT,'models/catalog.json'),OUT=path.join(ROOT,'car-pdi');
 const esc=s=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
-const slug=s=>String(s).toLowerCase().normalize('NFKD').replace(/[^\\w\\s-]/g,'').replace(/[\\s_]+/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,'');
+const slug=s=>String(s).toLowerCase().normalize('NFKD').replace(/[^\w\s-]/g,'').replace(/[\s_]+/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,'');
 const data=JSON.parse(fs.readFileSync(CAT,'utf8'));if(!Array.isArray(data.models))throw Error('catalog models must be an array');
 const approved=data.models.filter(m=>m.status==='approved'&&m.researchStatus==='approved'&&m.seoStatus!=='blocked'&&m.approvedForPublication===true);
 const url=m=>`${SITE}/car-pdi/${m.brandSlug||slug(m.brand)}/${m.modelSlug||slug(m.model)}/`;
@@ -82,13 +82,13 @@ for(const b of brands){const ms=approved.filter(m=>m.brandSlug===b.brandSlug);wr
 const sitemapFile=path.join(ROOT,'sitemap.xml');
 if(fs.existsSync(sitemapFile)){
   let sm=fs.readFileSync(sitemapFile,'utf8');
-  sm=sm.replace(/\\s*<!-- BEGIN GENERATED BRAND MODEL PAGES -->[\\s\\S]*?<!-- END GENERATED BRAND MODEL PAGES -->\\s*/g,'\\n');
+  sm=sm.replace(/\s*<!-- BEGIN GENERATED BRAND MODEL PAGES -->[\s\S]*?<!-- END GENERATED BRAND MODEL PAGES -->\s*/g,'\n');
   const today=new Date().toISOString().slice(0,10);
   const hubUrls=['  <url><loc>'+SITE+'/car-pdi/</loc><lastmod>'+today+'</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>']
     .concat(brands.map(b=>'  <url><loc>'+SITE+'/car-pdi/'+b.brandSlug+'/</loc><lastmod>'+today+'</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>'));
   const modelUrls=approved.map(m=>'  <url><loc>'+url(m)+'</loc><lastmod>'+today+'</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>');
-  const urls=hubUrls.concat(modelUrls).join('\\n');
-  const block='  <!-- BEGIN GENERATED BRAND MODEL PAGES -->\\n'+urls+'\\n  <!-- END GENERATED BRAND MODEL PAGES -->';
+  const urls=hubUrls.concat(modelUrls).join('\n');
+  const block='  <!-- BEGIN GENERATED BRAND MODEL PAGES -->\n'+urls+'\n  <!-- END GENERATED BRAND MODEL PAGES -->';
   sm=sm.replace(/<\/urlset>/,block+'\n</urlset>');
   fs.writeFileSync(sitemapFile,sm);
 }
