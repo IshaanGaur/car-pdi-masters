@@ -91,6 +91,32 @@ jobs:
             echo "OK: brand-model pages and sitemap are live on $host"
           done
 
+      - name: Verify AI access and legacy booking cleanup on deployed hosts
+        run: |
+          set -euo pipefail
+          for host in 'https://car-pdi-masters.web.app' 'https://www.carmasters.co.in'; do
+            echo "Checking AI discovery files on $host"
+            robots="$(curl -fsSL --retry 5 --retry-delay 2 "$host/robots.txt")"
+            llms="$(curl -fsSL --retry 5 --retry-delay 2 "$host/llms.txt")"
+            for bot in OAI-SearchBot Google-Extended Claude-SearchBot PerplexityBot; do
+              grep -Eiq "User-agent[[:space:]]*:[[:space:]]*$bot" <<<"$robots" || { echo "ERROR: $bot missing from robots.txt on $host"; exit 1; }
+            done
+            grep -Fq '2,500+ cars inspected' <<<"$llms" || { echo "ERROR: llms.txt trust signal missing on $host"; exit 1; }
+            grep -Fq '10+ years of inspection experience' <<<"$llms" || { echo "ERROR: llms.txt experience signal missing on $host"; exit 1; }
+            grep -Fq '300+ checkpoints' <<<"$llms" || { echo "ERROR: llms.txt checkpoint signal missing on $host"; exit 1; }
+
+            for path in '' 'services/new-car-pdi.html' 'locations/gurugram.html'; do
+              url="$host/$path"
+              echo "Checking legacy booking references on $url"
+              body="$(curl -fsSL --retry 5 --retry-delay 2 "$url")"
+              if grep -Eiq 'CarParakh|carparakh\.com' <<<"$body"; then
+                echo "ERROR: stale CarParakh reference still live on $url"
+                exit 1
+              fi
+            done
+            echo "OK: AI access, trust signals and booking cleanup verified on $host"
+          done
+
       - name: Verify Sohna Road SEO page on deployed hosts
         run: |
           set -euo pipefail
