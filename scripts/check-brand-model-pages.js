@@ -44,6 +44,13 @@ const smPath=path.join(ROOT,'sitemap.xml'); ok(fs.existsSync(smPath),'sitemap.xm
 if(fs.existsSync(smPath)){
  const sm=fs.readFileSync(smPath,'utf8'), expected=[SITE+'/car-pdi/'].concat(brands.map(([b])=>SITE+'/car-pdi/'+b+'/'),approved.map(m=>SITE+modelUrl(m)));
  ok(sm.includes('BEGIN GENERATED BRAND MODEL PAGES')&&sm.includes('END GENERATED BRAND MODEL PAGES'),'generated sitemap block missing');
+ const allLocs=[...sm.matchAll(/<loc>([^<]+)<\\/loc>/g)].map(m=>m[1]);
+ ok(new Set(allLocs).size===allLocs.length,'sitemap.xml contains duplicate <loc> URLs: '+(allLocs.length-new Set(allLocs).size));
+ const generatedBlock=sm.match(/<!-- BEGIN GENERATED BRAND MODEL PAGES -->[\\s\\S]*?<!-- END GENERATED BRAND MODEL PAGES -->/);
+ if(generatedBlock){
+   const generatedLocs=[...generatedBlock[0].matchAll(/<loc>([^<]+)<\\/loc>/g)].map(m=>m[1]);
+   ok(generatedLocs.length===approved.length+brands.length+1,'generated sitemap block has '+generatedLocs.length+' URLs; expected '+(approved.length+brands.length+1));
+ }
  for(const u of expected)ok(sm.includes('<loc>'+u+'</loc>'),'sitemap URL missing: '+u);
 }
 if(generated!==approved.length)fail.push(`generated ${generated} model pages; expected ${approved.length}`);
