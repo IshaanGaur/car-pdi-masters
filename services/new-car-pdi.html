@@ -476,6 +476,59 @@
   </div>
 </section>
 
+
+<!-- REAL INSPECTION VIDEO / FIRST-HAND EVIDENCE -->
+<section class="service-section soft" id="real-inspection-video" hidden>
+  <div class="container">
+    <div class="service-head">
+      <div class="eyebrow dark">REAL INSPECTION FOOTAGE</div>
+      <h2>See a Real New Car Inspection by Car PDI Masters</h2>
+      <p>
+        This short inspection video shows Car PDI Masters performing a real vehicle
+        inspection. It is provided as first-hand evidence of the inspection work,
+        alongside the 300+ checkpoint workflow and photo-supported inspection report.
+      </p>
+    </div>
+
+    <div class="coverage-grid">
+      <article class="coverage-card" style="grid-column:1/-1;">
+        <video
+          controls
+          playsinline
+          preload="metadata"
+          poster="/assets/new-car-pdi.jpg"
+          width="480"
+          height="854"
+          style="display:block;width:min(100%,420px);height:auto;max-height:760px;margin:0 auto;border-radius:16px;background:#111;"
+          aria-label="Real new car inspection video by Car PDI Masters"
+        >
+          <source src="/assets/new-car-pdi-inspection-branded.webm" type="video/webm">
+          Your browser does not support embedded video. Please use the page content to review the New Car PDI service.
+        </video>
+        <p style="text-align:center;margin:14px 0 0;">
+          <strong>Car PDI Masters</strong> · Real inspection footage · Delhi NCR
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    const section = document.getElementById('real-inspection-video');
+    const source = section && section.querySelector('source');
+    if (!section || !source) return;
+
+    fetch(source.src, { method: 'HEAD', cache: 'no-store' })
+      .then(function (response) {
+        if (response.ok) section.hidden = false;
+      })
+      .catch(function () {
+        /* Keep the section hidden until the video asset is available. */
+      });
+  })();
+</script>
+
 <!-- DIRECT ANSWER FOR SEARCH AND AI -->
 <section class="service-section">
   <div class="container">
