@@ -31,7 +31,7 @@ The inspection uses a structured 300+ checkpoint framework. Paint thickness read
 - Comprehensive 360° PDI: ₹2,499 (confirm current package inclusions and availability with the team).
 
 ## Booking
-Customers enquire by phone or WhatsApp. The team confirms location access and appointment availability, then shares the next booking steps. Car PDI Masters performs the inspection; CarParakh is used for booking coordination after availability is confirmed.
+Customers enquire by phone or WhatsApp. The team confirms location access and appointment availability, then shares the next booking steps. Car PDI Masters performs the inspection; the website booking form is used for booking coordination after availability is confirmed.
 
 ## Important
 Service availability depends on location, vehicle access, appointment timing and selected package. Prices and package inclusions should be confirmed on the official website or with the team before booking.
