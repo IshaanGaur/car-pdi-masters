@@ -274,7 +274,9 @@
   }
   setupHomepageUI();
   setupPlans();
-  loadPricing();
+  // Avoid loading Firebase pricing modules on pages that do not render dynamic pricing.
+  // Booking/price pages still load pricing normally; informational pages skip the extra network work.
+  if(document.querySelector('[data-price],[data-service-price]')) loadPricing();
   loadLocations();
   window.CPM_MONEY=money;
   window.CPM_SUBMIT_BOOKING=async function(e){
