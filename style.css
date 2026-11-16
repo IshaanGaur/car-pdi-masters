@@ -1743,6 +1743,36 @@ h4{
     );
 }
 
+.service-trust-strip{
+  grid-column:1 / -1;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+  margin-top:4px;
+}
+
+.service-trust-item{
+  padding:16px 18px;
+  border:1px solid rgba(104,185,255,.28);
+  border-radius:16px;
+  background:rgba(8,25,42,.82);
+  box-shadow:0 15px 40px rgba(0,0,0,.16);
+}
+
+.service-trust-item strong{
+  display:block;
+  color:#fff;
+  font-size:20px;
+}
+
+.service-trust-item span{
+  display:block;
+  margin-top:4px;
+  color:#9fc0da;
+  font-size:13px;
+  line-height:1.4;
+}
+
 .service-summary{
   max-width:720px;
   margin-top:26px;
@@ -3161,6 +3191,7 @@ footer{
   }
 
   .service-summary-grid,
+  .service-trust-strip,
   .checkpoint-list{
     grid-template-columns:1fr;
   }
