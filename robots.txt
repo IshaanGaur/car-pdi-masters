@@ -1,4 +1,36 @@
+# Search and AI crawler access
 User-agent: *
 Allow: /
 Disallow: /config/README.md
+
+# OpenAI Search — enables eligible visibility in ChatGPT Search
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI user-requested fetches
+User-agent: ChatGPT-User
+Allow: /
+
+# OpenAI model-training crawler — allowed by site owner
+User-agent: GPTBot
+Allow: /
+
+# Google Search/AI grounding and Gemini controls
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic search and user-requested fetches
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+
+# Anthropic model-training crawler — allowed by site owner
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity search crawler
+User-agent: PerplexityBot
+Allow: /
+
 Sitemap: https://www.carmasters.co.in/sitemap.xml
