@@ -153,7 +153,7 @@ if (!/2,500\+/.test(read('llms.txt')) || !/10\+ years/.test(read('llms.txt')) ||
 }
 for (const file of walkHtml(root)) {
   const html = fs.readFileSync(file, 'utf8');
-  if (/\\bCarParakh\\b|https?:\\/\\/(?:www\\.)?carparakh\\.com/i.test(html)) {
+  if (/\bCarParakh\b|https?:\/\/(?:www\.)?carparakh\.com/i.test(html)) {
     problems.push(path.relative(root, file) + ': stale CarParakh customer-facing reference remains after SEO build');
   }
   const badEnquiry = [...html.matchAll(/<a\b[^>]*href=["']([^"']*)["'][^>]*>([\s\S]*?)<\/a>/gi)]
