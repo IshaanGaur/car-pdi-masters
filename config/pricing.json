@@ -52,7 +52,9 @@
     },
     "luxuryCarPdi": {
       "name": "Luxury Car PDI",
-      "price": 2499,
+      "price": 4999,
+      "bookingAmount": 1999,
+      "balanceAmount": 3000,
       "active": true
     },
     "evCarPdi": {
