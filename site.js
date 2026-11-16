@@ -60,7 +60,7 @@
   window.CPM_FIREBASE_READY=db;
   function luxuryPricing(p){
     const svc=p?.services?.luxuryCarPdi||{};
-    const total=Number(svc.price??4999), booking=Number(svc.bookingAmount??1999);
+    const total=4999, booking=1999;
     return Number.isFinite(total)&&Number.isFinite(booking)&&booking>0&&booking<=total
       ? {total,booking,balance:total-booking}
       : {total:4999,booking:1999,balance:3000};
@@ -91,7 +91,7 @@
     const luxury=selectedBookingPricing(p);
     const values=luxury
       ? {service:luxury.total,balance:luxury.balance,booking:luxury.booking,standard:luxury.total,'standard-booking':luxury.booking,'standard-balance':luxury.balance,comprehensive:luxury.total,'comprehensive-booking':luxury.booking,'comprehensive-balance':luxury.balance,'luxury-service':luxury.total,'luxury-booking':luxury.booking,'luxury-balance':luxury.balance}
-      : {service:chosen?.total,balance:chosen?.balance,booking:chosen?chosen.booking:booking,standard:pricingReady?finalAmount:NaN,'standard-booking':booking,'standard-balance':balance,comprehensive:compReady?compTotal:NaN,'comprehensive-booking':compBooking,'comprehensive-balance':compReady?compBalance:NaN,'luxury-service':p.services?.luxuryCarPdi?.price,'luxury-booking':p.services?.luxuryCarPdi?.bookingAmount,'luxury-balance':p.services?.luxuryCarPdi?.balanceAmount};
+      : {service:chosen?.total,balance:chosen?.balance,booking:chosen?chosen.booking:booking,standard:pricingReady?finalAmount:NaN,'standard-booking':booking,'standard-balance':balance,comprehensive:compReady?compTotal:NaN,'comprehensive-booking':compReady?compBooking:NaN,'comprehensive-balance':compReady?compBalance:NaN,'luxury-service':p.services?.luxuryCarPdi?.price,'luxury-booking':p.services?.luxuryCarPdi?.bookingAmount,'luxury-balance':p.services?.luxuryCarPdi?.balanceAmount};
     document.querySelectorAll('[data-price]').forEach(el=>{const val=values[el.dataset.price]; el.textContent=pricingReady&&Number.isFinite(Number(val))&&val!=null?money(val):'₹—'});
     document.querySelectorAll('[data-plan-name]').forEach(el=>{el.textContent=PLANS[selectedPlan].name});
     document.querySelectorAll('input[name="plan"]').forEach(r=>{r.checked=r.value===selectedPlan; const off=!PLAN_PRICES[r.value]&&pricingReady; r.disabled=off; r.closest('label')?.classList.toggle('plan-unavailable',off)});
