@@ -569,6 +569,49 @@
 
 })();
 
+/* Luxury Car PDI uses one dedicated Advance Package.
+   Standard and Comprehensive options remain unchanged for other inspection types. */
+(function(){
+  function setLuxuryPackageUI(){
+    const type=document.getElementById('type');
+    const picker=document.querySelector('[data-plan-picker]');
+    if(!type||!picker) return;
+    const isLuxury=/^luxury car(?: pdi)?$/i.test(String(type.value||'').trim());
+    const standard=picker.querySelector('[data-plan-option="standard"]');
+    const comprehensive=picker.querySelector('[data-plan-option="comprehensive"]');
+    const advance=picker.querySelector('[data-plan-option="luxury-advance"]');
+    const legend=picker.querySelector('legend');
+    const link=picker.querySelector('.plan-picker-link');
+    if(!standard||!comprehensive||!advance) return;
+
+    if(isLuxury){
+      standard.hidden=true;
+      comprehensive.hidden=true;
+      advance.hidden=false;
+      if(legend) legend.textContent='Inspection Package *';
+      if(link) link.textContent="What's included in the Advance Package?";
+      const summary=document.querySelector('[data-plan-name]');
+      if(summary) summary.textContent='Advance Package';
+    }else{
+      standard.hidden=false;
+      comprehensive.hidden=false;
+      advance.hidden=true;
+      if(legend) legend.textContent='Inspection Plan *';
+      if(link) link.textContent="What's included in each plan?";
+      const summary=document.querySelector('[data-plan-name]');
+      if(summary) summary.textContent=(window.CPM_PRICING&&document.querySelector('input[name="plan"]:checked')?.value==='comprehensive-360-pdi')?'Comprehensive 360° PDI':'Standard PDI';
+    }
+  }
+  function init(){
+    const type=document.getElementById('type');
+    if(!type) return;
+    type.addEventListener('change',setLuxuryPackageUI);
+    setLuxuryPackageUI();
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init,{once:true});
+  else init();
+})();
+
 /* Use the current Gurugram locality in the header WhatsApp prefill. */
 (function(){
   function init(){
