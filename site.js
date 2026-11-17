@@ -69,8 +69,10 @@
       : {total:4999,booking:1999,balance:3000};
   }
   function selectedBookingPricing(p){
-    const type=document.getElementById('type')?.value||'';
-    return type==='Luxury Car PDI'?luxuryPricing(p):null;
+    const type=String(document.getElementById('type')?.value||'').trim().toLowerCase();
+    // Accept both the current label and the shorter legacy/live value "Luxury Car".
+    const isLuxury=type==='luxury car pdi'||type==='luxury car';
+    return isLuxury?luxuryPricing(p):null;
   }
   function apply(p){
     // Always normalize missing/invalid dashboard pricing to the known website fallback.
