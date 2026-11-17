@@ -662,7 +662,7 @@
 
 
 <!-- REAL INSPECTION VIDEO / FIRST-HAND EVIDENCE -->
-<section class="service-section soft" id="real-inspection-video" hidden>
+<section class="service-section soft" id="real-inspection-video">
   <div class="container">
     <div class="service-head">
       <div class="eyebrow dark">REAL INSPECTION FOOTAGE</div>
@@ -697,17 +697,7 @@
   </div>
 </section>
 
-<script>
-  (function () {
-    const section = document.getElementById('real-inspection-video');
-    const video = section && section.querySelector('video');
-    if (!section || !video) return;
-
-    video.addEventListener('loadedmetadata', function () {
-      section.hidden = false;
-    });
-  })();
-</script>
+<!-- Real inspection video is visible by default; the referenced MP4 asset is present. -->
 
 <!-- DIRECT ANSWER FOR SEARCH AND AI -->
 <section class="service-section">
