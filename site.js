@@ -111,6 +111,7 @@
       : {service:chosen.total,balance:chosen.balance,booking:chosen.booking,standard:finalAmount,'standard-booking':booking,'standard-balance':balance,comprehensive:compReady?compTotal:fallback.comprehensiveFinalAmount,'comprehensive-booking':compReady?compBooking:fallback.comprehensiveBookingAmount,'comprehensive-balance':compReady?compBalance:fallback.comprehensiveBalanceAmount,'luxury-service':source.services?.luxuryCarPdi?.price??4999,'luxury-booking':source.services?.luxuryCarPdi?.bookingAmount??1999,'luxury-balance':source.services?.luxuryCarPdi?.balanceAmount??3000};
     document.querySelectorAll('[data-price]').forEach(el=>{const val=values[el.dataset.price]; el.textContent=validNumber(val)?money(val):'₹—'});
     document.querySelectorAll('[data-plan-name]').forEach(el=>{el.textContent=PLANS[selectedPlan].name});
+    if(typeof window.CPM_SYNC_LUXURY_PACKAGE_UI==='function') window.CPM_SYNC_LUXURY_PACKAGE_UI();
     document.querySelectorAll('input[name="plan"]').forEach(r=>{r.checked=r.value===selectedPlan; const off=!PLAN_PRICES[r.value]; r.disabled=off; r.closest('label')?.classList.toggle('plan-unavailable',off)});
     document.querySelectorAll('[data-service-price]').forEach(el=>{const key=el.dataset.servicePrice; const svc=source.services&&source.services[key]; const serviceValue=validNumber(svc?.price)?Number(svc.price):basePrice; el.textContent=money(serviceValue)});
     const priceInput=document.getElementById('bookingPrice'); if(priceInput) priceInput.value=luxury?luxury.total:chosen.total;
@@ -602,6 +603,7 @@
       if(summary) summary.textContent=(window.CPM_PRICING&&document.querySelector('input[name="plan"]:checked')?.value==='comprehensive-360-pdi')?'Comprehensive 360° PDI':'Standard PDI';
     }
   }
+  window.CPM_SYNC_LUXURY_PACKAGE_UI=setLuxuryPackageUI;
   function init(){
     const type=document.getElementById('type');
     if(!type) return;
