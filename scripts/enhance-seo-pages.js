@@ -33,9 +33,11 @@ function contextFor(file) {
   return { kind: 'home' };
 }
 function removeLegacyBookingCoordinatorReferences(html) {
-  html = html.replace(/<a\b[^>]*href=["']https:\/\/carparakh\.com\/?["'][^>]*>CarParakh<\/a>/gi, 'the website booking form');
-  html = html.replace(/https:\/\/carparakh\.com\/?/gi, '');
-  return html.replace(/\bCarParakh\b/gi, 'the website booking form');
+  // Migrate any legacy CarParakh references to the Car PDI Masters domain/brand.
+  // Preserve the path when a legacy URL contains one; the booking journey is now owned by Car PDI Masters.
+  html = html.replace(/https?:\/\/(?:www\.)?carparakh\.com/gi, SITE);
+  html = html.replace(/\bCarParakh\b/gi, 'Car PDI Masters');
+  return html;
 }
 function addBookingDisclosure(html) {
   if (/id=["']booking-platform-disclosure["']/.test(html)) return html;
@@ -303,6 +305,7 @@ for (const file of htmlFiles) {
     '<section class="section booking-section" id="booking">');
   html = addBookingDisclosure(html);
   html = removeLegacyBookingCoordinatorReferences(html);
+  // Final public-HTML sweep: no legacy CarParakh brand or domain may remain.
   if (html !== original) { write(file, html); changed++; }
 }
 console.log('SEO/AEO/GEO build enhancement complete: ' + changed + ' HTML pages processed (' + htmlFiles.length + ' eligible pages).');
