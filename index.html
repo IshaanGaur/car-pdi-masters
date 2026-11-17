@@ -1124,10 +1124,11 @@
     <form class="booking-form" onsubmit="return CPM_SUBMIT_BOOKING(event)">
       <label><span>Customer Name *</span><input id="name" placeholder="Your name" required></label>
       <label><span>Mobile Number *</span><input id="mobile" inputmode="tel" placeholder="WhatsApp / mobile number" required></label>
-      <fieldset class="plan-picker full">
+      <fieldset class="plan-picker full" data-plan-picker>
         <legend>Inspection Plan *</legend>
-        <label><input type="radio" name="plan" value="standard-pdi" checked><span><b>Standard PDI</b><small><span data-price="standard">₹1,499</span> · booking <span data-price="standard-booking">₹299</span></small></span></label>
-        <label><input type="radio" name="plan" value="comprehensive-360-pdi"><span><b>Comprehensive 360° PDI</b><small><span data-price="comprehensive">₹2,499</span> · booking <span data-price="comprehensive-booking">₹499</span></small></span></label>
+        <label data-plan-option="standard"><input type="radio" name="plan" value="standard-pdi" checked><span><b>Standard PDI</b><small><span data-price="standard">₹1,499</span> · booking <span data-price="standard-booking">₹299</span></small></span></label>
+        <label data-plan-option="comprehensive"><input type="radio" name="plan" value="comprehensive-360-pdi"><span><b>Comprehensive 360° PDI</b><small><span data-price="comprehensive">₹2,499</span> · booking <span data-price="comprehensive-booking">₹499</span></small></span></label>
+        <label data-plan-option="luxury-advance" class="luxury-plan-option" hidden><input type="radio" name="luxury-plan-display" tabindex="-1" aria-hidden="true" disabled><span><b>Advance Package</b><small><span data-price="luxury-service">₹4,999</span> · booking <span data-price="luxury-booking">₹1,999</span></small></span></label>
         <a class="plan-picker-link" href="#pricing">What's included in each plan?</a>
       </fieldset>
       <label><span>Inspection Type *</span><select id="type" required><option value="">Select inspection type</option><option>New Car PDI</option><option>New Car Inspection</option><option>Used Car PDI</option><option>Used Car Inspection</option><option>Pre-Purchase Car Inspection</option><option>Luxury Car</option><option>EV Car</option></select></label>
