@@ -69,6 +69,9 @@ function faqFor(ctx) {
   if (/New Car/.test(s)) f[0].a = 'Share the make, model, variant, dealership or delivery location and expected delivery date. The team will confirm availability for a pre-delivery inspection before you accept the vehicle.';
   if (/Used Car|Pre-Purchase/.test(s)) f[0].a = 'Share the make, model, variant, seller or vehicle location and preferred inspection time. The inspection is arranged before you finalise the purchase, subject to access and appointment confirmation.';
   if (/EV/.test(s)) f[1].a = 'The inspection covers observable body and paint condition, tyres, cabin, displays, controls, accessible electrical features and charging-related items that can be checked safely. It does not certify battery health unless a compatible, separately specified test is available.';
+  if (/Luxury Car PDI/.test(s)) {
+    f[3] = {q:'How much does a Luxury Car PDI cost?',a:'The Luxury Car PDI Advance Package is ₹4,999, with a ₹1,999 booking amount and ₹3,000 balance. Confirm current package inclusions and appointment availability before booking.'};
+  }
   return f;
 }
 function homeFaqs() {
@@ -108,7 +111,9 @@ function updateJsonLd(html, ctx) {
           return q;
         });
         if (ctx.kind === 'service' && node['@type'] === 'Service') {
-          node.offers = [
+          node.offers = /Luxury Car PDI/i.test(String(node.name||ctx.service||'')) ? [
+            {'@type':'Offer',name:'Luxury Car PDI — Advance Package',price:'4999',priceCurrency:'INR',availability:'https://schema.org/InStock',url:SITE+'/services/luxury-car-pdi.html'}
+          ] : [
             {'@type':'Offer',name:'Standard PDI',price:'1499',priceCurrency:'INR',availability:'https://schema.org/InStock',url:SITE+'/#pricing'},
             {'@type':'Offer',name:'Comprehensive 360° PDI',price:'2499',priceCurrency:'INR',availability:'https://schema.org/InStock',url:SITE+'/#pricing'}
           ];
@@ -130,10 +135,8 @@ for (const file of htmlFiles) {
   const ctx = contextFor(file);
   // Keep the sitewide locality footer aligned with the current Delhi NCR service area.
   // This is a presentation/consistency fix only; it does not alter URLs, canonicals or booking logic.
-  if (ctx.kind === 'location') {
-    html = html.replace(/Serving Delhi &amp; Gurugram/gi, 'Serving Delhi NCR');
-    html = html.replace(/Serving Delhi & Gurugram/gi, 'Serving Delhi NCR');
-  }
+  html = html.replace(/Serving Delhi &amp; Gurugram/gi, 'Serving Delhi NCR');
+  html = html.replace(/Serving Delhi & Gurugram/gi, 'Serving Delhi NCR');
   if (ctx.kind === 'location') {
     html = html.replace(/no dealer relationship is implied/gi, 'zero dealership affiliations or commissions');
     html = html.replace(/ZERO dealer(?: or shop)? tie-ups/gi, 'zero dealership affiliations or commissions');
