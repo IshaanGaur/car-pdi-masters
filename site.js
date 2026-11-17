@@ -60,9 +60,12 @@
   window.CPM_FIREBASE_READY=db;
   function luxuryPricing(p){
     const svc=p?.services?.luxuryCarPdi||{};
-    const total=4999, booking=1999;
-    return Number.isFinite(total)&&Number.isFinite(booking)&&booking>0&&booking<=total
-      ? {total,booking,balance:total-booking}
+    const validNumber=(v)=>v!=null&&v!==''&&Number.isFinite(Number(v));
+    const total=validNumber(svc.price)?Number(svc.price):4999;
+    const booking=validNumber(svc.bookingAmount)?Number(svc.bookingAmount):1999;
+    const balance=validNumber(svc.balanceAmount)?Number(svc.balanceAmount):total-booking;
+    return total>0&&booking>0&&booking<=total&&balance>=0
+      ? {total,booking,balance}
       : {total:4999,booking:1999,balance:3000};
   }
   function selectedBookingPricing(p){
