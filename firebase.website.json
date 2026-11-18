@@ -32,6 +32,8 @@
     "predeploy": [
       "node scripts/enhance-seo-pages.js",
       "node scripts/generate-brand-model-pages.js",
+      "node scripts/apply-seo-meta.js",
+      "node scripts/add-new-car-pdi-links.js",
       "node scripts/check-website.js"
     ],
     "headers": [
