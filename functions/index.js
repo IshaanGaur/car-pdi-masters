@@ -371,9 +371,11 @@ exports.cpmSubmitWebsiteEnquiryV1 = onRequest({
 
       const ref = db.collection('bookings').doc();
       const enquiryCode = 'CPM-LEAD-' + ref.id.slice(-8).toUpperCase();
-      await db.runTransaction(async tx => {
+      const leadResult = await db.runTransaction(async tx => {
         const tokenSnap = await tx.get(tokenRef);
-        if (tokenSnap.exists && tokenSnap.data()?.bookingRef) return;
+        if (tokenSnap.exists && tokenSnap.data()?.bookingRef) {
+          return { enquiryId: String(tokenSnap.data()?.bookingId || '') };
+        }
         tx.set(ref, {
           bookingId: enquiryCode,
           bookingStatus,
@@ -398,8 +400,9 @@ exports.cpmSubmitWebsiteEnquiryV1 = onRequest({
           bookingId: enquiryCode,
           createdAt: FieldValue.serverTimestamp()
         });
+        return { enquiryId: enquiryCode };
       });
-      return res.status(200).json({ success: true, enquiryId: enquiryCode });
+      return res.status(200).json({ success: true, enquiryId: leadResult.enquiryId });
     }
 
     const ref = db.collection('bookings').doc();
