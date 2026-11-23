@@ -15,7 +15,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      # Mirror Firebase website predeploy order so CI audits the same generated output that will be deployed.
       - run: node scripts/enhance-seo-pages.js
+      - run: node scripts/generate-brand-model-pages.js
+      - run: node scripts/apply-seo-meta.js
+      - run: node scripts/add-new-car-pdi-links.js
       - name: Check JavaScript syntax
         run: |
           node --check site.js
