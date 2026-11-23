@@ -53,9 +53,9 @@ if(fs.existsSync(smPath)){
  ok(sm.includes('BEGIN GENERATED BRAND MODEL PAGES')&&sm.includes('END GENERATED BRAND MODEL PAGES'),'generated sitemap block missing');
  const allLocs=[...sm.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
  ok(new Set(allLocs).size===allLocs.length,'sitemap.xml contains duplicate <loc> URLs: '+(allLocs.length-new Set(allLocs).size));
- const generatedBlock=sm.match(/<!-- BEGIN GENERATED BRAND MODEL PAGES -->[\\s\\S]*?<!-- END GENERATED BRAND MODEL PAGES -->/);
+ const generatedBlock=sm.match(/<!-- BEGIN GENERATED BRAND MODEL PAGES -->[\s\S]*?<!-- END GENERATED BRAND MODEL PAGES -->/);
  if(generatedBlock){
- const allLocs=[...sm.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
+ const generatedLocs=[...generatedBlock[0].matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
    ok(generatedLocs.length===approved.length+brands.length+1,'generated sitemap block has '+generatedLocs.length+' URLs; expected '+(approved.length+brands.length+1));
  }
  for(const u of expected)ok(sm.includes('<loc>'+u+'</loc>'),'sitemap URL missing: '+u);
