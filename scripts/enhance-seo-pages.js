@@ -41,7 +41,7 @@ function removeLegacyBookingCoordinatorReferences(html) {
 }
 function addBookingDisclosure(html) {
   if (/id=["']booking-platform-disclosure["']/.test(html)) return html;
-  const note = '<p id="booking-platform-disclosure" class="booking-platform-disclosure">Car PDI Masters carries out the vehicle inspection. After availability is confirmed, complete the booking and payment through the website booking form.</p>';
+  const note = '<p id="booking-platform-disclosure" class="booking-platform-disclosure">Car PDI Masters carries out the vehicle inspection. Choose an active service location and appointment slot in the booking form, submit your vehicle details, then complete the booking payment securely through Razorpay.</p>';
   return html.replace(/<\/footer>/i, note + '</footer>');
 }
 function escapeHtml(s) {
@@ -52,7 +52,7 @@ function faqFor(ctx) {
     const base = [
       {q:'Can you inspect a car at my home, office or dealership in ' + ctx.place + '?',a:'An on-site inspection can be arranged at a home, office, dealership showroom or stockyard in ' + ctx.place + ', subject to access permission, a safe inspection area and appointment confirmation.'},
       {q:'What does a car inspection in ' + ctx.place + ' cover?',a:'The inspection uses a structured 300+ checkpoint framework covering observable exterior and paint condition, tyres, interior, accessible mechanical areas, electrical features and safety observations. Paint thickness readings are taken on applicable panels; OBD scanning is included only where the selected package and vehicle support it.'},
-      {q:'How do I arrange a car inspection in ' + ctx.place + '?',a:'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection address and preferred timing. The team will confirm availability and share the next steps through the website booking form.'}
+      {q:'How do I arrange a car inspection in ' + ctx.place + '?',a:'Use the website booking form, select an active inspection location and preferred appointment slot, enter the car details and inspection address, then complete the booking payment securely through Razorpay.'}
     ];
     if (ctx.place === 'Gurugram') {
       base[0] = {q:'Can you inspect a car at a Gurugram showroom or dealer?',a:'Yes, a new-car PDI or used-car inspection can be arranged around Gurugram at a home, office, showroom or other agreed vehicle location, subject to dealer or site access permission and appointment confirmation.'};
@@ -65,7 +65,7 @@ function faqFor(ctx) {
   const f = [
     {q:'What information should I share before arranging ' + s + '?',a:'Share the car make, model, variant, whether it is new or used, the inspection location and your preferred date and time. The team can then confirm the appropriate inspection and appointment availability.'},
     {q:'What is included in the inspection report?',a:'The inspection follows a structured 300+ checkpoint framework where applicable and records observable findings with relevant photo evidence. Paint thickness measurements are taken on applicable panels. OBD scanning is used only where the selected package and vehicle support it.'},
-    {q:'How do I enquire about ' + s + '?',a:'Use the callback form, WhatsApp enquiry link or call 99711 16411. Share your vehicle details and location; the team will confirm availability and explain that Car PDI Masters performs the inspection; booking and payment are completed through the website booking form after availability is confirmed.'},
+    {q:'How do I enquire about ' + s + '?',a:'Use the website booking form, select the inspection plan and active location, enter your vehicle and appointment details, then complete the booking payment securely through Razorpay.'},
     {q:'How much does a car PDI cost?',a:'The Standard PDI is listed at ₹1,499 and the Comprehensive 360° PDI at ₹2,499. Contact Car PDI Masters to confirm current package inclusions, availability and appointment details.'}
   ];
   if (/New Car/.test(s)) f[0].a = 'Share the make, model, variant, dealership or delivery location and expected delivery date. The team will confirm availability for a pre-delivery inspection before you accept the vehicle.';
@@ -81,7 +81,7 @@ function homeFaqs() {
     {q:'What is a new car PDI?',a:'A pre-delivery inspection is a structured check of a vehicle before accepting delivery, covering relevant exterior, interior, electrical, tyre and other inspection areas.'},
     {q:'What is a used car inspection?',a:'It is a structured assessment of a used vehicle’s observable condition and relevant inspection areas before purchase.'},
     {q:'How many checkpoints are covered?',a:'Car PDI Masters uses a 300+ checkpoint inspection framework across major vehicle systems and condition areas.'},
-    {q:'How do I arrange an inspection?',a:'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. Select an active service location and preferred appointment slot in the booking form, then complete the booking payment securely through Razorpay.'},
+    {q:'How do I arrange an inspection?',a:'Use the website booking form to select an inspection plan, active service location and preferred appointment slot, enter your vehicle details, then complete the booking payment securely through Razorpay.'},
     {q:'Can I choose my inspection location?',a:'Share the exact vehicle location, such as a home, office, dealership showroom or stockyard. The team will confirm service coverage, access permission and appointment availability.'}
   ];
 }
@@ -102,10 +102,8 @@ function updateJsonLd(html, ctx) {
       let changed = false;
       for (const node of nodes) {
         if (node['@type'] === 'FAQPage' && Array.isArray(node.mainEntity)) node.mainEntity = node.mainEntity.map(q => {
-          if (q.acceptedAnswer && typeof q.acceptedAnswer.text === 'string' && /Razorpay|booking amount|balance payment|booking form/i.test(q.acceptedAnswer.text)) {
-            changed = true;
-            return {...q,acceptedAnswer:{'@type':'Answer',text:'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through the website booking form.'}};
-          }
+          // Only replace the retired booking FAQ wording. Do not overwrite every
+          // FAQ answer that happens to mention the current booking form.
           if (q.name === 'How do I book and pay?') {
             changed = true;
             return {...q,acceptedAnswer:{'@type':'Answer',text:'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through the website booking form.'}};
@@ -143,36 +141,27 @@ for (const file of htmlFiles) {
     html = html.replace(/no dealer relationship is implied/gi, 'zero dealership affiliations or commissions');
     html = html.replace(/ZERO dealer(?: or shop)? tie-ups/gi, 'zero dealership affiliations or commissions');
     html = html.replace(/OBD for all cars/gi, 'OBD scanning where the selected package and vehicle support it');
-    html = html.replace(/battery health/gi, 'battery condition');
+    // Keep the distinction between a visual/electrical inspection and a battery-health certification.
     html = html.replace(/Pay ₹299 booking deposit securely through Razorpay to (?:confirm|reserve) your (?:slot|inspector slot)/gi, 'Enquire by WhatsApp or call to confirm availability and booking steps');
     html = html.replace(/Pay ₹499 booking deposit securely through Razorpay to (?:confirm|reserve) your (?:slot|inspector slot)/gi, 'Enquire by WhatsApp or call to confirm availability and booking steps');
   }
   html = updateJsonLd(html, ctx);
-  html = html.replace(/Choose the new car PDI service and submit your booking details\./gi, 'Send an enquiry with your vehicle details, inspection location and preferred timing using WhatsApp or call.');
-  html = html.replace(/Pay the booking amount and wait for review and assignment\./gi, 'The team confirms appointment availability and shares the next steps for booking through the website booking form.');
-  html = html.replace(/Our team reviews and confirms the inspection assignment\./gi, 'Complete the booking through the website booking form after the appointment details are confirmed.');
+  html = html.replace(/Choose the new car PDI service and submit your booking details\./gi, 'Use the website booking form to enter your vehicle details, inspection location and preferred appointment timing.');
+  html = html.replace(/Pay the booking amount and wait for review and assignment\./gi, 'Select an active service location and preferred appointment slot in the booking form, then complete the booking payment securely through Razorpay.');
+  html = html.replace(/Our team reviews and confirms the inspection assignment\./gi, 'Complete the booking payment securely through Razorpay after submitting the vehicle and appointment details.');
   html = html.replace(/Complete the pending balance before the inspection starts\./gi, 'Share any additional vehicle or access details requested before the appointment.');
   html = html.replace(/Fill in the booking form with the car details, inspection address, date and time, then pay the booking (?:amount|deposit) securely through Razorpay\. The remaining balance is paid before the inspection starts\./gi,
     'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through the website booking form.');
-  html = html.replace(/(<a\b[^>]*href=["'][^"']*#booking["'][^>]*>)([\s\S]*?)(<\/a>)/gi, (m, open, label, close) => {
-    const plain = label.replace(/<[^>]*>/g,'').trim().replace(/[→»]+/g,'').trim();
-    if (/^(book(?:\s+(?:online|inspection|used car inspection))?|continue to booking)$/i.test(plain)) return open + 'Enquire on WhatsApp' + close;
-    return m;
-  });
+
   // Remove stale booking-deposit amounts and old booking-first descriptions from all public pages.
-  const enquiryWaUrl = 'https://wa.me/919971116411?text=Hello%20Car%20PDI%20Masters%2C%20I%20want%20to%20enquire%20about%20a%20car%20inspection.';
   html = html.replace(/Booking\s*:\s*₹299\s*\/\s*₹499/gi, 'Booking is completed through the website booking form after availability confirmation');
-  html = html.replace(/Booking\s*₹299\s*online\s*now\s*·\s*Balance\s*₹1,200\s*before\s*inspection/gi, 'Enquire on WhatsApp or call · Booking through the website booking form after availability confirmation');
-  html = html.replace(/Booking\s*₹499\s*online\s*now\s*·\s*Balance\s*₹2,000\s*before\s*inspection/gi, 'Enquire on WhatsApp or call · Booking through the website booking form after availability confirmation');
+  html = html.replace(/Booking\s*₹299\s*online\s*now\s*·\s*Balance\s*₹1,200\s*before\s*inspection/gi, 'Booking through the website form · Secure Razorpay payment');
+  html = html.replace(/Booking\s*₹499\s*online\s*now\s*·\s*Balance\s*₹2,000\s*before\s*inspection/gi, 'Booking through the website form · Secure Razorpay payment');
   html = html.replace(/Your booking is received first, reviewed by the team, assigned and then confirmed before the inspection is scheduled as final\./gi,
-    'Start with a WhatsApp or phone enquiry. The team reviews your vehicle and location details, confirms availability and then shares the next steps to complete the website booking.');
+    'Start with the website booking form, submit your vehicle and appointment details, then complete the booking payment securely through Razorpay.');
   html = html.replace(/Our website journey is built around choosing the right inspection, selecting an active service location, booking, review and assignment, completing payment and receiving inspection information\./gi,
     'Choose an inspection plan, enter your vehicle and appointment details, then pay the booking amount securely through Razorpay to create your booking.');
-  html = html.replace(/<a\b([^>]*?)href=["']\/#booking["']([^>]*)>([\s\S]*?)<\/a>/gi, (m, before, after, label) => {
-    const plain = label.replace(/<[^>]*>/g, '').trim();
-    if (/^Book\b/i.test(plain)) return '<a' + before + 'href="' + enquiryWaUrl + '"' + after + '>Enquire on WhatsApp</a>';
-    return m;
-  });
+
   html = html.replace(/<h3>Pay booking amount<\/h3>/gi, '<h3>Complete booking through the website booking form</h3>');
   html = html.replace(/<h3>Provide vehicle location<\/h3>/gi, '<h3>Share vehicle location and preferred timing</h3>');
   html = html.replace(/Enter the Delhi inspection address and preferred date\/time\./gi, 'Share your vehicle location and preferred timing by WhatsApp or phone.');
@@ -185,29 +174,29 @@ for (const file of htmlFiles) {
 
   // Sweep remaining customer-facing deposit labels, booking-first steps and malformed legacy FAQ copy.
   html = html.replace(/<p class=["']plan-pay["']>Booking\s*<b[^>]*>₹299<\/b>\s*online now\s*·\s*Balance\s*<b[^>]*>₹1,200<\/b>\s*before inspection<\/p>/gi,
-    '<p class="plan-pay">Full inspection price: <b>₹1,499</b> · Enquire to confirm availability and booking steps</p>');
+    '<p class="plan-pay">Full inspection price: <b>₹1,499</b> · Book through the website form</p>');
   html = html.replace(/<p class=["']plan-pay["']>Booking\s*<b[^>]*>₹499<\/b>\s*online now\s*·\s*Balance\s*<b[^>]*>₹2,000<\/b>\s*before inspection<\/p>/gi,
-    '<p class="plan-pay">Full inspection price: <b>₹2,499</b> · Enquire to confirm availability and booking steps</p>');
+    '<p class="plan-pay">Full inspection price: <b>₹2,499</b> · Book through the website form</p>');
   html = html.replace(/Booking\s*₹299\s*online now\s*·\s*Balance\s*₹1,200\s*before inspection/gi,
-    'Full inspection price ₹1,499 · Enquire to confirm availability and booking steps');
+    'Full inspection price ₹1,499 · Book through the website form');
   html = html.replace(/Booking\s*₹499\s*online now\s*·\s*Balance\s*₹2,000\s*before inspection/gi,
-    'Full inspection price ₹2,499 · Enquire to confirm availability and booking steps');
+    'Full inspection price ₹2,499 · Book through the website form');
   html = html.replace(/Fill in the booking form with the car details, inspection address, date and time, then The team confirms availability and shares the next steps for booking through the website booking form\. The remaining balance is paid before the inspection starts\./gi, 'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through the website booking form.');
   html = html.replace(/The remaining balance is paid before the inspection starts\./gi, '');
   html = html.replace(/Standard PDI:\s*₹1,499\s*[·•]\s*Comprehensive 360° PDI:\s*₹2,499\s*[·•]\s*Booking:\s*₹299\s*\/\s*₹499/gi,
-    'Standard PDI: ₹1,499 · Comprehensive 360° PDI: ₹2,499 · Enquire to confirm availability and booking through the website booking form');
+    'Standard PDI: ₹1,499 · Comprehensive 360° PDI: ₹2,499 · Book through the website form');
   html = html.replace(/Fill in the booking form[\s\S]{0,600}?The remaining balance is paid before the inspection starts\./gi,
     'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through the website booking form.');
   html = html.replace(/<h3>Pay booking amount<\/h3>/gi, '<h3>Confirm availability and booking</h3>');
   html = html.replaceAll('Pay booking amount', 'Confirm availability and booking');
-  html = html.replace(/Pay the booking amount securely through Razorpay\.?/gi, 'The team confirms availability and shares the next steps for booking through the website booking form.');
+  html = html.replace(/Pay the booking amount securely through Razorpay\.?/gi, 'Use the website booking form to submit the vehicle and appointment details, then complete the booking payment securely through Razorpay.');
   html = html.replace(/Fill in the booking form[\s\S]{0,420}?Razorpay\.[\s\S]{0,180}?inspection starts\./gi,
     'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through the website booking form.');
   html = html.replace(/Enter the Delhi inspection address and preferred date\/time\./gi, 'Share the vehicle location and preferred timing by WhatsApp or phone.');
   html = html.replace(/Your booking is received first, reviewed by the team, assigned and then confirmed before the inspection is scheduled as final\./gi,
-    'Start with a WhatsApp or phone enquiry. The team reviews your vehicle and location details, confirms availability and shares the next steps to complete the website booking.');
+    'Start with the website booking form, submit your vehicle and appointment details, then complete the booking payment securely through Razorpay.');
   html = html.replace(/Our website journey is built around choosing the right inspection, selecting an active service location, booking, review and assignment, completing payment and receiving inspection information\./gi,
-    'Our enquiry-first journey helps you choose an inspection, share your vehicle location and preferred timing, confirm availability and complete booking through the website booking form.');
+    'Choose an inspection plan, enter your vehicle and appointment details, then complete the booking payment securely through Razorpay.');
   // The customer journey is the original paid booking flow: choose a plan, submit vehicle/slot details, then pay the booking amount through Razorpay.
   const enquiryText = 'Choose your inspection plan, share vehicle and appointment details in the booking form, then complete the booking payment securely through Razorpay.';
   const wa = 'https://wa.me/919971116411?text=Hello%20Car%20PDI%20Masters%2C%20I%20need%20help%20with%20a%20car%20inspection%20booking.';
@@ -216,69 +205,70 @@ for (const file of htmlFiles) {
     if (!/Booking[\s\S]*?(?:299|499)/i.test(block)) return block;
     return '<div class="checkpoint-note"><strong>Standard PDI:</strong> ₹1,499 &nbsp; • &nbsp; <strong>Comprehensive 360° PDI:</strong> ₹2,499 &nbsp; • &nbsp; Booking is completed through the website booking form after availability confirmation &nbsp; • &nbsp; <a href="/#pricing">Compare plans →</a></div>';
   });
-  // All public CTAs must start an enquiry, not scroll customers into the dormant direct-booking form.
+  // Booking CTAs must remain attached to the live paid booking form.
+  // Do not rewrite /#booking links to callback or WhatsApp: check-website.js treats
+  // /#booking as the canonical customer booking destination.
   html = html.replace(/<a\b([^>]*?)href=["'](?:\/#booking|#booking)["']([^>]*)>([\s\S]*?)<\/a>/gi,
     (match, beforeHref, afterHref, label) => {
-      // Brand cards intentionally use #booking as a make-selection link.
-      // Preserve their logo/name markup; only convert actual booking CTAs.
-      if (/\bclass=["'][^"']*\bbrand-card\b/i.test(beforeHref + afterHref)) return match;
-      return '<a' + beforeHref + 'href="#booking"' + afterHref + '>Request a Callback</a>';
+      const plain = label.replace(/<[^>]*>/g, '').replace(/[→»]+/g, '').trim();
+      if (/^(request a callback|start booking|book online|book inspection|continue to booking|enquire on whatsapp)$/i.test(plain)) {
+        return '<a' + beforeHref + 'href="#booking"' + afterHref + '>Book Inspection</a>';
+      }
+      return match;
     });
   // Keep the original paid booking form visible; never hide or replace its Razorpay booking journey.
   html = html.replace(/<section class=["']section booking-section["'] id=["']booking["'][^>]*hidden[^>]*>/i,
     '<section class="section booking-section" id="booking">');
   // Final customer-facing sweep: normalize legacy payment labels, links and process copy.
   html = html.replace(/<div>\s*<span>Booking Amount<\/span>\s*<strong>[\s\S]*?<\/strong>\s*<\/div>/gi,
-    '<div><span>Booking Process</span><strong>WhatsApp / Call</strong></div>');
+    '<div><span>Booking Amount</span><strong>Secure Razorpay Payment</strong></div>');
   html = html.replace(/<div class=["']price-note["'][^>]*>[\s\S]*?<\/div>/gi,
-    '<div class="price-note"><b>How to arrange an inspection:</b> Enquire by WhatsApp or call. The team confirms availability and shares the booking steps through the website booking form. <a href="#pricing">Compare plans →</a></div>');
+    '<div class="price-note"><b>How to arrange an inspection:</b> Use the website booking form to select an active service location, enter your vehicle and appointment details, then complete the booking payment securely through Razorpay. <a href="#pricing">Compare plans →</a></div>');
   html = html.replace(/Pay only the booking amount online now; the balance is paid before the inspection starts\.?/gi,
-    'Enquire by WhatsApp or call. After availability is confirmed, the team shares the booking steps through the website booking form.');
+    'Use the website booking form to enter your vehicle and appointment details, then complete the booking payment securely through Razorpay.');
   html = html.replace(/Select an inspection type,[\s\S]{0,260}?Razorpay[^.]*\./gi, enquiryText);
   html = html.replace(/Select your inspection type and location,[\s\S]{0,260}?Razorpay[^.]*\./gi, enquiryText);
   html = html.replace(/Fill in the booking form[\s\S]{0,320}?Razorpay[\s\S]{0,160}?inspection starts\./gi, enquiryText);
   html = html.replace(/Pay the booking amount securely through Razorpay[^.]*\./gi,
-    'The team confirms availability and shares the next steps for booking through the website booking form.');
+    'Use the website booking form to submit the vehicle and appointment details, then complete the booking payment securely through Razorpay.');
   html = html.replace(/Pay booking amount securely through Razorpay[^.]*\./gi,
-    'The team confirms availability and shares the next steps for booking through the website booking form.');
-  html = html.replace(/<a\b([^>]*?)href=["']\/payment\.html["']([^>]*)>[\s\S]*?<\/a>/gi,
-    '<a$1href="' + wa + '"$2>Enquire on WhatsApp</a>');
+    'Use the website booking form to submit the vehicle and appointment details, then complete the booking payment securely through Razorpay.');
+  // Retired direct-payment links should not bypass the live booking form.
+  // Route legacy /payment.html anchors to the booking section instead.
+  html = html.replace(/<a\b([^>]*?)href=["']\/payment\.html(?:\?[^"']*)?["']([^>]*)>([\s\S]*?)<\/a>/gi,
+    '<a$1href="#booking"$2>Book Inspection</a>');
   html = html.replace(/<a\b([^>]*?)href=["']\/#booking["']([^>]*)>([\s\S]*?)<\/a>/gi, (m, before, after, label) => {
     const plain = label.replace(/<[^>]*>/g, '').replace(/[→»]/g, '').trim();
-    if (/^(book(?:\s+(?:online|inspection(?:\s+in\s+[^]+)?|used\s+car\s+inspection))?|start\s+booking|continue\s+to\s+booking)$/i.test(plain)) {
-      return '<a' + before + 'href="#booking"' + after + '>Request a Callback</a>';
+    if (/^(request a callback|enquire on whatsapp|start booking|book online|book inspection|continue to booking)$/i.test(plain)) {
+      return '<a' + before + 'href="#booking"' + after + '>Book Inspection</a>';
     }
     return m;
   });
-  html = html.replace(/<a\b([^>]*?)href=["']\/payment\.html["']([^>]*)>[\s\S]*?<\/a>/gi,
-    '<a$1href="' + wa + '"$2>Enquire on WhatsApp</a>');
-  html = html.replace(/<a\b([^>]*?)href=["']\/#booking["']([^>]*)>(?:Book Inspection|Book Inspection in [^<]+|Book Online|Start Booking)<\/a>/gi,
-    '<a$1href="' + wa + '"$2>Enquire on WhatsApp</a>');
   html = html.replaceAll('Choose EV Car PDI and submit the booking details.', 'Send an enquiry with your EV make, model, inspection location and preferred timing using WhatsApp or call.');
-  html = html.replaceAll('Choose Luxury Car PDI and submit the booking details.', 'Send an enquiry with your vehicle details, inspection location and preferred timing using WhatsApp or call.');
-  html = html.replaceAll('Choose the 360° inspection service and submit the booking details.', 'Send an enquiry with your vehicle details, inspection location and preferred timing using WhatsApp or call.');
-  html = html.replaceAll('Pay the booking amount and wait for review or assignment.', 'The team confirms appointment availability and shares the next steps for booking through the website booking form.');
-  html = html.replaceAll('Pay the booking amount first. Your booking is reviewed and assigned before final confirmation.', 'Enquire by WhatsApp or call. The team confirms availability and shares the booking steps through the website booking form.');
-  html = html.replaceAll('Pay only the booking amount online now; the balance is paid before the inspection starts.', 'Send an enquiry by WhatsApp or call. Availability is confirmed before the booking is completed through the website booking form.');
+  html = html.replaceAll('Choose Luxury Car PDI and submit the booking details.', 'Use the website booking form to enter your vehicle details, inspection location and preferred appointment timing.');
+  html = html.replaceAll('Choose the 360° inspection service and submit the booking details.', 'Use the website booking form to enter your vehicle details, inspection location and preferred appointment timing.');
+  html = html.replaceAll('Pay the booking amount and wait for review or assignment.', 'Select an active service location and preferred appointment slot in the booking form, then complete the booking payment securely through Razorpay.');
+  html = html.replaceAll('Pay the booking amount first. Your booking is reviewed and assigned before final confirmation.', 'Use the website booking form to select an active service location, enter your vehicle and appointment details, then complete the booking payment securely through Razorpay.');
+  html = html.replaceAll('Pay only the booking amount online now; the balance is paid before the inspection starts.', 'Submit the vehicle and appointment details through the website booking form, then complete the booking payment securely through Razorpay.');
   html = html.replaceAll('Select an inspection type, enter your Gurugram address, preferred date and time, and continue to the ₹299 secure Razorpay payment page.', enquiryText);
   html = html.replaceAll('Select your inspection type and location, submit the vehicle details, then use the ₹299 booking payment option. Payment is made securely through Razorpay (UPI, cards or netbanking).', enquiryText);
   html = html.replaceAll('Fill in the booking form with the car details, inspection address, date and time, then pay the booking amount securely through Razorpay. The remaining balance is paid before the inspection starts.', enquiryText);
-  html = html.replaceAll('Pay booking amount securely through Razorpay (UPI, cards or netbanking).', 'The team confirms availability and shares the next steps for booking through the website booking form.');
-  html = html.replaceAll('Pay the booking amount securely through Razorpay (UPI, cards or netbanking).', 'The team confirms availability and shares the next steps for booking through the website booking form.');
-  html = html.replaceAll('href="/payment.html"', 'href="' + wa + '"');
-  html = html.replaceAll('href="/#booking">Book Online</a>', 'href="#booking">Request a Callback</a>');
-  html = html.replaceAll('href="/#booking">Book Inspection</a>', 'href="#booking">Request a Callback</a>');
-  html = html.replaceAll('href="/#booking">Book Inspection in Saket</a>', 'href="#booking">Request a Callback</a>');
-  html = html.replaceAll('href="/#booking">Start Booking</a>', 'href="#booking">Request a Callback</a>');
-  html = html.replaceAll('>Payment Options</a>', '>Enquire on WhatsApp</a>');
-  html = html.replaceAll('>Payment Details</a>', '>Enquire on WhatsApp</a>');
-  html = html.replaceAll('>Pay ₹299 Booking</a>', '>Enquire on WhatsApp</a>');
-  html = html.replaceAll('>Pay &#8377;299 Booking</a>', '>Enquire on WhatsApp</a>');
+  html = html.replaceAll('Pay booking amount securely through Razorpay (UPI, cards or netbanking).', 'Use the website booking form to submit the vehicle and appointment details, then complete the booking payment securely through Razorpay.');
+  html = html.replaceAll('Pay the booking amount securely through Razorpay (UPI, cards or netbanking).', 'Use the website booking form to submit the vehicle and appointment details, then complete the booking payment securely through Razorpay.');
+  html = html.replaceAll('href="/payment.html"', 'href="#booking"');
+  html = html.replaceAll('href="/#booking">Book Online</a>', 'href="#booking">Book Inspection</a>');
+  html = html.replaceAll('href="/#booking">Book Inspection</a>', 'href="#booking">Book Inspection</a>');
+  html = html.replaceAll('href="/#booking">Book Inspection in Saket</a>', 'href="#booking">Book Inspection</a>');
+  html = html.replaceAll('href="/#booking">Start Booking</a>', 'href="#booking">Book Inspection</a>');
+  html = html.replaceAll(' >Payment Options</a>', '>Enquire on WhatsApp</a>');
+  html = html.replaceAll(' >Payment Details</a>', '>Enquire on WhatsApp</a>');
+  html = html.replaceAll(' >Pay ₹299 Booking</a>', '>Enquire on WhatsApp</a>');
+  html = html.replaceAll(' >Pay &#8377;299 Booking</a>', '>Enquire on WhatsApp</a>');
   html = html.replaceAll('Tap your car\'s brand to book its inspection.', 'Choose your car brand to send an inspection enquiry on WhatsApp.');
   html = html.replaceAll('Tap your car’s brand to book its inspection.', 'Choose your car brand to send an inspection enquiry on WhatsApp.');
-  html = html.replaceAll('Booking Amount', 'Enquiry First');
+  html = html.replaceAll('Booking Amount', 'Booking Amount');
   html = html.replaceAll('Simple payment flow:', 'How to arrange an inspection:');
-  html = html.replaceAll('Pay the booking amount first. Your booking is reviewed and assigned before final confirmation.', 'Enquire by WhatsApp or call. The team confirms availability and shares the booking steps through the website booking form.');
+  html = html.replaceAll('Pay the booking amount first. Your booking is reviewed and assigned before final confirmation.', 'Use the website booking form to select an active service location, enter your vehicle and appointment details, then complete the booking payment securely through Razorpay.');
   if (ctx.kind === 'home') {
     html = html.replace(/<details>\s*<summary>What happens after I pay the booking amount\?<\/summary>\s*<p>[\s\S]*?<\/p>\s*<\/details>/i,
       '<details><summary>How do I arrange an inspection?</summary><p>Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and guide you through the website booking process.</p></details>');
@@ -295,10 +285,12 @@ for (const file of htmlFiles) {
   }
   if (ctx.kind === 'home' && !/<section class=["']section booking-section["'] id=["']booking["'][^>]*>[\s\S]*?CPM_SUBMIT_BOOKING/i.test(html)) throw new Error('Homepage paid booking form is missing');
   if (ctx.kind === 'home' && /<section class=["']section booking-section["'] id=["']booking["'][^>]*(?:hidden|aria-hidden=["']true["'])/i.test(html)) throw new Error('Homepage paid booking form is hidden');
-  // Any booking CTA must lead to the paid booking form, not the retired callback form.
+  // Final CTA guard: every explicit booking CTA must point to the live paid booking form.
   html = html.replace(/(<a\b[^>]*href=["'](?:\/#booking|#booking)["'][^>]*>)([\s\S]*?)(<\/a>)/gi, (m, open, label, close) => {
     const plain = label.replace(/<[^>]*>/g, '').trim();
-    if (/^(Request a Callback|Enquire on WhatsApp|Start Booking|Book Online)$/i.test(plain)) return open + 'Book Inspection' + close;
+    if (/^(Request a Callback|Enquire on WhatsApp|Start Booking|Book Online|Book Inspection)$/i.test(plain)) {
+      return open + 'Book Inspection' + close;
+    }
     return m;
   });
   html = html.replace(/<section class=["']section booking-section["'] id=["']booking["'][^>]*hidden[^>]*>/i,
