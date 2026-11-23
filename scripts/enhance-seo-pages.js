@@ -102,10 +102,8 @@ function updateJsonLd(html, ctx) {
       let changed = false;
       for (const node of nodes) {
         if (node['@type'] === 'FAQPage' && Array.isArray(node.mainEntity)) node.mainEntity = node.mainEntity.map(q => {
-          if (q.acceptedAnswer && typeof q.acceptedAnswer.text === 'string' && /Razorpay|booking amount|balance payment|booking form/i.test(q.acceptedAnswer.text)) {
-            changed = true;
-            return {...q,acceptedAnswer:{'@type':'Answer',text:'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through the website booking form.'}};
-          }
+          // Only replace the retired booking FAQ wording. Do not overwrite every
+          // FAQ answer that happens to mention the current booking form.
           if (q.name === 'How do I book and pay?') {
             changed = true;
             return {...q,acceptedAnswer:{'@type':'Answer',text:'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through the website booking form.'}};
@@ -143,7 +141,7 @@ for (const file of htmlFiles) {
     html = html.replace(/no dealer relationship is implied/gi, 'zero dealership affiliations or commissions');
     html = html.replace(/ZERO dealer(?: or shop)? tie-ups/gi, 'zero dealership affiliations or commissions');
     html = html.replace(/OBD for all cars/gi, 'OBD scanning where the selected package and vehicle support it');
-    html = html.replace(/battery health/gi, 'battery condition');
+    // Keep the distinction between a visual/electrical inspection and a battery-health certification.
     html = html.replace(/Pay ₹299 booking deposit securely through Razorpay to (?:confirm|reserve) your (?:slot|inspector slot)/gi, 'Enquire by WhatsApp or call to confirm availability and booking steps');
     html = html.replace(/Pay ₹499 booking deposit securely through Razorpay to (?:confirm|reserve) your (?:slot|inspector slot)/gi, 'Enquire by WhatsApp or call to confirm availability and booking steps');
   }
