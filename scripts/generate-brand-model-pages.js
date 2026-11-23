@@ -1,5 +1,6 @@
 const fs=require('fs'),path=require('path');const ROOT=path.join(__dirname,'..'),SITE='https://www.carmasters.co.in',CAT=path.join(ROOT,'models/catalog.json'),OUT=path.join(ROOT,'car-pdi');
 const esc=s=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+const meta=s=>{const x=String(s??'').trim();if(x.length<=160)return x;const y=x.slice(0,157).replace(/\s+\S*$/,'').trim();return y+'...';};
 const slug=s=>String(s).toLowerCase().normalize('NFKD').replace(/[^\w\s-]/g,'').replace(/[\s_]+/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,'');
 const data=JSON.parse(fs.readFileSync(CAT,'utf8'));if(!Array.isArray(data.models))throw Error('catalog models must be an array');
 const approved=data.models.filter(m=>m.status==='approved'&&m.researchStatus==='approved'&&m.seoStatus!=='blocked'&&m.approvedForPublication===true);

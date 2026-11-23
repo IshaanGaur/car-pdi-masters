@@ -2,7 +2,7 @@ const fs=require('fs'),path=require('path');
 const ROOT=path.join(__dirname,'..'), OUT=path.join(ROOT,'car-pdi'), CAT=path.join(ROOT,'models/catalog.json'), SITE='https://www.carmasters.co.in';
 const fail=[]; const ok=(c,m)=>{if(!c)fail.push(m)};
 const data=JSON.parse(fs.readFileSync(CAT,'utf8'));
-const approved=data.models.filter(m=>m.status==='approved'&&m.researchStatus==='approved'&&m.seoStatus!=='blocked');
+const approved=data.models.filter(m=>m.status==='approved'&&m.researchStatus==='approved'&&m.seoStatus!=='blocked'&&m.approvedForPublication===true);
 const slug=s=>String(s).toLowerCase().normalize('NFKD').replace(/[^\w\s-]/g,'').replace(/[\s_]+/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,'');
 const modelUrl=m=>`/car-pdi/${m.brandSlug||slug(m.brand)}/${m.modelSlug||slug(m.model)}/`;
 ok(fs.existsSync(OUT),'car-pdi output directory missing');
