@@ -192,14 +192,13 @@ for (const file of htmlFiles) {
   html = html.replace(/Pay the booking amount securely through Razorpay\.?/gi, 'Use the website booking form to submit the vehicle and appointment details, then complete the booking payment securely through Razorpay.');
   html = html.replace(/Fill in the booking form[\s\S]{0,420}?Razorpay\.[\s\S]{0,180}?inspection starts\./gi,
     'Use the website booking form to enter your car make, model, inspection location and preferred timing, then complete the booking payment securely through Razorpay.');
-  html = html.replace(/Enter the Delhi inspection address and preferred date\/time\./gi, 'Share the vehicle location and preferred timing by WhatsApp or phone.');
+  html = html.replace(/Enter the Delhi inspection address and preferred date\/time\./gi, 'Select the active inspection location and preferred timing in the website booking form.');
   html = html.replace(/Your booking is received first, reviewed by the team, assigned and then confirmed before the inspection is scheduled as final\./gi,
     'Start with the website booking form, submit your vehicle and appointment details, then complete the booking payment securely through Razorpay.');
   html = html.replace(/Our website journey is built around choosing the right inspection, selecting an active service location, booking, review and assignment, completing payment and receiving inspection information\./gi,
     'Choose an inspection plan, enter your vehicle and appointment details, then complete the booking payment securely through Razorpay.');
   // The customer journey is the original paid booking flow: choose a plan, submit vehicle/slot details, then pay the booking amount through Razorpay.
   const enquiryText = 'Choose your inspection plan, share vehicle and appointment details in the booking form, then complete the booking payment securely through Razorpay.';
-  const wa = 'https://wa.me/919971116411?text=Hello%20Car%20PDI%20Masters%2C%20I%20need%20help%20with%20a%20car%20inspection%20booking.';
   // The locality price strip uses HTML entities, so normalize that whole customer-facing block.
   html = html.replace(/<div class=["']checkpoint-note["'][^>]*>[\s\S]*?<\/div>/gi, (block) => {
     if (!/Booking[\s\S]*?(?:299|499)/i.test(block)) return block;
@@ -244,7 +243,7 @@ for (const file of htmlFiles) {
     }
     return m;
   });
-  html = html.replaceAll('Choose EV Car PDI and submit the booking details.', 'Send an enquiry with your EV make, model, inspection location and preferred timing using WhatsApp or call.');
+  html = html.replaceAll('Choose EV Car PDI and submit the booking details.', 'Use the website booking form to enter your EV make, model, inspection location and preferred appointment timing, then complete the booking payment securely through Razorpay.');
   html = html.replaceAll('Choose Luxury Car PDI and submit the booking details.', 'Use the website booking form to enter your vehicle details, inspection location and preferred appointment timing.');
   html = html.replaceAll('Choose the 360° inspection service and submit the booking details.', 'Use the website booking form to enter your vehicle details, inspection location and preferred appointment timing.');
   html = html.replaceAll('Pay the booking amount and wait for review or assignment.', 'Select an active service location and preferred appointment slot in the booking form, then complete the booking payment securely through Razorpay.');
@@ -264,8 +263,8 @@ for (const file of htmlFiles) {
   html = html.replaceAll(' >Payment Details</a>', '>Payment Details</a>');
   html = html.replaceAll(' >Pay ₹299 Booking</a>', '>Pay ₹299 Booking</a>');
   html = html.replaceAll(' >Pay &#8377;299 Booking</a>', '>Pay &#8377;299 Booking</a>');
-  html = html.replaceAll('Tap your car\'s brand to book its inspection.', 'Choose your car brand to send an inspection enquiry on WhatsApp.');
-  html = html.replaceAll('Tap your car’s brand to book its inspection.', 'Choose your car brand to send an inspection enquiry on WhatsApp.');
+  html = html.replaceAll('Tap your car\'s brand to book its inspection.', 'Tap your car\'s brand to book its inspection.');
+  html = html.replaceAll('Tap your car’s brand to book its inspection.', 'Tap your car’s brand to book its inspection.');
   html = html.replaceAll('Booking Amount', 'Booking Amount');
   html = html.replaceAll('Simple payment flow:', 'How to arrange an inspection:');
   html = html.replaceAll('Pay the booking amount first. Your booking is reviewed and assigned before final confirmation.', 'Use the website booking form to select an active service location, enter your vehicle and appointment details, then complete the booking payment securely through Razorpay.');
