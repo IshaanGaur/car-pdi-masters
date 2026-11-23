@@ -38,6 +38,48 @@ const walk = dir => {
 walk('');
 for (const f of pages) {
   const html = read(f);
+  const rendered = html
+    .replace(/<script\b[\s\S]*?<\/script>/gi, '')
+    .replace(/<style\b[\s\S]*?<\/style>/gi, '');
+  const renderedGuards = [
+    [/\$\{[^}]+\}/g, 'unresolved template placeholder'],
+    [/\bundefined\b/gi, 'undefined value'],
+    [/\bNaN\b/g, 'NaN value'],
+    [/₹—/g, 'missing price placeholder'],
+    [/\bCarParakh\b|https?:\/\/(?:www\.)?carparakh\.com/gi, 'stale CarParakh reference'],
+    [/98765[\s-]?43210/g, 'placeholder phone number'],
+    [/\bEnquiry First\b/gi, 'stale enquiry-first label'],
+    [/\bRequest a Callback\b/gi, 'stale callback booking label']
+  ];
+  for (const [rx, label] of renderedGuards) {
+    if (rx.test(rendered)) problems.push(`${f}: ${label}`);
+  }
+  if (/\uFFFD/.test(html) || /â(?:€™|€|œ|‚|„|…|—|–|˜|š|ž)/.test(html) || /Ã(?:©|®|±|¼|½|¾|€™|“|”|˜|š|ž)/.test(html)) {
+    problems.push(`${f}: UTF-8 mojibake or replacement character`);
+  }
+  if (/href=["'](?:#|javascript:void\(0\))/i.test(html)) problems.push(`${f}: empty/placeholder href`);
+  const h1s = [...html.matchAll(/<h1\b[^>]*>/gi)];
+  if (!/<meta name="robots" content="[^"]*noindex/i.test(html) && h1s.length !== 1) {
+    problems.push(`${f}: indexable page must have exactly one H1 (found ${h1s.length})`);
+  }
+  for (const m of html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>/gi)) {
+    const raw = m[1].trim();
+    if (!raw || /^(#|mailto:|tel:|javascript:|data:)/i.test(raw) || /^https?:\/\//i.test(raw) && !/^https?:\/\/(?:www\.)?carmasters\.co\.in\//i.test(raw)) continue;
+    let u; try { u = new URL(raw, 'https://www.carmasters.co.in/'); } catch (_) { problems.push(`${f}: malformed href ${raw}`); continue; }
+    if (u.hostname && !/^(?:www\.)?carmasters\.co\.in$/i.test(u.hostname)) continue;
+    const p = u.pathname || '/';
+    if (!(p.endsWith('/') || p.endsWith('.html'))) continue;
+    const rel = p === '/' ? 'index.html' : (p.endsWith('/') ? p.slice(1) + 'index.html' : p.slice(1));
+    if (!fs.existsSync(path.join(root, rel))) problems.push(`${f}: internal href points to missing file ${p}`);
+  }
+  for (const m of html.matchAll(/<img\b[^>]*src=["']([^"']+)["'][^>]*>/gi)) {
+    const raw = m[1].trim();
+    if (!raw || /^(data:|https?:\/\/)/i.test(raw)) continue;
+    let u; try { u = new URL(raw, 'https://www.carmasters.co.in/'); } catch (_) { problems.push(`${f}: malformed image src ${raw}`); continue; }
+    if (u.hostname && !/^(?:www\.)?carmasters\.co\.in$/i.test(u.hostname)) continue;
+    const rel = (u.pathname || '/').replace(/^\//,'');
+    if (rel && !fs.existsSync(path.join(root, rel))) problems.push(`${f}: image src points to missing file ${u.pathname}`);
+  }
   for (const m of html.matchAll(/(?:wa\.me\/|tel:)\+?(\d+)/g)) {
     if (m[1].replace(/^91/, '') !== '9971116411') problems.push(`${f}: call/WhatsApp link uses ${m[1]} instead of 9971116411`);
   }
