@@ -202,7 +202,7 @@ for (const file of htmlFiles) {
   // The locality price strip uses HTML entities, so normalize that whole customer-facing block.
   html = html.replace(/<div class=["']checkpoint-note["'][^>]*>[\s\S]*?<\/div>/gi, (block) => {
     if (!/Booking[\s\S]*?(?:299|499)/i.test(block)) return block;
-    return '<div class="checkpoint-note"><strong>Standard PDI:</strong> ₹1,499 &nbsp; • &nbsp; <strong>Comprehensive 360° PDI:</strong> ₹2,499 &nbsp; • &nbsp; Booking is completed through the website booking form after availability confirmation &nbsp; • &nbsp; <a href="/#pricing">Compare plans →</a></div>';
+    return '<div class="checkpoint-note"><strong>Standard PDI:</strong> ₹1,499 &nbsp; • &nbsp; <strong>Comprehensive 360° PDI:</strong> ₹2,499 &nbsp; • &nbsp; Booking through the website form with secure Razorpay payment &nbsp; • &nbsp; <a href="/#pricing">Compare plans →</a></div>';
   });
   // Booking CTAs must remain attached to the live paid booking form.
   // Do not rewrite /#booking links to callback or WhatsApp: check-website.js treats
