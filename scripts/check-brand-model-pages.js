@@ -32,7 +32,7 @@ for(const m of approved){
   ok(!/\b(?:undefined|NaN)\b/.test(h),`undefined/NaN output: ${m.brand} ${m.model}`);
   ok(!/\bCarParakh\b|carparakh\.com/i.test(h),`stale CarParakh reference: ${m.brand} ${m.model}`);
   ok((h.match(/<h1\b/gi)||[]).length===1,`H1 count invalid: ${m.brand} ${m.model}`);
-  const title=(h.match(/<title>([\s\S]*?)<\/title>/i)||[])[1]||'', desc=(h.match(/<meta name="description" content="([^"]*)"/i)||[])[1]||'', canon=(h.match(/<link rel="canonical" href="([^"]+)"/i)||[])[1]||'';(h.match(/<title>([\s\S]*?)<\/title>/i)||[])[1]||'', desc=(h.match(/<meta name="description" content="([^"]*)"/i)||[])[1]||'', canon=(h.match(/<link rel="canonical" href="([^"]+)"/i)||[])[1]||'';
+  const title=(h.match(/<title>([\s\S]*?)<\/title>/i)||[])[1]||"", desc=(h.match(/<meta name="description" content="([^"]*)"/i)||[])[1]||"", canon=(h.match(/<link rel="canonical" href="([^"]+)"/i)||[])[1]||"";
   ok(title.length>0 && title.length<=60,`title length invalid (${title.length}): ${m.brand} ${m.model}`);
   ok(desc.length>0 && desc.length<=160,`meta description length invalid (${desc.length}): ${m.brand} ${m.model}`);
   ok(canon===SITE+modelUrl(m),`canonical mismatch: ${m.brand} ${m.model}`);
@@ -51,11 +51,11 @@ const smPath=path.join(ROOT,'sitemap.xml'); ok(fs.existsSync(smPath),'sitemap.xm
 if(fs.existsSync(smPath)){
  const sm=fs.readFileSync(smPath,'utf8'), expected=[SITE+'/car-pdi/'].concat(brands.map(([b])=>SITE+'/car-pdi/'+b+'/'),approved.map(m=>SITE+modelUrl(m)));
  ok(sm.includes('BEGIN GENERATED BRAND MODEL PAGES')&&sm.includes('END GENERATED BRAND MODEL PAGES'),'generated sitemap block missing');
- const allLocs=[...sm.matchAll(/<loc>([^<]+)<\\/loc>/g)].map(m=>m[1]);
+ const allLocs=[...sm.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
  ok(new Set(allLocs).size===allLocs.length,'sitemap.xml contains duplicate <loc> URLs: '+(allLocs.length-new Set(allLocs).size));
  const generatedBlock=sm.match(/<!-- BEGIN GENERATED BRAND MODEL PAGES -->[\\s\\S]*?<!-- END GENERATED BRAND MODEL PAGES -->/);
  if(generatedBlock){
-   const generatedLocs=[...generatedBlock[0].matchAll(/<loc>([^<]+)<\\/loc>/g)].map(m=>m[1]);
+ const allLocs=[...sm.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
    ok(generatedLocs.length===approved.length+brands.length+1,'generated sitemap block has '+generatedLocs.length+' URLs; expected '+(approved.length+brands.length+1));
  }
  for(const u of expected)ok(sm.includes('<loc>'+u+'</loc>'),'sitemap URL missing: '+u);
