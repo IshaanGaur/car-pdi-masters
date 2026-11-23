@@ -66,6 +66,67 @@ for (const f of pages) {
     }
   }
 }
+// Rendered-output regression guards. These run after the SEO enhancer so they catch
+// defects in the HTML that would actually be deployed, not just source-code defects.
+const generatedModelRoutes = new Set(['/car-pdi/']);
+try {
+  const catalog = JSON.parse(read('models/catalog.json'));
+  for (const m of (catalog.models || [])) {
+    if (!m.brandSlug || !m.modelSlug) continue;
+    generatedModelRoutes.add('/car-pdi/' + m.brandSlug + '/');
+    generatedModelRoutes.add('/car-pdi/' + m.brandSlug + '/' + m.modelSlug + '/');
+  }
+} catch (_) {}
+
+for (const f of pages) {
+  const html = read(f);
+  const rendered = html
+    .replace(/<script\b[\s\S]*?<\/script>/gi, '')
+    .replace(/<style\b[\s\S]*?<\/style>/gi, '');
+
+  const guards = [
+    [/\$\{[^}]+\}/g, 'unresolved template placeholder'],
+    [/\bundefined\b/gi, 'undefined value'],
+    [/\bNaN\b/g, 'NaN value'],
+    [/₹—/g, 'missing price placeholder'],
+    [/\bCarParakh\b|https?:\/\/(?:www\.)?carparakh\.com/gi, 'stale CarParakh reference'],
+    [/98765[\s-]?43210/g, 'placeholder phone number'],
+    [/\bEnquiry First\b/gi, 'stale enquiry-first label'],
+    [/\bRequest a Callback\b/gi, 'stale callback booking label']
+  ];
+  for (const [rx, label] of guards) {
+    if (rx.test(rendered)) problems.push(f + ': ' + label);
+  }
+
+  if (/\uFFFD/.test(html) || /â|Ã/.test(html)) problems.push(f + ': UTF-8 mojibake or replacement character');
+
+  // Only an actually empty href, "#" itself, or javascript:void(0) is a placeholder.
+  if (/href=["'](?:["']|#["'])|href=["']javascript:void\(0\)["']/i.test(html)) {
+    problems.push(f + ': empty/placeholder href');
+  }
+
+  for (const m of html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>/gi)) {
+    const raw = m[1].trim();
+    if (!raw || /^(#|mailto:|tel:|javascript:|data:)/i.test(raw) || (/^https?:\/\//i.test(raw) && !/^https?:\/\/(?:www\.)?carmasters\.co\.in\//i.test(raw))) continue;
+    let u;
+    try { u = new URL(raw, 'https://www.carmasters.co.in/'); } catch (_) {
+      problems.push(f + ': malformed href ' + raw);
+      continue;
+    }
+    if (u.hostname && !/^(?:www\.)?carmasters\.co\.in$/i.test(u.hostname)) continue;
+    const p = u.pathname || '/';
+    if (!(p.endsWith('/') || p.endsWith('.html'))) continue;
+
+    if (p.startsWith('/car-pdi/')) {
+      if (!generatedModelRoutes.has(p)) problems.push(f + ': internal href points to unknown generated model route ' + p);
+      continue;
+    }
+
+    const rel = p === '/' ? 'index.html' : (p.endsWith('/') ? p.slice(1) + 'index.html' : p.slice(1));
+    if (!fs.existsSync(path.join(root, rel))) problems.push(f + ': internal href points to missing file ' + p);
+  }
+}
+
 // Every indexable HTML page must have a complete, self-consistent SEO head and valid JSON-LD.
 // This catches regressions outside the locality-page-only checks below.
 for (const f of pages) {
