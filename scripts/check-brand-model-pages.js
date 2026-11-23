@@ -26,6 +26,12 @@ for(const m of approved){
   if(!fs.existsSync(f))continue;
   generated++;
   const h=fs.readFileSync(f,'utf8'), title=(h.match(/<title>([\s\S]*?)<\/title>/i)||[])[1]||'', desc=(h.match(/<meta name="description" content="([^"]*)"/i)||[])[1]||'', canon=(h.match(/<link rel="canonical" href="([^"]+)"/i)||[])[1]||'';
+  ok(!/\$\{[^}]+\}/.test(h),`unresolved template placeholder: ${m.brand} ${m.model}`);
+  ok(!/\uFFFD|â(?:€™|€|œ|‚|„|…|—|–|˜|š|ž)|Ã(?:©|®|±|¼|½|¾|€™|“|”|˜|š|ž)/.test(h),`UTF-8 mojibake/replacement character: ${m.brand} ${m.model}`);
+  ok(!/₹—/.test(h),`missing price placeholder: ${m.brand} ${m.model}`);
+  ok(!/\b(?:undefined|NaN)\b/.test(h),`undefined/NaN output: ${m.brand} ${m.model}`);
+  ok(!/\bCarParakh\b|carparakh\.com/i.test(h),`stale CarParakh reference: ${m.brand} ${m.model}`);
+  ok((h.match(/<h1\b/gi)||[]).length===1,`H1 count invalid: ${m.brand} ${m.model}`);
   ok(title.length>0 && title.length<=60,`title length invalid (${title.length}): ${m.brand} ${m.model}`);
   ok(desc.length>0 && desc.length<=160,`meta description length invalid (${desc.length}): ${m.brand} ${m.model}`);
   ok(canon===SITE+modelUrl(m),`canonical mismatch: ${m.brand} ${m.model}`);
