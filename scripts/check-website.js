@@ -38,6 +38,18 @@ const walk = dir => {
 walk('');
 for (const f of pages) {
   const html = read(f);
+  const renderedGuards = [
+    [/\$\{[^}]+\}/g, 'unresolved template placeholder'],
+    [/\bundefined\b/gi, 'undefined value'],
+    [/\bNaN\b/g, 'NaN value'],
+    [/\uFFFD/g, 'Unicode replacement character / mojibake'],
+    [/â(?:€™|€|œ|�|‚|„|…|—|–|˜|š|ž)/g, 'UTF-8 mojibake'],
+    [/Ã(?:©|®|±|¼|½|¾|€™|“|”|˜|š|ž)/g, 'UTF-8 mojibake'],
+    [/₹—/g, 'missing price placeholder'],
+    [/\bCarParakh\b|https?:\/\/(?:www\.)?carparakh\.com/gi, 'stale CarParakh reference'],
+    [/98765[\s-]?43210/g, 'placeholder phone number']
+  ];
+  for (const [rx, label] of renderedGuards) if (rx.test(html)) problems.push(f + ': ' + label);
   for (const m of html.matchAll(/(?:wa\.me\/|tel:)\+?(\d+)/g)) {
     if (m[1].replace(/^91/, '') !== '9971116411') problems.push(`${f}: call/WhatsApp link uses ${m[1]} instead of 9971116411`);
   }
