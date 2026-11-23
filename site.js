@@ -334,7 +334,7 @@
   };
   
   function paidBookingFormMarkup(){
-    return "<section class=\"section booking-section\" id=\"booking\">\n  <div class=\"container booking-box\">\n    <div class=\"booking-copy\">\n      <div class=\"eyebrow\">BOOK YOUR INSPECTION</div>\n      <h2>Ready to inspect before you decide?</h2>\n      <p>Choose your plan, inspection type, active location, vehicle details and preferred slot. Your booking will then move through the review and assignment process.</p>\n      <p class=\"booking-plan-line\">Selected plan: <b data-plan-name>Standard PDI</b></p>\n      <div class=\"booking-price\">\n        <div><span>Total</span><strong data-price=\"service\">₹1,499</strong></div>\n        <div><span>Booking</span><strong data-price=\"booking\">₹299</strong></div>\n        <div><span>Balance</span><strong data-price=\"balance\">₹1,200</strong></div>\n      </div>\n    </div>\n    <form class=\"booking-form\" onsubmit=\"return CPM_SUBMIT_BOOKING(event)\">\n      <label><span>Customer Name *</span><input id=\"name\" placeholder=\"Your name\" required></label>\n      <label><span>Mobile Number *</span><input id=\"mobile\" inputmode=\"tel\" placeholder=\"WhatsApp / mobile number\" required></label>\n      <fieldset class=\"plan-picker full\">\n        <legend>Inspection Plan *</legend>\n        <label><input type=\"radio\" name=\"plan\" value=\"standard-pdi\" checked><span><b>Standard PDI</b><small><span data-price=\"standard\">₹1,499</span> · booking <span data-price=\"standard-booking\">₹299</span></small></span></label>\n        <label><input type=\"radio\" name=\"plan\" value=\"comprehensive-360-pdi\"><span><b>Comprehensive 360° PDI</b><small><span data-price=\"comprehensive\">₹2,499</span> · booking <span data-price=\"comprehensive-booking\">₹499</span></small></span></label>\n        <a class=\"plan-picker-link\" href=\"#pricing\">What's included in each plan?</a>\n      </fieldset>\n      <label><span>Inspection Type *</span><select id=\"type\" required><option value=\"\">Select inspection type</option><option>New Car PDI</option><option>New Car Inspection</option><option>Used Car PDI</option><option>Used Car Inspection</option><option>Pre-Purchase Car Inspection</option><option>Luxury Car PDI</option><option>EV Car PDI</option></select></label>\n      <label><span>Inspection Location *</span><select id=\"location\" required><option value=\"\">Loading active locations…</option></select></label>\n      <p class=\"form-msg full\" id=\"locationMsg\">Loading active locations…</p>\n      <label class=\"full\"><span>Car Make *</span><select id=\"carMake\" required><option value=\"\">Select car make</option><option>Maruti Suzuki</option><option>Hyundai</option><option>Tata</option><option>Mahindra</option><option>Toyota</option><option>Kia</option><option>Honda</option><option>MG</option><option>Skoda</option><option>Volkswagen</option><option>Renault</option><option>Nissan</option><option>Citroën</option><option>Jeep</option><option>Isuzu</option><option>BYD</option><option>BMW</option><option>Mercedes-Benz</option><option>Audi</option><option>Volvo</option><option>Lexus</option><option>Jaguar</option><option>Land Rover</option><option>Porsche</option><option>MINI</option><option>Force Motors</option><option>Other</option></select></label>\n      <label id=\"otherMakeWrap\" class=\"full hidden-field\"><span>Other Make</span><input id=\"otherMake\" placeholder=\"Enter car make\"></label>\n      <label><span>Car Model *</span><select id=\"carModel\" required disabled><option value=\"\">Select make first</option></select></label>\n      <label id=\"otherModelWrap\" class=\"hidden-field\"><span>Other Model</span><input id=\"otherModel\" placeholder=\"Enter car model\"></label>\n      <label><span>Variant (Optional)</span><select id=\"variant\"><option value=\"\">Select variant if known</option><option>Other</option></select></label>\n      <label id=\"otherVariantWrap\" class=\"hidden-field\"><span>Other Variant (Optional)</span><input id=\"otherVariant\" placeholder=\"Enter variant if known\"></label>\n      <label id=\"registrationWrap\" class=\"full hidden-field\"><span>Registration Number</span><input id=\"registrationNumber\" placeholder=\"Registration number\"></label>\n      <label class=\"full\"><span>Inspection Address (Optional)</span><input id=\"address\" placeholder=\"Inspection address, if available\"></label>\n      <label class=\"date-field\">\n  <span>Preferred Date *</span>\n  <input id=\"date\" type=\"date\" required aria-label=\"Preferred date\">\n</label>\n      <label><span>Preferred Time *</span><select id=\"time\" required><option value=\"\">Select preferred time</option><option>10:00 AM – 11:00 AM</option><option>11:00 AM – 12:00 PM</option><option>12:00 PM – 1:00 PM</option><option>1:00 PM – 2:00 PM</option><option>2:00 PM – 3:00 PM</option><option>3:00 PM – 4:00 PM</option><option>4:00 PM – 5:00 PM</option><option>5:00 PM – 6:00 PM</option><option>6:00 PM – 7:00 PM</option><option>7:00 PM – 8:00 PM</option></select></label>\n      <label class=\"full\"><span>Additional Notes (Optional)</span><textarea id=\"notes\" placeholder=\"Anything else we should know?\"></textarea></label>\n      <button class=\"btn btn-primary btn-large full\" type=\"submit\">Continue to Booking Payment</button>\n      <p class=\"form-msg full\" id=\"bookingMsg\"></p>\n    </form>\n  </div>\n</section>";
+    return "<section class=\"section booking-section\" id=\"booking\">\n  <div class=\"container booking-box\">\n    <div class=\"booking-copy\">\n      <div class=\"eyebrow\">BOOK YOUR INSPECTION</div>\n      <h2>Ready to inspect before you decide?</h2>\n      <p>Choose your plan, inspection type, active location, vehicle details and preferred slot. Your booking will then move through the review and assignment process.</p>\n      <p class=\"booking-plan-line\">Selected plan: <b data-plan-name>Standard PDI</b></p>\n      <div class=\"booking-price\">\n        <div><span>Total</span><strong data-price=\"service\">₹1,499</strong></div>\n        <div><span>Booking</span><strong data-price=\"booking\">₹299</strong></div>\n        <div><span>Balance</span><strong data-price=\"balance\">₹1,200</strong></div>\n      </div>\n    </div>\n    <form class=\"booking-form\" onsubmit=\"return CPM_SUBMIT_BOOKING(event)\">\n      <label><span>Customer Name *</span><input id=\"name\" placeholder=\"Your name\" required></label>\n      <label><span>Mobile Number *</span><input id=\"mobile\" inputmode=\"tel\" placeholder=\"WhatsApp / mobile number\" required></label>\n      <label class=\"full booking-lead-consent\"><span><input id=\"bookingLeadConsent\" type=\"checkbox\"> <b>I agree to be contacted by phone or WhatsApp about this inspection.</b></span></label>\n      <p class=\"form-msg full\" id=\"bookingLeadMsg\" aria-live=\"polite\"></p>\n      <fieldset class=\"plan-picker full\">\n        <legend>Inspection Plan *</legend>\n        <label><input type=\"radio\" name=\"plan\" value=\"standard-pdi\" checked><span><b>Standard PDI</b><small><span data-price=\"standard\">₹1,499</span> · booking <span data-price=\"standard-booking\">₹299</span></small></span></label>\n        <label><input type=\"radio\" name=\"plan\" value=\"comprehensive-360-pdi\"><span><b>Comprehensive 360° PDI</b><small><span data-price=\"comprehensive\">₹2,499</span> · booking <span data-price=\"comprehensive-booking\">₹499</span></small></span></label>\n        <a class=\"plan-picker-link\" href=\"#pricing\">What's included in each plan?</a>\n      </fieldset>\n      <label><span>Inspection Type *</span><select id=\"type\" required><option value=\"\">Select inspection type</option><option>New Car PDI</option><option>New Car Inspection</option><option>Used Car PDI</option><option>Used Car Inspection</option><option>Pre-Purchase Car Inspection</option><option>Luxury Car PDI</option><option>EV Car PDI</option></select></label>\n      <label><span>Inspection Location *</span><select id=\"location\" required><option value=\"\">Loading active locations…</option></select></label>\n      <p class=\"form-msg full\" id=\"locationMsg\">Loading active locations…</p>\n      <label class=\"full\"><span>Car Make *</span><select id=\"carMake\" required><option value=\"\">Select car make</option><option>Maruti Suzuki</option><option>Hyundai</option><option>Tata</option><option>Mahindra</option><option>Toyota</option><option>Kia</option><option>Honda</option><option>MG</option><option>Skoda</option><option>Volkswagen</option><option>Renault</option><option>Nissan</option><option>Citroën</option><option>Jeep</option><option>Isuzu</option><option>BYD</option><option>BMW</option><option>Mercedes-Benz</option><option>Audi</option><option>Volvo</option><option>Lexus</option><option>Jaguar</option><option>Land Rover</option><option>Porsche</option><option>MINI</option><option>Force Motors</option><option>Other</option></select></label>\n      <label id=\"otherMakeWrap\" class=\"full hidden-field\"><span>Other Make</span><input id=\"otherMake\" placeholder=\"Enter car make\"></label>\n      <label><span>Car Model *</span><select id=\"carModel\" required disabled><option value=\"\">Select make first</option></select></label>\n      <label id=\"otherModelWrap\" class=\"hidden-field\"><span>Other Model</span><input id=\"otherModel\" placeholder=\"Enter car model\"></label>\n      <label><span>Variant (Optional)</span><select id=\"variant\"><option value=\"\">Select variant if known</option><option>Other</option></select></label>\n      <label id=\"otherVariantWrap\" class=\"hidden-field\"><span>Other Variant (Optional)</span><input id=\"otherVariant\" placeholder=\"Enter variant if known\"></label>\n      <label id=\"registrationWrap\" class=\"full hidden-field\"><span>Registration Number</span><input id=\"registrationNumber\" placeholder=\"Registration number\"></label>\n      <label class=\"full\"><span>Inspection Address (Optional)</span><input id=\"address\" placeholder=\"Inspection address, if available\"></label>\n      <label class=\"date-field\">\n  <span>Preferred Date *</span>\n  <input id=\"date\" type=\"date\" required aria-label=\"Preferred date\">\n</label>\n      <label><span>Preferred Time *</span><select id=\"time\" required><option value=\"\">Select preferred time</option><option>10:00 AM – 11:00 AM</option><option>11:00 AM – 12:00 PM</option><option>12:00 PM – 1:00 PM</option><option>1:00 PM – 2:00 PM</option><option>2:00 PM – 3:00 PM</option><option>3:00 PM – 4:00 PM</option><option>4:00 PM – 5:00 PM</option><option>5:00 PM – 6:00 PM</option><option>6:00 PM – 7:00 PM</option><option>7:00 PM – 8:00 PM</option></select></label>\n      <label class=\"full\"><span>Additional Notes (Optional)</span><textarea id=\"notes\" placeholder=\"Anything else we should know?\"></textarea></label>\n      <button class=\"btn btn-primary btn-large full\" type=\"submit\">Continue to Booking Payment</button>\n      <p class=\"form-msg full\" id=\"bookingMsg\"></p>\n    </form>\n  </div>\n</section>";
   }
   function ensureSitewidePaidBookingForm(){
     const existing=document.getElementById('booking');
@@ -350,6 +350,90 @@
     loadLocations();
   }
   ensureSitewidePaidBookingForm();
+
+  function setupBookingLeadCapture(){
+    const form=document.querySelector('form[onsubmit*="CPM_SUBMIT_BOOKING"]');
+    if(!form || form.dataset.bookingLeadBound==='1') return;
+    const nameInput=document.getElementById('name');
+    const mobileInput=document.getElementById('mobile');
+    const consentInput=document.getElementById('bookingLeadConsent');
+    const leadMsg=document.getElementById('bookingLeadMsg');
+    if(!nameInput||!mobileInput||!consentInput) return;
+    form.dataset.bookingLeadBound='1';
+
+    let saved=false;
+    try{saved=sessionStorage.getItem('cpm_booking_lead_saved')==='1'}catch(_){}
+
+    const token=(()=>{
+      try{
+        const key='cpm_booking_lead_token';
+        let value=sessionStorage.getItem(key);
+        if(!value){
+          value=window.crypto?.randomUUID?.()||('lead_'+Date.now()+'_'+Math.random().toString(36).slice(2));
+          sessionStorage.setItem(key,value);
+        }
+        return value;
+      }catch(_){
+        return 'lead_'+Date.now()+'_'+Math.random().toString(36).slice(2);
+      }
+    })();
+
+    let timer;
+    const trySave=()=>{
+      clearTimeout(timer);
+      timer=setTimeout(async()=>{
+        if(saved||!consentInput.checked) return;
+        const name=nameInput.value.trim();
+        const phone=mobileInput.value.replace(/\D/g,'').slice(-10);
+        if(name.length<2 || !/^[6-9]\d{9}$/.test(phone)) return;
+
+        const service=document.getElementById('type')?.value||'Other / Not Sure';
+        const location=document.getElementById('location')?.value||'Not provided yet';
+        const make=document.getElementById('carMake')?.value||'';
+        const model=document.getElementById('carModel')?.value||'';
+        const vehicle=[make,model].filter(Boolean).join(' ');
+        try{
+          const response=await fetch('/api/enquiry',{
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            body:JSON.stringify({
+              leadStage:'BOOKING_STARTED',
+              leadToken:token,
+              name,
+              phone,
+              service,
+              vehicle,
+              location,
+              contactMethod:'WhatsApp',
+              notes:'Customer entered name and mobile in the website booking form and consented to contact, but has not completed the booking yet.',
+              consent:true,
+              sourcePath:window.location.pathname
+            })
+          });
+          const result=await response.json().catch(()=>({}));
+          if(!response.ok||!result.success) throw new Error(result.message||'');
+          saved=true;
+          try{sessionStorage.setItem('cpm_booking_lead_saved','1')}catch(_){}
+          if(leadMsg) leadMsg.textContent='Your contact details are saved. You can continue the booking, or we can contact you to confirm availability.';
+        }catch(_){
+          // Never interrupt the booking flow if lead capture is temporarily unavailable.
+        }
+      },500);
+    };
+
+    ['input','blur'].forEach(evt=>{
+      nameInput.addEventListener(evt,trySave);
+      mobileInput.addEventListener(evt,trySave);
+    });
+    consentInput.addEventListener('change',trySave);
+    document.getElementById('type')?.addEventListener('change',trySave);
+    document.getElementById('location')?.addEventListener('change',trySave);
+    document.getElementById('carMake')?.addEventListener('change',trySave);
+    document.getElementById('carModel')?.addEventListener('change',trySave);
+  }
+
+  setupBookingLeadCapture();
+
   window.CPM_SUBMIT_ENQUIRY=async function(event){
     event.preventDefault();
     const form=event.currentTarget;
