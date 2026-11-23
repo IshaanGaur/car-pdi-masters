@@ -326,14 +326,20 @@ exports.cpmSubmitWebsiteEnquiryV1 = onRequest({
   const name = clean(body.name, 80);
   const phoneRaw = String(body.phone || '').replace(/\D/g, '');
   const phone = phoneRaw.startsWith('91') && phoneRaw.length === 12 ? phoneRaw.slice(2) : phoneRaw;
-  const service = clean(body.service, 80);
+  const leadStage = clean(body.leadStage, 40);
+  const isBookingLead = leadStage === 'BOOKING_STARTED';
+  const leadToken = clean(body.leadToken, 100);
+  const service = clean(body.service, 80) || (isBookingLead ? 'Other / Not Sure' : '');
   const vehicle = clean(body.vehicle, 100);
-  const location = clean(body.location, 120);
+  const location = clean(body.location, 120) || (isBookingLead ? 'Not provided yet' : '');
   const contactMethod = body.contactMethod === 'Call' ? 'Call' : 'WhatsApp';
   const notes = clean(body.notes, 1000);
   const sourcePath = clean(body.sourcePath, 240);
   if (name.length < 2 || !/^[6-9]\d{9}$/.test(phone) || !service || location.length < 2 || body.consent !== true) {
     return res.status(400).json({ success: false, message: 'Please check your name, 10-digit mobile number, service, location and contact consent.' });
+  }
+  if (isBookingLead && !/^[A-Za-z0-9_-]{16,100}$/.test(leadToken)) {
+    return res.status(400).json({ success: false, message: 'A valid booking lead reference is required.' });
   }
   const allowedServices = ['New Car PDI','New Car Inspection','Used Car PDI','Used Car Inspection','Pre-Purchase Car Inspection','EV Car PDI','Luxury Car PDI','Other / Not Sure'];
   if (!allowedServices.includes(service)) return res.status(400).json({ success: false, message: 'Please choose a valid inspection service.' });
@@ -350,14 +356,60 @@ exports.cpmSubmitWebsiteEnquiryV1 = onRequest({
       if (count >= 5) throw new Error('RATE_LIMITED');
       tx.set(rateRef, { windowStart: withinWindow ? record.windowStart : now, count: count + 1, updatedAt: FieldValue.serverTimestamp() });
     });
+    const source = isBookingLead ? 'WEBSITE_BOOKING_LEAD' : 'WEBSITE_ENQUIRY';
+    const bookingStatus = isBookingLead ? 'LEAD_NEW' : 'ENQUIRY_NEW';
+
+    if (isBookingLead) {
+      const tokenHash = crypto.createHash('sha256').update(leadToken).digest('hex');
+      const tokenRef = db.doc('websiteBookingLeadTokens/' + tokenHash);
+      const existing = await tokenRef.get();
+      if (existing.exists && existing.data()?.bookingRef) {
+        const existingBooking = await db.doc(existing.data().bookingRef).get();
+        const existingCode = existingBooking.exists ? String(existingBooking.data()?.bookingId || '') : '';
+        if (existingCode) return res.status(200).json({ success: true, enquiryId: existingCode, duplicate: true });
+      }
+
+      const ref = db.collection('bookings').doc();
+      const enquiryCode = 'CPM-LEAD-' + ref.id.slice(-8).toUpperCase();
+      await db.runTransaction(async tx => {
+        const tokenSnap = await tx.get(tokenRef);
+        if (tokenSnap.exists && tokenSnap.data()?.bookingRef) return;
+        tx.set(ref, {
+          bookingId: enquiryCode,
+          bookingStatus,
+          bookingPaymentStatus: 'NOT_APPLICABLE',
+          balancePaymentStatus: 'NOT_APPLICABLE',
+          source,
+          leadStage: 'BOOKING_STARTED',
+          customerName: name,
+          customerPhone: phone,
+          inspectionType: service,
+          vehicleMakeModel: vehicle,
+          inspectionLocation: location,
+          preferredContactMethod: contactMethod,
+          additionalInformation: notes || 'Customer started the website booking form but did not complete the booking.',
+          sourcePath,
+          consentToContact: true,
+          createdAt: FieldValue.serverTimestamp(),
+          updatedAt: FieldValue.serverTimestamp()
+        });
+        tx.create(tokenRef, {
+          bookingRef: ref.path,
+          bookingId: enquiryCode,
+          createdAt: FieldValue.serverTimestamp()
+        });
+      });
+      return res.status(200).json({ success: true, enquiryId: enquiryCode });
+    }
+
     const ref = db.collection('bookings').doc();
     const enquiryCode = 'CPM-ENQ-' + ref.id.slice(-8).toUpperCase();
     await ref.set({
       bookingId: enquiryCode,
-      bookingStatus: 'ENQUIRY_NEW',
+      bookingStatus,
       bookingPaymentStatus: 'NOT_APPLICABLE',
       balancePaymentStatus: 'NOT_APPLICABLE',
-      source: 'WEBSITE_ENQUIRY',
+      source,
       customerName: name,
       customerPhone: phone,
       inspectionType: service,
