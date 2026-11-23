@@ -142,8 +142,8 @@ for (const file of htmlFiles) {
     html = html.replace(/ZERO dealer(?: or shop)? tie-ups/gi, 'zero dealership affiliations or commissions');
     html = html.replace(/OBD for all cars/gi, 'OBD scanning where the selected package and vehicle support it');
     // Keep the distinction between a visual/electrical inspection and a battery-health certification.
-    html = html.replace(/Pay ₹299 booking deposit securely through Razorpay to (?:confirm|reserve) your (?:slot|inspector slot)/gi, 'Enquire by WhatsApp or call to confirm availability and booking steps');
-    html = html.replace(/Pay ₹499 booking deposit securely through Razorpay to (?:confirm|reserve) your (?:slot|inspector slot)/gi, 'Enquire by WhatsApp or call to confirm availability and booking steps');
+    html = html.replace(/Pay ₹299 booking deposit securely through Razorpay to (?:confirm|reserve) your (?:slot|inspector slot)/gi, 'Complete the booking payment securely through Razorpay through the website booking form');
+    html = html.replace(/Pay ₹499 booking deposit securely through Razorpay to (?:confirm|reserve) your (?:slot|inspector slot)/gi, 'Complete the booking payment securely through Razorpay through the website booking form');
   }
   html = updateJsonLd(html, ctx);
   html = html.replace(/Choose the new car PDI service and submit your booking details\./gi, 'Use the website booking form to enter your vehicle details, inspection location and preferred appointment timing.');
@@ -260,10 +260,10 @@ for (const file of htmlFiles) {
   html = html.replaceAll('href="/#booking">Book Inspection</a>', 'href="#booking">Book Inspection</a>');
   html = html.replaceAll('href="/#booking">Book Inspection in Saket</a>', 'href="#booking">Book Inspection</a>');
   html = html.replaceAll('href="/#booking">Start Booking</a>', 'href="#booking">Book Inspection</a>');
-  html = html.replaceAll(' >Payment Options</a>', '>Enquire on WhatsApp</a>');
-  html = html.replaceAll(' >Payment Details</a>', '>Enquire on WhatsApp</a>');
-  html = html.replaceAll(' >Pay ₹299 Booking</a>', '>Enquire on WhatsApp</a>');
-  html = html.replaceAll(' >Pay &#8377;299 Booking</a>', '>Enquire on WhatsApp</a>');
+  html = html.replaceAll(' >Payment Options</a>', '>Payment Options</a>');
+  html = html.replaceAll(' >Payment Details</a>', '>Payment Details</a>');
+  html = html.replaceAll(' >Pay ₹299 Booking</a>', '>Pay ₹299 Booking</a>');
+  html = html.replaceAll(' >Pay &#8377;299 Booking</a>', '>Pay &#8377;299 Booking</a>');
   html = html.replaceAll('Tap your car\'s brand to book its inspection.', 'Choose your car brand to send an inspection enquiry on WhatsApp.');
   html = html.replaceAll('Tap your car’s brand to book its inspection.', 'Choose your car brand to send an inspection enquiry on WhatsApp.');
   html = html.replaceAll('Booking Amount', 'Booking Amount');
