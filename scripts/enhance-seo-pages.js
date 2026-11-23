@@ -106,7 +106,7 @@ function updateJsonLd(html, ctx) {
           // FAQ answer that happens to mention the current booking form.
           if (q.name === 'How do I book and pay?') {
             changed = true;
-            return {...q,acceptedAnswer:{'@type':'Answer',text:'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through the website booking form.'}};
+            return {...q,acceptedAnswer:{'@type':'Answer',text:'Use the website booking form to enter your car make, model, inspection location and preferred timing, then complete the booking payment securely through Razorpay.'}};
           }
           return q;
         });
@@ -151,10 +151,10 @@ for (const file of htmlFiles) {
   html = html.replace(/Our team reviews and confirms the inspection assignment\./gi, 'Complete the booking payment securely through Razorpay after submitting the vehicle and appointment details.');
   html = html.replace(/Complete the pending balance before the inspection starts\./gi, 'Share any additional vehicle or access details requested before the appointment.');
   html = html.replace(/Fill in the booking form with the car details, inspection address, date and time, then pay the booking (?:amount|deposit) securely through Razorpay\. The remaining balance is paid before the inspection starts\./gi,
-    'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through the website booking form.');
+    'Use the website booking form to enter your car make, model, inspection location and preferred timing, then complete the booking payment securely through Razorpay.');
 
   // Remove stale booking-deposit amounts and old booking-first descriptions from all public pages.
-  html = html.replace(/Booking\s*:\s*₹299\s*\/\s*₹499/gi, 'Booking is completed through the website booking form after availability confirmation');
+  html = html.replace(/Booking\s*:\s*₹299\s*\/\s*₹499/gi, 'Booking is completed through the website booking form with secure Razorpay payment');
   html = html.replace(/Booking\s*₹299\s*online\s*now\s*·\s*Balance\s*₹1,200\s*before\s*inspection/gi, 'Booking through the website form · Secure Razorpay payment');
   html = html.replace(/Booking\s*₹499\s*online\s*now\s*·\s*Balance\s*₹2,000\s*before\s*inspection/gi, 'Booking through the website form · Secure Razorpay payment');
   html = html.replace(/Your booking is received first, reviewed by the team, assigned and then confirmed before the inspection is scheduled as final\./gi,
@@ -164,11 +164,11 @@ for (const file of htmlFiles) {
 
   html = html.replace(/<h3>Pay booking amount<\/h3>/gi, '<h3>Complete booking through the website booking form</h3>');
   html = html.replace(/<h3>Provide vehicle location<\/h3>/gi, '<h3>Share vehicle location and preferred timing</h3>');
-  html = html.replace(/Enter the Delhi inspection address and preferred date\/time\./gi, 'Share your vehicle location and preferred timing by WhatsApp or phone.');
-  html = html.replace(/Choose the vehicle's actual inspection address during booking, subject to operational availability\./gi, 'Share the vehicle’s exact inspection address in your enquiry; appointment availability and access permission are confirmed before booking.');
-  html = html.replace(/Enter the booking form[\s\S]{0,140}?preferred date\/time\./gi, 'Share your vehicle details, location and preferred timing by WhatsApp or phone.');
+  html = html.replace(/Enter the Delhi inspection address and preferred date\/time\./gi, 'Select the active inspection location and preferred timing in the website booking form.');
+  html = html.replace(/Choose the vehicle's actual inspection address during booking, subject to operational availability\./gi, 'Enter the vehicle’s exact inspection address in the booking form, subject to access permission and service coverage.');
+  html = html.replace(/Enter the booking form[\s\S]{0,140}?preferred date\/time\./gi, 'Enter your vehicle details, location and preferred timing in the website booking form.');
   html = html.replace(/Select your inspection type, provide the vehicle details and enter the actual inspection location\. Then use the available ₹299 booking payment option through the website payment flow\./gi,
-    'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through the website booking form.');
+    'Use the website booking form to enter your car make, model, inspection location and preferred timing, then complete the booking payment securely through Razorpay.');
   html = html.replace(/For a new car PDI the inspection should happen at the dealer before you sign the delivery papers\. Enter the dealer address in the booking form\. Your home address in Adarsh Nagar is only needed if the car is already with you\./gi,
     'For a new car PDI, share the dealer or delivery address where the vehicle will be inspected. Your home address is only needed when the vehicle is already with you.');
 
@@ -181,17 +181,17 @@ for (const file of htmlFiles) {
     'Full inspection price ₹1,499 · Book through the website form');
   html = html.replace(/Booking\s*₹499\s*online now\s*·\s*Balance\s*₹2,000\s*before inspection/gi,
     'Full inspection price ₹2,499 · Book through the website form');
-  html = html.replace(/Fill in the booking form with the car details, inspection address, date and time, then The team confirms availability and shares the next steps for booking through the website booking form\. The remaining balance is paid before the inspection starts\./gi, 'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through the website booking form.');
+  html = html.replace(/Fill in the booking form with the car details, inspection address, date and time, then The team confirms availability and shares the next steps for booking through the website booking form\. The remaining balance is paid before the inspection starts\./gi, 'Use the website booking form to enter your car make, model, inspection location and preferred timing, then complete the booking payment securely through Razorpay.');
   html = html.replace(/The remaining balance is paid before the inspection starts\./gi, '');
   html = html.replace(/Standard PDI:\s*₹1,499\s*[·•]\s*Comprehensive 360° PDI:\s*₹2,499\s*[·•]\s*Booking:\s*₹299\s*\/\s*₹499/gi,
     'Standard PDI: ₹1,499 · Comprehensive 360° PDI: ₹2,499 · Book through the website form');
   html = html.replace(/Fill in the booking form[\s\S]{0,600}?The remaining balance is paid before the inspection starts\./gi,
-    'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through the website booking form.');
-  html = html.replace(/<h3>Pay booking amount<\/h3>/gi, '<h3>Confirm availability and booking</h3>');
-  html = html.replaceAll('Pay booking amount', 'Confirm availability and booking');
+    'Use the website booking form to enter your car make, model, inspection location and preferred timing, then complete the booking payment securely through Razorpay.');
+  html = html.replace(/<h3>Pay booking amount<\/h3>/gi, '<h3>Complete booking payment</h3>');
+  html = html.replaceAll('Pay booking amount', 'Complete booking payment');
   html = html.replace(/Pay the booking amount securely through Razorpay\.?/gi, 'Use the website booking form to submit the vehicle and appointment details, then complete the booking payment securely through Razorpay.');
   html = html.replace(/Fill in the booking form[\s\S]{0,420}?Razorpay\.[\s\S]{0,180}?inspection starts\./gi,
-    'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and share the next steps for booking through the website booking form.');
+    'Use the website booking form to enter your car make, model, inspection location and preferred timing, then complete the booking payment securely through Razorpay.');
   html = html.replace(/Enter the Delhi inspection address and preferred date\/time\./gi, 'Share the vehicle location and preferred timing by WhatsApp or phone.');
   html = html.replace(/Your booking is received first, reviewed by the team, assigned and then confirmed before the inspection is scheduled as final\./gi,
     'Start with the website booking form, submit your vehicle and appointment details, then complete the booking payment securely through Razorpay.');
@@ -271,9 +271,9 @@ for (const file of htmlFiles) {
   html = html.replaceAll('Pay the booking amount first. Your booking is reviewed and assigned before final confirmation.', 'Use the website booking form to select an active service location, enter your vehicle and appointment details, then complete the booking payment securely through Razorpay.');
   if (ctx.kind === 'home') {
     html = html.replace(/<details>\s*<summary>What happens after I pay the booking amount\?<\/summary>\s*<p>[\s\S]*?<\/p>\s*<\/details>/i,
-      '<details><summary>How do I arrange an inspection?</summary><p>Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. The team will confirm availability and guide you through the website booking process.</p></details>');
+      '<details><summary>How do I arrange an inspection?</summary><p>Use the website booking form to select your inspection plan and active location, enter your vehicle and appointment details, then complete the booking payment securely through Razorpay.</p></details>');
     html = html.replace(/<details>\s*<summary>Can I choose my inspection location\?<\/summary>\s*<p>[\s\S]*?<\/p>\s*<\/details>/i,
-      '<details><summary>Can I choose my inspection location?</summary><p>Share the exact vehicle location, such as a home, office, dealership showroom or stockyard. The team will confirm service coverage, access permission and appointment availability.</p></details>');
+      '<details><summary>Can I choose my inspection location?</summary><p>Select an active inspection location in the booking form and enter the exact vehicle address, subject to service coverage and access permission.</p></details>');
     html = html.replace('<details><summary>When is the balance payment made?</summary><p>The remaining balance is intended to be completed before the inspection starts.</p></details>', '');
     if (!/"@type"\s*:\s*"FAQPage"/.test(html)) html = html.replace(/<\/head>/i,
       '<script type="application/ld+json">' + JSON.stringify({'@context':'https://schema.org','@type':'FAQPage',mainEntity:homeFaqs().map(x=>({'@type':'Question',name:x.q,acceptedAnswer:{'@type':'Answer',text:x.a}}))}) + '</script></head>');
