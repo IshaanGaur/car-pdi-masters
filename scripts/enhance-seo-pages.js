@@ -52,7 +52,7 @@ function faqFor(ctx) {
     const base = [
       {q:'Can you inspect a car at my home, office or dealership in ' + ctx.place + '?',a:'An on-site inspection can be arranged at a home, office, dealership showroom or stockyard in ' + ctx.place + ', subject to access permission, a safe inspection area and appointment confirmation.'},
       {q:'What does a car inspection in ' + ctx.place + ' cover?',a:'The inspection uses a structured 300+ checkpoint framework covering observable exterior and paint condition, tyres, interior, accessible mechanical areas, electrical features and safety observations. Paint thickness readings are taken on applicable panels; OBD scanning is included only where the selected package and vehicle support it.'},
-      {q:'How do I arrange a car inspection in ' + ctx.place + '?',a:'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection address and preferred timing. The team will confirm availability and share the next steps through the website booking form.'}
+      {q:'How do I arrange a car inspection in ' + ctx.place + '?',a:'Use the website booking form to select the inspection plan and active location, enter the vehicle and appointment details, then pay the booking amount securely through Razorpay. The remaining balance is paid before the inspection starts.'}
     ];
     if (ctx.place === 'Gurugram') {
       base[0] = {q:'Can you inspect a car at a Gurugram showroom or dealer?',a:'Yes, a new-car PDI or used-car inspection can be arranged around Gurugram at a home, office, showroom or other agreed vehicle location, subject to dealer or site access permission and appointment confirmation.'};
@@ -65,7 +65,7 @@ function faqFor(ctx) {
   const f = [
     {q:'What information should I share before arranging ' + s + '?',a:'Share the car make, model, variant, whether it is new or used, the inspection location and your preferred date and time. The team can then confirm the appropriate inspection and appointment availability.'},
     {q:'What is included in the inspection report?',a:'The inspection follows a structured 300+ checkpoint framework where applicable and records observable findings with relevant photo evidence. Paint thickness measurements are taken on applicable panels. OBD scanning is used only where the selected package and vehicle support it.'},
-    {q:'How do I enquire about ' + s + '?',a:'Use the callback form, WhatsApp enquiry link or call 99711 16411. Share your vehicle details and location; the team will confirm availability and explain that Car PDI Masters performs the inspection; booking and payment are completed through the website booking form after availability is confirmed.'},
+    {q:'How do I book ' + s + '?',a:'Use the website booking form to select the inspection plan and active location, enter your vehicle and appointment details, then pay the booking amount securely through Razorpay. The remaining balance is paid before the inspection starts.'},
     {q:'How much does a car PDI cost?',a:'The Standard PDI is listed at ₹1,499 and the Comprehensive 360° PDI at ₹2,499. Contact Car PDI Masters to confirm current package inclusions, availability and appointment details.'}
   ];
   if (/New Car/.test(s)) f[0].a = 'Share the make, model, variant, dealership or delivery location and expected delivery date. The team will confirm availability for a pre-delivery inspection before you accept the vehicle.';
@@ -81,7 +81,7 @@ function homeFaqs() {
     {q:'What is a new car PDI?',a:'A pre-delivery inspection is a structured check of a vehicle before accepting delivery, covering relevant exterior, interior, electrical, tyre and other inspection areas.'},
     {q:'What is a used car inspection?',a:'It is a structured assessment of a used vehicle’s observable condition and relevant inspection areas before purchase.'},
     {q:'How many checkpoints are covered?',a:'Car PDI Masters uses a 300+ checkpoint inspection framework across major vehicle systems and condition areas.'},
-    {q:'How do I arrange an inspection?',a:'Send an enquiry by WhatsApp or call 99711 16411 with your car make, model, inspection location and preferred timing. Select an active service location and preferred appointment slot in the booking form, then complete the booking payment securely through Razorpay.'},
+    {q:'How do I arrange an inspection?',a:'Use the website booking form to select your inspection plan and active location, enter your vehicle and appointment details, then pay the booking amount securely through Razorpay. The remaining balance is paid before the inspection starts.'},
     {q:'Can I choose my inspection location?',a:'Select an active inspection location in the booking form and enter the exact vehicle address, subject to service coverage and access permission.'}
   ];
 }
@@ -163,6 +163,12 @@ for (const file of htmlFiles) {
 
   html = html.replace(/Booking\s*:\s*₹299\s*\/\s*₹499/gi,
     'Standard PDI: ₹1,499 · Comprehensive 360° PDI: ₹2,499 · Booking: ₹299 / ₹499');
+  html = html.replace(/Enquire to confirm availability and booking steps/gi,
+    'Booking ₹299 online now · Balance ₹1,200 before inspection');
+  html = html.replace(/Booking Process<\/span><strong>WhatsApp \/ Call<\/strong>/gi,
+    'Booking Process</span><strong>₹299 / ₹499 online</strong>');
+  html = html.replace(/How to arrange an inspection:<\/b> Enquire by WhatsApp or call\. After availability is confirmed, the team shares the booking steps through the website booking form\./gi,
+    'How to arrange an inspection:</b> Use the website booking form to enter your vehicle and appointment details, then pay the booking amount securely through Razorpay. The remaining balance is paid before the inspection starts.');
   html = html.replace(/Booking\s*₹299\s*online\s*now\s*·\s*Balance\s*₹1,200\s*before\s*inspection/gi,
     'Booking ₹299 online now · Balance ₹1,200 before inspection');
   html = html.replace(/Booking\s*₹499\s*online\s*now\s*·\s*Balance\s*₹2,000\s*before\s*inspection/gi,
