@@ -216,13 +216,16 @@ for (const file of htmlFiles) {
     if (!/Booking[\s\S]*?(?:299|499)/i.test(block)) return block;
     return '<div class="checkpoint-note"><strong>Standard PDI:</strong> ₹1,499 &nbsp; • &nbsp; <strong>Comprehensive 360° PDI:</strong> ₹2,499 &nbsp; • &nbsp; Booking is completed through the website booking form after availability confirmation &nbsp; • &nbsp; <a href="/#pricing">Compare plans →</a></div>';
   });
-  // All public CTAs must start an enquiry, not scroll customers into the dormant direct-booking form.
+  // Booking CTAs must remain attached to the live paid booking form.
+  // Do not rewrite /#booking links to callback or WhatsApp: check-website.js treats
+  // /#booking as the canonical customer booking destination.
   html = html.replace(/<a\b([^>]*?)href=["'](?:\/#booking|#booking)["']([^>]*)>([\s\S]*?)<\/a>/gi,
     (match, beforeHref, afterHref, label) => {
-      // Brand cards intentionally use #booking as a make-selection link.
-      // Preserve their logo/name markup; only convert actual booking CTAs.
-      if (/\bclass=["'][^"']*\bbrand-card\b/i.test(beforeHref + afterHref)) return match;
-      return '<a' + beforeHref + 'href="#booking"' + afterHref + '>Request a Callback</a>';
+      const plain = label.replace(/<[^>]*>/g, '').replace(/[→»]+/g, '').trim();
+      if (/^(request a callback|start booking|book online|book inspection|continue to booking|enquire on whatsapp)$/i.test(plain)) {
+        return '<a' + beforeHref + 'href="#booking"' + afterHref + '>Book Inspection</a>';
+      }
+      return match;
     });
   // Keep the original paid booking form visible; never hide or replace its Razorpay booking journey.
   html = html.replace(/<section class=["']section booking-section["'] id=["']booking["'][^>]*hidden[^>]*>/i,
@@ -241,19 +244,17 @@ for (const file of htmlFiles) {
     'The team confirms availability and shares the next steps for booking through the website booking form.');
   html = html.replace(/Pay booking amount securely through Razorpay[^.]*\./gi,
     'The team confirms availability and shares the next steps for booking through the website booking form.');
-  html = html.replace(/<a\b([^>]*?)href=["']\/payment\.html["']([^>]*)>[\s\S]*?<\/a>/gi,
-    '<a$1href="' + wa + '"$2>Enquire on WhatsApp</a>');
+  // Retired direct-payment links should not bypass the live booking form.
+  // Route legacy /payment.html anchors to the booking section instead.
+  html = html.replace(/<a\b([^>]*?)href=["']\/payment\.html(?:\?[^"']*)?["']([^>]*)>([\s\S]*?)<\/a>/gi,
+    '<a$1href="#booking"$2>Book Inspection</a>');
   html = html.replace(/<a\b([^>]*?)href=["']\/#booking["']([^>]*)>([\s\S]*?)<\/a>/gi, (m, before, after, label) => {
     const plain = label.replace(/<[^>]*>/g, '').replace(/[→»]/g, '').trim();
-    if (/^(book(?:\s+(?:online|inspection(?:\s+in\s+[^]+)?|used\s+car\s+inspection))?|start\s+booking|continue\s+to\s+booking)$/i.test(plain)) {
-      return '<a' + before + 'href="#booking"' + after + '>Request a Callback</a>';
+    if (/^(request a callback|enquire on whatsapp|start booking|book online|book inspection|continue to booking)$/i.test(plain)) {
+      return '<a' + before + 'href="#booking"' + after + '>Book Inspection</a>';
     }
     return m;
   });
-  html = html.replace(/<a\b([^>]*?)href=["']\/payment\.html["']([^>]*)>[\s\S]*?<\/a>/gi,
-    '<a$1href="' + wa + '"$2>Enquire on WhatsApp</a>');
-  html = html.replace(/<a\b([^>]*?)href=["']\/#booking["']([^>]*)>(?:Book Inspection|Book Inspection in [^<]+|Book Online|Start Booking)<\/a>/gi,
-    '<a$1href="' + wa + '"$2>Enquire on WhatsApp</a>');
   html = html.replaceAll('Choose EV Car PDI and submit the booking details.', 'Send an enquiry with your EV make, model, inspection location and preferred timing using WhatsApp or call.');
   html = html.replaceAll('Choose Luxury Car PDI and submit the booking details.', 'Send an enquiry with your vehicle details, inspection location and preferred timing using WhatsApp or call.');
   html = html.replaceAll('Choose the 360° inspection service and submit the booking details.', 'Send an enquiry with your vehicle details, inspection location and preferred timing using WhatsApp or call.');
@@ -265,11 +266,11 @@ for (const file of htmlFiles) {
   html = html.replaceAll('Fill in the booking form with the car details, inspection address, date and time, then pay the booking amount securely through Razorpay. The remaining balance is paid before the inspection starts.', enquiryText);
   html = html.replaceAll('Pay booking amount securely through Razorpay (UPI, cards or netbanking).', 'The team confirms availability and shares the next steps for booking through the website booking form.');
   html = html.replaceAll('Pay the booking amount securely through Razorpay (UPI, cards or netbanking).', 'The team confirms availability and shares the next steps for booking through the website booking form.');
-  html = html.replaceAll('href="/payment.html"', 'href="' + wa + '"');
-  html = html.replaceAll('href="/#booking">Book Online</a>', 'href="#booking">Request a Callback</a>');
-  html = html.replaceAll('href="/#booking">Book Inspection</a>', 'href="#booking">Request a Callback</a>');
-  html = html.replaceAll('href="/#booking">Book Inspection in Saket</a>', 'href="#booking">Request a Callback</a>');
-  html = html.replaceAll('href="/#booking">Start Booking</a>', 'href="#booking">Request a Callback</a>');
+  html = html.replaceAll('href="/payment.html"', 'href="#booking"');
+  html = html.replaceAll('href="/#booking">Book Online</a>', 'href="#booking">Book Inspection</a>');
+  html = html.replaceAll('href="/#booking">Book Inspection</a>', 'href="#booking">Book Inspection</a>');
+  html = html.replaceAll('href="/#booking">Book Inspection in Saket</a>', 'href="#booking">Book Inspection</a>');
+  html = html.replaceAll('href="/#booking">Start Booking</a>', 'href="#booking">Book Inspection</a>');
   html = html.replaceAll('>Payment Options</a>', '>Enquire on WhatsApp</a>');
   html = html.replaceAll('>Payment Details</a>', '>Enquire on WhatsApp</a>');
   html = html.replaceAll('>Pay ₹299 Booking</a>', '>Enquire on WhatsApp</a>');
@@ -295,10 +296,12 @@ for (const file of htmlFiles) {
   }
   if (ctx.kind === 'home' && !/<section class=["']section booking-section["'] id=["']booking["'][^>]*>[\s\S]*?CPM_SUBMIT_BOOKING/i.test(html)) throw new Error('Homepage paid booking form is missing');
   if (ctx.kind === 'home' && /<section class=["']section booking-section["'] id=["']booking["'][^>]*(?:hidden|aria-hidden=["']true["'])/i.test(html)) throw new Error('Homepage paid booking form is hidden');
-  // Any booking CTA must lead to the paid booking form, not the retired callback form.
+  // Final CTA guard: every explicit booking CTA must point to the live paid booking form.
   html = html.replace(/(<a\b[^>]*href=["'](?:\/#booking|#booking)["'][^>]*>)([\s\S]*?)(<\/a>)/gi, (m, open, label, close) => {
     const plain = label.replace(/<[^>]*>/g, '').trim();
-    if (/^(Request a Callback|Enquire on WhatsApp|Start Booking|Book Online)$/i.test(plain)) return open + 'Book Inspection' + close;
+    if (/^(Request a Callback|Enquire on WhatsApp|Start Booking|Book Online|Book Inspection)$/i.test(plain)) {
+      return open + 'Book Inspection' + close;
+    }
     return m;
   });
   html = html.replace(/<section class=["']section booking-section["'] id=["']booking["'][^>]*hidden[^>]*>/i,
