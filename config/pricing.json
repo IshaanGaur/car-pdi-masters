@@ -1,8 +1,8 @@
 {
   "currency": "INR",
-  "defaultServicePrice": 2499,
+  "defaultServicePrice": 1499,
   "bookingAmount": 299,
-  "balanceAmount": 2200,
+  "balanceAmount": 1200,
   "plans": {
     "standard-pdi": {
       "name": "Standard PDI",
@@ -65,6 +65,6 @@
   },
   "adminIntegration": {
     "source": "config/pricing.json",
-    "note": "The website reads pricing from this central configuration. Connect the existing Admin Panel to update this configuration or replace the loader with the Admin Panel's authenticated pricing API/Firestore document. Do not expose admin credentials in the public website."
+    "note": "Reference configuration for pricing defaults and admin integration. Runtime booking pricing is read from the Firebase pricing/current document and falls back to the standard/comprehensive values in site.js. Keep these values aligned when pricing is intentionally changed; never expose admin credentials in the public website."
   }
 }

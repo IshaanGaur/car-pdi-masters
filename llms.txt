@@ -68,7 +68,7 @@
 - Pricing and package inclusions can change; confirm the current package and appointment availability on the official website before booking.
 
 ## Booking
-Customers can enquire by phone or WhatsApp and use the website booking form. Car PDI Masters performs the inspection. Appointment availability, location access and selected package are confirmed before the booking/payment steps are completed through the website.
+Customers can use the website booking form to select the inspection plan and active location, enter vehicle and appointment details, and pay the booking amount securely through Razorpay. The booking is then reviewed and assigned by Car PDI Masters; the remaining balance is paid before the inspection starts. Phone or WhatsApp support is available for booking help.
 
 ## Inspection scope and limitations
 The inspection uses a structured 300+ checkpoint framework. Paint thickness readings are taken on applicable panels. OBD scanning is available only where the selected package and vehicle are compatible. Findings are based on observable condition and the checks included in the selected inspection workflow; an inspection does not guarantee that every concealed defect or historical event will be identified.
