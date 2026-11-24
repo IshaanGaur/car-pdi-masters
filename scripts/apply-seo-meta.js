@@ -12,6 +12,10 @@ const OVERRIDES = {
   'services/new-car-pdi.html': {
     title: 'New Car PDI | PDI for New Car in Delhi NCR | 300+ Checks',
     description: 'Book a new car PDI in Delhi NCR before delivery. PDI for new car with 300+ checks, paint thickness readings and a photo-supported report from ₹1,499.'
+  },
+  'services/used-car-inspection.html': {
+    title: 'Used Car Inspection in Delhi | 300+ Checks | Car PDI Masters',
+    description: 'Book a used car inspection in Delhi before buying. Get 300+ checks for body, paint, tyres, interior and electrical features, with a photo-supported report.'
   }
 };
 
