@@ -17,6 +17,10 @@ const OVERRIDES = {
     title: 'Used Car Inspection in Delhi | 300+ Checks | Car PDI Masters',
     description: 'Book a used car inspection in Delhi before buying. Get 300+ checks for body, paint, tyres, interior and electrical features, with a photo-supported report.'
   },
+  'services/pre-purchase-car-inspection.html': {
+    title: 'Pre-Purchase Car Inspection in Delhi | 300+ Checks',
+    description: 'Get a pre-purchase car inspection in Delhi before buying a used car. 300+ checks, paint condition, selected OBD checks, photos and a structured report.'
+  },
   'services/used-car-pdi.html': {
     title: 'Used Car PDI in Delhi NCR | 300+ Checks',
     description: 'Book a used car PDI in Delhi NCR before handover. Get 300+ checks, paint thickness readings, selected OBD scanning and a photo-supported report.'
