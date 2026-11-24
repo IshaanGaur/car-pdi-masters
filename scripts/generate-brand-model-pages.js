@@ -46,8 +46,8 @@ function jsonld(m,u){return JSON.stringify({'@context':'https://schema.org','@gr
 function page(m){
   const u=url(m),k=keywordMap(m),f=faq(m),checks=modelChecks(m),ev=isEv(m),premium=isPremium(m);
   const historical=m.demandValidation==='used_historical';
-  const title=m.brand+' '+m.model+' PDI | Car PDI Masters';
-  const desc=meta(historical?m.brand+' '+m.model+' used car PDI and pre-purchase inspection in Delhi NCR. 2,500+ cars inspected, 10+ years experience, 300+ checks, paint thickness and applicable diagnostics.':m.brand+' '+m.model+' PDI in Delhi NCR for new-car delivery or used-car purchase. 2,500+ cars inspected, 10+ years experience, 300+ checks, paint thickness and applicable diagnostics.');
+  const title=m.seoTitle||m.brand+' '+m.model+' PDI | Car PDI Masters';
+  const desc=meta(m.seoDescription||(historical?m.brand+' '+m.model+' used car PDI and pre-purchase inspection in Delhi NCR. 2,500+ cars inspected, 10+ years experience, 300+ checks, paint thickness and applicable diagnostics.':m.brand+' '+m.model+' PDI in Delhi NCR for new-car delivery or used-car purchase. 2,500+ cars inspected, 10+ years experience, 300+ checks, paint thickness and applicable diagnostics.'));
   const powers=m.powertrains?.length?m.powertrains:['Verify exact powertrain at inspection'];
   const trans=m.transmissions?.length?m.transmissions:['Verify exact transmission at inspection'];
   const vars=m.variants?.length?m.variants:['Verify exact variant and equipment at inspection'];
