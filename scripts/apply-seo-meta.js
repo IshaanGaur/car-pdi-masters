@@ -10,8 +10,8 @@ const ROOT = path.join(__dirname, '..');
 
 const OVERRIDES = {
   'services/new-car-pdi.html': {
-    title: 'New Car PDI Service in Delhi NCR | 300+ Checkpoints | From ₹1,499',
-    description: 'Independent new car PDI service in Delhi NCR before delivery. 300+ checkpoints, paint thickness readings and a photo-supported report. From ₹1,499.'
+    title: 'New Car PDI | PDI for New Car in Delhi NCR | 300+ Checks',
+    description: 'Book a new car PDI in Delhi NCR before delivery. PDI for new car with 300+ checks, paint thickness readings and a photo-supported report from ₹1,499.'
   }
 };
 
