@@ -1,17 +1,14 @@
 // Build-time title/description overrides for SEO.
-// Search Console data (Nov 2026) showed /services/new-car-pdi.html gets its impressions for
-// "pdi service in delhi" style queries, so its title/description now say "PDI Service in Delhi NCR".
 // Runs from firebase.website.json "predeploy", AFTER scripts/enhance-seo-pages.js.
-// To tune another page later, add an entry to OVERRIDES (key = file path from the site root).
-// Each page keeps exactly ONE <title> and ONE meta description (scripts/check-website.js enforces this).
+// Each page keeps exactly ONE <title> and ONE meta description.
 const fs = require('fs');
 const path = require('path');
 const ROOT = path.join(__dirname, '..');
 
 const OVERRIDES = {
   'services/new-car-pdi.html': {
-    title: 'New Car PDI | PDI for New Car in Delhi NCR | 300+ Checks',
-    description: 'Book a new car PDI in Delhi NCR before delivery. PDI for new car with 300+ checks, paint thickness readings and a photo-supported report from ₹1,499.'
+    title: 'New Car PDI in Delhi NCR | From ₹1,499 | 300+ Checks',
+    description: 'Book a new car PDI in Delhi NCR before delivery. Get 300+ checks, paint thickness readings and a photo-supported report from ₹1,499.'
   },
   'services/used-car-inspection.html': {
     title: 'Used Car Inspection in Delhi | 300+ Checks | Car PDI Masters',
@@ -41,9 +38,9 @@ for (const [file, o] of Object.entries(OVERRIDES)) {
   if (!fs.existsSync(full)) { console.warn('SEO meta override skipped, file not found: ' + file); continue; }
   const original = fs.readFileSync(full, 'utf8');
   if (/http-equiv=["']refresh/i.test(original)) continue;
-  if (/name=["']robots["']\s+content=["'][^"']*noindex/i.test(original)) continue;
+  if (/name=["']robots["']\\s+content=["'][^"']*noindex/i.test(original)) continue;
   let html = original;
-  html = html.replace(/<title\b[^>]*>[\s\S]*?<\/title>/i, '<title>' + escapeAttr(o.title) + '</title>');
+  html = html.replace(/<title\\b[^>]*>[\\s\\S]*?<\\/title>/i, '<title>' + escapeAttr(o.title) + '</title>');
   html = setMeta(html, 'name', 'description', o.description);
   html = setMeta(html, 'property', 'og:title', o.title);
   html = setMeta(html, 'property', 'og:description', o.description);
