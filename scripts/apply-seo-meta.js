@@ -38,9 +38,9 @@ for (const [file, o] of Object.entries(OVERRIDES)) {
   if (!fs.existsSync(full)) { console.warn('SEO meta override skipped, file not found: ' + file); continue; }
   const original = fs.readFileSync(full, 'utf8');
   if (/http-equiv=["']refresh/i.test(original)) continue;
-  if (/name=["']robots["']\\s+content=["'][^"']*noindex/i.test(original)) continue;
+  if (/name=["']robots["']\s+content=["'][^"']*noindex/i.test(original)) continue;
   let html = original;
-  html = html.replace(/<title\\b[^>]*>[\\s\\S]*?<\\/title>/i, '<title>' + escapeAttr(o.title) + '</title>');
+  html = html.replace(/<title\b[^>]*>[\s\S]*?<\/title>/i, '<title>' + escapeAttr(o.title) + '</title>');
   html = setMeta(html, 'name', 'description', o.description);
   html = setMeta(html, 'property', 'og:title', o.title);
   html = setMeta(html, 'property', 'og:description', o.description);
