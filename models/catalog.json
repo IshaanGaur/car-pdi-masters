@@ -7,6 +7,47 @@
   "locationPolicy": "reuse existing location/locality pages; do not generate model x location pages by default",
   "models": [
     {
+      "brand": "Mercedes-Benz",
+      "brandSlug": "mercedes-benz",
+      "model": "CLA",
+      "modelSlug": "cla",
+      "status": "research_pending",
+      "researchStatus": "pending",
+      "seoStatus": "not_published",
+      "newCarPdi": null,
+      "usedCarPdi": null,
+      "powertrains": [
+        "Electric (current India generation)",
+        "Petrol (older India generations)"
+      ],
+      "transmissions": [
+        "Automatic (generation dependent)"
+      ],
+      "variants": [
+        "CLA 200 (current electric generation)",
+        "Older India-market CLA variants (generation dependent)"
+      ],
+      "aliases": [],
+      "sourceUrls": [
+        "https://www.mercedes-benz.co.in/passengercars/models/saloon/cla-electric/overview.html",
+        "https://www.mercedes-benz.co.in/passengercars/models.html?showOnly=new"
+      ],
+      "checkedAt": "2026-11-25",
+      "notes": [
+        "Added to the research queue after a real Mercedes-Benz CLA used-car inspection in Delhi NCR on 2026-11-24. The inspection is demand evidence, not manufacturer specification evidence.",
+        "Do not publish until generation-specific India-market powertrain, transmission and variant data are fully verified. One authoritative model URL may cover new and used intent, with generation-aware wording."
+      ],
+      "priorityTier": 3,
+      "priorityReason": "Observed real-world luxury used-car inspection plus current Mercedes-Benz India model presence; validate demand and generation-specific specifications before publication.",
+      "researchNotes": [
+        "Mercedes-Benz India currently lists the CLA as an all-electric model and the official CLA Electric page identifies the CLA 200 as electric. Older used CLA vehicles in India can have different powertrains, so the model page must not imply that all used CLA vehicles share the current electric specification.",
+        "Final publication requires exact generation/model-year verification, current and historical India-market variants, and model-specific inspection wording."
+      ],
+      "demandValidation": "observed_inspection",
+      "approvedForPublication": false,
+      "variantResearchStatus": "pending_generation_review"
+    },
+    {
       "brand": "Maruti Suzuki",
       "brandSlug": "maruti-suzuki",
       "model": "Alto K10",
