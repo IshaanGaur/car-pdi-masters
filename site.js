@@ -176,7 +176,7 @@
     'Isuzu':['D-Max','MU-X','Other'],
     'BYD':['Atto 3','Seal','e6','Seal U','Other'],
     'BMW':['2 Series','3 Series','5 Series','7 Series','X1','X3','X5','X7','Other'],
-    'Mercedes-Benz':['A-Class','C-Class','E-Class','S-Class','GLA','GLC','GLE','GLS','Other'],
+    'Mercedes-Benz':['A-Class','C-Class','E-Class','S-Class','GLA','GLC','GLE','GLS','CLA','Other'],
     'Audi':['A4','A6','A8','Q3','Q5','Q7','Q8','Other'],
     'Volvo':['EX30','XC40','XC60','XC90','Other'],
     'Lexus':['ES','NX','RX','LX','LM','Other'],
