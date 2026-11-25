@@ -38,7 +38,7 @@
         "Do not publish until generation-specific India-market powertrain, transmission and variant data are fully verified. One authoritative model URL may cover new and used intent, with generation-aware wording."
       ],
       "priorityTier": 3,
-      "priorityReason": "Observed real-world luxury used-car inspection plus current Mercedes-Benz India model presence; validate demand and generation-specific specifications before publication.",
+      "priorityReason": "Recent premium used-car inspection creates observed demand, but current India CLA is electric while older used examples are generation-dependent; keep gated until generation-aware content is fully validated.",
       "researchNotes": [
         "Mercedes-Benz India currently lists the CLA as an all-electric model and the official CLA Electric page identifies the CLA 200 as electric. Older used CLA vehicles in India can have different powertrains, so the model page must not imply that all used CLA vehicles share the current electric specification.",
         "Final publication requires exact generation/model-year verification, current and historical India-market variants, and model-specific inspection wording."
@@ -4567,8 +4567,8 @@
         "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA.",
         "Added to the observed-inspection evidence record after a real Mercedes-Benz E-Class new-car PDI in Gurugram on 2026-11-24. This is demand/business evidence; it does not replace manufacturer specification verification."
       ],
-      "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "priorityTier": 2,
+      "priorityReason": "Strong premium new-car PDI intent plus a recent real E-Class new-car PDI in Gurugram; controlled second-wave model test aligned with the New Car PDI growth objective.",
       "researchNotes": [
         "Mercedes-Benz India currently lists the E-Class Sedan Long with petrol and diesel configurations. Used-PDI content should distinguish current long-wheelbase India specification from earlier E-Class generations.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
@@ -5166,8 +5166,8 @@
         "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review.",
         "Added to the observed-inspection evidence record after a real Volvo XC60 used-car inspection in Delhi NCR on 2026-11-24. This is demand/business evidence; it does not replace manufacturer specification verification."
       ],
-      "priorityTier": 3,
-      "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
+      "priorityTier": 2,
+      "priorityReason": "Premium used-car inspection intent plus a recent real XC60 used inspection in Delhi NCR; controlled second-wave model test.",
       "researchNotes": [
         "Current Volvo Cars India XC60 is B5 AWD petrol mild hybrid with automatic transmission. Older India XC60 generations also included diesel mild hybrid and plug-in-hybrid variants, so used-PDI copy must remain generation-aware.",
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
