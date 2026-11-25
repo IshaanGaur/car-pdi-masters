@@ -4562,9 +4562,10 @@
         "https://www.mercedes-benz.co.in/",
         "https://www.mercedes-benz.co.in/passengercars/configurator.html?view=BODYTYPE"
       ],
-      "checkedAt": "2026-11-12",
+      "checkedAt": "2026-11-25",
       "notes": [
-        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA."
+        "Premium-model research batch: official India manufacturer sources verified; final publication still requires review and generation-specific content QA.",
+        "Added to the observed-inspection evidence record after a real Mercedes-Benz E-Class new-car PDI in Gurugram on 2026-11-24. This is demand/business evidence; it does not replace manufacturer specification verification."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
@@ -4573,7 +4574,8 @@
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
       "approvedForPublication": true,
-      "variantResearchStatus": "verified_current_market"
+      "variantResearchStatus": "verified_current_market",
+      "demandValidation": "observed_inspection"
     },
     {
       "brand": "Mercedes-Benz",
