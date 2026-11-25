@@ -1505,8 +1505,8 @@
       "brand": "Tata",
       "brandSlug": "tata",
       "model": "Sierra",
-    "seoTitle": "Tata Sierra PDI Checklist | Sierra PDI | Car PDI Masters",
-    "seoDescription": "Tata Sierra PDI checklist and car inspection in Delhi NCR for new-car delivery or used-car purchase. 300+ checks, paint thickness and applicable diagnostics.",
+      "seoTitle": "Tata Sierra PDI Checklist | Sierra PDI | Car PDI Masters",
+      "seoDescription": "Tata Sierra PDI checklist and car inspection in Delhi NCR for new-car delivery or used-car purchase. 300+ checks, paint thickness and applicable diagnostics.",
       "modelSlug": "sierra",
       "status": "approved",
       "researchStatus": "approved",
@@ -5159,9 +5159,10 @@
         "https://www.volvocars.com/in/cars/xc60/specifications/",
         "https://www.volvocars.com/files/cs/v3/assets/blt0feaa88e629251fc/blt5fe9a87f7d599154/xc60-my24-27_10_2023.pdf"
       ],
-      "checkedAt": "2026-11-12",
+      "checkedAt": "2026-11-25",
       "notes": [
-        "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review."
+        "Final Tier-3 premium research: official India manufacturer/authorised-retailer sources verified; publication remains gated pending full catalog QA and content review.",
+        "Added to the observed-inspection evidence record after a real Volvo XC60 used-car inspection in Delhi NCR on 2026-11-24. This is demand/business evidence; it does not replace manufacturer specification verification."
       ],
       "priorityTier": 3,
       "priorityReason": "Premium/luxury model with high-value used/new PDI intent.",
@@ -5170,7 +5171,8 @@
         "Final Tier-3 approval: official India manufacturer/authorised-retailer material and current model/used-market status reviewed on 2026-11-12. Exact model year, variant, drivetrain and configuration must be verified at inspection; publish only through the approval-gated universal model SEO generator."
       ],
       "approvedForPublication": true,
-      "variantResearchStatus": "verified_current_market"
+      "variantResearchStatus": "verified_current_market",
+      "demandValidation": "observed_inspection"
     },
     {
       "brand": "Volvo",
