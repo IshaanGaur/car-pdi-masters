@@ -90,6 +90,15 @@
             const confirmPayment = functions.httpsCallable(fnApi, 'cpmConfirmBookingRazorpayPaymentV1');
             const confirmation = await confirmPayment({ ...response, bookingDocId, bookingId, customerPhone });
             if (confirmation.data?.paid) {
+              if (typeof window.gtag === 'function') {
+                window.gtag('event', 'purchase', {
+                  transaction_id: bookingId,
+                  value: Number(order.amount) / 100,
+                  currency: order.currency || 'INR',
+                  payment_stage: 'booking_payment_verified',
+                  page_location: window.location.href
+                });
+              }
               say(`Payment verified for ${bookingId}. Your booking is now waiting for the team’s review and assignment.`, 'success');
               button.textContent = 'Booking payment verified';
               button.disabled = true;
